@@ -28,12 +28,12 @@
         - role: Key Personnel
           years: 2018--2028
           text: >-
-            NIH bossDB (R24)---petabyte-scale data storage and community
+            NIH bossDB (R24MH114785)---petabyte-scale data storage and community
             collaboration for connectomics and precision medicine.
           domains: [neuro, ai]
         - role: PI
           years: 2021--2023
-          text: BENCHMARK (NIH R01)---community standards for high-resolution connectomics.
+          text: BENCHMARK (NIH R01MH126684)---community standards for high-resolution connectomics.
           domains: [neuro]
         - role: PI
           years: 2020--2021
@@ -49,7 +49,7 @@
           domains: [neuro, ai]
         - role: PI
           years: 2017--2020
-          text: NIH SABER---reproducible cloud processing pipelines for neuroscience.
+          text: NIH SABER (R24MH114799)---reproducible cloud processing pipelines for neuroscience.
           domains: [neuro, ai]
         - role: Technical Lead
           years: 2020--2021
@@ -105,7 +105,7 @@
       domains: [ai]
     - role: Lecturer, Applied Biomedical Engineering, EP
       years: 2018--Present
-      text: Graduate courses in applied neuroscience and neuroinformatics.
+      text: Graduate courses in applied neuroscience and neuroengineering.
       domains: [neuro, learning]
     - role: Lecturer, Lifelong Learning
       years: 2022--Present

@@ -1,20 +1,23 @@
 - years: 2018--Present
-  title: Frontiers in Neuroinformatics
+  title: Frontiers in Neuroengineering (EN.585.781)
   org: JHU Engineering for Professionals
-  description: Advanced topics survey course for Biomedical Engineering graduate students.
+  description: >-
+    Multi-instructor graduate survey in Applied Biomedical Engineering, online
+    and asynchronous, on state-of-the-art tools for measuring and interpreting
+    brain activity.
   domains: [neuro, learning]
 
 - years: 2022--Present
   title: Agentic AI Systems
-  org: JHU Engineering for Professionals
+  org: JHU Lifelong Learning
   description: >-
-    Master class on agentic AI systems reaching thousands of learners through
-    Johns Hopkins Engineering for Professionals; covers the evolution from
-    traditional computer vision to modern multimodal agent frameworks.
+    Faculty masterclass in the Agentic AI and Applied Generative AI certificate
+    programs, covering the evolution from traditional computer vision to modern
+    multimodal agent frameworks.
   domains: [ai, learning]
 
 - years: 2015--2022
-  title: Introduction to Connectomics (Intersession)
+  title: "Mapping the Brain: An Introduction to Connectomics (Intersession)"
   org: Johns Hopkins University
   description: >-
     Intensive research-based course with student poster session. Consistently

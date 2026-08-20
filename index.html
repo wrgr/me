@@ -67,11 +67,24 @@ title: William Gray-Roncal, PhD
     and Technology, the program directed by James Diamond at the School of
     Education, where Gray-Roncal is a Visiting Assistant Professor. The work
     applies systems engineering principles to learning in operational
-    environments including healthcare and defense. He
-    also teaches <em>Frontiers in Neuroinformatics</em> and a masterclass on
-    <em>Agentic AI Systems</em> through Hopkins Engineering for Professionals,
-    and taught <em>Introduction to Connectomics</em> — consistently among the
-    highest-rated courses in the Whiting School.
+    environments including healthcare and defense.
+  </p>
+  <p class="prose">
+    He teaches
+    {%- assign courses = "" -%}
+    {%- for t in site.data.cv.teaching -%}
+      {%- unless t.title contains "Research Mentor" -%}
+        {%- capture one -%}<em>{{ t.title | texclean | split: " (" | first }}</em> ({{ t.org | texclean }}){%- endcapture -%}
+        {%- assign courses = courses | append: one | append: "|" -%}
+      {%- endunless -%}
+    {%- endfor -%}
+    {%- assign list = courses | split: "|" -%}
+    {%- for c in list -%}
+      {%- if forloop.last and forloop.length > 1 %}, and {% elsif forloop.first %} {% else %}, {% endif -%}
+      {{ c }}
+    {%- endfor -%}.
+    The connectomics intersession course was consistently among the
+    highest-rated in the Whiting School.
   </p>
 </section>
 
@@ -83,8 +96,8 @@ title: William Gray-Roncal, PhD
   </div>
   <p class="metrics-line">
     <a href="{{ '/publications/' | relative_url }}">Full publication list →</a>
-    &nbsp;·&nbsp; ~3,000 citations · h-index 21 (as of Aug 2026,
-    <a href="https://scholar.google.com/citations?user={{ site.data.profiles.scholar }}">Google Scholar</a>)
+    &nbsp;·&nbsp; 3,009 citations · h-index 21 · i10-index 32
+    (<a href="https://scholar.google.com/citations?user={{ site.data.profiles.scholar }}">Google Scholar</a>, August 2026)
   </p>
 </section>
 
