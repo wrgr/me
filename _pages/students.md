@@ -2,7 +2,7 @@
 layout: page
 title: For students and mentees
 subtitle: >-
-  Nearly 500 students mentored, through programs built on one premise: judge the
+  Approximately 500 students mentored, through programs built on one premise: judge the
   work, not the pedigree.
 permalink: /students/
 ---
