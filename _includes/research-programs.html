@@ -1,0 +1,38 @@
+{%- comment -%}
+Research program cards, generated from the "Research Program Leadership" block
+in _data/cv/experience.yml. The CV writes each bullet as
+"NIH SABER---reproducible cloud processing pipelines"; the card splits that into
+a title and a description, and shows the role and years as the kicker.
+{%- endcomment -%}
+<div class="card-grid">
+{%- for e in site.data.cv.experience -%}
+  {%- for g in e.groups -%}
+    {%- if g.label contains "Research Program" -%}
+      {%- for it in g.items -%}
+        {%- assign dkey = it.domains | first | default: "neuro" -%}
+        {%- assign d = site.data.domains | where: "key", dkey | first -%}
+        {%- assign full = it.text | texclean | strip_html -%}
+        {%- assign name = it.text | card_subject -%}
+        {%- assign rest = full | remove_first: name -%}
+  <article class="card project-card domain--{{ dkey }}">
+    <div class="card-kicker">
+      <span class="kind">{{ it.role }}{% if it.years %} · {{ it.years | texclean }}{% endif %}</span>
+      <ul class="chips chips--mini">
+        {%- for k in it.domains -%}
+          {%- assign dd = site.data.domains | where: "key", k | first -%}
+        <li><span class="chip chip--mini domain--{{ k }}">{{ dd.label }}</span></li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <h3>{{ name }}</h3>
+    {%- assign desc = rest | remove_first: "—" | strip | remove_first: "." | strip -%}
+    {%- comment -%} entries with no em-dash leave only punctuation behind {%- endcomment -%}
+    {%- if desc.size > 3 %}
+    <p>{{ desc | capitalize }}</p>
+    {%- endif %}
+  </article>
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+</div>

@@ -1,0 +1,30 @@
+- years: 2018--Present
+  title: Frontiers in Neuroinformatics
+  org: JHU Engineering for Professionals
+  description: Advanced topics survey course for Biomedical Engineering graduate students.
+  domains: [neuro, learning]
+
+- years: 2022--Present
+  title: Agentic AI Systems
+  org: JHU Engineering for Professionals
+  description: >-
+    Master class on agentic AI systems reaching thousands of learners through
+    Johns Hopkins Engineering for Professionals; covers the evolution from
+    traditional computer vision to modern multimodal agent frameworks.
+  domains: [ai, learning]
+
+- years: 2015--2022
+  title: Introduction to Connectomics (Intersession)
+  org: Johns Hopkins University
+  description: >-
+    Intensive research-based course with student poster session. Consistently
+    among highest-rated courses in Whiting School.
+  domains: [neuro, learning]
+
+- years: 2011--Present
+  title: Research Mentor
+  org: JHU and APL
+  description: >-
+    Mentored nearly \textbf{500 students} at high school, undergraduate, and
+    graduate levels.
+  domains: [workforce]

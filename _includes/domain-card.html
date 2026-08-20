@@ -1,13 +1,7 @@
 <article class="card domain-card domain--{{ include.domain.key }}">
   <h3>{{ include.domain.label }}</h3>
   <p>{{ include.domain.blurb }}</p>
-  {% if include.domain.roles and include.domain.roles.size > 0 %}
-  <ul class="roles">
-    {% for role in include.domain.roles %}
-    <li>{{ role }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+  {% include domain-roles.html key=include.domain.key limit=4 %}
   {% if include.domain.chips and include.domain.chips.size > 0 %}
   <ul class="chips">
     {% for chip in include.domain.chips %}

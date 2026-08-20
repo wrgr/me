@@ -1,0 +1,25 @@
+# Educational leadership & workforce development.
+# Drives the CV section and the website's "Programs & mentoring" section.
+
+- years: 2017--2023
+  title: Founder & Lead, CIRCUIT Program
+  org: Johns Hopkins University Applied Physics Laboratory
+  expansion: Cohort-based Integrated Research Community for Undergraduate Innovation and Trailblazing
+  description: >-
+    Nationally recognized research and mentoring program for underserved and
+    underrepresented students in STEM. \textbf{220+ students served} from high
+    school to graduate school across technical areas from underwater to space
+    systems.
+  stat: 220+ students served
+  domains: [workforce, neuro]
+
+- years: 2009--Present
+  title: Co-Founder & Co-Director, College Prep Program at APL
+  org: Laurel, MD
+  description: >-
+    All-volunteer summer program supporting underserved students with college
+    preparation. Competency-based curriculum including academics, applications,
+    essays, financial aid, and longitudinal support. \textbf{220+ students
+    served; >90\% on track for 4-year degrees.} 500+ volunteer hours annually.
+  stat: 220+ students served, >90% on track for four-year degrees
+  domains: [workforce]

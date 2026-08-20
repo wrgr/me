@@ -1,0 +1,17 @@
+<article class="card project-card domain--{{ include.item.domains | first }}">
+  <div class="card-kicker">
+    <span class="kind">{{ include.item.kind }}</span>
+    <ul class="chips chips--mini">
+      {% for dkey in include.item.domains %}
+      {% assign d = site.data.domains | where: "key", dkey | first %}
+      <li><span class="chip chip--mini domain--{{ dkey }}">{{ d.label }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <h3>{{ include.item.name }}</h3>
+  <p>{{ include.item.blurb }}</p>
+  <p class="card-link">
+    {% if include.item.url %}<a href="{{ include.item.url }}">{{ include.item.link_label | default: "Visit" }} →</a>{% endif %}
+    {% if include.item.cite %}<a href="{{ '/publications/' | relative_url }}#{{ include.item.cite }}">Paper</a>{% endif %}
+  </p>
+</article>

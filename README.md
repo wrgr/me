@@ -17,28 +17,48 @@ bundle exec jekyll serve --livereload
 
 | What | Where |
 | --- | --- |
+| **Career facts (source of truth)** | `_data/cv/*.yml` — experience, education, awards, teaching, service, programs |
+| **Publications (source of truth)** | `cv/will_cv.bib` + `\nocite` lists in `cv/will_cv.tex` |
 | Homepage sections | `index.html` |
-| Six domain cards | `_data/domains.yml` |
-| Project & writing cards | `_data/projects.yml` |
+| Six domain blurbs | `_data/domains.yml` (roles are derived, not stored) |
+| Software & datasets | `_data/software.yml` |
+| Writing & ideas | `_data/writing.yml` |
 | Profile links / CV path | `_data/profiles.yml` |
-| Publications (generated) | `_bibliography/papers.bib` |
+| Generated CV LaTeX | `cv/will_cv.tex` — **do not hand-edit** |
+| Generated bibliography | `_bibliography/papers.bib` — **do not hand-edit** |
 | Publication entry template | `_layouts/bib.html` |
 | Design tokens (colors, dark mode) | `_sass/_tokens.scss` |
-| **CV + publication source of truth** | `cv/` — see [cv/README.md](cv/README.md) |
 
-### Publications and CV
+## One source of truth
 
-`cv/will_cv.tex` + `cv/will_cv.bib` are the source of truth for **both** the CV
-PDF and the site's publication list. Do not hand-edit
-`_bibliography/papers.bib` — it is generated:
+Career facts live once, in `_data/cv/*.yml`, and flow to both artifacts:
 
-```bash
-python3 cv/bib2jekyll.py
+```
+_data/cv/*.yml ──┬── cv/yaml2tex.py ──▶ cv/will_cv.tex ──▶ assets/pdf/cv.pdf
+                 └── site.data.cv.*  ──▶ website (Liquid reads the YAML directly)
+
+cv/will_cv.bib ───── cv/bib2jekyll.py ─▶ _bibliography/papers.bib ─▶ publications
 ```
 
-That derives each entry's category (paper / talk / poster) from the `\nocite`
-lists in the CV, adds `domain=` chips and `selected=` stars, and normalizes the
-formatting. Full workflow and gotchas: [cv/README.md](cv/README.md).
+Nothing on the site restates a CV fact. Domain cards, for instance, do not store
+their own role lists — `_includes/domain-roles.html` finds every entry in
+`_data/cv/*.yml` tagged with that domain and renders it. Tag a new grant with
+`domains: [neuro]` and it appears on the neuro card and in the CV at once.
+
+YAML values may contain LaTeX (`\textbf{...}`, `---`, `\%`) because the CV
+consumes them too; the `texclean` Liquid filter in `_plugins/` renders those as
+HTML for the web.
+
+### Regenerating
+
+```bash
+python3 cv/yaml2tex.py    # _data/cv/*.yml  -> cv/will_cv.tex
+python3 cv/bib2jekyll.py  # cv/will_cv.bib  -> _bibliography/papers.bib
+```
+
+Then rebuild the PDF — see [cv/README.md](cv/README.md).
+
+
 
 ## Deployment
 

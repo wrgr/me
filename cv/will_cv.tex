@@ -5,8 +5,15 @@
 \usepackage[resetlabels]{multibib}
 
 %% ==========================================================================
+%% GENERATED FILE -- DO NOT EDIT DIRECTLY
+%% Source of truth: _data/cv/*.yml
+%% Regenerate:      python3 cv/yaml2tex.py
+%% The \nocite blocks below are the exception: they are hand-maintained,
+%% because cite-key membership decides paper/talk/poster on the website too.
+%% ==========================================================================
+
+%% ==========================================================================
 %% BIBLIOGRAPHY CONFIGURATION
-%% Each category can be independently updated
 %% ==========================================================================
 \newcites{pre,peer,conf,poster,talks,other,prog,unp}{%
   Pre-prints,
@@ -34,26 +41,17 @@
 }
 \renewcommand*{\namefont}{\fontsize{32}{40}\mdseries\upshape}
 
-\newcommand{\cvreference}[7]{%
-    \textbf{#1}\newline% Name
-    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
-    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
-    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
-    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
-    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
-    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
-
 %% ==========================================================================
 %% PERSONAL INFORMATION
 %% ==========================================================================
-\AtBeginDocument{\recomputelengths} 
+\AtBeginDocument{\recomputelengths}
 \firstname{William}
-\familyname{Gray-Roncal} 
-\address{JHU Applied Physics Laboratory \\
-  11100 Johns Hopkins Road, MP3-E104\\ 
-  Asymmetric Operations Sector \\
+\familyname{Gray-Roncal}
+\address{Johns Hopkins University Applied Physics Laboratory\\
+  11100 Johns Hopkins Road, MP3-E104\\
+  Asymmetric Operations Sector\\
   Decision Systems Group\\
-  }{Laurel, MD 20723} 
+  }{Laurel, MD 20723}
 \homepage{wrgr.github.io/me}
 \email{william.gray.roncal@jhuapl.edu}
 
@@ -64,12 +62,8 @@
 %% PROFESSIONAL EXPERIENCE
 %% ==========================================================================
 \section{Professional Experience}
-
-%% --- APL Position ---
 \cventry{2007--Present}{Principal Research Engineer, Project Manager, Section Supervisor}{Johns Hopkins University Applied Physics Laboratory}{Laurel, MD}{}
-{
-\textit{Applies systems engineering methods to complex challenges spanning defense, space, biomedical, and learning systems, with expertise in building scalable data systems and human-machine teaming solutions.}
-\vspace{0.15cm}
+{\textit{Applies systems engineering methods to complex challenges spanning defense, space, biomedical, and learning systems, with expertise in building scalable data systems and human-machine teaming solutions.}
 \vspace{0.15cm}
 \textbf{Research Program Leadership:}
 \begin{itemize}
@@ -95,54 +89,50 @@
 \begin{itemize}
 \item \textit{Data Scientist (2017--2022):} JHU Precision Medicine---analytics leadership for Multiple Sclerosis and COVID-19.
 \end{itemize}
-}
+\vspace{0.15cm}}
 \vspace{0.2cm}
-
-%% --- JHU Academic Appointments (Consolidated with progression) ---
 \cventry{2017--Present}{Faculty Appointments}{Johns Hopkins University}{}{}
-{
-\begin{itemize}
+{\begin{itemize}
 \item \textit{Visiting Assistant Professor, School of Education (2026--Present):} Leading development of the Learning Engineering Specialization within the Master of Education in Learning Design and Technology program; applying systems engineering principles to learning in operational environments including healthcare and defense.
-\item[] \hspace{1em}\textit{Previously:} Assistant Research Professor (courtesy), School of Education (2020--2025)---interdisciplinary research at the intersection of engineering and education.
+\item[] \hspace{1em}\textit{Previously: Assistant Research Professor (courtesy), School of Education (2020--2025)---interdisciplinary research at the intersection of engineering and education.}
 \item \textit{Assistant Research Professor, Computer Science (2017--Present):} Teaching, research collaboration, and advising undergraduate/graduate students.
 \item \textit{Lecturer, Applied Biomedical Engineering, EP (2018--Present):} Graduate courses in applied neuroscience and neuroinformatics.
 \item \textit{Lecturer, Lifelong Learning (2022--Present):} Workshops and courses in frontier AI areas.
-\end{itemize}
-}
+\end{itemize}}
 \vspace{0.2cm}
-
-%% --- Prior Positions ---
-\cventry{2010--2017}{Research Scientist}{NeuroData and the Open Connectome Project}{Johns Hopkins University}{}{Led research in mesoscale and nanoscale connectomics, community analytics, and computer vision. Translated raw image volumes to knowledge for statistical inference across multiple institutions.}
-
+\cventry{2010--2017}{Research Scientist}{NeuroData and the Open Connectome Project}{Johns Hopkins University}{}
+{Led research in mesoscale and nanoscale connectomics, community analytics, and computer vision. Translated raw image volumes to knowledge for statistical inference across multiple institutions.}
 \vspace{0.2cm}
-\cventry{2001--2007}{Electrical and Systems Engineer}{Northrop Grumman Corporation}{Information Technology (TASC), Chantilly VA; Space Technology, Redondo Beach, CA}{}{Subject Matter Expert and Responsible Engineer for satellite systems. 100\% Award Fee. Intern 2001--02.}
-
+\cventry{2001--2007}{Electrical and Systems Engineer}{Northrop Grumman Corporation}{Information Technology (TASC), Chantilly VA; Space Technology, Redondo Beach, CA}{}
+{Subject Matter Expert and Responsible Engineer for satellite systems. 100\% Award Fee. Intern 2001--02.}
 
 %% ==========================================================================
 %% EDUCATION
 %% ==========================================================================
 \section{Education}
-
 \cventry{2010--2016}{Ph.D. in Computer Science}{Johns Hopkins University}{}{}
-{\textbf{Dissertation:} Enabling Scalable Neurocartography: Images to Graphs for Discovery\\
-Committee Chair: Gregory D. Hager}
+{\textbf{Dissertation:} Enabling Scalable Neurocartography: Images to Graphs for Discovery\\ Committee Chair: Gregory D. Hager}
 
-\cventry{2009--2010}{Post-Masters Certificate, Electrical Engineering}{Johns Hopkins University}{}{}{}
+\cventry{2009--2010}{Post-Masters Certificate, Electrical Engineering}{Johns Hopkins University}{}{}
+{}
 
-\cventry{2004--2005}{M.S. in Electrical Engineering}{University of Southern California}{}{}{}
+\cventry{2004--2005}{M.S. in Electrical Engineering}{University of Southern California}{}{}
+{}
 
-\cventry{1999--2003}{B.E. in Electrical Engineering, Math Minor}{Vanderbilt University}{}{}{\textit{Magna Cum Laude}}
+\cventry{1999--2003}{B.E. in Electrical Engineering, Math Minor}{Vanderbilt University}{}{}
+{\textit{Magna Cum Laude}}
 
-\cventry{2012}{Introduction to Connectomics}{MIT and Harvard Universities}{}{}{}
+\cventry{2012}{Introduction to Connectomics}{MIT and Harvard Universities}{}{}
+{}
 
-\cventry{2002}{Study Abroad}{University of Leeds, England}{}{}{}
+\cventry{2002}{Study Abroad}{University of Leeds, England}{}{}
+{}
 
 
 %% ==========================================================================
-%% EDUCATIONAL LEADERSHIP & PROGRAM DEVELOPMENT
+%% EDUCATIONAL LEADERSHIP \& WORKFORCE DEVELOPMENT
 %% ==========================================================================
 \section{Educational Leadership \& Workforce Development}
-
 \cventry{2017--2023}{Founder \& Lead, CIRCUIT Program}{Johns Hopkins University Applied Physics Laboratory}{}{}
 {Cohort-based Integrated Research Community for Undergraduate Innovation and Trailblazing. Nationally recognized research and mentoring program for underserved and underrepresented students in STEM. \textbf{220+ students served} from high school to graduate school across technical areas from underwater to space systems.}
 
@@ -150,12 +140,10 @@ Committee Chair: Gregory D. Hager}
 \cventry{2009--Present}{Co-Founder \& Co-Director, College Prep Program at APL}{Laurel, MD}{}{}
 {All-volunteer summer program supporting underserved students with college preparation. Competency-based curriculum including academics, applications, essays, financial aid, and longitudinal support. \textbf{220+ students served; >90\% on track for 4-year degrees.} 500+ volunteer hours annually.}
 
-
 %% ==========================================================================
 %% TEACHING
 %% ==========================================================================
 \section{Teaching}
-
 \cventry{2018--Present}{Frontiers in Neuroinformatics}{JHU Engineering for Professionals}{}{}
 {Advanced topics survey course for Biomedical Engineering graduate students.}
 
@@ -170,18 +158,16 @@ Committee Chair: Gregory D. Hager}
 
 
 %% ==========================================================================
-%% SKILLS & MEMBERSHIPS
+%% SKILLS \& CERTIFICATIONS
 %% ==========================================================================
 \section{Skills \& Certifications}
-
 \cventry{Technical}{Machine Learning, Deep Learning, Computer Vision, Graph Neural Networks, Connectomics, Cloud Computing (AWS)}{}{}{}{}
 \cventry{Languages}{Python, MATLAB, SQL, LaTeX}{}{}{}{}
 \cventry{Certifications}{Six Sigma Green Belt $\cdot$ Engineer Intern (EIT) $\cdot$ Secret Clearance}{}{}{}{}
 \cventry{Memberships}{Society for Neuroscience $\cdot$ Eta Kappa Nu $\cdot$ Tau Beta Pi Honor Societies}{}{}{}{}
 
-
 %% ==========================================================================
-%% AWARDS & HONORS
+%% AWARDS \& HONORS
 %% ==========================================================================
 \section{Awards \& Honors}
 
@@ -204,9 +190,11 @@ Committee Chair: Gregory D. Hager}
 \cventry{2003}{Program Award for Top EECS Student}{Vanderbilt University}{}{}{}
 \cventry{2003}{Dean's Award for Outstanding Service}{Vanderbilt University}{}{}{}
 
-
 %% ==========================================================================
-%% PUBLICATIONS
+%% PUBLICATIONS (hand-maintained \nocite lists)
+%% ==========================================================================
+%% ==========================================================================
+%% ==========================================================================
 %% Note: Update will_cv.bib with DOIs/URLs for complete linking
 %% ==========================================================================
 \section{Publications}
@@ -242,10 +230,15 @@ Committee Chair: Gregory D. Hager}
 
 
 %% ==========================================================================
+
+%% ==========================================================================
+
+%% ==========================================================================
+
+%% ==========================================================================
 %% PROFESSIONAL SERVICE
 %% ==========================================================================
 \section{Professional Service}
-
 \cventry{2025}{Co-organizer}{AI Synergy Summit}{Johns Hopkins University}{}{Convened researchers and practitioners on integrating generative AI and human learning approaches.}
 
 \vspace{0.1cm}
@@ -263,31 +256,4 @@ Committee Chair: Gregory D. Hager}
 \vspace{0.1cm}
 \cventry{2015}{Workshop Organizer}{BigNeuro 2015: Making sense of big neural data}{NIPS}{}{}
 
-
 \end{document}
-
-%% ==========================================================================
-%% NOTES FOR FUTURE UPDATES
-%% ==========================================================================
-%% 
-%% TO ADD A NEW PUBLICATION:
-%% 1. Add entry to will_cv.bib with DOI/URL
-%% 2. Add citation key to appropriate \nocite command above
-%%
-%% TO UPDATE POSITIONS:
-%% 1. Update date ranges in relevant \cventry
-%% 2. Move completed projects to "completed" subsection if needed
-%%
-%% DOIS FOUND AND ADDED (all complete as of 2026-02):
-%% - Johnson2023:            10.1109/ISEC57711.2023.10402255
-%% - Floryanzia2024:         10.1109/ISEC61299.2024.10664684
-%% - Sharp2023:              10.18260/1-2--39964
-%% - balwani2021multi:       10.1109/ICIP42928.2021.9506174
-%% - bishop2021confirms:     10.1109/EMBC46164.2021.9630109
-%% - matelsky2021integrated: 10.1109/EMBC46164.2021.9630199
-%% - matelsky2021dotmotif:   10.1038/s41598-021-91025-5
-%% - bridgeford2021:         10.1371/journal.pcbi.1009279
-%% - encarnacion2018:        10.1109/ISECon.2018.8340503 (was already there, fixed syntax)
-%%
-%% ==========================================================================
-

@@ -55,6 +55,15 @@
   position: relative;
   margin-bottom: 0.2rem;
 }
+.domain-card .roles .role {
+  color: var(--accent, var(--ink));
+  font-weight: 600;
+}
+.domain-card .roles .role::after {
+  content: " ·";
+  color: var(--muted);
+  font-weight: 400;
+}
 .domain-card .roles li::before {
   content: "";
   position: absolute;

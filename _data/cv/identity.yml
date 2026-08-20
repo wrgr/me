@@ -1,0 +1,34 @@
+# Canonical identity. Feeds both the CV PDF and the website.
+first_name: William
+family_name: Gray-Roncal
+suffix: PhD
+# Full display name used in prose and page titles
+display_name: William Gray-Roncal, PhD
+short_name: W. Gray-Roncal
+
+title: Principal Research Engineer
+title_full: Principal Research Engineer, Project Manager, Section Supervisor
+employer: Johns Hopkins University Applied Physics Laboratory
+employer_short: JHU APL
+
+address_lines:
+  - Johns Hopkins University Applied Physics Laboratory
+  - 11100 Johns Hopkins Road, MP3-E104
+  - Asymmetric Operations Sector
+  - Decision Systems Group
+address_city: Laurel, MD 20723
+
+# CV uses the institutional address; the website uses site.email (see _config.yml).
+cv_email: william.gray.roncal@jhuapl.edu
+homepage: wrgr.github.io/me
+
+# One-line and short-form descriptions reused across the site
+roles_strip:
+  - Researcher & systems engineer
+  - Mentor & program builder
+  - Learning engineer & educator
+
+summary: >-
+  Applies systems engineering methods to complex challenges spanning defense,
+  space, biomedical, and learning systems, with expertise in building scalable
+  data systems and human-machine teaming solutions.
