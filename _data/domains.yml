@@ -1,41 +1,55 @@
 # The six domains. `key` doubles as the CSS class suffix (.domain--<key>)
 # and as the vocabulary for the `domain={...}` field in _bibliography/papers.bib.
+# Facts sourced from the CV (Feb 2026).
 - key: neuro
   label: Neuro & connectomics
   blurb: >-
     Mapping brains at synaptic scale — automated reconstruction pipelines,
     petabyte-scale community archives, and the query tools that turn image
     volumes into testable circuits.
+  roles:
+    - Co-PI, NIH CONNECTS Mouse Connectome (2023–2028)
+    - Key Personnel, NIH bossDB R24 (2018–2028)
+    - PI, BENCHMARK — NIH R01 (2021–2023)
+    - Technical Lead, IARPA MICrONS (2017–2022)
   chips:
-    - name: BossDB
+    - name: bossDB
       url: https://bossdb.org
+    - name: MICrONS
     - name: BENCHMARK
     - name: DotMotif
       url: https://github.com/aplbrain/dotmotif
-    - name: MICrONS
 
 - key: ai
   label: AI & data
   blurb: >-
     Computer vision, graph analysis, and cloud infrastructure that scale from
-    laptop prototypes to petabyte pipelines — plus rigorous evaluation of how
-    well models (and the humans using them) actually perform.
+    laptop prototypes to petabyte pipelines — including algorithms that borrow
+    their architecture from biology.
+  roles:
+    - PI, TITAN — DARPA AIE (2020–2021)
+    - Technical Lead, NeuroAI Engines (2020–2021)
+    - PI, SABER — NIH (2017–2020)
   chips:
-    - name: ExpertTrace
-      url: https://github.com/wrgr/expertTrace
-    - name: Subgraph search
-    - name: Scalable pipelines
+    - name: Low-shot learning
+    - name: Graph queries
+    - name: Reproducible pipelines
 
 - key: defense
   label: Defense & space
   blurb: >-
-    Twenty years of systems engineering for national-security sponsors —
-    space and undersea systems, and decision-support prototypes for hard
-    operational problems.
+    Two decades of systems engineering for national-security sponsors — from
+    satellite systems as a responsible engineer to decision-support prototypes
+    for hard operational problems.
+  roles:
+    - Asymmetric Operations Sector, Decision Systems Group, JHU APL
+    - Team Lead, CDAO Digital Talent Management Futures (2024)
+    - Electrical & Systems Engineer, Northrop Grumman (2001–2007)
   chips:
     - name: JHU APL
       url: https://www.jhuapl.edu
-    - name: PISTA (DTRA)
+    - name: Satellite systems
+    - name: Human–machine teaming
 
 - key: learning
   label: Learning engineering
@@ -43,28 +57,37 @@
     Treating human capability as a system parameter — something you can
     specify, measure, and improve with the same discipline applied to any
     engineered system.
+  roles:
+    - Visiting Assistant Professor, JHU School of Education (2026–)
+    - Leading development of the Learning Engineering Specialization, M.Ed. in Learning Design and Technology
+    - Quantitative measures of human cognitive performance in operational contexts
   chips:
-    - name: LENS
-      url: https://capabilitymatters.org
     - name: Capability Matters
       url: https://capabilitymatters.org
-    - name: Show Your Work
+    - name: Agentic AI Systems
+    - name: Frontiers in Neuroinformatics
 
 - key: workforce
   label: Workforce
   blurb: >-
-    Cohort-based pathways into research careers — nearly 500 students
-    mentored through programs built to widen who gets to do science.
+    Cohort-based pathways into research careers — nearly 500 students mentored
+    through programs built to widen who gets to do science.
+  roles:
+    - Founder & Lead, CIRCUIT (2017–2023) — 220+ students
+    - Co-Founder & Co-Director, College Prep Program at APL (2009–) — 220+ students
   chips:
     - name: CIRCUIT
-    - name: MERIT
-    - name: COMPASS
+    - name: College Prep
     - name: NeuroTrailblazers
       url: https://github.com/wrgr/neurotrailblazers
 
 - key: health
   label: Public health
   blurb: >-
-    Bringing the same measurement discipline to biomedical and public-health
-    challenges.
-  chips: []
+    The same measurement discipline turned on clinical data — analytics
+    leadership for multiple sclerosis and COVID-19 research at Johns Hopkins.
+  roles:
+    - Data Scientist, JHU Precision Medicine (2017–2022)
+  chips:
+    - name: Precision Medicine
+    - name: MS & COVID-19 analytics

@@ -21,22 +21,24 @@ bundle exec jekyll serve --livereload
 | Six domain cards | `_data/domains.yml` |
 | Project & writing cards | `_data/projects.yml` |
 | Profile links / CV path | `_data/profiles.yml` |
-| Publications (BibTeX) | `_bibliography/papers.bib` |
+| Publications (generated) | `_bibliography/papers.bib` |
 | Publication entry template | `_layouts/bib.html` |
 | Design tokens (colors, dark mode) | `_sass/_tokens.scss` |
+| **CV + publication source of truth** | `cv/` — see [cv/README.md](cv/README.md) |
 
-### Publications
+### Publications and CV
 
-`_bibliography/papers.bib` is the single source of truth. Custom fields:
+`cv/will_cv.tex` + `cv/will_cv.bib` are the source of truth for **both** the CV
+PDF and the site's publication list. Do not hand-edit
+`_bibliography/papers.bib` — it is generated:
 
-- `selected={true}` — shows the entry on the homepage with a ★
-- `domain={neuro,ai}` — comma-separated keys from `_data/domains.yml`, rendered as colored chips
-- `pdf=`, `code=`, `website=` — optional buttons per entry
+```bash
+python3 cv/bib2jekyll.py
+```
 
-### CV
-
-Set `cv: /assets/pdf/cv.pdf` in `_data/profiles.yml` once the PDF exists —
-the nav and contact rows pick it up automatically.
+That derives each entry's category (paper / talk / poster) from the `\nocite`
+lists in the CV, adds `domain=` chips and `selected=` stars, and normalizes the
+formatting. Full workflow and gotchas: [cv/README.md](cv/README.md).
 
 ## Deployment
 

@@ -20,7 +20,8 @@
         {%- assign nameparts = name | split: " " -%}
         {%- assign last = nameparts | last -%}
       {%- endif -%}
-      {%- if wgr_index == -1 and last contains "Roncal" -%}
+      {%- assign initial = display | strip | slice: 0, 1 -%}
+      {%- if wgr_index == -1 and last contains "Roncal" and initial == "W" -%}
         {%- assign wgr_index = forloop.index0 -%}
         {%- assign wgr_display = display | strip -%}
       {%- endif -%}
@@ -37,7 +38,8 @@
         {%- assign nameparts = name | split: " " -%}
         {%- assign last = nameparts | last -%}
       {%- endif -%}
-      {%- if last contains "Roncal" -%}<strong>{{ display | strip }}</strong>{%- else -%}{{ display | strip }}{%- endif -%}
+      {%- assign initial = display | strip | slice: 0, 1 -%}
+      {%- if last contains "Roncal" and initial == "W" -%}<strong>{{ display | strip }}</strong>{%- else -%}{{ display | strip }}{%- endif -%}
       {%- unless forloop.last %}, {% endunless -%}
     {%- endfor -%}
     {%- if wgr_index >= 12 -%}, …, <strong>{{ wgr_display }}</strong>{%- endif -%}

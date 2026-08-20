@@ -9,17 +9,18 @@
   link_label: Casebook (PDF)
 
 - name: Show Your Work
-  kind: Writing
+  kind: Writing — forthcoming
   domains: [learning]
   blurb: >-
-    Gray-Roncal & Diamond, 2026 — on making thinking visible as the unit of
-    assessment in an AI-saturated world.
+    With James Diamond — on making thinking visible as the unit of assessment
+    in an AI-saturated world. In preparation; not yet published.
 
 - name: Calibrate the Scientists, Not Just the Microscopes
-  kind: Writing
+  kind: Writing — in press
   domains: [learning, neuro]
   blurb: >-
-    Commentary for the BRAIN CONNECTS community — in press.
+    Commentary for the BRAIN CONNECTS community, arguing that measurement
+    discipline belongs on the people as well as the instruments. In press.
 
 - name: BossDB
   kind: Research infrastructure

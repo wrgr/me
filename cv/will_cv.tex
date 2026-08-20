@@ -1,0 +1,293 @@
+\documentclass[10pt,colorlinks=true,urlcolor=blue]{moderncv}
+\usepackage{utopia}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[resetlabels]{multibib}
+
+%% ==========================================================================
+%% BIBLIOGRAPHY CONFIGURATION
+%% Each category can be independently updated
+%% ==========================================================================
+\newcites{pre,peer,conf,poster,talks,other,prog,unp}{%
+  Pre-prints,
+  Peer Reviewed Articles,
+  Conference Proceedings,
+  Posters,
+  Talks,
+  Other Publications,
+  Programs,
+  Unpublished
+}
+\renewcommand{\bibliographyitemlabel}{\@{\arabic{enumiv}}}
+
+\usepackage[scale=0.8]{geometry}
+
+%% ==========================================================================
+%% CUSTOM COMMANDS
+%% ==========================================================================
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvline{}{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+    }%
+}
+\renewcommand*{\namefont}{\fontsize{32}{40}\mdseries\upshape}
+
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+%% ==========================================================================
+%% PERSONAL INFORMATION
+%% ==========================================================================
+\AtBeginDocument{\recomputelengths} 
+\firstname{William}
+\familyname{Gray-Roncal} 
+\address{JHU Applied Physics Laboratory \\
+  11100 Johns Hopkins Road, MP3-E104\\ 
+  Asymmetric Operations Sector \\
+  Decision Systems Group\\
+  }{Laurel, MD 20723} 
+\homepage{wrgr.github.io/me}
+\email{william.gray.roncal@jhuapl.edu}
+
+\begin{document}
+\maketitle
+
+%% ==========================================================================
+%% PROFESSIONAL EXPERIENCE
+%% ==========================================================================
+\section{Professional Experience}
+
+%% --- APL Position ---
+\cventry{2007--Present}{Principal Research Engineer, Project Manager, Section Supervisor}{Johns Hopkins University Applied Physics Laboratory}{Laurel, MD}{}
+{
+\textit{Applies systems engineering methods to complex challenges spanning defense, space, biomedical, and learning systems, with expertise in building scalable data systems and human-machine teaming solutions.}
+\vspace{0.15cm}
+\vspace{0.15cm}
+\textbf{Research Program Leadership:}
+\begin{itemize}
+\item \textit{Co-PI (2023--2028):} NIH CONNECTS Mouse Connectome---scaling circuit analysis and reconstruction.
+\item \textit{Key Personnel (2023--2026):} NIH CONNECTS High Throughput Imaging Research Grant.
+\item \textit{Key Personnel (2018--2028):} NIH bossDB (R24)---petabyte-scale data storage and community collaboration for connectomics and precision medicine.
+\item \textit{PI (2021--2023):} BENCHMARK (NIH R01)---community standards for high-resolution connectomics.
+\item \textit{PI (2020--2021):} TITAN (DARPA AIE)---low-shot learning algorithms inspired by insect neural connectivity.
+\item \textit{Technical Lead (2017--2022):} IARPA MICrONS---algorithms for cubic millimeter mammalian neuroscience; scene parsing methods for operator-focused environments.
+\item \textit{PI (2017--2020):} NIH SABER---reproducible cloud processing pipelines for neuroscience.
+\item \textit{Technical Lead (2020--2021):} NeuroAI Engines---translating biological neural computation to next-generation AI algorithms.
+\item \textit{Current Research:} Quantitative measures of human cognitive performance in complex operational contexts.
+\end{itemize}
+\vspace{0.15cm}
+\textbf{Leadership \& Management:}
+\begin{itemize}
+\item \textit{Acting Group Supervisor (2022--2023):} REDD Group strategic development and staff mentorship.
+\item \textit{Section Supervisor (2018--2022):} Line management, hiring, mentoring, and strategic initiatives.
+\item \textit{Team Lead (2024):} CDAO Digital Talent Management Futures---diverse talent pipeline for DoD.
+\end{itemize}
+\vspace{0.15cm}
+\textbf{Data Science \& Clinical Applications:}
+\begin{itemize}
+\item \textit{Data Scientist (2017--2022):} JHU Precision Medicine---analytics leadership for Multiple Sclerosis and COVID-19.
+\end{itemize}
+}
+\vspace{0.2cm}
+
+%% --- JHU Academic Appointments (Consolidated with progression) ---
+\cventry{2017--Present}{Faculty Appointments}{Johns Hopkins University}{}{}
+{
+\begin{itemize}
+\item \textit{Visiting Assistant Professor, School of Education (2026--Present):} Leading development of the Learning Engineering Specialization within the Master of Education in Learning Design and Technology program; applying systems engineering principles to learning in operational environments including healthcare and defense.
+\item[] \hspace{1em}\textit{Previously:} Assistant Research Professor (courtesy), School of Education (2020--2025)---interdisciplinary research at the intersection of engineering and education.
+\item \textit{Assistant Research Professor, Computer Science (2017--Present):} Teaching, research collaboration, and advising undergraduate/graduate students.
+\item \textit{Lecturer, Applied Biomedical Engineering, EP (2018--Present):} Graduate courses in applied neuroscience and neuroinformatics.
+\item \textit{Lecturer, Lifelong Learning (2022--Present):} Workshops and courses in frontier AI areas.
+\end{itemize}
+}
+\vspace{0.2cm}
+
+%% --- Prior Positions ---
+\cventry{2010--2017}{Research Scientist}{NeuroData and the Open Connectome Project}{Johns Hopkins University}{}{Led research in mesoscale and nanoscale connectomics, community analytics, and computer vision. Translated raw image volumes to knowledge for statistical inference across multiple institutions.}
+
+\vspace{0.2cm}
+\cventry{2001--2007}{Electrical and Systems Engineer}{Northrop Grumman Corporation}{Information Technology (TASC), Chantilly VA; Space Technology, Redondo Beach, CA}{}{Subject Matter Expert and Responsible Engineer for satellite systems. 100\% Award Fee. Intern 2001--02.}
+
+
+%% ==========================================================================
+%% EDUCATION
+%% ==========================================================================
+\section{Education}
+
+\cventry{2010--2016}{Ph.D. in Computer Science}{Johns Hopkins University}{}{}
+{\textbf{Dissertation:} Enabling Scalable Neurocartography: Images to Graphs for Discovery\\
+Committee Chair: Gregory D. Hager}
+
+\cventry{2009--2010}{Post-Masters Certificate, Electrical Engineering}{Johns Hopkins University}{}{}{}
+
+\cventry{2004--2005}{M.S. in Electrical Engineering}{University of Southern California}{}{}{}
+
+\cventry{1999--2003}{B.E. in Electrical Engineering, Math Minor}{Vanderbilt University}{}{}{\textit{Magna Cum Laude}}
+
+\cventry{2012}{Introduction to Connectomics}{MIT and Harvard Universities}{}{}{}
+
+\cventry{2002}{Study Abroad}{University of Leeds, England}{}{}{}
+
+
+%% ==========================================================================
+%% EDUCATIONAL LEADERSHIP & PROGRAM DEVELOPMENT
+%% ==========================================================================
+\section{Educational Leadership \& Workforce Development}
+
+\cventry{2017--2023}{Founder \& Lead, CIRCUIT Program}{Johns Hopkins University Applied Physics Laboratory}{}{}
+{Cohort-based Integrated Research Community for Undergraduate Innovation and Trailblazing. Nationally recognized research and mentoring program for underserved and underrepresented students in STEM. \textbf{220+ students served} from high school to graduate school across technical areas from underwater to space systems.}
+
+\vspace{0.2cm}
+\cventry{2009--Present}{Co-Founder \& Co-Director, College Prep Program at APL}{Laurel, MD}{}{}
+{All-volunteer summer program supporting underserved students with college preparation. Competency-based curriculum including academics, applications, essays, financial aid, and longitudinal support. \textbf{220+ students served; >90\% on track for 4-year degrees.} 500+ volunteer hours annually.}
+
+
+%% ==========================================================================
+%% TEACHING
+%% ==========================================================================
+\section{Teaching}
+
+\cventry{2018--Present}{Frontiers in Neuroinformatics}{JHU Engineering for Professionals}{}{}
+{Advanced topics survey course for Biomedical Engineering graduate students.}
+
+\cventry{2022--Present}{Agentic AI Systems}{JHU Engineering for Professionals}{}{}
+{Master class on agentic AI systems reaching thousands of learners through Johns Hopkins Engineering for Professionals; covers the evolution from traditional computer vision to modern multimodal agent frameworks.}
+
+\cventry{2015--2022}{Introduction to Connectomics (Intersession)}{Johns Hopkins University}{}{}
+{Intensive research-based course with student poster session. Consistently among highest-rated courses in Whiting School.}
+
+\cventry{2011--Present}{Research Mentor}{JHU and APL}{}{}
+{Mentored nearly \textbf{500 students} at high school, undergraduate, and graduate levels.}
+
+
+%% ==========================================================================
+%% SKILLS & MEMBERSHIPS
+%% ==========================================================================
+\section{Skills \& Certifications}
+
+\cventry{Technical}{Machine Learning, Deep Learning, Computer Vision, Graph Neural Networks, Connectomics, Cloud Computing (AWS)}{}{}{}{}
+\cventry{Languages}{Python, MATLAB, SQL, LaTeX}{}{}{}{}
+\cventry{Certifications}{Six Sigma Green Belt $\cdot$ Engineer Intern (EIT) $\cdot$ Secret Clearance}{}{}{}{}
+\cventry{Memberships}{Society for Neuroscience $\cdot$ Eta Kappa Nu $\cdot$ Tau Beta Pi Honor Societies}{}{}{}{}
+
+
+%% ==========================================================================
+%% AWARDS & HONORS
+%% ==========================================================================
+\section{Awards \& Honors}
+
+\subsection{Research \& Innovation}
+\cventry{2024}{Nexus Convening Award}{Johns Hopkins University}{}{}{}
+\cventry{2021}{Light the FUSE Award}{JHU Applied Physics Laboratory}{}{}{}
+\cventry{2018}{REDx Imagine Award}{JHU Applied Physics Laboratory}{AI and connectomics}{}{}
+\cventry{2015}{Author's First Paper Publication Award}{JHU Applied Physics Laboratory}{}{}{}
+\cventry{2014}{Hart Prize Award for Best Research Project}{JHU Applied Physics Laboratory}{}{}{}
+
+\subsection{Service \& Leadership}
+\cventry{2014}{Volunteer of the Year Award}{Howard County, Maryland}{}{}{}
+\cventry{2009--2013}{APL Diversity Awards}{JHU Applied Physics Laboratory}{}{}{}
+\cventry{2009}{Diversity Leadership Award}{Johns Hopkins University}{}{}{}
+
+\subsection{Academic}
+\cventry{2010--2016}{Full-tuition PhD Fellowship}{JHU Applied Physics Laboratory}{}{}{}
+\cventry{2004--2005}{Full-tuition Master's Fellowship}{Northrop Grumman Corporation}{}{}{}
+\cventry{1999--2003}{Harold Stirling Vanderbilt Scholarship}{Vanderbilt University}{Full tuition}{}{}
+\cventry{2003}{Program Award for Top EECS Student}{Vanderbilt University}{}{}{}
+\cventry{2003}{Dean's Award for Outstanding Service}{Vanderbilt University}{}{}{}
+
+
+%% ==========================================================================
+%% PUBLICATIONS
+%% Note: Update will_cv.bib with DOIs/URLs for complete linking
+%% ==========================================================================
+\section{Publications}
+
+\vspace{-15pt}
+\nociteconf{microns2025functional,wimbish2024em,Floryanzia_2024,Cervantes_2023b,Sharp_2023,Johnson_2023,Sanchez_2022,Hider_2022,Matelsky_2022,Robinson_2022,Cowley_2022a,Cowley_2022b,Matelsky_2021a,Lawrence_2021,Bridgeford_2021,Robinson_2021,Azabou_2021,Matelsky_2021c,Balwani_2021,Rhodes_2021,Bishop_2021,Matelsky_2021b,Matelsky_2020,Drenkow_2020,Prasad_2020,VillafaneDelgado_2020,Huynh_2019,Johnson_2019,GrayRoncal_2018,Encarnacion_2018,Vogelstein_2018,Kiar_2018,Reilly_2017,Dyer_2017,Matelsky_2017,GrayRoncal_2016a,Kiar_2017,GrayRoncal_2016f,GrayRoncal_2015a,GrayRoncal_2015b,Kasthuri_2015,Kazhdan_2015,GrayRoncal_2013c,Burns_2013,Vogelstein_2013,Mhembere_2013,GrayRoncal_2012a}
+\bibliographystyleconf{unsrtinit}
+\bibliographyconf{will_cv}
+
+
+%% ==========================================================================
+%% INVITED TALKS
+%% ==========================================================================
+\section{Invited Talks}
+
+\nocitetalks{GrayRoncal_2021,GrayRoncal_2021b,GrayRoncal_2021c,GrayRoncal_2020,GrayRoncal_2019,GrayRoncal_2018b,GrayRoncal_2017b,GrayRoncal_2015g,GrayRoncal_2015h,GrayRoncal_2015d,GrayRoncal_2015e,GrayRoncal_2015f,GrayRoncal_2014b,GrayRoncal_2011c,GrayRoncal_2013d,GrayRoncal_2012d}
+\bibliographystyletalks{unsrtinit}
+\bibliographytalks{will_cv}
+
+
+%% ==========================================================================
+%% POSTERS
+%% ==========================================================================
+\section{Posters}
+
+\nociteposter{GrayRoncal_2017a,Bishop_2017,Matelsky_2017b,Drenkow_2017,Matelsky_2016,GrayRoncal_2016b,GrayRoncal_2015c,Baden_2015,Simhal_2015,Vogelstein_2015,Kiar_2015,GrayRoncal_2014,Sinha_2014,Kleissas_2014,GrayRoncal_2013b,Kleissas_2013,GrayRoncal_2012b,Vogelstein_2011b,Vogelstein_2011a,GrayRoncal_2011a,Vogelstein_2010,GrayRoncal_2010}
+\bibliographystyleposter{unsrtinit}
+\bibliographyposter{will_cv}
+
+\bibliographystyleother{unsrtinit}
+\bibliographyother{will_cv}
+
+
+
+%% ==========================================================================
+%% PROFESSIONAL SERVICE
+%% ==========================================================================
+\section{Professional Service}
+
+\cventry{2025}{Co-organizer}{AI Synergy Summit}{Johns Hopkins University}{}{Convened researchers and practitioners on integrating generative AI and human learning approaches.}
+
+\vspace{0.1cm}
+\cventry{2021}{Workshop Moderator \& Presenter}{Toward Agentic and Multimodal AI Systems}{AAAI}{}{}
+
+\vspace{0.1cm}
+\cventry{2020}{Symposium Organizer \& Presenter}{Toward Petascale and Exascale Connectomics}{BRAIN Initiative Meeting}{}{}
+
+\vspace{0.1cm}
+\cventry{2019}{Workshop Moderator \& Presenter}{IEEE Integrated STEM Education Conference (ISEC)}{}{}{}
+
+\vspace{0.1cm}
+\cventry{2017}{Workshop Co-organizer \& Moderator}{BigNeuro 2017: Analyzing brain data from nano to macroscale}{NeurIPS}{}{}
+
+\vspace{0.1cm}
+\cventry{2015}{Workshop Organizer}{BigNeuro 2015: Making sense of big neural data}{NIPS}{}{}
+
+
+\end{document}
+
+%% ==========================================================================
+%% NOTES FOR FUTURE UPDATES
+%% ==========================================================================
+%% 
+%% TO ADD A NEW PUBLICATION:
+%% 1. Add entry to will_cv.bib with DOI/URL
+%% 2. Add citation key to appropriate \nocite command above
+%%
+%% TO UPDATE POSITIONS:
+%% 1. Update date ranges in relevant \cventry
+%% 2. Move completed projects to "completed" subsection if needed
+%%
+%% DOIS FOUND AND ADDED (all complete as of 2026-02):
+%% - Johnson2023:            10.1109/ISEC57711.2023.10402255
+%% - Floryanzia2024:         10.1109/ISEC61299.2024.10664684
+%% - Sharp2023:              10.18260/1-2--39964
+%% - balwani2021multi:       10.1109/ICIP42928.2021.9506174
+%% - bishop2021confirms:     10.1109/EMBC46164.2021.9630109
+%% - matelsky2021integrated: 10.1109/EMBC46164.2021.9630199
+%% - matelsky2021dotmotif:   10.1038/s41598-021-91025-5
+%% - bridgeford2021:         10.1371/journal.pcbi.1009279
+%% - encarnacion2018:        10.1109/ISECon.2018.8340503 (was already there, fixed syntax)
+%%
+%% ==========================================================================
+
