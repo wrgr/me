@@ -1,0 +1,66 @@
+# Grouped by CV subsection. `featured: true` surfaces it on the website.
+- group: Research & Innovation
+  items:
+    - year: 2024
+      title: Nexus Convening Award
+      org: Johns Hopkins University
+      featured: true
+    - year: 2021
+      title: Light the FUSE Award
+      org: JHU Applied Physics Laboratory
+      detail: Team award, Trailblazer CIRCUIT team (2020 awards cycle)
+      featured: true
+    - year: 2020
+      title: Fast Company World Changing Ideas — finalist
+      org: CIRCUIT, education category
+      featured: true
+    - year: 2018
+      title: REDx Imagine Award
+      org: JHU Applied Physics Laboratory
+      detail: AI and connectomics
+      featured: true
+    - year: 2015
+      title: Author's First Paper Publication Award
+      org: JHU Applied Physics Laboratory
+    - year: 2014
+      title: Hart Prize Award for Best Research Project
+      org: JHU Applied Physics Laboratory
+      featured: true
+
+- group: Service & Leadership
+  items:
+    - year: 2017
+      title: Outstanding Young Alumni Award
+      org: Greeneville City Schools Education Foundation
+      detail: CORE Champions Awards, cited in part for co-founding the APL College Prep program
+      featured: true
+    - year: 2014
+      title: Volunteer of the Year Award
+      org: Howard County, Maryland
+      featured: true
+    - year: 2009--2013
+      title: APL Diversity Awards
+      org: JHU Applied Physics Laboratory
+    - year: 2009
+      title: Diversity Leadership Award
+      org: Johns Hopkins University
+      featured: true
+
+- group: Academic
+  items:
+    - year: 2010--2016
+      title: Full-tuition PhD Fellowship
+      org: JHU Applied Physics Laboratory
+    - year: 2004--2005
+      title: Full-tuition Master's Fellowship
+      org: Northrop Grumman Corporation
+    - year: 1999--2003
+      title: Harold Stirling Vanderbilt Scholarship
+      org: Vanderbilt University
+      detail: Full tuition
+    - year: 2003
+      title: Program Award for Top EECS Student
+      org: Vanderbilt University
+    - year: 2003
+      title: Dean's Award for Outstanding Service
+      org: Vanderbilt University

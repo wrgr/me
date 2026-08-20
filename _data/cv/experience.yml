@@ -1,0 +1,132 @@
+# Professional experience. Generates the CV's Professional Experience section
+# and supplies role lines to the website's domain cards.
+#
+# Each entry: years, title, org, location, summary, groups[] (labelled bullet
+# blocks), items[] (plain bullets), description (prose).
+# `domains` tags map to _data/domains.yml keys so the site can surface roles
+# under the right domain card.
+
+- years: 2007--Present
+  title: Principal Research Engineer, Project Manager, Section Supervisor
+  org: Johns Hopkins University Applied Physics Laboratory
+  location: Laurel, MD
+  summary: >-
+    Applies systems engineering methods to complex challenges spanning defense,
+    space, biomedical, and learning systems, with expertise in building scalable
+    data systems and human-machine teaming solutions.
+  groups:
+    - label: Research Program Leadership
+      items:
+        - role: Co-PI
+          years: 2023--2028
+          text: NIH CONNECTS Mouse Connectome---scaling circuit analysis and reconstruction.
+          domains: [neuro]
+        - role: Key Personnel
+          years: 2023--2026
+          text: NIH CONNECTS High Throughput Imaging Research Grant.
+          domains: [neuro]
+        - role: Key Personnel
+          years: 2018--2028
+          text: >-
+            NIH bossDB (R24MH114785)---petabyte-scale data storage and community
+            collaboration for connectomics and precision medicine.
+          domains: [neuro, ai]
+        - role: PI
+          years: 2021--2023
+          text: BENCHMARK (NIH R01MH126684)---community standards for high-resolution connectomics.
+          domains: [neuro]
+        - role: PI
+          years: 2020--2021
+          text: >-
+            TITAN (DARPA AIE)---low-shot learning algorithms inspired by insect
+            neural connectivity.
+          domains: [ai, neuro]
+        - role: Technical Lead
+          years: 2017--2022
+          text: >-
+            IARPA MICrONS---algorithms for cubic millimeter mammalian
+            neuroscience; scene parsing methods for operator-focused environments.
+          domains: [neuro, ai]
+        - role: PI
+          years: 2017--2020
+          text: NIH SABER (R24MH114799)---reproducible cloud processing pipelines for neuroscience.
+          domains: [neuro, ai]
+        - role: Technical Lead
+          years: 2020--2021
+          text: >-
+            NeuroAI Engines---translating biological neural computation to
+            next-generation AI algorithms.
+          domains: [ai, neuro]
+        - role: Current Research
+          text: >-
+            Quantitative measures of human cognitive performance in complex
+            operational contexts.
+          domains: [learning, defense]
+    - label: Leadership & Management
+      items:
+        - role: Acting Group Supervisor
+          years: 2022--2023
+          text: REDD Group strategic development and staff mentorship.
+        - role: Section Supervisor
+          years: 2018--2022
+          text: Line management, hiring, mentoring, and strategic initiatives.
+        - role: Team Lead
+          years: 2024
+          text: CDAO Digital Talent Management Futures---diverse talent pipeline for DoD.
+          domains: [workforce, defense]
+    - label: Data Science & Clinical Applications
+      items:
+        - role: Data Scientist
+          years: 2017--2022
+          text: >-
+            JHU Precision Medicine---analytics leadership for Multiple Sclerosis
+            and COVID-19.
+          domains: [health]
+
+- years: 2017--Present
+  title: Faculty Appointments
+  org: Johns Hopkins University
+  items:
+    - role: Visiting Assistant Professor, School of Education
+      years: 2026--Present
+      text: >-
+        Leading development of the Learning Engineering Specialization within
+        the Master of Education in Learning Design and Technology program;
+        applying systems engineering principles to learning in operational
+        environments including healthcare and defense.
+      note: >-
+        Previously: Assistant Research Professor (courtesy), School of Education
+        (2020--2025)---interdisciplinary research at the intersection of
+        engineering and education.
+      domains: [learning]
+    - role: Assistant Research Professor, Computer Science
+      years: 2017--Present
+      text: Teaching, research collaboration, and advising undergraduate/graduate students.
+      domains: [ai]
+    - role: Lecturer, Applied Biomedical Engineering, EP
+      years: 2018--Present
+      text: Graduate courses in applied neuroscience and neuroengineering.
+      domains: [neuro, learning]
+    - role: Lecturer, Lifelong Learning
+      years: 2022--Present
+      text: Workshops and courses in frontier AI areas.
+      domains: [learning, ai]
+
+- years: 2010--2017
+  title: Research Scientist
+  org: NeuroData and the Open Connectome Project
+  location: Johns Hopkins University
+  description: >-
+    Led research in mesoscale and nanoscale connectomics, community analytics,
+    and computer vision. Translated raw image volumes to knowledge for
+    statistical inference across multiple institutions.
+  domains: [neuro, ai]
+
+- years: 2001--2007
+  title: Electrical and Systems Engineer
+  org: Northrop Grumman Corporation
+  location: Information Technology (TASC), Chantilly VA; Space Technology, Redondo Beach, CA
+  description: >-
+    Subject Matter Expert and Responsible Engineer for satellite systems.
+    100\% Award Fee. Intern 2001--02.
+  domains: [defense]

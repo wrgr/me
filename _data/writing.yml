@@ -1,0 +1,79 @@
+# Longer-form arguments. `pull` is a verbatim quotation from the named source —
+# do not paraphrase these into claims the source does not make.
+
+- title: Capability is a system parameter
+  kind: The thesis
+  domains: [learning]
+  status: Casebook, First Edition, August 2026
+  pull: >-
+    Systems don't fail because the technology breaks. They fail because someone
+    couldn't do what the system required.
+  blurb: >-
+    Every complex system depends on what people can do inside it. That
+    dependency is measurable, designable, and too important to leave to chance.
+    Capability lives at the interface between what a system requires of its
+    operators and the impact the system has to deliver — and when that interface
+    is wrong, the gap may originate in human development, in system design, in
+    organizational performance, or in the interaction among them. Telling those
+    apart is itself a measurement and engineering problem.
+  url: https://capabilitymatters.org/capability-matters-casebook-draft.pdf
+  link_label: Read the casebook (PDF)
+  source: Capability Matters, ed. Gray-Roncal & Diamond
+
+- title: Show Your Work
+  kind: Working paper — draft
+  domains: [learning]
+  status: Draft, August 2026, with James Diamond
+  pull: >-
+    A curve can turn a 40 into a B. A transcript can certify a degree. A
+    benchmark can certify a model. None can tell you whether the learner, the
+    clinician, or the operator can actually do the thing when the stakes are
+    real — only a demonstration can.
+  blurb: >-
+    The argument that professional competence has to be measured by functional
+    behavior — a work sample scored against a real task — not inferred from a
+    grade, a credit hour, or a test score. The same standard doubles as a fairer
+    gate: let the demonstration, not the pedigree, decide.
+  url: https://raw.githubusercontent.com/wrgr/lens-concentration/main/papers/show-your-work.pdf
+  link_label: Read the draft (PDF)
+
+- title: Capability, Not Content
+  kind: Position paper
+  domains: [learning]
+  pull: >-
+    "More training" is the answer we reach for when we have not asked what
+    capability is actually missing, or where in the system it lives.
+  blurb: >-
+    You cannot lecture a pilot out of a single-sensor design, audit a hospital
+    into safety with a metric staff have learned to game, or brief a crew past a
+    manning shortfall. When the diagnosis is wrong, the intervention is theater.
+
+- title: Calibrate the Scientists, Not Just the Microscopes
+  kind: Commentary — in press
+  domains: [learning, neuro]
+  status: BRAIN CONNECTS, in press
+  blurb: >-
+    Measurement discipline belongs on the people running an experiment as much
+    as on the instruments they run it with.
+
+- title: When a negative result is the result
+  kind: Method
+  domains: [learning]
+  pull: >-
+    "Not like this, not yet" is a result a capability engineer must be able to
+    deliver.
+  blurb: >-
+    Reading a constraint space accurately enough to recognize that external,
+    non-technical factors have narrowed it past the point where a capability
+    goal is realistic is itself a valid project outcome — documented, defended,
+    and used to guide the work. It is not a failure.
+
+- title: Agency as a design constraint
+  kind: Method
+  domains: [learning, defense]
+  pull: >-
+    Capability without agency is automation.
+  blurb: >-
+    The goal is not operators who comply with a system specification but
+    operators who can perform, adapt, and lead when the system encounters
+    conditions it was not designed for.

@@ -1,0 +1,91 @@
+# Software, tools, and datasets. Descriptions adapted from his own copy on
+# capabilitymatters.org/experiments and the casebook references.
+# `kind` groups the cards; `domains` keys come from _data/domains.yml.
+
+- name: bossDB
+  kind: Data infrastructure
+  domains: [neuro, ai]
+  blurb: >-
+    The Brain Observatory Storage Service and Database — petabyte-scale storage
+    and delivery for volumetric neuroscience, serving the connectomics community
+    as shared infrastructure.
+  url: https://bossdb.org
+  link_label: bossdb.org
+  cite: Hider_2022
+
+- name: DotMotif
+  kind: Software
+  domains: [neuro, ai]
+  blurb: >-
+    A query language and engine for finding subgraph motifs in connectomes —
+    ask structural questions of a brain network without writing a traversal.
+  url: https://github.com/aplbrain/dotmotif
+  link_label: GitHub
+  cite: Matelsky_2021a
+
+- name: NeuroTrailblazers
+  kind: Curriculum & datasets
+  domains: [workforce, neuro]
+  blurb: >-
+    Training and mentorship for nanoscale connectomics: ten technical units from
+    electron-microscopy basics through NeuroAI analysis, a curated journal club,
+    and hands-on work against real datasets including MICrONS and FlyWire. Built
+    for three audiences at once — students, the mentors supporting them, and
+    programs adopting the model.
+  url: https://neurotrailblazers.org
+  link_label: neurotrailblazers.org
+
+- name: ExpertTrace
+  kind: Software
+  domains: [ai, learning]
+  blurb: >-
+    An AI mentor working from an operational knowledge corpus — symptom to fault
+    to corrective action, plus the tacit cues experts never write down — that
+    probes a learner through a live scenario at a chosen level of expertise. It
+    assesses on unfamiliar scenarios, because repeating a known pattern is not
+    transfer.
+  url: https://experttrace.org
+  link_label: experttrace.org
+
+- name: Calibrated Judgment
+  kind: Software
+  domains: [learning]
+  blurb: >-
+    Grades an argumentative essay twice — once from the finished text, once from
+    the transcript of the AI dialogue behind it — and reports the gap between
+    them. Every score is anchored to a verbatim quote, and criteria a model
+    should not settle alone route to the instructor, whose override becomes
+    calibration data.
+  url: https://calibratedjudgment.org
+  link_label: calibratedjudgment.org
+
+- name: LLM101
+  kind: Teaching tool
+  domains: [learning, ai]
+  blurb: >-
+    Next-token prediction explained at five depths, so a reader can take the
+    level they can actually use rather than the one the author found
+    interesting. The build is written up beside it as a worked example of
+    designing for a capability instead of for coverage.
+  url: https://wrgr.github.io/llm101/
+  link_label: Try it
+
+- name: POP
+  kind: Sandbox
+  domains: [ai]
+  blurb: >-
+    A soap-bubble physics sandbox: shape a wand, watch the film billow and
+    deform in moving air, then run the whole thing backwards — fit an ellipse to
+    a photo of a real bubble and read the wind speed back out of the shape it
+    left.
+  url: https://wrgr.github.io/pop
+  link_label: Play
+
+- name: Learning Engineering Commons
+  kind: Community
+  domains: [learning]
+  blurb: >-
+    A shared reading list, tool directory, practice library, events calendar,
+    and community roster for people doing learning engineering.
+  url: https://lecommons.org
+  link_label: lecommons.org

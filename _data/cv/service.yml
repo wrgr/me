@@ -1,0 +1,36 @@
+- year: 2025
+  role: Co-organizer
+  title: AI Synergy Summit
+  org: Johns Hopkins University
+  description: >-
+    Convened researchers and practitioners on integrating generative AI and
+    human learning approaches.
+  featured: true
+
+- year: 2021
+  role: Workshop Moderator & Presenter
+  title: Toward Agentic and Multimodal AI Systems
+  org: AAAI
+  featured: true
+
+- year: 2020
+  role: Symposium Organizer & Presenter
+  title: Toward Petascale and Exascale Connectomics
+  org: BRAIN Initiative Meeting
+  featured: true
+
+- year: 2019
+  role: Workshop Moderator & Presenter
+  title: IEEE Integrated STEM Education Conference (ISEC)
+
+- year: 2017
+  role: Workshop Co-organizer & Moderator
+  title: "BigNeuro 2017: Analyzing brain data from nano to macroscale"
+  org: NeurIPS
+  featured: true
+
+- year: 2015
+  role: Workshop Organizer
+  title: "BigNeuro 2015: Making sense of big neural data"
+  org: NIPS
+  featured: true

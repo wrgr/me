@@ -1,0 +1,13 @@
+<article class="card media-card{% if include.item.domains %} domain--{{ include.item.domains | first }}{% endif %}">
+  <div class="card-kicker">
+    <span class="kind">{{ include.item.kind }}</span>
+    <span class="when">{{ include.item.date }}</span>
+  </div>
+  <h3>{{ include.item.title }}</h3>
+  {% if include.item.outlet %}<p class="outlet">{{ include.item.outlet }}</p>{% endif %}
+  {% if include.item.blurb %}<p>{{ include.item.blurb }}</p>{% endif %}
+  {% if include.item.quote %}<blockquote class="pull">{{ include.item.quote }}</blockquote>{% endif %}
+  {% if include.item.url %}
+  <p class="card-link"><a href="{{ include.item.url }}">{{ include.item.link_label | default: "Read" }} →</a></p>
+  {% endif %}
+</article>

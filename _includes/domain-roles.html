@@ -1,0 +1,54 @@
+{%- comment -%}
+Collects the roles tagged with a given domain from the canonical CV data, so
+domain cards never restate what _data/cv/*.yml already says.
+
+Scans experience (grouped bullets, plain items, and whole positions), programs,
+and teaching for `domains:` tags matching include.key. Each line renders as
+"Role (years): Subject", where Subject is the text up to its em-dash — the CV
+writes "NIH SABER---reproducible cloud pipelines", the card wants "NIH SABER".
+
+Usage: {% include domain-roles.html key=d.key limit=4 %}
+{%- endcomment -%}
+{%- assign key = include.key -%}
+{%- assign max = include.limit | default: 4 -%}
+{%- assign shown = 0 -%}
+{%- capture lines -%}
+  {%- for e in site.data.cv.experience -%}
+    {%- for g in e.groups -%}
+      {%- for it in g.items -%}
+        {%- if it.domains contains key and shown < max -%}
+          {%- assign subject = it.text | card_subject -%}
+          <li>{% if it.role %}<span class="role">{{ it.role }}{% if it.years %} ({{ it.years | texclean }}){% endif %}</span> {% endif %}{{ subject }}</li>
+          {%- assign shown = shown | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- for it in e.items -%}
+      {%- if it.domains contains key and shown < max -%}
+        {%- assign subject = it.role | default: it.text | card_subject -%}
+        <li><span class="role">{{ subject }}</span>{% if it.years %} ({{ it.years | texclean }}){% endif %}</li>
+        {%- assign shown = shown | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if e.domains contains key and shown < max -%}
+      <li><span class="role">{{ e.title | texclean }}</span>, {{ e.org | texclean }}{% if e.years %} ({{ e.years | texclean }}){% endif %}</li>
+      {%- assign shown = shown | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- for p in site.data.cv.programs -%}
+    {%- if p.domains contains key and shown < max -%}
+      <li><span class="role">{{ p.title | texclean }}</span>{% if p.years %} ({{ p.years | texclean }}){% endif %}</li>
+      {%- assign shown = shown | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- for t in site.data.cv.teaching -%}
+    {%- if t.domains contains key and shown < max -%}
+      <li><span class="role">{{ t.title | texclean }}</span>, {{ t.org | texclean }}</li>
+      {%- assign shown = shown | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign lines = lines | strip -%}
+{%- if lines != "" %}
+<ul class="roles">{{ lines }}</ul>
+{%- endif -%}

@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <p class="edu">
+    {%- assign shorts = "" -%}
+    {%- for e in site.data.cv.education -%}
+      {%- if e.short -%}{%- assign shorts = shorts | append: e.short | append: " · " -%}{%- endif -%}
+    {%- endfor -%}
+    {{ shorts | split: " · " | join: " · " }}
+  </p>
+  {% include contact-row.html %}
+  <p class="colophon">© {{ 'now' | date: "%Y" }} William Gray-Roncal · Hand-built with Jekyll · No trackers</p>
+</footer>

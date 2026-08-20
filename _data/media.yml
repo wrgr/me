@@ -1,0 +1,111 @@
+# Press coverage and news. Every item is URL-cited; `quote` fields are verbatim
+# from the linked source and attributed to him specifically — several APL
+# releases quote colleagues on the same project, so check before adding one.
+# `role: subject` = the piece is about his work; `mentioned` = named in passing.
+
+- title: Johns Hopkins APL Developing Standards to Enable Better Brain Analysis
+  kind: Press release
+  outlet: Johns Hopkins APL News
+  date: June 2022
+  role: subject
+  domains: [neuro, ai]
+  blurb: >-
+    Announcing BENCHMARK, a $1.3M NIH grant to build community standards for
+    large-scale structural brain data, integrated into bossDB.
+  quote: >-
+    We will significantly amplify neuroscience research investments by ensuring
+    data and analysis products are comparable and reproducible.
+  url: https://www.jhuapl.edu/news/news-releases/220602-apl-empowering-brain-mapping-analytics
+
+- title: >-
+    Johns Hopkins APL Awarded NIH BRAIN CONNECTS Funding to Map Brain Circuits
+    at the Resolution of a Single Synapse
+  kind: Press release
+  outlet: Johns Hopkins APL News
+  date: November 2023
+  role: subject
+  domains: [neuro]
+  blurb: >-
+    Named co-lead of APL's contribution to two NIH BRAIN CONNECTS projects,
+    bringing scalable cloud pipelines, systems engineering, and machine learning
+    to high-throughput connectomics.
+  url: https://www.jhuapl.edu/news/news-releases/231114-apl-awarded-nih-brain-connects-funding
+
+- title: Deciphering the Brain
+  kind: Feature
+  outlet: JHU Engineering magazine
+  date: January 2023
+  role: subject
+  domains: [neuro, ai]
+  blurb: >-
+    A feature on BENCHMARK and bossDB, and on making petabyte-scale brain data
+    shareable across the BRAIN Initiative community.
+  url: https://engineering.jhu.edu/magazine/2023/01/deciphering-the-brain
+
+- title: >-
+    Johns Hopkins APL, Amazon Partner to Accelerate Access to High-Resolution
+    Brain Mapping Data
+  kind: Press release
+  outlet: Johns Hopkins APL News
+  date: July 2021
+  role: subject
+  domains: [neuro, ai]
+  blurb: >-
+    bossDB joins the AWS Open Data Sponsorship Program, opening petascale
+    neuroimaging data to the public.
+  quote: >-
+    This relationship will catalyze the democratization of data access and
+    accelerate scientific exploration by researchers and members of the public.
+  url: https://www.jhuapl.edu/news/news-releases/210722b-BossDB-Amazon-Web-Services-brain-neuroscience
+
+- title: The Subset Seekers
+  kind: Feature
+  outlet: Johns Hopkins APL News
+  date: May 2021
+  role: mentioned
+  domains: [health, ai]
+  blurb: >-
+    Led the data science team that triaged records from 1,182 COVID-19 patients
+    and built an algorithm predicting patient trajectory two weeks after
+    admission.
+  url: https://www.jhuapl.edu/news/news-releases/210524-precision-medicine-finds-covid-subtypes
+
+- title: Hopkins Researchers Release Tool to Enable Better Health Care
+  kind: Press release
+  outlet: Johns Hopkins APL News
+  date: May 2019
+  role: subject
+  domains: [health]
+  blurb: >-
+    Launch of the Johns Hopkins Precision Medicine Analytics Platform (PMAP).
+  quote: >-
+    PMAP gives researchers access to data, a virtual collaborative workspace and
+    tools to help develop new algorithms that can ultimately improve clinical
+    decisions and patient care.
+  url: https://www.jhuapl.edu/news/news-releases/190530b-hopkins-researchers-release-tool-enable-better-health-care
+
+- title: APL, Collaborators Launch World's Largest Neuroscience Data Repository
+  kind: Press release
+  outlet: Johns Hopkins APL News
+  date: November 2018
+  role: subject
+  domains: [neuro, ai]
+  blurb: The bossDB launch announcement.
+  quote: >-
+    As neuroscience datasets continue to grow in size, this is an important
+    example of collaborative experimentation at the forefront of neuroscience,
+    combining diverse expertise drawn from many research groups.
+  url: https://www.jhuapl.edu/news/news-releases/181126-apl-collaborators-launch-worlds-largest-neuroscience-data-repository
+
+- title: >-
+    Johns Hopkins APL College Prep Program Earns Howard County Volunteer of the
+    Year Honors
+  kind: Award
+  outlet: Johns Hopkins APL News
+  date: April 2014
+  role: subject
+  domains: [workforce]
+  blurb: >-
+    Awarded jointly to Will and Karla Gray-Roncal for co-leading APL's
+    all-volunteer College Prep Program.
+  url: https://www.jhuapl.edu/news/news-releases/140407-johns-hopkins-apl-college-prep-program-earns-howard-county-volunteer-year-honors

@@ -1,0 +1,14 @@
+<article class="card writing-card domain--{{ include.item.domains | first }}">
+  <div class="card-kicker">
+    <span class="kind">{{ include.item.kind }}</span>
+  </div>
+  <h3>{{ include.item.name | default: include.item.title }}</h3>
+  {% if include.item.pull %}
+  <blockquote class="pull">{{ include.item.pull }}</blockquote>
+  {% endif %}
+  <p>{{ include.item.blurb }}</p>
+  {% if include.item.status %}<p class="status">{{ include.item.status }}</p>{% endif %}
+  {% if include.item.url %}
+  <p class="card-link"><a href="{{ include.item.url }}">{{ include.item.link_label | default: "Read" }} →</a></p>
+  {% endif %}
+</article>

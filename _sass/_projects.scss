@@ -1,0 +1,65 @@
+.project-card .card-kicker,
+.writing-card .card-kicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.project-card .kind,
+.writing-card .kind {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.project-card .card-link,
+.writing-card .card-link { margin: 0; font-size: 0.88rem; }
+.project-card .card-link a,
+.writing-card .card-link a { color: var(--accent, var(--ink-soft)); text-decoration: none; }
+.project-card .card-link a:hover,
+.writing-card .card-link a:hover { text-decoration: underline; }
+
+.writing-card blockquote.pull {
+  margin: 0 0 0.7rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--accent, var(--rule));
+  font-family: var(--display);
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.writing-card .status {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+.card-link a + a { margin-left: 0.9rem; }
+
+.lead-link {
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+.lead-link a { color: var(--d-learn); }
+
+.media-card .card-kicker { align-items: baseline; }
+.media-card .when {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.media-card .outlet {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 0.4rem;
+}
+.media-card blockquote.pull {
+  margin: 0 0 0.7rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--accent, var(--rule));
+  font-size: 0.92rem;
+  color: var(--ink);
+}

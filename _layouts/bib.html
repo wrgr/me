@@ -1,0 +1,66 @@
+---
+---
+{% capture venue %}{% if entry.journal %}{{ entry.journal }}{% elsif entry.booktitle %}{{ entry.booktitle }}{% elsif entry.archiveprefix %}arXiv preprint{% elsif entry.howpublished %}{{ entry.howpublished }}{% else %}{{ entry.type }}{% endif %}{% endcapture %}
+<li class="pub{% if entry.selected %} pub--selected{% endif %}" id="{{ key }}">
+  <p class="pub-title">{{ entry.title }}{% if entry.selected %} <span class="pub-star" title="Selected publication">★</span>{% endif %}</p>
+  <p class="pub-authors">
+    {%- assign authors = entry.author | split: " and " -%}
+    {%- assign total = authors.size -%}
+    {%- assign wgr_index = -1 -%}
+    {%- assign wgr_display = "" -%}
+    {%- for a in authors -%}
+      {%- assign name = a | strip -%}
+      {%- if name contains "," -%}
+        {%- assign parts = name | split: "," -%}
+        {%- assign last = parts[0] | strip -%}
+        {%- assign first = parts[1] | strip -%}
+        {%- capture display %}{{ first }} {{ last }}{% endcapture -%}
+      {%- else -%}
+        {%- assign display = name -%}
+        {%- assign nameparts = name | split: " " -%}
+        {%- assign last = nameparts | last -%}
+      {%- endif -%}
+      {%- assign initial = display | strip | slice: 0, 1 -%}
+      {%- if wgr_index == -1 and last contains "Roncal" and initial == "W" -%}
+        {%- assign wgr_index = forloop.index0 -%}
+        {%- assign wgr_display = display | strip -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- for a in authors limit: 12 -%}
+      {%- assign name = a | strip -%}
+      {%- if name contains "," -%}
+        {%- assign parts = name | split: "," -%}
+        {%- assign last = parts[0] | strip -%}
+        {%- assign first = parts[1] | strip -%}
+        {%- capture display %}{{ first }} {{ last }}{% endcapture -%}
+      {%- else -%}
+        {%- assign display = name -%}
+        {%- assign nameparts = name | split: " " -%}
+        {%- assign last = nameparts | last -%}
+      {%- endif -%}
+      {%- assign initial = display | strip | slice: 0, 1 -%}
+      {%- if last contains "Roncal" and initial == "W" -%}<strong>{{ display | strip }}</strong>{%- else -%}{{ display | strip }}{%- endif -%}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor -%}
+    {%- if wgr_index >= 12 -%}, …, <strong>{{ wgr_display }}</strong>{%- endif -%}
+    {%- assign last_index = total | minus: 1 -%}
+    {%- if total > 12 and wgr_index != last_index %}, et al.{% endif -%}
+  </p>
+  <p class="pub-meta">
+    <span class="pub-venue">{{ venue | strip }}</span>{% if entry.volume %} {{ entry.volume }}{% if entry.number %}({{ entry.number }}){% endif %}{% endif %} · {{ entry.year }}
+    {%- if entry.domain -%}
+      {%- assign dkeys = entry.domain | remove: " " | split: "," -%}
+      {%- for dkey in dkeys -%}
+        {%- assign d = site.data.domains | where: "key", dkey | first -%}
+        {%- if d %} <span class="chip chip--mini domain--{{ dkey }}">{{ d.label }}</span>{% endif -%}
+      {%- endfor -%}
+    {%- endif %}
+  </p>
+  <p class="pub-links">
+    {% if entry.doi %}<a href="https://doi.org/{{ entry.doi }}">DOI</a>{% endif %}
+    {% if entry.pdf %}<a href="{{ entry.pdf }}">PDF</a>{% endif %}
+    {% if entry.code %}<a href="{{ entry.code }}">Code</a>{% endif %}
+    {% if entry.website %}<a href="{{ entry.website }}">Website</a>{% endif %}
+    {% if entry.doi == nil and entry.url %}<a href="{{ entry.url }}">Link</a>{% endif %}
+  </p>
+</li>

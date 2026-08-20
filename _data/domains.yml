@@ -1,0 +1,72 @@
+# The six domains. `key` doubles as the CSS class suffix (.domain--<key>)
+# and as the vocabulary for the `domain={...}` field in _bibliography/papers.bib.
+# Roles are NOT listed here: _includes/domain-roles.html derives them from
+# _data/cv/*.yml by matching `domains:` tags, so facts live in one place.
+- key: neuro
+  label: Neuro & connectomics
+  blurb: >-
+    Mapping brains at synaptic scale — automated reconstruction pipelines,
+    petabyte-scale community archives, and the query tools that turn image
+    volumes into testable circuits.
+  chips:
+    - name: bossDB
+      url: https://bossdb.org
+    - name: MICrONS
+    - name: BENCHMARK
+    - name: DotMotif
+      url: https://github.com/aplbrain/dotmotif
+
+- key: ai
+  label: AI & data
+  blurb: >-
+    Computer vision, graph analysis, and cloud infrastructure that scale from
+    laptop prototypes to petabyte pipelines — including algorithms that borrow
+    their architecture from biology.
+  chips:
+    - name: Low-shot learning
+    - name: Graph queries
+    - name: Reproducible pipelines
+
+- key: defense
+  label: Defense & space
+  blurb: >-
+    Two decades of systems engineering for national-security sponsors — from
+    satellite systems as a responsible engineer to decision-support prototypes
+    for hard operational problems.
+  chips:
+    - name: JHU APL
+      url: https://www.jhuapl.edu
+    - name: Satellite systems
+    - name: Human–machine teaming
+
+- key: learning
+  label: Learning engineering
+  blurb: >-
+    Treating human capability as a system parameter — something you can
+    specify, measure, and improve with the same discipline applied to any
+    engineered system.
+  chips:
+    - name: Capability Matters
+      url: https://capabilitymatters.org
+    - name: Agentic AI Systems
+    - name: Frontiers in Neuroengineering
+
+- key: workforce
+  label: Workforce
+  blurb: >-
+    Cohort-based pathways into research careers — approximately 500 students mentored
+    through programs built to widen who gets to do science.
+  chips:
+    - name: CIRCUIT
+    - name: College Prep
+    - name: NeuroTrailblazers
+      url: https://github.com/wrgr/neurotrailblazers
+
+- key: health
+  label: Public health
+  blurb: >-
+    The same measurement discipline turned on clinical data — analytics
+    leadership for multiple sclerosis and COVID-19 research at Johns Hopkins.
+  chips:
+    - name: Precision Medicine
+    - name: MS & COVID-19 analytics
