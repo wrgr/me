@@ -1,0 +1,70 @@
+# The six domains. `key` doubles as the CSS class suffix (.domain--<key>)
+# and as the vocabulary for the `domain={...}` field in _bibliography/papers.bib.
+- key: neuro
+  label: Neuro & connectomics
+  blurb: >-
+    Mapping brains at synaptic scale — automated reconstruction pipelines,
+    petabyte-scale community archives, and the query tools that turn image
+    volumes into testable circuits.
+  chips:
+    - name: BossDB
+      url: https://bossdb.org
+    - name: BENCHMARK
+    - name: DotMotif
+      url: https://github.com/aplbrain/dotmotif
+    - name: MICrONS
+
+- key: ai
+  label: AI & data
+  blurb: >-
+    Computer vision, graph analysis, and cloud infrastructure that scale from
+    laptop prototypes to petabyte pipelines — plus rigorous evaluation of how
+    well models (and the humans using them) actually perform.
+  chips:
+    - name: ExpertTrace
+      url: https://github.com/wrgr/expertTrace
+    - name: Subgraph search
+    - name: Scalable pipelines
+
+- key: defense
+  label: Defense & space
+  blurb: >-
+    Twenty years of systems engineering for national-security sponsors —
+    space and undersea systems, and decision-support prototypes for hard
+    operational problems.
+  chips:
+    - name: JHU APL
+      url: https://www.jhuapl.edu
+    - name: PISTA (DTRA)
+
+- key: learning
+  label: Learning engineering
+  blurb: >-
+    Treating human capability as a system parameter — something you can
+    specify, measure, and improve with the same discipline applied to any
+    engineered system.
+  chips:
+    - name: LENS
+      url: https://capabilitymatters.org
+    - name: Capability Matters
+      url: https://capabilitymatters.org
+    - name: Show Your Work
+
+- key: workforce
+  label: Workforce
+  blurb: >-
+    Cohort-based pathways into research careers — nearly 500 students
+    mentored through programs built to widen who gets to do science.
+  chips:
+    - name: CIRCUIT
+    - name: MERIT
+    - name: COMPASS
+    - name: NeuroTrailblazers
+      url: https://github.com/wrgr/neurotrailblazers
+
+- key: health
+  label: Public health
+  blurb: >-
+    Bringing the same measurement discipline to biomedical and public-health
+    challenges.
+  chips: []

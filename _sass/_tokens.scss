@@ -1,0 +1,45 @@
+:root {
+  --paper: #fbfaf7;
+  --surface: #f4f2ec;
+  --ink: #1c2128;
+  --ink-soft: #454c56;
+  --muted: #6b7280;
+  --rule: #e5e2da;
+  --card: #ffffff;
+  --d-neuro: #6d4fc4;
+  --d-ai: #2159c2;
+  --d-defense: #3d5a6e;
+  --d-learn: #c05a1e;
+  --d-workforce: #b03a66;
+  --d-health: #2c7a4b;
+  --tint: rgba(28, 33, 40, 0.04);
+  --display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #15181d;
+    --surface: #1b1f26;
+    --ink: #e8e6e1;
+    --ink-soft: #b8bcc4;
+    --muted: #858c98;
+    --rule: #2e333c;
+    --card: #1e232b;
+    --d-neuro: #9d85e3;
+    --d-ai: #6e97e0;
+    --d-defense: #7e9cb0;
+    --d-learn: #e08a52;
+    --d-workforce: #d97a9c;
+    --d-health: #5fae83;
+    --tint: rgba(232, 230, 225, 0.05);
+  }
+}
+
+.domain--neuro { --accent: var(--d-neuro); }
+.domain--ai { --accent: var(--d-ai); }
+.domain--defense { --accent: var(--d-defense); }
+.domain--learning { --accent: var(--d-learn); }
+.domain--workforce { --accent: var(--d-workforce); }
+.domain--health { --accent: var(--d-health); }

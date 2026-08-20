@@ -1,0 +1,11 @@
+<article class="card domain-card domain--{{ include.domain.key }}">
+  <h3>{{ include.domain.label }}</h3>
+  <p>{{ include.domain.blurb }}</p>
+  {% if include.domain.chips and include.domain.chips.size > 0 %}
+  <ul class="chips">
+    {% for chip in include.domain.chips %}
+    <li>{% if chip.url %}<a class="chip" href="{{ chip.url }}">{{ chip.name }}</a>{% else %}<span class="chip">{{ chip.name }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>

@@ -1,0 +1,55 @@
+title: William Gray-Roncal, PhD
+description: >-
+  Principal Research Engineer at the Johns Hopkins University Applied Physics
+  Laboratory. One method, six domains: neuroscience and connectomics, AI and
+  data, defense and space, learning engineering, STEM workforce, and public
+  health.
+url: "https://wrgr.github.io"
+baseurl: "/me"
+
+author:
+  name: William Gray-Roncal
+email: wgr@jhu.edu
+
+permalink: pretty
+timezone: America/New_York
+
+plugins:
+  - jekyll/scholar
+  - jekyll-feed
+  - jekyll-sitemap
+
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - cv
+  - LICENSE
+
+sass:
+  style: compressed
+
+scholar:
+  style: apa
+  locale: en
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bib
+  sort_by: year
+  order: descending
+  group_by: year
+  group_order: descending
+  bibtex_filters:
+    - latex
+    - smallcaps
+    - superscript
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page

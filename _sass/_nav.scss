@@ -1,0 +1,33 @@
+.site-nav {
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1rem;
+}
+.site-nav nav {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0.85rem clamp(1.25rem, 5vw, 2.5rem);
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.site-nav .brand {
+  font-family: var(--display);
+  font-weight: 650;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+.site-nav ul {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.92rem;
+}
+.site-nav ul a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.site-nav ul a:hover { color: var(--ink); text-decoration: underline; }
+.site-nav ul a[aria-current="page"] { color: var(--ink); font-weight: 600; }

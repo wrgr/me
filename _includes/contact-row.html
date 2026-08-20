@@ -1,0 +1,7 @@
+<ul class="contact-row">
+  <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+  <li><a href="https://github.com/{{ site.data.profiles.github }}" rel="me">GitHub</a></li>
+  <li><a href="https://scholar.google.com/citations?user={{ site.data.profiles.scholar }}">Google Scholar</a></li>
+  <li><a href="https://www.linkedin.com/in/{{ site.data.profiles.linkedin }}/">LinkedIn</a></li>
+  {% if site.data.profiles.cv %}<li><a href="{{ site.data.profiles.cv | relative_url }}">CV (PDF)</a></li>{% endif %}
+</ul>

@@ -1,0 +1,17 @@
+.project-card .card-kicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.project-card .kind {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.project-card .card-link { margin: 0; font-size: 0.88rem; }
+.project-card .card-link a { color: var(--accent, var(--ink-soft)); text-decoration: none; }
+.project-card .card-link a:hover { text-decoration: underline; }

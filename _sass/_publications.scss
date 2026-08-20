@@ -1,0 +1,40 @@
+.bibliography-wrap h2.bibliography,
+.bibliography-wrap > h2 {
+  font-size: 1.35rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+ol.bibliography {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pub {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.pub:last-child { border-bottom: none; }
+.pub p { margin: 0 0 0.2rem; }
+
+.pub-title { font-weight: 600; color: var(--ink); }
+.pub-star { color: var(--d-learn); font-size: 0.85em; }
+.pub-authors { font-size: 0.9rem; color: var(--ink-soft); }
+.pub-authors strong { color: var(--ink); }
+.pub-meta { font-size: 0.85rem; color: var(--muted); }
+.pub-venue { font-style: italic; }
+.pub-links { font-size: 0.82rem; }
+.pub-links a {
+  margin-right: 0.75rem;
+  color: var(--ink-soft);
+  text-decoration-color: var(--rule);
+}
+.pub-links a:hover { color: var(--ink); }
+
+.metrics-line {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-top: 1rem;
+}

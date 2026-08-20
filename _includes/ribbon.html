@@ -1,0 +1,27 @@
+<div class="band">
+  <svg viewBox="0 0 600 44" preserveAspectRatio="none" role="img" aria-label="Six domain hues blending into one continuous ribbon: neuroscience and connectomics, AI and data, defense and space, learning engineering, workforce, public health">
+    <title>One continuous ribbon across six domains</title>
+    <defs>
+      <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#6d4fc4"/>
+        <stop offset="14%" stop-color="#6d4fc4"/>
+        <stop offset="24%" stop-color="#2159c2"/>
+        <stop offset="34%" stop-color="#2159c2"/>
+        <stop offset="44%" stop-color="#3d5a6e"/>
+        <stop offset="52%" stop-color="#3d5a6e"/>
+        <stop offset="62%" stop-color="#c05a1e"/>
+        <stop offset="72%" stop-color="#c05a1e"/>
+        <stop offset="82%" stop-color="#b03a66"/>
+        <stop offset="88%" stop-color="#b03a66"/>
+        <stop offset="97%" stop-color="#2c7a4b"/>
+        <stop offset="100%" stop-color="#2c7a4b"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="600" height="44" rx="10" fill="url(#spectrum)"/>
+  </svg>
+  <ul class="band-labels">
+    {% for d in site.data.domains %}
+    <li><span class="dot domain--{{ d.key }}"></span>{{ d.label }}</li>
+    {% endfor %}
+  </ul>
+</div>

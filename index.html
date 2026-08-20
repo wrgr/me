@@ -1,0 +1,88 @@
+---
+layout: home
+title: William Gray-Roncal, PhD
+---
+<header class="masthead">
+  <p class="eyebrow">Johns Hopkins University Applied Physics Laboratory</p>
+  <h1>William Gray-Roncal, PhD</h1>
+  <ul class="roles-strip">
+    <li>Researcher &amp; systems engineer</li>
+    <li>Mentor &amp; program builder</li>
+    <li>Learning engineer &amp; educator</li>
+  </ul>
+  <p class="standfirst">
+    Principal Research Engineer at the Johns Hopkins University Applied Physics
+    Laboratory. Two decades of systems engineering across defense, space,
+    biomedical, and learning systems — DARPA-, IARPA-, NIH-, and DoD-sponsored —
+    bridging <strong>computational neuroscience</strong>, <strong>AI</strong>, and
+    <strong>large-scale data infrastructure</strong>, and building the programs
+    that grow the people who do this work.
+  </p>
+  {% include contact-row.html %}
+  {% include ribbon.html %}
+</header>
+
+<section id="domains">
+  <div class="kicker"><span class="eyebrow">One method, six domains</span></div>
+  <h2>The blend is the point</h2>
+  <p class="prose">
+    The through-line is systems engineering plus measurement, applied wherever
+    capability must be built — in a reconstruction pipeline, a research team, or
+    a learner. The same discipline that maps a cubic millimeter of cortex also
+    builds the archive that shares it, the metrics that judge it, and the
+    mentoring programs that staff it.
+  </p>
+  <div class="card-grid">
+    {% for d in site.data.domains %}
+      {% include domain-card.html domain=d %}
+    {% endfor %}
+  </div>
+</section>
+
+<section id="programs">
+  <div class="kicker"><span class="eyebrow">Programs &amp; mentoring</span></div>
+  <h2>Nearly 500 students mentored</h2>
+  <p class="prose">
+    <strong>CIRCUIT</strong> was built as the workforce solution to IARPA
+    MICrONS: cohorts of undergraduates, recruited for potential rather than
+    pedigree, whose reconstructions contributed materially to results published
+    in <em>Nature</em>. Co-author of the peer-reviewed CIRCUIT model paper
+    (ASEE 2023).
+  </p>
+  <p class="prose">
+    The model generalized into <strong>MERIT</strong> and the
+    <strong>COMPASS</strong> mentor layer, and traveled to new sponsors:
+    <strong>PISTA</strong> (DTRA, Summer 2025) took nine fellows through ten
+    weeks and three full redesigns of a CBRNE decision-support prototype.
+  </p>
+  <p class="prose">
+    On the learning-engineering side, he leads the development of the
+    <strong>LENS</strong> concentration within the JHU M.Ed. in Learning Design
+    and Technology (School of Education), the program directed by James Diamond
+    — where "capability is a system parameter" is the working thesis of
+    <a href="https://capabilitymatters.org">capabilitymatters.org</a>.
+  </p>
+</section>
+
+<section id="selected-publications">
+  <div class="kicker"><span class="eyebrow">Selected publications</span></div>
+  <h2>Selected work</h2>
+  <div class="bibliography-wrap">
+    {% bibliography --query @*[selected=true] %}
+  </div>
+  <p class="metrics-line">
+    <a href="{{ '/publications/' | relative_url }}">Full publication list →</a>
+    &nbsp;·&nbsp; ~3,000 citations · h-index 21 (as of Aug 2026,
+    <a href="https://scholar.google.com/citations?user={{ site.data.profiles.scholar }}">Google Scholar</a>)
+  </p>
+</section>
+
+<section id="projects">
+  <div class="kicker"><span class="eyebrow">Projects &amp; writing</span></div>
+  <h2>Built and written</h2>
+  <div class="card-grid">
+    {% for p in site.data.projects %}
+      {% include project-card.html project=p %}
+    {% endfor %}
+  </div>
+</section>
