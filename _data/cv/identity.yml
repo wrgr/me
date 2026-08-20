@@ -20,7 +20,7 @@ address_city: Laurel, MD 20723
 
 # CV uses the institutional address; the website uses site.email (see _config.yml).
 cv_email: william.gray.roncal@jhuapl.edu
-homepage: wrgr.github.io/me
+homepage: will.grayroncal.com
 
 # One-line and short-form descriptions reused across the site
 roles_strip:

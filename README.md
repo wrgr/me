@@ -1,4 +1,4 @@
-# grayroncal.com (staging: wrgr.github.io/me)
+# will.grayroncal.com
 
 Academic homepage for William Gray-Roncal, PhD — built with Jekyll and
 jekyll-scholar. One method, six domains: neuro & connectomics, AI & data,
@@ -62,17 +62,49 @@ Then rebuild the PDF — see [cv/README.md](cv/README.md).
 
 ## Deployment
 
-GitHub Actions (`.github/workflows/deploy.yml`) builds on every PR and
-deploys to GitHub Pages on push to `main` (jekyll-scholar requires the
-Actions build — the classic Pages builder can't run it).
+GitHub Actions (`.github/workflows/deploy.yml`) builds on every PR and deploys
+to GitHub Pages on push to `main`. jekyll-scholar is not on the GitHub Pages
+whitelist, so the classic Pages builder cannot build this site — the Actions
+build is required, not a preference.
 
-One-time repo setting: **Settings → Pages → Source → "GitHub Actions"**.
+### Going live at will.grayroncal.com
 
-### Moving to grayroncal.com later
+Three things must agree: the DNS record, the `CNAME` file, and the repo setting.
 
-1. Add a `CNAME` file containing `grayroncal.com`
-2. In `_config.yml`: set `url: https://grayroncal.com` and `baseurl: ""`
-3. Point DNS A/AAAA records at GitHub Pages; enforce HTTPS
-4. Then flip the `comingSoon` flag in capabilitymatters' `experiments.astro` (and its pinned test)
+1. **DNS** — at whatever host serves `grayroncal.com`, add one record:
 
-All internal links go through `relative_url`, so no other changes are needed.
+   | Type | Name / Host | Value |
+   | --- | --- | --- |
+   | `CNAME` | `will` | `wrgr.github.io.` |
+
+   A subdomain needs only this. The `A`/`AAAA` records GitHub documents are for
+   apex domains (`grayroncal.com`) and are **not** used here. The value is the
+   *user* domain `wrgr.github.io`, with no `/me` path and no repo name — some
+   DNS UIs require the trailing dot, others add it for you.
+
+2. **Repo setting** — Settings → Pages → Source → **"GitHub Actions"**, then set
+   Custom domain to `will.grayroncal.com`. Once the certificate provisions
+   (usually minutes, occasionally up to 24h), tick **Enforce HTTPS**.
+
+3. **`CNAME` file** — already in the repo root, containing `will.grayroncal.com`.
+   Jekyll copies it into `_site/`, and the deploy workflow fails the build if it
+   ever goes missing. Deleting it unbinds the domain.
+
+Check propagation with `dig +short will.grayroncal.com` — it should return
+`wrgr.github.io` followed by GitHub's IPs.
+
+### Moving the site elsewhere
+
+`_config.yml` holds `url` and `baseurl`; every internal link goes through
+`relative_url`, so a move is those two values plus the `CNAME` file. Serving
+from a subpath again (say `wrgr.github.io/me`) means setting
+`baseurl: "/me"` and deleting `CNAME` — nothing in the templates changes.
+
+### After the domain resolves
+
+`wrgr/capabilitymatters` lists this site on its Experiments page behind a
+`comingSoon: true` flag, pinned by a test. Both must change in one commit:
+remove the flag in `src/pages/experiments.astro`, and remove
+`test_grayroncal_is_coming_soon` in `tests/test_experiments_page.py`. Note that
+page currently points at `grayroncal.com`, so the URL needs updating to
+`will.grayroncal.com` too.

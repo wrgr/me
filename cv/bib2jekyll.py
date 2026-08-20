@@ -464,7 +464,7 @@ def main():
     out.sort(key=lambda x: (-x[1], x[2]))
 
     header = [
-        "% Publications for wrgr.github.io/me",
+        "% Publications for will.grayroncal.com",
         "% Source of truth: William Gray-Roncal's CV BibTeX (Feb 2026), converted for",
         "% jekyll-scholar. Custom fields:",
         "%   category = paper | talk | poster",
