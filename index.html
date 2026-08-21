@@ -5,14 +5,11 @@ title: William Gray-Roncal, PhD
 <header class="masthead masthead--hero">
   <p class="eyebrow">{{ site.data.cv.identity.employer }}</p>
   <h1>{{ site.data.cv.identity.first_name }} <span class="nowrap">{{ site.data.cv.identity.family_name }}</span>, {{ site.data.cv.identity.suffix }}</h1>
-  <p class="lede">
-    Capability is a system parameter. He builds the systems that measure it —
-    in brains, in machines, and in people.
-  </p>
+  <p class="lede">{{ site.data.cv.identity.tagline }}</p>
   <p class="standfirst">
-    Principal research engineer at Johns Hopkins APL and a faculty member at
-    Johns Hopkins, working across <strong>defense, space, biomedical, and
-    learning systems</strong> for twenty years.
+    I'm a principal research engineer at Johns Hopkins APL and a faculty member
+    at Johns Hopkins, working across <strong>defense, space, biomedical, and
+    learning systems</strong>.
   </p>
   <p class="hero-cta">
     <a class="btn btn--primary" href="{{ '/research/' | relative_url }}">See the research</a>
@@ -24,7 +21,6 @@ title: William Gray-Roncal, PhD
 
 <section id="proof" class="statband">
   <ul>
-    <li><span class="stat">20</span><span class="stat-label">years across six domains</span></li>
     <li><span class="stat">~500</span><span class="stat-label">students mentored</span></li>
     <li><span class="stat">3,009</span><span class="stat-label">citations · h-index 21</span></li>
     {%- assign progs = 0 -%}
