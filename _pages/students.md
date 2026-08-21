@@ -12,9 +12,8 @@ permalink: /students/
     Every program on this page starts from the same conviction — that
     <strong>a demonstrated output is harder to inherit than a proxy</strong>.
     Scaffold people so they can do real work inside the established system, then
-    let the demonstration decide. To be successful we have to identify and
-    include the right people, and to judge that accurately, we have to see the
-    work.
+    let the demonstration decide. Including the right people means finding them
+    first — and judging that accurately means seeing the work.
   </p>
   <p class="prose">
     You do not need to arrive knowing all of this. No one carries every tool;

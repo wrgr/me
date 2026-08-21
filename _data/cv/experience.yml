@@ -59,8 +59,8 @@
           domains: [ai, neuro]
         - role: Current Research
           text: >-
-            Quantitative measures of human cognitive performance in complex
-            operational contexts.
+            Human cognitive performance---quantitative measures of operator
+            capability in complex operational contexts.
           domains: [learning, defense]
     - label: Leadership & Management
       items:
@@ -103,7 +103,7 @@
       years: 2017--Present
       text: Teaching, research collaboration, and advising undergraduate/graduate students.
       domains: [ai]
-    - role: Lecturer, Applied Biomedical Engineering, EP
+    - role: Lecturer, Applied Biomedical Engineering, Engineering for Professionals
       years: 2018--Present
       text: Graduate courses in applied neuroscience and neuroengineering.
       domains: [neuro, learning]

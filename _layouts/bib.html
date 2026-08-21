@@ -1,6 +1,7 @@
 ---
 ---
-{% capture venue %}{% if entry.journal %}{{ entry.journal }}{% elsif entry.booktitle %}{{ entry.booktitle }}{% elsif entry.archiveprefix %}arXiv preprint{% elsif entry.howpublished %}{{ entry.howpublished }}{% else %}{{ entry.type }}{% endif %}{% endcapture %}
+{% capture venue %}{% if entry.journal %}{{ entry.journal }}{% elsif entry.booktitle %}{{ entry.booktitle }}{% elsif entry.archiveprefix %}arXiv preprint{% elsif entry.howpublished %}{{ entry.howpublished }}{% elsif entry.address %}{{ entry.address }}{% endif %}{% endcapture %}
+{%- assign venue = venue | strip -%}
 <li class="pub{% if entry.selected %} pub--selected{% endif %}" id="{{ key }}">
   <p class="pub-title">{{ entry.title }}{% if entry.selected %} <span class="pub-star" title="Selected publication">★</span>{% endif %}</p>
   <p class="pub-authors">
@@ -47,7 +48,7 @@
     {%- if total > 12 and wgr_index != last_index %}, et al.{% endif -%}
   </p>
   <p class="pub-meta">
-    <span class="pub-venue">{{ venue | strip }}</span>{% if entry.volume %} {{ entry.volume }}{% if entry.number %}({{ entry.number }}){% endif %}{% endif %} · {{ entry.year }}
+    {% if venue != "" %}<span class="pub-venue">{{ venue }}</span>{% if entry.volume %} {{ entry.volume }}{% if entry.number %}({{ entry.number }}){% endif %}{% endif %} · {% endif %}{{ entry.year }}
     {%- if entry.domain -%}
       {%- assign dkeys = entry.domain | remove: " " | split: "," -%}
       {%- for dkey in dkeys -%}
