@@ -2,177 +2,98 @@
 layout: home
 title: William Gray-Roncal, PhD
 ---
-<header class="masthead">
+<header class="masthead masthead--hero">
   <p class="eyebrow">{{ site.data.cv.identity.employer }}</p>
   <h1>{{ site.data.cv.identity.first_name }} <span class="nowrap">{{ site.data.cv.identity.family_name }}</span>, {{ site.data.cv.identity.suffix }}</h1>
-  <ul class="roles-strip">
-    {% for r in site.data.cv.identity.roles_strip %}<li>{{ r }}</li>
-    {% endfor %}
-  </ul>
+  <p class="lede">{{ site.data.cv.identity.tagline }}</p>
   <p class="standfirst">
-    He is a principal research engineer, project manager, and section supervisor
-    at APL, and a faculty member at Johns Hopkins, applying systems engineering
-    methods to complex challenges spanning <strong>defense, space, biomedical,
-    and learning systems</strong> — building scalable data systems, human–machine
-    teaming solutions, and the programs that grow the people who do this work.
+    I'm a principal research engineer at Johns Hopkins APL and a faculty member
+    at Johns Hopkins, working across <strong>defense, space, biomedical, and
+    learning systems</strong>.
   </p>
-  {% include contact-row.html %}
+  <p class="hero-cta">
+    <a class="btn btn--primary" href="{{ '/research/' | relative_url }}">See the research</a>
+    <a class="btn" href="{{ '/students/' | relative_url }}">For students</a>
+    <a class="btn btn--quiet" href="mailto:{{ site.email }}">Get in touch</a>
+  </p>
   {% include ribbon.html %}
 </header>
+
+<section id="proof" class="statband">
+  <ul>
+    <li><span class="stat">~500</span><span class="stat-label">students mentored</span></li>
+    <li><span class="stat">3,009</span><span class="stat-label">citations · h-index 21</span></li>
+    {%- assign progs = 0 -%}
+    {%- for e in site.data.cv.experience -%}{%- for g in e.groups -%}
+      {%- if g.label contains "Research Program" -%}{%- assign progs = g.items | size -%}{%- endif -%}
+    {%- endfor -%}{%- endfor -%}
+    <li><span class="stat">{{ progs }}</span><span class="stat-label">sponsored programs led or co-led</span></li>
+  </ul>
+</section>
 
 <section id="domains">
   <div class="kicker"><span class="eyebrow">One method, six domains</span></div>
   <h2>The blend is the point</h2>
   <p class="prose">
-    The through-line is systems engineering plus measurement, applied wherever
-    capability must be built — in a reconstruction pipeline, a clinical dataset,
-    a research team, or a learner. The same discipline that maps a cubic
-    millimeter of cortex also builds the archive that shares it, the metrics that
-    judge it, and the programs that staff it.
+    Learning is what connects the six: how brains encode it, how machines
+    approximate it, how people acquire it under pressure. The method underneath is constant — systems engineering plus
+    measurement, applied to a reconstruction pipeline, a clinical dataset, a
+    research team, or a learner.
   </p>
-  <div class="card-grid">
+  <ul class="domain-strip">
     {% for d in site.data.domains %}
-      {% include domain-card.html domain=d %}
+    <li class="domain--{{ d.key }}">
+      <span class="domain-strip__label">{{ d.label }}</span>
+      <span class="domain-strip__line">{{ d.short | default: d.blurb | strip_html }}</span>
+    </li>
     {% endfor %}
+  </ul>
+</section>
+
+<section id="pathways">
+  <div class="kicker"><span class="eyebrow">Three ways in</span></div>
+  <h2>Where this goes next</h2>
+  <div class="pathways">
+    <article class="pathway domain--learning">
+      <h3>Study learning engineering</h3>
+      <p>
+        <strong>LENS</strong> — Learning Engineering for Next-Generation
+        Systems — launches Fall 2026 inside the Johns Hopkins M.Ed. in Learning
+        Design and Technology. Built for people moving between technical
+        practice and learning design.
+      </p>
+      <p class="card-link"><a href="https://capabilitymatters.org">capabilitymatters.org →</a></p>
+    </article>
+    <article class="pathway domain--workforce">
+      <h3>Do research with us</h3>
+      <p>
+        CIRCUIT, MERIT, and PISTA are cohort programs built on one premise:
+        judge the work, not the pedigree. Roughly 500 students mentored, whose
+        cohorts contributed to reconstructions published in <em>Nature</em>.
+      </p>
+      <p class="card-link"><a href="{{ '/students/' | relative_url }}">For students and mentees →</a></p>
+    </article>
+    <article class="pathway domain--neuro">
+      <h3>Collaborate</h3>
+      <p>
+        Sponsored research and consortium work across connectomics, petabyte
+        data infrastructure, and the measurement of human performance —
+        currently co-PI on NIH BRAIN CONNECTS.
+      </p>
+      <p class="card-link"><a href="{{ '/research/' | relative_url }}">Research programs →</a></p>
+    </article>
   </div>
 </section>
 
-<section id="programs">
-  <div class="kicker"><span class="eyebrow">Programs &amp; mentoring</span></div>
-  <h2>Approximately 500 students mentored</h2>
-  <p class="prose lead-link"><a href="{{ '/students/' | relative_url }}">For students and mentees — the programs, and how to get in touch →</a></p>
-  <p class="prose">
-    <strong>CIRCUIT</strong> — the Cohort-based Integrated Research Community for
-    Undergraduate Innovation and Trailblazing — is a nationally recognized
-    research and mentoring program he founded and led at APL from 2017 to 2023.
-    It served <strong>220+ students</strong> from high school through graduate
-    school, across technical areas from underwater to space systems, and its
-    cohorts contributed to work published in <em>Nature</em>. Co-author of the
-    peer-reviewed CIRCUIT model paper (ASEE 2023).
-  </p>
-  <p class="prose">
-    The <strong>College Prep Program at APL</strong>, which he co-founded in 2009
-    and still co-directs, is an all-volunteer summer program supporting
-    underserved students through academics, applications, essays, and financial
-    aid, with longitudinal support afterward. A further
-    <strong>220+ students served</strong>, with more than
-    <strong>90% on track for four-year degrees</strong>, on 500+ volunteer hours
-    a year.
-  </p>
-  <p class="prose">
-    On the learning-engineering side, he leads the development of the
-    <strong>LENS</strong> concentration — Learning Engineering for
-    Next-Generation Systems — within the Johns Hopkins M.Ed. in Learning Design
-    and Technology, the program directed by James Diamond at the School of
-    Education, where Gray-Roncal is a Visiting Assistant Professor. The work
-    applies systems engineering principles to learning in operational
-    environments including healthcare and defense.
-  </p>
-  <p class="prose">
-    He teaches
-    {%- assign courses = "" -%}
-    {%- for t in site.data.cv.teaching -%}
-      {%- unless t.title contains "Research Mentor" -%}
-        {%- capture one -%}<em>{{ t.title | texclean | split: " (" | first }}</em> ({{ t.org | texclean }}){%- endcapture -%}
-        {%- assign courses = courses | append: one | append: "|" -%}
-      {%- endunless -%}
-    {%- endfor -%}
-    {%- assign list = courses | split: "|" -%}
-    {%- for c in list -%}
-      {%- if forloop.last and forloop.length > 1 %}, and {% elsif forloop.first %} {% else %}, {% endif -%}
-      {{ c }}
-    {%- endfor -%}.
-    The connectomics intersession course was consistently among the
-    highest-rated in the Whiting School.
-  </p>
-</section>
-
-<section id="selected-publications">
-  <div class="kicker"><span class="eyebrow">Publications</span></div>
-  <h2>Selected work</h2>
-  <div class="bibliography-wrap">
-    {% bibliography --query @*[selected=true] %}
+<section id="featured">
+  <div class="kicker"><span class="eyebrow">Selected work</span></div>
+  <h2>A few things worth reading</h2>
+  <div class="bibliography-wrap bibliography-wrap--compact">
+    {% bibliography --query @*[selected=true && year >= 2022] %}
   </div>
   <p class="metrics-line">
-    <a href="{{ '/publications/' | relative_url }}">Full publication list →</a>
-    &nbsp;·&nbsp; 3,009 citations · h-index 21 · i10-index 32
-    (<a href="https://scholar.google.com/citations?user={{ site.data.profiles.scholar }}">Google Scholar</a>, August 2026)
+    <a href="{{ '/publications/' | relative_url }}">All 90 publications, talks and posters →</a>
+    &nbsp;·&nbsp;
+    <a href="{{ '/writing/' | relative_url }}">Writing &amp; press →</a>
   </p>
-</section>
-
-<section id="research">
-  <div class="kicker"><span class="eyebrow">Research programs</span></div>
-  <h2>Sponsored work</h2>
-  <p class="prose">
-    Programs led or co-led at APL, sponsored by NIH, DARPA, IARPA, and DoD.
-  </p>
-  {% include research-programs.html %}
-</section>
-
-<section id="writing">
-  <div class="kicker"><span class="eyebrow">Writing &amp; ideas</span></div>
-  <h2>The argument</h2>
-  <p class="prose">
-    One claim runs across the domains: what people can do inside a system is a
-    designable, measurable property of that system — and treating it that way
-    changes what you build, what you measure, and who gets to do the work.
-  </p>
-  <div class="card-grid">
-    {% for w in site.data.writing %}
-      {% include writing-card.html item=w %}
-    {% endfor %}
-  </div>
-</section>
-
-<section id="software">
-  <div class="kicker"><span class="eyebrow">Software &amp; datasets</span></div>
-  <h2>Tools and data</h2>
-  <p class="prose">
-    Infrastructure, tools, and teaching artifacts — most open source, all built
-    to be used by someone other than their author.
-  </p>
-  <div class="card-grid">
-    {% for item in site.data.software %}
-      {% include software-card.html item=item %}
-    {% endfor %}
-  </div>
-</section>
-
-<section id="media">
-  <div class="kicker"><span class="eyebrow">In the press</span></div>
-  <h2>Coverage</h2>
-  <div class="card-grid">
-    {% for m in site.data.media %}
-      {% include media-card.html item=m %}
-    {% endfor %}
-  </div>
-</section>
-
-<section id="recognition">
-  <div class="kicker"><span class="eyebrow">Recognition &amp; service</span></div>
-  <h2>Selected awards and service</h2>
-  <div class="two-col">
-    <div>
-      <h3>Awards</h3>
-      <ul class="tight">
-        {% for group in site.data.cv.awards %}
-          {% for a in group.items %}
-            {% if a.featured %}
-        <li>{{ a.title | texclean }}, {{ a.org | texclean }}{% if a.detail %} — {{ a.detail | texclean }}{% endif %} ({{ a.year | texclean }})</li>
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-      </ul>
-    </div>
-    <div>
-      <h3>Service</h3>
-      <ul class="tight">
-        {% for e in site.data.cv.service %}
-          {% if e.featured %}
-        <li>{{ e.role | texclean }}, {{ e.title | texclean }}{% if e.org %}, {{ e.org | texclean }}{% endif %} ({{ e.year | texclean }})</li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
 </section>

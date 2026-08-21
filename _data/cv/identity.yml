@@ -28,6 +28,12 @@ roles_strip:
   - Mentor & program builder
   - Learning engineer & educator
 
+# Hero tagline. Feeds the homepage lede and the meta/social description, so
+# the page's promise and its search snippet cannot drift apart.
+tagline: >-
+  Learning is the through-line — patterns in brains, in machines, and in minds.
+  Giving everyone a chance to participate, and to thrive.
+
 summary: >-
   Applies systems engineering methods to complex challenges spanning defense,
   space, biomedical, and learning systems, with expertise in building scalable
