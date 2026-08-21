@@ -85,6 +85,9 @@ Set `featured: true` on an award or service entry to surface it on the homepage.
 **Do not normalise his name across entries.** Each entry carries the form that
 appeared on that publication, and the record shows a real change:
 
+- **2010 and earlier** — `Gray, William R`, before the surname change. His
+  first-author DARPA poster that year is under "Gray" while Vogelstein's OHBM
+  poster already lists him as "Gray Roncal", so 2010 carries both.
 - **2010–2017** — unhyphenated, `{Gray Roncal}, William` (the braces keep the
   two-word surname together, or BibTeX treats "Gray" as a first name)
 - **2018** — transition year; both forms appear
@@ -95,8 +98,9 @@ where the paper's other authors are also initialled. `William Roberts
 Gray-Roncal` on one 2023 entry is as-published too.
 
 Highlighting does not depend on the form: `_layouts/bib.html` bolds any author
-whose surname contains "Roncal" and whose display name starts with "W", so both
-spellings and every initialled variant are caught. That test also correctly
+whose display name starts with "W" and whose surname either contains "Roncal"
+or is exactly "Gray", so all three eras and every initialled variant are
+caught. That test also correctly
 excludes **Karla Gray-Roncal** and **Maria Roncal**, who are different people
 and appear as co-authors — never "fix" their names to match his.
 
