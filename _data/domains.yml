@@ -4,6 +4,7 @@
 # _data/cv/*.yml by matching `domains:` tags, so facts live in one place.
 - key: neuro
   label: Neuro & connectomics
+  short: Mapping brains at synaptic scale — and building the archives that share the maps.
   blurb: >-
     Mapping brains at synaptic scale — automated reconstruction pipelines,
     petabyte-scale community archives, and the query tools that turn image
@@ -18,6 +19,7 @@
 
 - key: ai
   label: AI & data
+  short: Computer vision and graph analysis that scale from a laptop to a petabyte.
   blurb: >-
     Computer vision, graph analysis, and cloud infrastructure that scale from
     laptop prototypes to petabyte pipelines — including algorithms that borrow
@@ -29,6 +31,7 @@
 
 - key: defense
   label: Defense & space
+  short: Systems engineering for national-security sponsors, from satellites to decision support.
   blurb: >-
     Two decades of systems engineering for national-security sponsors — from
     satellite systems as a responsible engineer to decision-support prototypes
@@ -41,6 +44,7 @@
 
 - key: learning
   label: Learning engineering
+  short: Treating human capability as something you can specify, measure, and improve.
   blurb: >-
     Treating human capability as a system parameter — something you can
     specify, measure, and improve with the same discipline applied to any
@@ -53,6 +57,7 @@
 
 - key: workforce
   label: Workforce
+  short: Cohort programs that widen who gets to do science.
   blurb: >-
     Cohort-based pathways into research careers — approximately 500 students mentored
     through programs built to widen who gets to do science.
@@ -64,6 +69,7 @@
 
 - key: health
   label: Public health
+  short: The same measurement discipline, turned on clinical data.
   blurb: >-
     The same measurement discipline turned on clinical data — analytics
     leadership for multiple sclerosis and COVID-19 research at Johns Hopkins.

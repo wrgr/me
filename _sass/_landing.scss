@@ -1,0 +1,156 @@
+/* Landing-page components: hero, stat band, domain strip, pathways.
+   The homepage is a landing page; the detail lives on /research/, /writing/,
+   /publications/ and /students/. */
+
+.masthead--hero {
+  padding-bottom: 1rem;
+}
+.masthead--hero h1 {
+  font-size: clamp(2.6rem, 8vw, 4.2rem);
+  margin-bottom: 0.75rem;
+}
+
+.lede {
+  font-family: var(--display);
+  font-weight: 560;
+  font-size: clamp(1.35rem, 3.4vw, 1.9rem);
+  line-height: 1.28;
+  color: var(--ink);
+  max-width: 40ch;
+  margin: 0 0 1rem;
+  text-wrap: balance;
+}
+
+.masthead--hero .standfirst {
+  font-size: 1.02rem;
+  max-width: 46ch;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------------------------------------------------------------- buttons */
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--card);
+  transition: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .btn { transition: background-color 120ms ease, border-color 120ms ease; }
+}
+.btn:hover { border-color: var(--ink-soft); }
+.btn--primary {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.btn--primary:hover { background: var(--ink-soft); border-color: var(--ink-soft); }
+.btn--quiet { background: transparent; color: var(--ink-soft); }
+
+/* ------------------------------------------------------------- stat band */
+
+.statband {
+  margin-top: 2.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.statband ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+  gap: 1.25rem 1rem;
+}
+.statband li { display: flex; flex-direction: column; gap: 0.15rem; }
+.stat {
+  font-family: var(--display);
+  font-weight: 650;
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+.stat-label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+/* ---------------------------------------------------------- domain strip */
+
+/* Replaces the six heavy domain cards: label plus one line, colour-keyed. */
+.domain-strip {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.domain-strip li {
+  background: var(--paper);
+  padding: 1rem 1.1rem;
+  border-top: 3px solid var(--accent, var(--rule));
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.domain-strip__label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent, var(--ink));
+}
+.domain-strip__line {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+/* -------------------------------------------------------------- pathways */
+
+.pathways {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.pathway {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent, var(--rule));
+  border-radius: 8px;
+  padding: 1.25rem 1.35rem 1.1rem;
+}
+.pathway h3 {
+  font-size: 1.12rem;
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+}
+.pathway p { font-size: 0.93rem; color: var(--ink-soft); margin: 0 0 0.6rem; }
+.pathway .card-link { margin: 0; font-size: 0.88rem; }
+.pathway .card-link a { color: var(--accent, var(--ink-soft)); text-decoration: none; }
+.pathway .card-link a:hover { text-decoration: underline; }
+
+/* Featured publications on the landing page stay tight. */
+.bibliography-wrap--compact .pub { padding-block: 0.7rem; }
+.bibliography-wrap--compact .pub-authors { display: none; }
