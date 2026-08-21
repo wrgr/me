@@ -80,6 +80,34 @@ Set `featured: true` on an award or service entry to surface it on the homepage.
 3. If it should be featured, add the key to `SELECTED` in `bib2jekyll.py`.
 4. Rebuild the PDF, then run `python3 cv/bib2jekyll.py`.
 
+## Author names: cite as published
+
+**Do not normalise his name across entries.** Each entry carries the form that
+appeared on that publication, and the record shows a real change:
+
+- **2010–2017** — unhyphenated, `{Gray Roncal}, William` (the braces keep the
+  two-word surname together, or BibTeX treats "Gray" as a first name)
+- **2018** — transition year; both forms appear
+- **2019 onward** — hyphenated, `Gray-Roncal, William`
+
+Initials-only variants (`{Gray Roncal}, W R`, `W. Gray-Roncal`) are correct
+where the paper's other authors are also initialled. `William Roberts
+Gray-Roncal` on one 2023 entry is as-published too.
+
+Highlighting does not depend on the form: `_layouts/bib.html` bolds any author
+whose surname contains "Roncal" and whose display name starts with "W", so both
+spellings and every initialled variant are caught. That test also correctly
+excludes **Karla Gray-Roncal** and **Maria Roncal**, who are different people
+and appear as co-authors — never "fix" their names to match his.
+
+What *is* worth fixing is malformed BibTeX, which is different from historical
+variation. Two were repaired and should stay repaired:
+
+- `Roncal, Will {Gray Roncal}` rendered "Will Gray Roncal **Roncal**" — the
+  braced part parses as a *first* name. Now `{Gray Roncal}, Will`.
+- `{Roncal, Gray}, William R` put the comma inside the braces. Now
+  `{Gray Roncal}, William R`.
+
 ## Gotchas
 
 - `\cventry`'s last argument is **not** `\long` — a blank line inside it breaks
