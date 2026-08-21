@@ -31,8 +31,7 @@ roles_strip:
 # Hero tagline. Feeds the homepage lede and the meta/social description, so
 # the page's promise and its search snippet cannot drift apart.
 tagline: >-
-  Twenty years engineering the systems that measure what people and machines
-  can do — and widening who gets to do it.
+  Learning is the through-line — patterns in brains, in machines, and in minds.
 
 summary: >-
   Applies systems engineering methods to complex challenges spanning defense,
