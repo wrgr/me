@@ -75,10 +75,20 @@ Set `featured: true` on an award or service entry to surface it on the homepage.
 
 ## Adding a publication
 
-1. Add the entry to `will_cv.bib` (include a `doi` if one exists).
-2. Add its cite key to the right `\nocite…` list in `will_cv.tex`.
+1. Add the entry to `will_cv.bib` (include a `doi` if one exists; if not,
+   add a `url` — talks and posters usually don't have a DOI, so they need a
+   `url` pointing at a durable page: a conference program/archive entry, a
+   university seminar-series page, a figshare/OSF/Zenodo deposit, etc.).
+2. Add its cite key to the right `\nocite…` list in `will_cv.tex`
+   (`\nociteconf` for papers, `\nocitetalks` for talks, `\nociteposter` for
+   posters — this is what puts it on the website under the right section).
 3. If it should be featured, add the key to `SELECTED` in `bib2jekyll.py`.
-4. Rebuild the PDF, then run `python3 cv/bib2jekyll.py`.
+4. If the venue is open access, drop a copy of the PDF at
+   `../assets/pdf/papers/<cite-key>.pdf` — `bib2jekyll.py` picks it up
+   automatically and adds a `pdf` field. Skip this for paywalled venues
+   (IEEE Xplore, Cell, Nature Methods, ACM, etc.) — link out via `doi`/`url`
+   instead, don't self-host copyrighted publisher PDFs.
+5. Rebuild the PDF, then run `python3 cv/bib2jekyll.py`.
 
 ## Author names: cite as published
 

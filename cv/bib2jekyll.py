@@ -19,6 +19,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 CVDIR = REPO / "cv"
 DEST = REPO / "_bibliography" / "papers.bib"
+PDF_DIR = REPO / "assets" / "pdf" / "papers"
 
 # ---------------------------------------------------------------- parsing
 
@@ -451,6 +452,8 @@ def main():
         add("doi", doi)
         if url and not doi:
             add("url", url)
+        if (PDF_DIR / f"{key}.pdf").exists():
+            add("pdf", f"/assets/pdf/papers/{key}.pdf")
         add("note", esc(note))
         add("category", cat)
         add("domain", domains)
@@ -470,6 +473,7 @@ def main():
         "%   category = paper | talk | poster",
         "%   domain   = comma-separated keys from _data/domains.yml",
         "%   selected = true  -> featured on the homepage",
+        "%   pdf      = auto-added when assets/pdf/papers/<key>.pdf exists",
         "",
     ]
     text = "\n".join(header) + "\n\n".join(s for s, _, _ in out) + "\n"
@@ -486,6 +490,8 @@ def main():
     print("selected MISSING:", sorted(SELECTED - {k for _, _, k in out}))
     dois = sum(1 for s, _, _ in out if "doi = {" in s)
     print("entries with DOI:", dois)
+    pdfs = sum(1 for s, _, _ in out if "pdf = {" in s)
+    print("entries with local PDF:", pdfs)
 
 
 if __name__ == "__main__":
