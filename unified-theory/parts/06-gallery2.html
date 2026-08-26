@@ -1,0 +1,425 @@
+<!-- ================= PLATES XIII–XXIV + FIELD NOTES ================= -->
+<section class="section" id="plates2" style="padding-top:0;">
+  <div class="plates">
+
+    <article class="plate" id="pl-dotmotif">
+      <header><span class="pl-no">Plate XIII</span><span class="chip t-maps">maps</span><span class="pl-year">2021 · 54 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A four-line query in a small language, matching a triangle motif inside a larger brain graph.">
+        <rect x="20" y="30" width="120" height="72" rx="4" fill="#17181b" stroke="#3a3c40"/>
+        <text x="30" y="50" class="svg-label" fill="var(--maps-well)">A -&gt; B</text>
+        <text x="30" y="66" class="svg-label" fill="var(--maps-well)">B -&gt; C</text>
+        <text x="30" y="82" class="svg-label" fill="var(--maps-well)">C -&gt; A</text>
+        <path d="M150 66 h26 l-6 -5 m6 5 l-6 5" stroke="#9a9891" fill="none" stroke-width="1.5"/>
+        <g stroke="#3a3c40" fill="none"><path d="M210 40 L250 30 M250 30 L290 55 M210 40 L200 90 M200 90 L240 120 M240 120 L290 100 M290 55 L290 100 M250 30 L240 75"/></g>
+        <g class="sw-maps" stroke-width="2.5" fill="none"><path d="M240 75 L290 55 L290 100 Z"/></g>
+        <g fill="#5a5c60"><circle cx="210" cy="40" r="4"/><circle cx="250" cy="30" r="4"/><circle cx="200" cy="90" r="4"/><circle cx="240" cy="120" r="4"/></g>
+        <g class="fw-maps"><circle cx="240" cy="75" r="5"/><circle cx="290" cy="55" r="5"/><circle cx="290" cy="100" r="5"/></g>
+        <text x="20" y="128" class="svg-label">6,894 triangles in mouse cortex · K6 cliques:</text>
+        <text x="20" y="142" class="svg-label">zero there, thousands in the worm</text>
+      </svg></div>
+      <h3>A grammar for asking brains questions</h3>
+      <p class="pl-cite">Matelsky, Reilly, Johnson, Stiso, Bassett, Wester &amp; Gray-Roncal · “DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries” · Scientific Reports</p>
+      <p class="body">
+        Once connectomes exist, most scientists still can’t query them —
+        subgraph search is a computer-science problem. DotMotif is a tiny
+        language where the code looks like the circuit: write
+        <code>A -&gt; B</code>, get every matching motif, on your laptop or a
+        graph database, identically. The gate to graph analysis, widened.
+      </p>
+      <ul class="pl-findings">
+        <li>The worm has cliques the mouse cortex lacks: K6 (six neurons all mutually connected) appears thousands of times in C. elegans and exactly zero times in the MICrONS cortex graph.</li>
+        <li>Worm brains fan in; mouse cortex fans out — the most common 3-neuron pattern flips between species.</li>
+        <li>Random-graph stand-ins for brains always undercount motifs — only degree-preserving shuffles come close.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-021-91025-5">doi:10.1038/s41598-021-91025-5</a></p>
+    </article>
+
+    <article class="plate" id="pl-confirms">
+      <header><span class="pl-no">Plate XIV</span><span class="chip t-trust">trust</span><span class="pl-year">2021 · 10 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="Five novice annotators on one side of a balance equal one expert on the other; a stack of ten-second yes/no cards behind them.">
+        <g fill="#3a3c40"><rect x="20" y="30" width="42" height="26" rx="3"/><rect x="28" y="38" width="42" height="26" rx="3"/><rect x="36" y="46" width="42" height="26" rx="3"/></g>
+        <text x="44" y="64" class="svg-label" fill="#e8e6e1">y/n?</text>
+        <path d="M60 120 H260" stroke="#9a9891" stroke-width="2"/>
+        <path d="M160 120 V96" stroke="#9a9891" stroke-width="2"/>
+        <g class="fw-trust">
+          <circle cx="92" cy="106" r="6"/><circle cx="108" cy="106" r="6"/><circle cx="124" cy="106" r="6"/><circle cx="140" cy="106" r="6"/><circle cx="76" cy="106" r="6"/>
+        </g>
+        <circle cx="228" cy="103" r="9" fill="none" class="sw-trust" stroke-width="2.5"/>
+        <text x="66" y="146" class="svg-label">5 novices, 3 agreeing</text>
+        <text x="204" y="146" class="svg-label">1 expert</text>
+        <text x="150" y="88" class="svg-label">=</text>
+      </svg></div>
+      <h3>Auditing a brain map with ten-second questions</h3>
+      <p class="pl-cite">Bishop, Matelsky, Wilt, …, Plaza, Wester &amp; Gray-Roncal · “CONFIRMS: a toolkit for scalable, black box connectome assessment” · IEEE EMBC</p>
+      <p class="body">
+        NRI (Plate XI) needs ground truth; CONFIRMS manufactures it, cheaply.
+        Any reconstruction — no source code needed — is sampled into atomic
+        micro-questions a person can answer in seconds, and the answers are
+        fused into quality estimates. Quality assurance as a swarm of yes/no/maybe
+        decisions, engineered so newcomers can contribute on day one.
+      </p>
+      <ul class="pl-findings">
+        <li>~60 users, &gt;90,000 tasks over three years; 244,663 synapses tagged; most forced-choice answers arrive within ten seconds.</li>
+        <li>Fusion rule: five intermediate annotators with three agreeing ≈ one expert — laws two and three in a single equation.</li>
+        <li>First author Caitlyn Bishop first appears in this bibliography on a 2017 student-team abstract.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1109/EMBC46164.2021.9630109">doi:10.1109/EMBC46164.2021.9630109</a></p>
+    </article>
+
+    <article class="plate" id="pl-bossdb">
+      <header><span class="pl-no">Plate XV</span><span class="chip t-archive">archive</span><span class="pl-year">2022 · 43 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A cloud swallowing brain-volume cubes through a wide pipe, with an ingest gauge reading 230 gigabytes per minute.">
+        <path d="M80 60 a22 22 0 0 1 40 -12 a18 18 0 0 1 34 6 a16 16 0 0 1 -6 31 h-62 a19 19 0 0 1 -6 -25" fill="none" class="sw-archive" stroke-width="2"/>
+        <g class="fw-archive" opacity=".85">
+          <rect x="30" y="120" width="16" height="16"/><rect x="52" y="120" width="16" height="16"/><rect x="74" y="120" width="16" height="16"/><rect x="41" y="102" width="16" height="16"/><rect x="63" y="102" width="16" height="16"/>
+        </g>
+        <path d="M96 112 C120 100 130 92 138 82" stroke="var(--archive-well)" stroke-width="5" fill="none" opacity=".6"/>
+        <g transform="translate(200,55)">
+          <path d="M0 60 A60 60 0 0 1 108 60" fill="none" stroke="#3a3c40" stroke-width="8"/>
+          <path d="M0 60 A60 60 0 0 1 88 18" fill="none" stroke="var(--archive-well)" stroke-width="8"/>
+          <text x="16" y="52" class="svg-big" font-size="17">230 GB/min</text>
+        </g>
+        <text x="30" y="148" class="svg-label">a 50 TB volume ingested in an afternoon</text>
+        <text x="30" y="162" class="svg-label">~2 PB stored</text>
+      </svg></div>
+      <h3>The archive, rebuilt for petabytes</h3>
+      <p class="pl-cite">Hider, Kleissas, Gion, …, Johnson, Gray-Roncal &amp; Wester · “The Brain Observatory Storage Service and Database (BossDB)” · Frontiers in Neuroinformatics</p>
+      <p class="body">
+        The Open Connectome cluster (Plate IX) hit its wall, so the team rebuilt
+        it cloud-native and serverless — same Morton-curve DNA, new physics:
+        storage that scales to zero when idle and fans out to thousands of
+        parallel functions under load. Built <em>before</em> the data existed,
+        in anticipation of MICrONS — the archive as a promise.
+      </p>
+      <ul class="pl-findings">
+        <li>Sustained ingest of 230 GB per minute; autoscaling tested to 5,000+ concurrent functions.</li>
+        <li>~2 petabytes of lossless EM imagery stored for MICrONS; 30+ public collections at bossdb.org.</li>
+        <li>Every dataset one Neuroglancer link away from any browser.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2022.828787">doi:10.3389/fninf.2022.828787</a></p>
+    </article>
+
+    <article class="plate" id="pl-standards">
+      <header><span class="pl-no">Plate XVI</span><span class="chip t-archive">archive</span><span class="pl-year">2022</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A tiny card catalog standing before an enormous library shelf, with a query card being pulled out.">
+        <g fill="none" stroke="#3a3c40">
+          <rect x="150" y="25" width="150" height="110"/>
+          <path d="M150 55 H300 M150 85 H300 M150 115 H300"/>
+          <path d="M165 25 V55 M185 25 V55 M205 25 V55 M225 25 V55 M245 25 V55 M265 25 V55 M285 25 V55 M160 55 V85 M180 55 V85 M200 55 V85 M220 55 V85 M240 55 V85 M262 55 V85 M282 55 V85 M170 85 V115 M190 85 V115 M212 85 V115 M232 85 V115 M252 85 V115 M274 85 V115 M292 85 V115 M158 115 V135 M178 115 V135 M198 115 V135 M218 115 V135 M240 115 V135 M260 115 V135 M280 115 V135"/>
+        </g>
+        <g>
+          <rect x="35" y="70" width="70" height="65" fill="none" class="sw-archive" stroke-width="2"/>
+          <path d="M35 92 H105 M35 114 H105" stroke="var(--archive-well)"/>
+          <rect x="44" y="76" width="20" height="10" class="fw-archive"/>
+        </g>
+        <text x="35" y="155" class="svg-label">27 GB of metadata</text>
+        <text x="150" y="155" class="svg-label">~1.4 PB of human cortex</text>
+      </svg></div>
+      <h3>Ask a petabyte a question</h3>
+      <p class="pl-cite">Sanchez, Moore, Johnson, Wester, Lichtman &amp; Gray-Roncal · “Connectomics Annotation Metadata Standardization” · Frontiers in Neuroinformatics</p>
+      <p class="body">
+        A petabyte you can’t query is a warehouse, not a library. This paper
+        writes the card catalog: a community metadata standard plus a portal
+        where dropdown menus ask questions of the H01 human-cortex volume —
+        150 million synapses — and answers come back as clickable 3D neurons.
+        The first authors, Morgan Sanchez and Dymon Moore, are CIRCUIT alumni;
+        the demo portal literally greets its own builder: “Welcome Morgan!”
+      </p>
+      <ul class="pl-findings">
+        <li>~27 GB of metadata makes ~1.4 petabytes of imagery queryable — 119 query combinations from seven question templates.</li>
+        <li>One schema spans two brains: H01 human cortex and the Kasthuri mouse volume (Plate IV).</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2022.828458">doi:10.3389/fninf.2022.828458</a></p>
+    </article>
+
+    <article class="plate" id="pl-ring">
+      <header><span class="pl-no">Plate XVII</span><span class="chip t-machines">machines</span><span class="pl-year">2022 · 13 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A ring of neurons with an activity bump, wired down into a small wheeled robot.">
+        <g transform="translate(160,60)">
+          <circle r="38" fill="none" stroke="#3a3c40" stroke-width="2"/>
+          <g class="fw-machines">
+            <circle cx="38" cy="0" r="4"/><circle cx="26.9" cy="26.9" r="4"/><circle cx="0" cy="38" r="4"/><circle cx="-26.9" cy="26.9" r="4"/><circle cx="-38" cy="0" r="4"/><circle cx="-26.9" cy="-26.9" r="4"/><circle cx="0" cy="-38" r="6.5"/><circle cx="26.9" cy="-26.9" r="5.5"/>
+          </g>
+          <path d="M-14 -46 A48 48 0 0 1 40 -26" fill="none" stroke="var(--machines-well)" stroke-width="5" opacity=".5"/>
+        </g>
+        <path d="M160 100 V122" stroke="#9a9891" stroke-width="1.5"/>
+        <g transform="translate(136,122)">
+          <rect x="0" y="0" width="48" height="20" rx="4" fill="none" stroke="#9a9891"/>
+          <circle cx="10" cy="24" r="6" fill="none" stroke="#9a9891"/><circle cx="38" cy="24" r="6" fill="none" stroke="#9a9891"/>
+        </g>
+        <text x="20" y="22" class="svg-label">the fly’s compass: an activity</text>
+        <text x="20" y="34" class="svg-label">bump on a ring of neurons</text>
+        <text x="216" y="140" class="svg-label">≈18.6 µW estimated</text>
+      </svg></div>
+      <h3>The map runs backwards</h3>
+      <p class="pl-cite">Robinson, Norman-Tenazas, Cervantes, …, Zhang &amp; Gray-Roncal · “Online learning for orientation estimation during translation in an insect ring attractor network” · Scientific Reports</p>
+      <p class="body">
+        Why map brains at all? Here is the answer running on wheels: the fly’s
+        head-direction circuit — 141 neurons, wired per the connectome — driving
+        a TurtleBot. The circuit’s heading “bump” teaches itself which visual
+        landmarks to trust, with no labels, in a single pass. The mapping
+        thread and the machines thread are one project.
+      </p>
+      <ul class="pl-findings">
+        <li>Online learning cut heading error 28% (rotation) and 38% (translation) in simulation, 14% on the physical robot.</li>
+        <li>Estimated to run in ~18.6 microwatts on neuromorphic hardware — insect-grade power.</li>
+        <li>The optimal solution rediscovers what animals do: trust distant landmarks, because nearby ones lie when you move.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-022-05798-4">doi:10.1038/s41598-022-05798-4</a></p>
+    </article>
+
+    <article class="plate" id="pl-cowleyhm">
+      <header><span class="pl-no">Plate XVIII</span><span class="chip t-trust">trust</span><span class="pl-year">2022 · 45 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="Paired bars showing the machine falling off a cliff on a one-shot class while humans hold steady.">
+        <g transform="translate(45,20)">
+          <path d="M0 110 H240" stroke="#3a3c40"/>
+          <rect x="10" y="18" width="26" height="92" class="fw-machines" opacity=".9"/>
+          <rect x="42" y="56" width="26" height="54" class="fw-machines" opacity=".55"/>
+          <rect x="120" y="16" width="26" height="94" class="fw-trust" opacity=".9"/>
+          <rect x="152" y="15" width="26" height="95" class="fw-trust"/>
+          <text x="6" y="126" class="svg-label">seen ×5 → new ×1</text>
+          <text x="118" y="126" class="svg-label">seen ×5 → new ×1</text>
+          <text x="10" y="10" class="svg-label">machine: 92.7 → 54.4</text>
+          <text x="120" y="10" class="svg-label" fill="var(--trust-well)">humans: 94.6 → 95.8</text>
+        </g>
+      </svg></div>
+      <h3>Measure the human before crowning the machine</h3>
+      <p class="pl-cite">Cowley, Natter, K. Gray-Roncal, …, Wester &amp; Gray-Roncal · “A framework for rigorous evaluation of human performance in human and machine learning comparison studies” · Scientific Reports</p>
+      <p class="body">
+        “Superhuman AI” claims rest on human baselines that were never measured
+        carefully. This framework imports psychometric rigor — matched trials,
+        naive participants, IRB, attention checks, deliberately alien stimuli,
+        even thumbnails blurred on purpose to equalize memory — and then shows
+        why it matters, with a one-shot learning study of 134 people.
+      </p>
+      <ul class="pl-findings">
+        <li>The one-shot cliff: a ResNet falls from 92.7% to 54.4% on a class it saw once; humans go 94.6% → 95.8% — no penalty at all.</li>
+        <li>The pitfalls list doubles as a field checklist: unmatched trials, careless annotators, no confidence intervals.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-022-08078-3">doi:10.1038/s41598-022-08078-3</a></p>
+    </article>
+
+    <article class="plate" id="pl-covid">
+      <header><span class="pl-no">Plate XIX</span><span class="chip t-trust">trust</span><span class="pl-year">2023 · 19 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A funnel of patients where the model releases confident calls and holds the undecided; cluster blobs sit to the right.">
+        <path d="M30 30 L130 30 L100 90 L60 90 Z" fill="none" stroke="#9a9891"/>
+        <path d="M60 90 L100 90 L92 130 L68 130 Z" fill="none" stroke="#9a9891"/>
+        <g class="fw-trust"><circle cx="50" cy="45" r="3"/><circle cx="70" cy="40" r="3"/><circle cx="90" cy="48" r="3"/><circle cx="110" cy="42" r="3"/><circle cx="75" cy="60" r="3"/><circle cx="95" cy="66" r="3"/><circle cx="68" cy="76" r="3"/><circle cx="88" cy="80" r="3"/><circle cx="78" cy="108" r="3"/><circle cx="82" cy="120" r="3"/></g>
+        <text x="128" y="52" class="svg-label">“mild” needs 90% of trees to agree</text>
+        <text x="140" y="68" class="svg-label">“severe” needs only 50%</text>
+        <text x="100" y="124" class="svg-label">156 still undecided at 48 h — by design</text>
+        <g transform="translate(240,20)" opacity=".9">
+          <circle cx="10" cy="10" r="8" class="fw-trust" opacity=".4"/><circle cx="40" cy="22" r="10" class="fw-trust" opacity=".7"/><circle cx="20" cy="44" r="7" class="fw-trust" opacity=".3"/>
+        </g>
+      </svg></div>
+      <h3>A model designed to say “I don’t know”</h3>
+      <p class="pl-cite">Cowley, Robinette, Matelsky, …, Zeger, Garibaldi &amp; Gray-Roncal · “Using machine learning on clinical data to identify unexpected patterns in groups of COVID-19 patients” · Scientific Reports</p>
+      <p class="body">
+        The same measurement discipline, turned on a pandemic: 1,175 Johns
+        Hopkins patients, first 48 hours in six-hour epochs. The classifier’s
+        thresholds are deliberately asymmetric — telling someone “you’ll be
+        fine” is made the hardest thing for the model to say — and clustering
+        surfaces the phenotypes where the model gets fooled.
+      </p>
+      <ul class="pl-findings">
+        <li>The symptom paradox: clusters with worse outcomes reported <em>fewer</em> symptoms — flagged honestly as documentation artifact or immunology, untested.</li>
+        <li>One epoch scored 90% accuracy with precisely zero predictive skill (MCC 0.00) — accuracy theater, exposed.</li>
+        <li>Two specific patient clusters generate most false “you’ll be fine” calls — a map of when not to trust the algorithm.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-022-26294-9">doi:10.1038/s41598-022-26294-9</a></p>
+    </article>
+
+    <article class="plate" id="pl-microns">
+      <header><span class="pl-no">Plate XX</span><span class="chip t-maps">maps</span><span class="pl-year">2025 · 456 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A mouse watching a screen, a cubic millimetre of its cortex expanding into an exploded stack of data slices.">
+        <g fill="none" stroke="#9a9891">
+          <path d="M30 70 C24 56 34 44 48 46 C52 38 66 38 70 46 C80 44 88 52 84 60 C88 68 80 76 72 74 C66 80 52 80 48 74 C38 78 28 78 30 70 Z"/>
+          <circle cx="44" cy="58" r="1.6" fill="#9a9891"/>
+          <path d="M84 60 L104 60"/>
+        </g>
+        <rect x="104" y="46" width="28" height="28" fill="none" class="sw-maps" stroke-width="2"/>
+        <g class="sw-maps" fill="none" opacity=".75">
+          <path d="M160 34 h60 M160 46 h60 M160 58 h60 M160 70 h60 M160 82 h60 M160 94 h60"/>
+        </g>
+        <path d="M132 60 L160 64" stroke="#9a9891" fill="none"/>
+        <text x="234" y="52" class="svg-big" font-size="15">1.6 PB</text>
+        <text x="234" y="72" class="svg-label">200,000+ cells</text>
+        <text x="234" y="86" class="svg-label">&gt;500M synapses</text>
+        <text x="234" y="100" class="svg-label">~4 km of axons</text>
+        <text x="30" y="140" class="svg-label">~28,000 slices at 40 nm · one mouse, watching movies</text>
+      </svg></div>
+      <h3>The poppy seed that weighed 1.6 petabytes</h3>
+      <p class="pl-cite">The MICrONS Consortium (Gray-Roncal among; JHU/APL led archiving) · “Functional connectomics spanning multiple areas of mouse visual cortex” · Nature</p>
+      <p class="body">
+        The landmark the previous nineteen plates were building toward: ~1 mm³
+        of mouse visual cortex — more than 200,000 cells and half a billion
+        synapses — co-registered with the recorded activity of ~75,000 of those
+        same neurons while the mouse watched movies. A relay of institutions
+        made it; his team’s archive (Plate XV) is where the world reads it.
+      </p>
+      <ul class="pl-findings">
+        <li>~28,000 serial sections at 40 nm; ~2 PB of raw imagery; over a million proofreading edits released.</li>
+        <li>~4 km of axons in a volume the size of a poppy seed (figure from the project’s public materials).</li>
+        <li>The New York Times called it “an advance … once considered impossible.”</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41586-025-08790-w">doi:10.1038/s41586-025-08790-w</a> · <a href="https://bossdb.org">bossdb.org</a></p>
+    </article>
+
+    <article class="plate" id="pl-collegeprep">
+      <header><span class="pl-no">Plate XXI</span><span class="chip t-people">people</span><span class="pl-year">2018 (program: 2009–)</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A winding trail with blaze markers climbing toward a graduation cap, dotted with many small student dots.">
+        <path d="M20 140 C90 130 120 90 170 80 C220 70 250 50 290 32" fill="none" stroke="#5a5c60" stroke-width="2" stroke-dasharray="6 5"/>
+        <g class="fw-people">
+          <rect x="60" y="118" width="6" height="12"/><rect x="140" y="80" width="6" height="12"/><rect x="230" y="52" width="6" height="12"/>
+        </g>
+        <g class="fw-people" opacity=".8">
+          <circle cx="40" cy="134" r="3"/><circle cx="85" cy="118" r="3"/><circle cx="110" cy="102" r="3"/><circle cx="158" cy="84" r="3"/><circle cx="196" cy="72" r="3"/><circle cx="246" cy="48" r="3"/>
+        </g>
+        <g stroke="var(--people-well)" fill="none" stroke-width="2">
+          <path d="M276 26 l14 6 l-14 6 l-14 -6 z"/><path d="M290 32 v10"/>
+        </g>
+        <text x="20" y="30" class="svg-label">blazes: academics · essays · aid · portfolio</text>
+        <text x="20" y="160" class="svg-label">168 students · 9 summers · 98% on track</text>
+      </svg></div>
+      <h3>The thread that predates the PhD</h3>
+      <p class="pl-cite">K. Gray-Roncal, Huynh, Kolarik, Roncal, Saunders &amp; Gray-Roncal · “The college prep program at APL” · IEEE ISEC</p>
+      <p class="body">
+        Before the dissertation, before the archive — in 2009 — he co-founded an
+        all-volunteer college-prep program with Karla Gray-Roncal for
+        underserved high-schoolers, and ran it like an engineered system:
+        competency-based curriculum, capstone portfolio, longitudinal follow-up,
+        published metrics. The “people” thread isn’t a late-career pivot; it ran
+        in parallel the whole time.
+      </p>
+      <ul class="pl-findings">
+        <li>168 students over nine summers; 98% of surveyed alumni on track to four-year degrees (self-reported survey — the paper says so plainly).</li>
+        <li>Zero paid staff. The companion paper (ISEC 2019) documents the low-cost technology stack that lets volunteers run it like an institution.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1109/ISECon.2018.8340511">doi:10.1109/ISECon.2018.8340511</a></p>
+    </article>
+
+    <article class="plate" id="pl-circuit">
+      <header><span class="pl-no">Plate XXII</span><span class="chip t-people">people</span><span class="pl-year">2018 (program: 2017–)</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="Circuit-board traces on the left morphing into branching neurons on the right, with student nodes along the junctions.">
+        <g class="sw-people" fill="none" stroke-width="2">
+          <path d="M20 50 H90 V90 H140 M20 90 H60 V130 H140 M20 130 H40"/>
+          <path d="M140 90 C180 88 200 70 224 62 C244 56 262 40 280 34"/>
+          <path d="M140 90 C185 96 210 112 235 120 C255 126 270 140 288 146"/>
+          <path d="M224 62 C232 48 240 44 248 38 M235 120 C248 116 254 124 266 122"/>
+        </g>
+        <g class="fw-people">
+          <circle cx="90" cy="50" r="4"/><circle cx="90" cy="90" r="4"/><circle cx="60" cy="90" r="4"/><circle cx="60" cy="130" r="4"/><circle cx="140" cy="90" r="5.5"/><circle cx="224" cy="62" r="4"/><circle cx="235" cy="120" r="4"/>
+        </g>
+        <text x="20" y="30" class="svg-label">CIRCUIT: the board becomes the brain</text>
+        <text x="20" y="160" class="svg-label">students proofread the real map · 191 fellows</text>
+      </svg></div>
+      <h3>The fusion point: outreach wired into the pipeline</h3>
+      <p class="pl-cite">Encarnacíon, Bishop, Downs, …, Rivlin, Wester &amp; Gray-Roncal · “CIRCUIT summer program” · IEEE ISEC</p>
+      <p class="body">
+        The moment the two parallel threads fuse. MICrONS needed proofreaders
+        “at a scale not possible with conventional approaches” — so he built a
+        program where underserved undergraduates do that real, sponsor-grade
+        work while being trained as researchers. The paper describing the pilot
+        is first-authored by the students themselves. The casebook later names
+        it “The Human Correction Layer at Petabyte Scale.”
+      </p>
+      <ul class="pl-findings">
+        <li>191 fellows, 58 cohort research projects, 46 challenge teams across four cycles (2023 count); ~220 undergrads, 15 grads, 23 high-schoolers through 2022; &gt;90% first-generation, low-income, and/or underrepresented.</li>
+        <li>Students matched to projects with the Gale–Shapley algorithm — the medical-residency match, repurposed for interns.</li>
+        <li>His site: cohorts “contributed to reconstructions published in Nature.”</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1109/ISECon.2018.8340503">doi:10.1109/ISECon.2018.8340503</a></p>
+    </article>
+
+    <article class="plate" id="pl-trailblazers">
+      <header><span class="pl-no">Plate XXIII</span><span class="chip t-people">people</span><span class="pl-year">2023–24</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="Eight pillars holding up a roof labeled as the program model.">
+        <path d="M40 50 L160 26 L280 50 Z" fill="none" class="sw-people" stroke-width="2"/>
+        <path d="M48 52 H272" stroke="var(--people-well)" stroke-width="2"/>
+        <g class="fw-people" opacity=".85">
+          <rect x="56" y="58" width="10" height="60"/><rect x="84" y="58" width="10" height="60"/><rect x="112" y="58" width="10" height="60"/><rect x="140" y="58" width="10" height="60"/><rect x="168" y="58" width="10" height="60"/><rect x="196" y="58" width="10" height="60"/><rect x="224" y="58" width="10" height="60"/><rect x="252" y="58" width="10" height="60"/>
+        </g>
+        <path d="M48 122 H272" stroke="#9a9891" stroke-width="2"/>
+        <text x="34" y="146" class="svg-label">recruiting · research · training · leadership</text>
+        <text x="34" y="160" class="svg-label">assessment · mentorship · partnerships · career</text>
+      </svg></div>
+      <h3>The program becomes a framework</h3>
+      <p class="pl-cite">Cervantes, Floryanzia, Sharp, Gray-Roncal &amp; Johnson (ASEE 2023) · Floryanzia, Jayabharathi, Carr, K. Gray-Roncal &amp; Gray-Roncal (IEEE ISEC 2024)</p>
+      <p class="body">
+        Law three applied to the program itself: CIRCUIT is abstracted into an
+        eight-pillar model anyone can run, written up with the program’s own
+        people as lead authors — its project manager (Cervantes, who also
+        co-authored the fly-compass paper of Plate XVII) and a graduate fellow
+        (Floryanzia, first author of the 2024 framework and of three
+        first-author bioengineering papers of her own).
+      </p>
+      <ul class="pl-findings">
+        <li>The thesis, verbatim: “capability, or talent, is distributed equally among individuals, whereas opportunity is not.”</li>
+        <li>Alumni offers at Google, Apple, Microsoft, Merck; graduate offers at MIT, Harvard, Berkeley, Chicago; 85% intend a Masters or PhD.</li>
+        <li>Selection is essays and interviews, not GPA cutoffs — judge the work, not the pedigree.</li>
+      </ul>
+      <p class="pl-src"><a href="https://peer.asee.org/43271">peer.asee.org/43271</a> · <a href="https://doi.org/10.1109/ISEC61299.2024.10664684">doi:10.1109/ISEC61299.2024.10664684</a></p>
+    </article>
+
+    <article class="plate" id="pl-showyourwork">
+      <header><span class="pl-no">Plate XXIV</span><span class="chip t-people">people</span><span class="pl-year">2026</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A balance scale weighing a transcript against a built artifact, with the artifact side heavier.">
+        <path d="M160 30 V70" stroke="#9a9891" stroke-width="2"/>
+        <path d="M70 52 L250 66" stroke="#e8e6e1" stroke-width="2.5"/>
+        <path d="M70 52 L56 86 M70 52 L84 86" stroke="#9a9891"/>
+        <path d="M250 66 L236 104 M250 66 L264 104" stroke="#9a9891"/>
+        <rect x="46" y="86" width="48" height="30" fill="none" stroke="#5a5c60"/>
+        <path d="M52 94 h36 M52 101 h36 M52 108 h24" stroke="#5a5c60"/>
+        <g class="sw-people" stroke-width="2" fill="none">
+          <rect x="228" y="104" width="44" height="26"/>
+          <path d="M236 130 v8 M264 130 v8 M228 112 h44"/>
+          <circle cx="250" cy="121" r="5"/>
+        </g>
+        <text x="40" y="140" class="svg-label">the transcript</text>
+        <text x="216" y="156" class="svg-label">the thing they built</text>
+        <text x="118" y="24" class="svg-label">“do not grade on a curve”</text>
+      </svg></div>
+      <h3>The synthesis: capability is a system parameter</h3>
+      <p class="pl-cite">Gray-Roncal &amp; Diamond · “Show Your Work” (working draft) · and the Capability Matters casebook, JHU Learning Design &amp; Technology</p>
+      <p class="body">
+        The newest work states law two as a philosophy and law three as a
+        curriculum. “Show Your Work” argues that grades, transcripts and
+        benchmarks certify proxies — only a demonstration certifies capability:
+        “The patient, the bridge, the cockpit, and the reaction vessel do not
+        grade on a curve.” The ~200-case casebook builds the discipline around
+        it, and LENS — a new Johns Hopkins M.Ed. concentration launching Fall
+        2026 — teaches it.
+      </p>
+      <ul class="pl-findings">
+        <li>The equity turn, verbatim: “a demonstrated output is harder to inherit than a proxy.”</li>
+        <li>The casebook’s first maxim: “Systems don’t fail because the technology breaks. They fail because someone couldn’t do what the system required.”</li>
+        <li>CIRCUIT appears inside as a case — with an explicit conflict-of-interest disclosure. Calibrating the judge of his own program.</li>
+      </ul>
+      <p class="pl-src"><a href="https://raw.githubusercontent.com/wrgr/lens-concentration/main/papers/show-your-work.pdf">Show Your Work (PDF)</a> · <a href="https://capabilitymatters.org">capabilitymatters.org</a></p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= FIELD NOTES: THE REST OF THE RECORD ================= -->
+<section class="section" id="fieldnotes" style="padding-top:1rem;">
+  <div class="col">
+    <p class="eyebrow">Field notes</p>
+    <h3>The rest of the record, accounted for</h3>
+    <p style="font-size:.95rem;">
+      The plates cover the spine; the method shows up everywhere else too.
+      Briefly, with sources:
+    </p>
+    <ul style="font-size:.9rem; line-height:1.75;">
+      <li><span class="chip t-machines">machines</span> <a href="https://arxiv.org/abs/1312.4318">Glocal invariants (2013)</a> — graph statistics for 16-million-vertex brains on one core and 6.5 GB of RAM; coined “glocal.”</li>
+      <li><span class="chip t-maps">maps</span> <a href="https://arxiv.org/abs/1506.02079">Gradient-domain fusion (2015)</a> — color-correcting five-teravoxel EM stacks in a 600 MB memory footprint; the unglamorous plumbing under Plates V–VI.</li>
+      <li><span class="chip t-archive">archive</span> <a href="https://doi.org/10.1093/gigascience/gix013">Science in the Cloud (2017)</a> — a full connectome pipeline for ~1.4 cents per scan; a live, clickable paper hosted for ~$100/year.</li>
+      <li><span class="chip t-archive">archive</span> <a href="https://doi.org/10.1101/217349">substrate (2017)</a> — composable browser 3D visualization; <a href="https://doi.org/10.1109/EMBC46164.2021.9630199">intern (2021)</a> — one Python interface over every volumetric store; <a href="https://arxiv.org/abs/2401.15251">EM/XRM metadata standards (2024)</a> — the missing BIDS/NWB equivalent for nanoscale data.</li>
+      <li><span class="chip t-maps">maps</span> <a href="https://doi.org/10.1038/s41597-020-00692-y">Thalamocortical dataset (2020)</a> — a cortex-to-hypothalamus “core sample” at micron scale, published for others; <a href="https://doi.org/10.1007/978-3-030-59722-1_11">“Agents” (MICCAI 2020)</a> — virtual rovers borrowed from autonomous navigation, path-finding through brains; <a href="https://doi.org/10.1109/ICIP42928.2021.9506174">multi-scale X-ray segmentation (2021)</a>; <a href="https://www.biorxiv.org/content/10.1101/2021.07.11.451911">C. elegans development (2021)</a> — one motif grows 353-fold from birth to adulthood while triangles grow 9×.</li>
+      <li><span class="chip t-machines">machines</span> <a href="https://arxiv.org/abs/2102.10106">MYOW (2021)</a> — self-supervised learning that mines a dataset for its own teaching examples; beat the supervised baseline on all four monkey-reach datasets. <a href="https://doi.org/10.1109/IEEECONF44664.2019.9048673">Transfer learning for EM workflows (2019)</a> — measuring whether models survive new brains instead of assuming it.</li>
+      <li><span class="chip t-trust">trust</span> <a href="https://doi.org/10.3389/fpsyg.2021.733021">Aerial-search benchmark (2021)</a> — 666 people searched satellite images: targets under ~100×100 px slip past, and on nearly-empty images 57% of “finds” were phantoms. <a href="https://www.biorxiv.org/content/10.1101/2021.11.01.466686">m2g (2021)</a> — the democratized pipeline: any laptop with 16 GB of RAM, ~6,000 scans, every one yielding a plausible connectome.</li>
+      <li><span class="chip t-people">people</span> <a href="https://doi.org/10.1109/isecon.2019.8882110">Outreach tech stack (2019)</a>, <a href="https://doi.org/10.1109/ISEC49744.2020.9280735">trailblazer training (2020)</a>, <a href="https://doi.org/10.1109/ISEC57711.2023.10402255">the immersive curriculum (2023)</a> — Learner Blueprints, a git-repo Knowledge Base, stoplight assessments; <a href="https://peer.asee.org/42839">Net-Hack (2023)</a> — a hackathon judged on proposals, not code; <a href="https://peer.asee.org/42515">BOLT (2023)</a> — swarm robotics as laser tag.</li>
+      <li><span class="chip t-shared">the rest</span> ~30 conference abstracts and invited talks (Society for Neuroscience, OHBM, BRAIN Initiative, NeurIPS BigNeuro workshops he organized in 2015 and 2017, a GoogleX talk, SXSW 2022) — catalogued in the <a href="https://github.com/wrgr/me/blob/main/cv/will_cv.bib">source bibliography</a>.</li>
+    </ul>
+  </div>
+</section>

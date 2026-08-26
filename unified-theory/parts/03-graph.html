@@ -1,0 +1,239 @@
+<!-- ================= FIG 1: RELATED-WORK GRAPH ================= -->
+<style>
+.graph-wrap { max-width: 1180px; margin: 0 auto; padding: 0 22px; }
+#graphSvg { width: 100%; height: auto; display: block; background: var(--well); border-radius: 6px; }
+#graphSvg .edge { stroke: #4a4d53; stroke-width: 1; fill: none; opacity: .7; }
+#graphSvg .edge.kw { stroke-dasharray: 3 4; opacity: .5; }
+#graphSvg .edge.hl { opacity: 1; stroke-width: 1.8; }
+#graphSvg .edge.dim, #graphSvg .node.dim { opacity: .12; }
+#graphSvg .node { cursor: pointer; }
+#graphSvg .node circle { stroke: rgba(16,17,19,.85); stroke-width: 1.2; }
+#graphSvg .node.related circle { fill: none; stroke-width: 1.4; }
+#graphSvg .node.kw rect { fill: var(--well-2); stroke: var(--shared-well); stroke-dasharray: 3 3; }
+#graphSvg .node text {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10.5px; fill: var(--faint-well); pointer-events: none;
+}
+#graphSvg .node.paper text { fill: var(--ink-well); }
+#graphSvg .node:focus { outline: none; }
+#graphSvg .node:focus circle, #graphSvg .node:focus rect { stroke: #fff; stroke-width: 2.4; }
+.graph-legend {
+  display: flex; flex-wrap: wrap; gap: .5rem 1.1rem; align-items: center;
+  font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .72rem;
+  color: var(--faint-well); margin-top: .9rem;
+}
+.graph-legend .sw { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: .4em; }
+.graph-legend .ln { display: inline-block; width: 22px; height: 0; border-top: 2px solid var(--faint-well); vertical-align: 3px; margin-right: .4em; }
+.graph-legend .ln.dash { border-top-style: dashed; }
+#graphDetail {
+  margin-top: 1.1rem; padding: 1rem 1.2rem; border-radius: 6px;
+  background: var(--well-2); color: var(--ink-well);
+  border-left: 3px solid var(--shared-well);
+  font-size: .95rem; min-height: 3.4rem;
+}
+#graphDetail .t { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.05rem; }
+#graphDetail .m { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .74rem; color: var(--faint-well); margin: .25rem 0 .4rem; }
+#graphDetail a { color: var(--ink-well); }
+</style>
+
+<section class="well" id="fig1">
+  <div class="graph-wrap">
+    <p class="eyebrow"><span class="figno">Fig. 1</span> — the related-work graph</p>
+    <h2 style="color:var(--ink-well); max-width:30ch;">One literature, wearing five disguises</h2>
+    <p style="max-width:62ch; color:var(--faint-well);">
+      His publications (filled disks, sized by citations), the prior work they
+      build on (open rings), and the shared ideas that bridge threads (dashed
+      boxes). Solid edges are real citations from reference lists; dashed edges
+      are thematic links — my reading, not theirs. Click or tab to any node.
+    </p>
+    <svg id="graphSvg" viewBox="0 0 1140 780" role="group" aria-label="Interactive related-work graph of Gray-Roncal's publications, their cited prior work, and shared bridging ideas. Tab through nodes for details."></svg>
+    <div class="graph-legend" aria-hidden="true">
+      <span><span class="sw" style="background:var(--maps-well)"></span>maps</span>
+      <span><span class="sw" style="background:var(--trust-well)"></span>trust</span>
+      <span><span class="sw" style="background:var(--archive-well)"></span>archive</span>
+      <span><span class="sw" style="background:var(--machines-well)"></span>machines</span>
+      <span><span class="sw" style="background:var(--people-well)"></span>people</span>
+      <span><span class="ln"></span>citation (from reference lists)</span>
+      <span><span class="ln dash"></span>thematic (this page's reading)</span>
+    </div>
+    <div id="graphDetail" aria-live="polite"><span style="color:var(--faint-well)">Select a node to see its story.</span></div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var svg = document.getElementById('graphSvg');
+  var detail = document.getElementById('graphDetail');
+  if (!svg || typeof SUBJECT === 'undefined') return;
+  var NS = 'http://www.w3.org/2000/svg';
+  var W = 1140, H = 780;
+
+  function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+  var rnd = mulberry32(1284176);
+
+  var threadColor = {
+    maps: 'var(--maps-well)', trust: 'var(--trust-well)', archive: 'var(--archive-well)',
+    machines: 'var(--machines-well)', people: 'var(--people-well)', shared: 'var(--shared-well)'
+  };
+  // rough cluster anchors per thread so the layout tells the thread story
+  var anchor = {
+    maps: [300, 240], trust: [820, 250], archive: [320, 570],
+    machines: [850, 560], people: [580, 660], shared: [575, 390]
+  };
+
+  var nodes = [], byId = {};
+  SUBJECT.papers.filter(function (p) { return p.ingraph !== false; }).forEach(function (p) {
+    var n = { id: p.id, kind: 'paper', thread: p.thread, label: p.short,
+      r: 6 + Math.sqrt(p.citations || 1) * 1.15, data: p };
+    nodes.push(n); byId[p.id] = n;
+  });
+  SUBJECT.related.forEach(function (p) {
+    var n = { id: p.id, kind: 'related', thread: p.thread, label: p.short, r: 7, data: p };
+    nodes.push(n); byId[p.id] = n;
+  });
+  SUBJECT.keywords.forEach(function (k) {
+    var n = { id: k.id, kind: 'kw', thread: 'shared', label: k.label,
+      r: k.label.length * 3.3 + 8, data: k };
+    nodes.push(n); byId[k.id] = n;
+  });
+  var edges = SUBJECT.edges.filter(function (e) { return byId[e.s] && byId[e.t]; });
+
+  // init positions near thread anchors, deterministic
+  nodes.forEach(function (n) {
+    var a = anchor[n.thread] || anchor.shared;
+    n.x = a[0] + (rnd() - 0.5) * 260;
+    n.y = a[1] + (rnd() - 0.5) * 240;
+    n.vx = 0; n.vy = 0;
+  });
+
+  // simple force simulation, run synchronously
+  for (var iter = 0; iter < 260; iter++) {
+    var alpha = 0.9 * (1 - iter / 260) + 0.02;
+    // repulsion (O(n^2), n is small)
+    for (var i = 0; i < nodes.length; i++) {
+      for (var j = i + 1; j < nodes.length; j++) {
+        var a = nodes[i], b = nodes[j];
+        var dx = b.x - a.x, dy = b.y - a.y;
+        var d2 = dx * dx + dy * dy + 0.01, d = Math.sqrt(d2);
+        var min = a.r + b.r + 26;
+        var f = (1600 / d2) * alpha + (d < min ? (min - d) * 0.35 * alpha : 0);
+        var fx = dx / d * f, fy = dy / d * f;
+        a.vx -= fx; a.vy -= fy; b.vx += fx; b.vy += fy;
+      }
+    }
+    // springs
+    edges.forEach(function (e) {
+      var s = byId[e.s], t = byId[e.t];
+      var dx = t.x - s.x, dy = t.y - s.y;
+      var d = Math.sqrt(dx * dx + dy * dy) + 0.01;
+      var rest = e.type === 'kw' ? 150 : 110;
+      var f = (d - rest) * 0.018 * alpha;
+      var fx = dx / d * f, fy = dy / d * f;
+      s.vx += fx; s.vy += fy; t.vx -= fx; t.vy -= fy;
+    });
+    // anchor gravity + integrate
+    nodes.forEach(function (n) {
+      var a2 = anchor[n.thread] || anchor.shared;
+      n.vx += (a2[0] - n.x) * 0.012 * alpha;
+      n.vy += (a2[1] - n.y) * 0.012 * alpha;
+      n.x += n.vx *= 0.72; n.y += n.vy *= 0.72;
+      n.x = Math.max(n.r + 58, Math.min(W - n.r - 58, n.x));
+      n.y = Math.max(n.r + 30, Math.min(H - n.r - 24, n.y));
+    });
+  }
+
+  var edgeG = document.createElementNS(NS, 'g');
+  svg.appendChild(edgeG);
+  edges.forEach(function (e) {
+    var s = byId[e.s], t = byId[e.t];
+    var path = document.createElementNS(NS, 'path');
+    var mx = (s.x + t.x) / 2 + (s.y - t.y) * 0.09;
+    var my = (s.y + t.y) / 2 + (t.x - s.x) * 0.09;
+    path.setAttribute('d', 'M' + s.x.toFixed(1) + ',' + s.y.toFixed(1) +
+      ' Q' + mx.toFixed(1) + ',' + my.toFixed(1) + ' ' + t.x.toFixed(1) + ',' + t.y.toFixed(1));
+    path.setAttribute('class', 'edge' + (e.type === 'kw' ? ' kw' : ''));
+    e.el = path;
+    edgeG.appendChild(path);
+  });
+
+  var nodeG = document.createElementNS(NS, 'g');
+  svg.appendChild(nodeG);
+
+  function show(n) {
+    var d = n.data;
+    var meta = [];
+    if (d.authors) meta.push(d.authors);
+    if (d.venue) meta.push(d.venue);
+    if (d.year) meta.push(d.year);
+    if (typeof d.citations === 'number') meta.push(d.citations + ' citations');
+    var kindNote = n.kind === 'paper' ? '' :
+      n.kind === 'kw' ? '<span class="chip t-shared">shared idea</span> ' :
+      (d.kind === 'cite' ? '<span class="chip t-shared">work citing his</span> ' : '<span class="chip t-shared">prior work he builds on</span> ');
+    detail.style.borderLeftColor = 'var(--' + (n.thread === 'shared' ? 'shared' : n.thread) + '-well)';
+    detail.innerHTML =
+      '<div class="t">' + kindNote + (d.title || d.label) + '</div>' +
+      (meta.length ? '<div class="m">' + meta.join(' · ') + '</div>' : '') +
+      '<div>' + (d.note || d.plain || '') +
+      (d.url ? ' <a href="' + d.url + '" target="_blank" rel="noopener">source ↗</a>' : '') + '</div>';
+  }
+
+  function highlight(n) {
+    var keep = {}; keep[n.id] = true;
+    edges.forEach(function (e) {
+      var on = e.s === n.id || e.t === n.id;
+      e.el.classList.toggle('hl', on);
+      e.el.classList.toggle('dim', !on);
+      if (on) { keep[e.s] = true; keep[e.t] = true; }
+    });
+    nodes.forEach(function (m) { m.el.classList.toggle('dim', !keep[m.id]); });
+  }
+  function clearHl() {
+    edges.forEach(function (e) { e.el.classList.remove('hl', 'dim'); });
+    nodes.forEach(function (m) { m.el.classList.remove('dim'); });
+  }
+
+  nodes.forEach(function (n) {
+    var g = document.createElementNS(NS, 'g');
+    g.setAttribute('class', 'node ' + n.kind);
+    g.setAttribute('tabindex', '0');
+    g.setAttribute('role', 'button');
+    var d = n.data;
+    g.setAttribute('aria-label', (d.title || d.label) + (d.year ? ', ' + d.year : '') +
+      (n.kind === 'paper' ? ', his paper' : n.kind === 'kw' ? ', shared idea' : ', related work'));
+    if (n.kind === 'kw') {
+      var wBox = n.label.length * 6.6 + 14;
+      var rect = document.createElementNS(NS, 'rect');
+      rect.setAttribute('x', (n.x - wBox / 2).toFixed(1));
+      rect.setAttribute('y', (n.y - 11).toFixed(1));
+      rect.setAttribute('width', wBox.toFixed(1));
+      rect.setAttribute('height', 22);
+      rect.setAttribute('rx', 4);
+      g.appendChild(rect);
+      var tx = document.createElementNS(NS, 'text');
+      tx.setAttribute('x', n.x.toFixed(1)); tx.setAttribute('y', (n.y + 3.5).toFixed(1));
+      tx.setAttribute('text-anchor', 'middle');
+      tx.textContent = n.label;
+      g.appendChild(tx);
+    } else {
+      var c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', n.x.toFixed(1)); c.setAttribute('cy', n.y.toFixed(1));
+      c.setAttribute('r', n.r.toFixed(1));
+      c.setAttribute(n.kind === 'paper' ? 'fill' : 'stroke', threadColor[n.thread] || threadColor.shared);
+      g.appendChild(c);
+      var tx2 = document.createElementNS(NS, 'text');
+      tx2.setAttribute('x', n.x.toFixed(1));
+      tx2.setAttribute('y', (n.y - n.r - 5).toFixed(1));
+      tx2.setAttribute('text-anchor', 'middle');
+      tx2.textContent = n.label;
+      g.appendChild(tx2);
+    }
+    g.addEventListener('click', function () { show(n); highlight(n); });
+    g.addEventListener('focus', function () { show(n); highlight(n); });
+    g.addEventListener('mouseenter', function () { highlight(n); });
+    g.addEventListener('mouseleave', clearHl);
+    g.addEventListener('blur', clearHl);
+    n.el = g;
+    nodeG.appendChild(g);
+  });
+})();
+</script>

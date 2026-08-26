@@ -1,0 +1,430 @@
+<!-- ================= PLATES I–XII ================= -->
+<style>
+.plates {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr));
+  gap: 1.6rem; max-width: 1180px; margin: 0 auto; padding: 0 22px;
+}
+.plate {
+  background: var(--tissue); border: 1px solid var(--line); border-radius: 8px;
+  padding: 1.2rem 1.3rem 1.1rem; box-shadow: var(--card-shadow);
+  display: flex; flex-direction: column;
+}
+.plate header { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .7rem; }
+.pl-no { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.02rem; }
+.pl-year { margin-left: auto; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .72rem; color: var(--faint); }
+.pl-art { background: var(--well); border-radius: 6px; margin-bottom: .9rem; }
+.pl-art svg { display: block; width: 100%; height: auto; }
+.plate h3 { font-size: 1.14rem; margin: 0 0 .15rem; }
+.pl-cite { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .7rem; color: var(--faint); line-height: 1.5; margin: 0 0 .6rem; }
+.plate p.body { font-size: .94rem; margin-bottom: .6rem; }
+.pl-findings { margin: 0 0 .8rem; padding-left: 1.1rem; font-size: .88rem; }
+.pl-findings li { margin-bottom: .3rem; }
+.pl-src { margin-top: auto; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .72rem; }
+/* shared SVG helpers */
+.plate .sw-maps { stroke: var(--maps-well); } .plate .fw-maps { fill: var(--maps-well); }
+.plate .sw-trust { stroke: var(--trust-well); } .plate .fw-trust { fill: var(--trust-well); }
+.plate .sw-archive { stroke: var(--archive-well); } .plate .fw-archive { fill: var(--archive-well); }
+.plate .sw-machines { stroke: var(--machines-well); } .plate .fw-machines { fill: var(--machines-well); }
+.plate .sw-people { stroke: var(--people-well); } .plate .fw-people { fill: var(--people-well); }
+.plate .sw-dim { stroke: #5a5c60; } .plate .fw-dim { fill: #5a5c60; }
+.plate .svg-label { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 9px; fill: #9a9891; }
+.plate .svg-big { font-family: "Fraunces", Georgia, serif; font-weight: 700; fill: #e8e6e1; }
+</style>
+
+<section class="section" id="plates1">
+  <div class="col">
+    <p class="eyebrow">The plates</p>
+    <h2>Every paper, retold in plain language</h2>
+    <p>
+      Cajal published his arguments as numbered plates: a drawing, then the
+      claim. Same format here — one bespoke illustration per publication, drawn
+      from what the paper actually did, with its key findings and a link to the
+      source. Citation counts are from
+      <a href="https://scholar.google.com/citations?user=54lnkjAAAAAJ">Google Scholar</a>,
+      August 2026. Colors keep their meaning:
+      <span class="chip t-maps">maps</span> <span class="chip t-trust">trust</span>
+      <span class="chip t-archive">archive</span> <span class="chip t-machines">machines</span>
+      <span class="chip t-people">people</span>.
+    </p>
+  </div>
+
+  <div class="plates" style="margin-top:1.6rem;">
+
+    <article class="plate" id="pl-mrcap">
+      <header><span class="pl-no">Plate I</span><span class="chip t-maps">maps</span><span class="pl-year">2012 · 60 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A brain outline being converted into a 70 by 70 connectivity matrix.">
+        <path d="M40 90 C30 60 55 38 85 42 C95 28 125 28 135 45 C150 40 162 55 155 70 C165 85 150 105 132 102 C122 118 92 118 82 105 C58 110 40 105 40 90 Z" fill="none" class="sw-maps" stroke-width="2"/>
+        <path d="M170 82 h32 m0 0 l-7 -6 m7 6 l-7 6" stroke="#9a9891" stroke-width="1.5" fill="none"/>
+        <g>
+          <rect x="215" y="38" width="88" height="88" fill="none" stroke="#5a5c60"/>
+          <g class="fw-maps">
+            <rect x="223" y="46" width="7" height="7"/><rect x="245" y="60" width="7" height="7"/><rect x="260" y="46" width="7" height="7"/><rect x="231" y="82" width="7" height="7"/><rect x="274" y="75" width="7" height="7"/><rect x="252" y="97" width="7" height="7"/><rect x="288" y="104" width="7" height="7"/><rect x="238" y="111" width="7" height="7"/><rect x="281" y="53" width="7" height="7"/><rect x="266" y="90" width="7" height="7"/>
+          </g>
+        </g>
+        <text x="40" y="140" class="svg-label">raw MRI</text>
+        <text x="215" y="140" class="svg-label">70 × 70 graph · 2,415 edges</text>
+      </svg></div>
+      <h3>The brain becomes a spreadsheet</h3>
+      <p class="pl-cite">Gray (Roncal), Bogovic, Vogelstein, Landman, Prince &amp; Vogelstein · “Magnetic resonance connectome automated pipeline” · IEEE Pulse</p>
+      <p class="body">
+        The opening move of the career: an automated pipeline that takes raw MRI
+        scans in one end and produces a brain graph out the other — 70
+        anatomical regions, 2,415 possible connections, no manual steps. Modular
+        on purpose, so any stage could be swapped by someone else.
+      </p>
+      <ul class="pl-findings">
+        <li>Over 200 connectomes processed by publication — a large number, in 2012.</li>
+        <li>~8 hours per subject on a single CPU core — remember that number for Plate X.</li>
+        <li>Already validating itself: symmetry checks, repeatability analysis.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1109/MPUL.2011.2181023">doi:10.1109/MPUL.2011.2181023</a></p>
+    </article>
+
+    <article class="plate" id="pl-migraine">
+      <header><span class="pl-no">Plate II</span><span class="chip t-trust">trust</span><span class="pl-year">2013 · 59 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A 6 by 6 similarity matrix where the highlighted most-similar cells fall exactly on the same-person pairs, like fingerprints.">
+        <g transform="translate(95,20)">
+          <rect x="0" y="0" width="132" height="132" fill="none" stroke="#5a5c60"/>
+          <g fill="#3a3c40">
+            <rect x="2" y="24" width="20" height="20"/><rect x="46" y="90" width="20" height="20"/><rect x="24" y="68" width="20" height="20"/><rect x="90" y="2" width="20" height="20"/><rect x="68" y="112" width="18" height="18"/><rect x="112" y="46" width="18" height="20"/>
+          </g>
+          <g class="fw-trust">
+            <rect x="24" y="2" width="20" height="20"/><rect x="2" y="24" width="20" height="20" opacity=".55"/>
+            <rect x="90" y="68" width="20" height="20"/><rect x="68" y="90" width="20" height="20" opacity=".55"/>
+            <rect x="46" y="46" width="20" height="20" opacity=".8"/>
+          </g>
+        </g>
+        <text x="55" y="166" class="svg-label">nearest graph = same person, rescanned · 42/42</text>
+      </svg></div>
+      <h3>Brain graphs are fingerprints</h3>
+      <p class="pl-cite">Gray Roncal, Koterba, Mhembere, … &amp; Vogelstein · “MIGRAINE: MRI Graph Reliability Analysis and Inference for Connectomics” · IEEE GlobalSIP</p>
+      <p class="body">
+        One year after building the graph-maker, he builds the machine that asks
+        whether its graphs can be trusted. MIGRAINE scales the pipeline up (to
+        voxel-level graphs with ten million vertices) and adds a new
+        rank-based reliability metric — the ancestor of “discriminability”
+        (Plate XII).
+      </p>
+      <ul class="pl-findings">
+        <li>For all 42 test–retest scans, the most similar graph in the whole collection was the same person, scanned on a different day — 42/42 identification.</li>
+        <li>Voxel graphs: ~10⁷ vertices cut to a 10⁵-vertex core keeping &gt;99% of edges.</li>
+        <li>Over 1,500 subjects processed across five datasets.</li>
+      </ul>
+      <p class="pl-src"><a href="https://arxiv.org/abs/1312.4875">arXiv:1312.4875</a></p>
+    </article>
+
+    <article class="plate" id="pl-tpami">
+      <header><span class="pl-no">Plate III</span><span class="chip t-machines">machines</span><span class="pl-year">2013 · 89 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A brain network where a small cluster of highlighted edges around hub nodes carries the class signal.">
+        <g stroke="#3a3c40" fill="none">
+          <path d="M60 40 L120 30 M60 40 L90 90 M120 30 L180 50 M180 50 L240 35 M240 35 L275 80 M90 90 L150 110 M150 110 L220 95 M220 95 L275 80 M120 30 L150 110 M180 50 L220 95 M60 40 L45 100 M45 100 L90 90"/>
+        </g>
+        <g class="sw-machines" fill="none" stroke-width="2">
+          <path d="M150 110 L180 140 M150 110 L110 140 M180 140 L110 140 M150 110 L220 95 M110 140 L90 90"/>
+        </g>
+        <g fill="#5a5c60">
+          <circle cx="60" cy="40" r="5"/><circle cx="120" cy="30" r="5"/><circle cx="180" cy="50" r="5"/><circle cx="240" cy="35" r="5"/><circle cx="275" cy="80" r="5"/><circle cx="45" cy="100" r="5"/>
+        </g>
+        <g class="fw-machines">
+          <circle cx="150" cy="110" r="6"/><circle cx="110" cy="140" r="6"/><circle cx="180" cy="140" r="6"/><circle cx="90" cy="90" r="6"/><circle cx="220" cy="95" r="6"/>
+        </g>
+        <text x="20" y="16" class="svg-label">the signal-subgraph: the few</text>
+        <text x="20" y="28" class="svg-label">edges that differ between classes</text>
+      </svg></div>
+      <h3>Reading sex from 70 brain regions</h3>
+      <p class="pl-cite">Vogelstein, Gray Roncal, Vogelstein &amp; Priebe · “Graph classification using signal-subgraphs” · IEEE TPAMI</p>
+      <p class="body">
+        The payoff of making brains into graphs: classification becomes graph
+        statistics. The “signal-subgraph” estimator finds the few edges that
+        actually differ between classes — and classifies connectomes by sex at
+        0.16 error, versus 0.27 for lasso and 0.50 for chance, on graphs made
+        by MRCAP (Plate I).
+      </p>
+      <ul class="pl-findings">
+        <li>Best model: signal concentrated on 12 hub vertices and 360 edges.</li>
+        <li>The abstract warns about itself: with ~50 samples, only about half the discovered signal-edges are real — “taken with a grain of salt.”</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1109/TPAMI.2012.235">doi:10.1109/TPAMI.2012.235</a></p>
+    </article>
+
+    <article class="plate" id="pl-kasthuri">
+      <header><span class="pl-no">Plate IV</span><span class="chip t-maps">maps</span><span class="pl-year">2015 · 1,287 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="Three saturated cylinders of brain tissue around two colored dendrites, with many gray axons passing through and only one making a synapse.">
+        <g fill="none" stroke="#3a3c40">
+          <ellipse cx="105" cy="42" rx="52" ry="13"/><path d="M53 42 V120 M157 42 V120"/><ellipse cx="105" cy="120" rx="52" ry="13"/>
+          <ellipse cx="185" cy="55" rx="42" ry="11" opacity=".7"/><path d="M143 55 V128 M227 55 V128" opacity=".7"/><ellipse cx="185" cy="128" rx="42" ry="11" opacity=".7"/>
+        </g>
+        <path d="M85 30 C90 60 80 95 88 135" fill="none" stroke="#e05555" stroke-width="3"/>
+        <path d="M185 42 C190 70 180 105 188 140" fill="none" stroke="var(--archive-well)" stroke-width="3"/>
+        <g stroke="#5a5c60" fill="none">
+          <path d="M30 60 C80 62 150 58 290 64"/><path d="M28 78 C90 80 180 74 292 82"/><path d="M30 96 C100 98 190 92 290 100"/><path d="M32 112 C90 112 200 108 288 114"/>
+        </g>
+        <circle cx="86" cy="79" r="4" class="fw-maps"/>
+        <text x="96" y="76" class="svg-label">1 synapse — of ~9 axons touching</text>
+        <text x="20" y="160" class="svg-label">1,500 µm³ · every wire traced · 1,700 synapses</text>
+      </svg></div>
+      <h3>The speck where every wire got traced</h3>
+      <p class="pl-cite">Kasthuri, Hayworth, Berger, …, Gray Roncal, …, Lichtman · “Saturated Reconstruction of a Volume of Neocortex” · Cell</p>
+      <p class="body">
+        His most-cited work. Mouse cortex cut into 2,250 slices just 29 nm
+        thick — collected on a conveyor belt of adhesive tape — and three tiny
+        cylinders reconstructed <em>saturated</em>: every axon, dendrite,
+        vesicle and synapse itemized. His role: the statistics and the open
+        database serving it all. The result killed a comfortable shortcut.
+      </p>
+      <ul class="pl-findings">
+        <li>~9 excitatory axons touch each dendritic spine; only one connects. An axon already connected to a dendrite is ~25× more likely to synapse on it again. Proximity does not predict wiring (Peters’ rule, refuted).</li>
+        <li>1,500 µm³ holds pieces of ~1,600 neurons — 5× the entire C. elegans nervous system, in “several billionths” of one brain.</li>
+        <li>Fully tracing the surrounding volume by hand: “two people-years of 24/7 tracing.” That number is the reason the next four plates exist.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1016/j.cell.2015.06.054">doi:10.1016/j.cell.2015.06.054</a></p>
+    </article>
+
+    <article class="plate" id="pl-vesicle">
+      <header><span class="pl-no">Plate V</span><span class="chip t-maps">maps</span><span class="pl-year">2015 · 39 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="An axonal bouton filled with tiny vesicle dots, pointing at a synaptic cleft, seen through a magnifying circle.">
+        <path d="M20 85 C60 60 110 60 150 82 C180 98 230 100 300 88" fill="none" stroke="#5a5c60" stroke-width="10" opacity=".5"/>
+        <circle cx="150" cy="85" r="52" fill="none" class="sw-maps" stroke-width="2"/>
+        <g class="fw-maps">
+          <circle cx="135" cy="70" r="3"/><circle cx="148" cy="64" r="3"/><circle cx="160" cy="72" r="3"/><circle cx="140" cy="84" r="3"/><circle cx="155" cy="88" r="3"/><circle cx="168" cy="82" r="3"/><circle cx="130" cy="96" r="3"/><circle cx="146" cy="100" r="3"/><circle cx="162" cy="98" r="3"/><circle cx="172" cy="94" r="3"/>
+        </g>
+        <path d="M150 116 v14" stroke="var(--maps-well)" stroke-width="3"/>
+        <path d="M120 136 h60" stroke="#e8e6e1" stroke-width="2.5"/>
+        <text x="20" y="30" class="svg-label">find the vesicle cloud → find the synapse</text>
+        <text x="196" y="146" class="svg-label">≈11.6M synapses found</text>
+      </svg></div>
+      <h3>Teaching a forest to spot synapses</h3>
+      <p class="pl-cite">Gray Roncal, Pekala, Kaynig-Fittkau, …, Hager · “VESICLE: Volumetric Evaluation of Synaptic Interfaces using Computer vision at Large Scale” · BMVC</p>
+      <p class="body">
+        The first synapse detector built for the hard, realistic case:
+        anisotropic, non-post-stained tissue. Its trick is an anatomist’s trick
+        — spot the cloud of vesicles first, then look for the cleft. A
+        lightweight random forest using that biological context trains in 10
+        minutes and deploys ~200× faster than its own CNN twin.
+      </p>
+      <ul class="pl-findings">
+        <li>≈11.6 million synapses detected across 20 teravoxels of mouse cortex — in 2015.</li>
+        <li>Philosophy stated outright: favor recall; humans can proofread false positives, but a missed connection is gone.</li>
+      </ul>
+      <p class="pl-src"><a href="https://arxiv.org/abs/1403.3724">arXiv:1403.3724</a></p>
+    </article>
+
+    <article class="plate" id="pl-i2g">
+      <header><span class="pl-no">Plate VI</span><span class="chip t-maps">maps</span><span class="pl-year">2015 · 33 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A factory pipeline from an image block to a graph, with a gauge honestly reading F1 = 0.16.">
+        <rect x="20" y="55" width="56" height="56" fill="#3a3c40"/>
+        <g stroke="#17181b" stroke-width="1"><path d="M28 66 C40 74 60 62 72 78 M24 88 C44 82 58 96 74 92 M30 104 C46 96 62 106 72 100"/></g>
+        <path d="M84 83 h22 l-6 -5 m6 5 l-6 5" stroke="#9a9891" fill="none" stroke-width="1.5"/>
+        <rect x="112" y="55" width="56" height="56" fill="none" class="sw-maps"/>
+        <path d="M118 66 C130 74 150 62 162 78 M116 88 C136 82 150 96 166 92 M122 104 C138 96 154 106 164 100" stroke="var(--maps-well)" fill="none"/>
+        <path d="M176 83 h22 l-6 -5 m6 5 l-6 5" stroke="#9a9891" fill="none" stroke-width="1.5"/>
+        <g><circle cx="235" cy="65" r="5" class="fw-maps"/><circle cx="275" cy="80" r="5" class="fw-maps"/><circle cx="245" cy="105" r="5" class="fw-maps"/><path d="M235 65 L275 80 M275 80 L245 105 M235 65 L245 105" stroke="var(--maps-well)" fill="none"/></g>
+        <text x="20" y="138" class="svg-big" font-size="22">F1 = 0.16</text>
+        <text x="20" y="158" class="svg-label">the best fully-automated brain graph of 2015, published proudly</text>
+      </svg></div>
+      <h3>The dissertation: images to graphs, no humans</h3>
+      <p class="pl-cite">Gray Roncal, Kleissas, Vogelstein, …, Hager · “An Automated Images-to-Graphs Framework for High Resolution Connectomics” · Frontiers in Neuroinformatics</p>
+      <p class="body">
+        The core of his PhD (“Enabling Scalable Neurocartography: Images to
+        Graphs for Discovery”): the first pipeline that begins with imaged
+        brain tissue and ends with a brain graph with zero human interaction.
+        Just as important: it invents a metric that scores the <em>graph</em>,
+        not the pixels — because the two disagree.
+      </p>
+      <ul class="pl-findings">
+        <li>1,856 candidate pipelines searched (~8,000 cluster jobs); the best honest graph F1 was 0.16 — published as the community baseline to beat.</li>
+        <li>The best graph does not come from the best individual modules: tiny segmentation errors at spine necks destroy graph topology.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2015.00020">doi:10.3389/fninf.2015.00020</a></p>
+    </article>
+
+    <article class="plate" id="pl-santiago">
+      <header><span class="pl-no">Plate VII</span><span class="chip t-maps">maps</span><span class="pl-year">2016</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A dendrite shaft with spines, some snapped off and reconnected by dashed lines; edge counts collapse from 31,980 to 2,718 when spines detach.">
+        <path d="M30 100 C100 92 220 96 295 100" fill="none" stroke="#5a5c60" stroke-width="8" opacity=".7"/>
+        <g class="sw-maps" stroke-width="2.5" fill="none">
+          <path d="M70 96 C68 80 72 70 66 60"/><path d="M130 94 C132 78 128 68 134 58"/>
+        </g>
+        <circle cx="66" cy="55" r="5" class="fw-maps"/><circle cx="134" cy="53" r="5" class="fw-maps"/>
+        <g stroke="var(--trust-well)" stroke-dasharray="3 3" stroke-width="2" fill="none">
+          <path d="M195 92 C197 76 193 66 199 56"/><path d="M255 92 C257 78 251 66 257 56"/>
+        </g>
+        <circle cx="199" cy="51" r="5" fill="none" class="sw-trust" stroke-width="2"/><circle cx="257" cy="51" r="5" fill="none" class="sw-trust" stroke-width="2"/>
+        <text x="30" y="138" class="svg-label">spines detached: 31,980 edges → 2,718</text>
+        <text x="30" y="152" class="svg-label">relinked: graph F1 0.31 → 0.64</text>
+      </svg></div>
+      <h3>The graph lives in the spine necks</h3>
+      <p class="pl-cite">Gray Roncal, Lea, Baruah &amp; Hager · “SANTIAGO: Spine Association for Neuron Topology Improvement and Graph Optimization” · arXiv</p>
+      <p class="body">
+        The follow-up attacks the single worst failure found in Plate VI: the
+        wispy necks connecting dendritic spines to their shafts. They are a
+        rounding error in voxels and almost all of the meaning in the graph. A
+        classifier that re-attaches orphaned spines — using cues like branching
+        angle — doubles graph quality without touching anything else.
+      </p>
+      <ul class="pl-findings">
+        <li>Snap the spine necks and the true graph collapses from 31,980 edges to 2,718.</li>
+        <li>Re-linking spines alone: graph F1 0.31 → 0.64. Show a human the top-5 candidates and the right shaft is there 89% of the time.</li>
+      </ul>
+      <p class="pl-src"><a href="https://arxiv.org/abs/1608.02307">arXiv:1608.02307</a></p>
+    </article>
+
+    <article class="plate" id="pl-xray">
+      <header><span class="pl-no">Plate VIII</span><span class="chip t-maps">maps</span><span class="pl-year">2017 · 92 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="An intact brain sample rotating in a synchrotron X-ray beam, producing a cloud of detected cells — no knife involved.">
+        <g stroke="var(--trust-well)" opacity=".65">
+          <path d="M15 75 H95 M15 85 H95 M15 95 H95" stroke-width="2"/>
+        </g>
+        <ellipse cx="130" cy="85" rx="26" ry="38" fill="none" class="sw-maps" stroke-width="2"/>
+        <path d="M130 40 a10 6 0 0 1 0 12" fill="none" stroke="#9a9891"/>
+        <g class="fw-maps" opacity=".9">
+          <circle cx="215" cy="55" r="2.5"/><circle cx="232" cy="70" r="2.5"/><circle cx="250" cy="52" r="2.5"/><circle cx="224" cy="92" r="2.5"/><circle cx="245" cy="105" r="2.5"/><circle cx="262" cy="80" r="2.5"/><circle cx="278" cy="60" r="2.5"/><circle cx="270" cy="112" r="2.5"/><circle cx="290" cy="95" r="2.5"/><circle cx="238" cy="128" r="2.5"/><circle cx="258" cy="132" r="2.5"/><circle cx="285" cy="128" r="2.5"/>
+        </g>
+        <text x="15" y="30" class="svg-label">synchrotron beam · sample spins · no sectioning</text>
+        <text x="200" y="155" class="svg-label">48,689 cells, auto-detected</text>
+      </svg></div>
+      <h3>Mapping a millimetre without a knife</h3>
+      <p class="pl-cite">Dyer, Gray Roncal, Prasad, …, Kasthuri · “Quantifying mesoscale neuroanatomy using X-ray microtomography” · eNeuro</p>
+      <p class="body">
+        Every map so far began by slicing the brain thousands of times. Here a
+        millimetre-scale chunk is imaged intact in about six minutes, spinning
+        in a synchrotron X-ray beam — filling the mesoscale rung between MRI and
+        EM. And because the sample is prepared EM-compatibly, the same tissue
+        can flow onward into nanoscale imaging: zoom-out and zoom-in on one
+        specimen.
+      </p>
+      <ul class="pl-findings">
+        <li>~16.6 gigavoxels in ~6 minutes; 48,689 cells auto-detected, analysis on a single workstation.</li>
+        <li>The automated segmentation agreed with the expert annotator better than a second human did.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1523/ENEURO.0195-17.2017">doi:10.1523/ENEURO.0195-17.2017</a></p>
+    </article>
+
+    <article class="plate" id="pl-ocp">
+      <header><span class="pl-no">Plate IX</span><span class="chip t-archive">archive</span><span class="pl-year">2013 · 66 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A server rack connected to the world, with a Z-order space-filling curve turning 3D brain space into a 1D index.">
+        <rect x="30" y="35" width="60" height="100" rx="4" fill="none" stroke="#9a9891"/>
+        <g stroke="#5a5c60"><path d="M38 50 h44 M38 66 h44 M38 82 h44 M38 98 h44 M38 114 h44"/></g>
+        <circle cx="44" cy="58" r="2" class="fw-archive"/><circle cx="44" cy="90" r="2" class="fw-archive"/>
+        <g class="sw-archive" fill="none" stroke-width="2">
+          <path d="M150 45 h24 v24 h-24 z M198 45 h24 v24 h-24 z M150 93 h24 v24 h-24 z M198 93 h24 v24 h-24 z" opacity=".4"/>
+          <path d="M162 57 L210 57 L162 105 L210 105"/>
+        </g>
+        <path d="M100 85 h30 l-7 -6 m7 6 l-7 6" stroke="#9a9891" fill="none" stroke-width="1.5"/>
+        <g fill="none" stroke="#9a9891"><circle cx="273" cy="80" r="22"/><path d="M251 80 h44 M273 58 a30 30 0 0 1 0 44 M273 58 a30 30 0 0 0 0 44"/></g>
+        <text x="72" y="150" class="svg-label">Morton curve: 3D brain → 1D index → the web</text>
+      </svg></div>
+      <h3>The astronomy playbook, applied to brains</h3>
+      <p class="pl-cite">Burns, Gray Roncal, Kleissas, …, Vogelstein · “The Open Connectome Project Data Cluster” · SSDBM</p>
+      <p class="body">
+        Law three gets its infrastructure: do for the brain what the Sloan
+        Digital Sky Survey did for the sky. A hand-built university cluster
+        serving EM volumes to anyone with a browser, with brain space carved
+        into cuboids and indexed by a Morton space-filling curve — a design
+        decision that survives, unchanged, into Plate XV a decade later.
+      </p>
+      <ul class="pl-findings">
+        <li>75+ TB across 50+ datasets in 2013, including 20 trillion voxels of mouse cortex served as arbitrary 3D cutouts.</li>
+        <li>Companion result: ~20 million synapses detected in a 12 TB volume in 2 days on 256 cores (CAJAL3D).</li>
+        <li>The honest math in the limitations: a human brain has ~10¹⁵ synapses; manual anything can never scale.</li>
+      </ul>
+      <p class="pl-src"><a href="https://arxiv.org/abs/1306.3543">arXiv:1306.3543</a></p>
+    </article>
+
+    <article class="plate" id="pl-ndmg">
+      <header><span class="pl-no">Plate X</span><span class="chip t-trust">trust</span><span class="pl-year">2018 · 51 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="Rows of small brains all agreeing on the direction of an effect while disagreeing wildly on its size.">
+        <g>
+          <g transform="translate(30,40)"><path d="M0 20 C0 6 14 0 24 4 C34 0 48 6 48 20 C48 34 34 40 24 36 C14 40 0 34 0 20 Z" fill="none" stroke="#9a9891"/><path d="M24 4 V36" stroke="#5a5c60"/><path d="M6 14 C12 10 18 12 22 14 M6 26 C12 22 18 24 22 26" stroke="var(--trust-well)" stroke-width="2.5" fill="none"/><path d="M26 14 C32 12 38 10 42 14 M26 26 C32 24 38 22 42 26" stroke="var(--trust-well)" stroke-width="2.5" fill="none"/></g>
+          <g transform="translate(100,40)"><path d="M0 20 C0 6 14 0 24 4 C34 0 48 6 48 20 C48 34 34 40 24 36 C14 40 0 34 0 20 Z" fill="none" stroke="#9a9891"/><path d="M24 4 V36" stroke="#5a5c60"/><path d="M6 14 C12 10 18 12 22 14 M6 26 C12 22 18 24 22 26" stroke="var(--trust-well)" stroke-width="1.2" fill="none"/><path d="M26 14 C32 12 38 10 42 14 M26 26 C32 24 38 22 42 26" stroke="var(--trust-well)" stroke-width="1.2" fill="none"/></g>
+          <g transform="translate(170,40)"><path d="M0 20 C0 6 14 0 24 4 C34 0 48 6 48 20 C48 34 34 40 24 36 C14 40 0 34 0 20 Z" fill="none" stroke="#9a9891"/><path d="M24 4 V36" stroke="#5a5c60"/><path d="M6 14 C12 10 18 12 22 14 M6 26 C12 22 18 24 22 26" stroke="var(--trust-well)" stroke-width="4" fill="none"/><path d="M26 14 C32 12 38 10 42 14 M26 26 C32 24 38 22 42 26" stroke="var(--trust-well)" stroke-width="4" fill="none"/></g>
+          <g transform="translate(240,40)"><path d="M0 20 C0 6 14 0 24 4 C34 0 48 6 48 20 C48 34 34 40 24 36 C14 40 0 34 0 20 Z" fill="none" stroke="#9a9891"/><path d="M24 4 V36" stroke="#5a5c60"/><path d="M6 14 C12 10 18 12 22 14 M6 26 C12 22 18 24 22 26" stroke="var(--trust-well)" stroke-width="2" fill="none"/><path d="M26 14 C32 12 38 10 42 14 M26 26 C32 24 38 22 42 26" stroke="var(--trust-well)" stroke-width="2" fill="none"/></g>
+        </g>
+        <text x="30" y="120" class="svg-label">every brain agrees on the direction (99.9%)</text>
+        <text x="30" y="136" class="svg-label">almost no two studies agree on the amount</text>
+      </svg></div>
+      <h3>Robust connectomes, troublesome variability</h3>
+      <p class="pl-cite">Kiar*, Bridgeford*, Gray Roncal*, …, Vogelstein (*equal) · “A High-Throughput Pipeline Identifies Robust Connectomes But Troublesome Variability” · bioRxiv</p>
+      <p class="body">
+        The judge-calibration move at population scale: one pipeline, zero
+        manual tuning, run over ~6,000 scans from dozens of studies —
+        producing over 100,000 connectomes and a paradox. The <em>direction</em>
+        of the brain’s wiring asymmetries is universal; the <em>amount</em>
+        varies so much between studies that unmeasured experimental variables
+        must be leaking in.
+      </p>
+      <ul class="pl-findings">
+        <li>99.9% of diffusion connectomes: hemispheres talk to themselves; 99.4% of functional: left–right twins in sync — a perfect modality mirror.</li>
+        <li>Even studies of demographically near-identical students differed significantly in two-thirds of comparisons.</li>
+        <li>The sober coinage: “repeatable does not mean correct.”</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1101/188706">doi:10.1101/188706</a></p>
+    </article>
+
+    <article class="plate" id="pl-nri">
+      <header><span class="pl-no">Plate XI</span><span class="chip t-trust">trust</span><span class="pl-year">2018 · 13 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="A neuron split in two: the paint-job metric barely notices while the wiring metric collapses, because synapse pairs lose their connecting path.">
+        <path d="M50 60 C90 50 130 55 160 62 C200 70 250 66 285 60" fill="none" stroke="var(--trust-well)" stroke-width="7" opacity=".85"/>
+        <path d="M158 40 L166 88" stroke="#e8e6e1" stroke-width="2" stroke-dasharray="4 3"/>
+        <g class="fw-trust"><circle cx="70" cy="58" r="4"/><circle cx="120" cy="57" r="4"/><circle cx="230" cy="66" r="4"/><circle cx="272" cy="61" r="4"/></g>
+        <path d="M70 58 C110 30 200 34 272 61" fill="none" stroke="#5a5c60" stroke-dasharray="2 3"/>
+        <text x="180" y="30" class="svg-label">pair broken → recall drops</text>
+        <text x="40" y="120" class="svg-label">voxel score (Rand): ≈ 1.0   “fine!”</text>
+        <text x="40" y="140" class="svg-label">wiring score (NRI): 0.67   “you split a neuron.”</text>
+      </svg></div>
+      <h3>Judge the wiring, not the paint job</h3>
+      <p class="pl-cite">Reilly, Garretson, Gray Roncal, …, Roos · “Neural Reconstruction Integrity” · Frontiers in Neuroinformatics</p>
+      <p class="body">
+        The keystone of law two. Classic metrics score reconstructions by voxel
+        overlap — and stay near a perfect 1.0 while a reconstruction shatters
+        every neuron, because the paint is mostly right even when the circuit is
+        destroyed. NRI instead asks: for every pair of synapses that shared a
+        neuron, is there still a path between them? Measure what the map is
+        <em>for</em>.
+      </p>
+      <ul class="pl-findings">
+        <li>Intuitive by design: split a neuron in two → 0.67; delete 20% of synapses → 0.78; a worked toy example → 0.333.</li>
+        <li>Precision vs recall diagnoses the error type: merges vs splits.</li>
+        <li>Tested on a synthetic cortex of 872 neurons and a million synapses — crash-test dummies for connectomics.</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2018.00074">doi:10.3389/fninf.2018.00074</a></p>
+    </article>
+
+    <article class="plate" id="pl-plos">
+      <header><span class="pl-no">Plate XII</span><span class="chip t-trust">trust</span><span class="pl-year">2021 · 64 citations</span></header>
+      <div class="pl-art"><svg viewBox="0 0 320 170" role="img" aria-label="192 pipelines drawn as a race of small bars, with one winner highlighted; clustered dots show measurements of the same person staying together.">
+        <g transform="translate(25,25)">
+          <g fill="#3a3c40">
+            <rect x="0" y="40" width="6" height="30"/><rect x="9" y="30" width="6" height="40"/><rect x="18" y="50" width="6" height="20"/><rect x="27" y="36" width="6" height="34"/><rect x="36" y="55" width="6" height="15"/><rect x="45" y="28" width="6" height="42"/><rect x="54" y="44" width="6" height="26"/><rect x="63" y="34" width="6" height="36"/><rect x="72" y="58" width="6" height="12"/><rect x="81" y="38" width="6" height="32"/><rect x="90" y="47" width="6" height="23"/><rect x="99" y="31" width="6" height="39"/><rect x="108" y="52" width="6" height="18"/><rect x="117" y="42" width="6" height="28"/>
+          </g>
+          <rect x="126" y="10" width="6" height="60" class="fw-trust"/>
+          <text x="120" y="86" class="svg-label">FNNNCP</text>
+        </g>
+        <g transform="translate(210,35)">
+          <g class="fw-maps"><circle cx="20" cy="20" r="4"/><circle cx="28" cy="26" r="4"/><circle cx="16" cy="30" r="4"/></g>
+          <g class="fw-people"><circle cx="70" cy="55" r="4"/><circle cx="78" cy="48" r="4"/><circle cx="66" cy="46" r="4"/></g>
+          <g class="fw-archive"><circle cx="30" cy="75" r="4"/><circle cx="22" cy="68" r="4"/><circle cx="36" cy="66" r="4"/></g>
+        </g>
+        <text x="205" y="140" class="svg-label">discriminability: scans<tspan x="205" dy="12">of you cluster as you</tspan></text>
+        <text x="25" y="140" class="svg-label">192 pipelines raced; ~80% significantly worse</text>
+      </svg></div>
+      <h3>A statistic for choosing honest pipelines</h3>
+      <p class="pl-cite">Bridgeford, Wang, …, Gray-Roncal, …, Vogelstein · “Eliminating accidental deviations to minimize generalization error and maximize replicability” · PLoS Computational Biology</p>
+      <p class="body">
+        MIGRAINE’s rank trick (Plate II), matured into a general statistic:
+        <em>discriminability</em> — the probability that two measurements of the
+        same person sit closer to each other than to anyone else’s. Then the
+        mega-experiment: 192 analysis pipelines raced on &gt;1,600 participants,
+        with discriminability picking the winners — in brain imaging and
+        genomics alike.
+      </p>
+      <ul class="pl-findings">
+        <li>~80% of standard fMRI pipelines were significantly worse than the best (“FNNNCP” — pipeline settings as a six-letter genotype).</li>
+        <li>The classic statistic, ICC, goes <em>negative</em> with 2 outliers in 10 subjects; discriminability shrugs.</li>
+        <li>Their own honesty rule: discriminability is “neither necessary, nor sufficient, for a measurement to be practically useful.”</li>
+      </ul>
+      <p class="pl-src"><a href="https://doi.org/10.1371/journal.pcbi.1009279">doi:10.1371/journal.pcbi.1009279</a></p>
+    </article>
+
+  </div>
+</section>

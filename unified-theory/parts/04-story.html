@@ -1,0 +1,243 @@
+<!-- ================= FIG 2: THE SPINE (SCALE LADDER) ================= -->
+<style>
+#spineWrap { max-width: 1180px; margin: 0 auto; padding: 0 22px; }
+#spineSvg { width: 100%; height: auto; display: block; }
+#spineSvg text { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+#spineSvg .rung-label { font-size: 12px; fill: var(--ink-well); font-weight: 600; letter-spacing: .08em; }
+#spineSvg .rung-sub { font-size: 10px; fill: var(--faint-well); }
+#spineSvg .rung-line { stroke: var(--line-well); stroke-width: 1; }
+#spineSvg .pchip { cursor: default; }
+#spineSvg .pchip rect { fill: var(--well-2); stroke-width: 1.2; rx: 4; }
+#spineSvg .pchip text { font-size: 10px; fill: var(--ink-well); }
+#spineSvg .pchip .yr { fill: var(--faint-well); font-size: 9px; }
+.act { margin: 2.6rem 0; }
+.act .act-head {
+  display: flex; align-items: baseline; gap: .8rem; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line); padding-bottom: .5rem; margin-bottom: 1rem;
+}
+.act .act-no {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--faint);
+}
+.act h3 { margin: 0; font-size: 1.5rem; }
+.act p { max-width: 68ch; }
+.act .papers-line {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .76rem; color: var(--faint); line-height: 1.8;
+}
+</style>
+
+<section class="well" id="fig2">
+  <div id="spineWrap">
+    <p class="eyebrow"><span class="figno">Fig. 2</span> — the spine</p>
+    <h2 style="color:var(--ink-well); max-width:32ch;">One ladder, from synapse to institution</h2>
+    <p style="max-width:64ch; color:var(--faint-well);">
+      Forget chronology; sort the bibliography by <em>the scale of the thing
+      being mapped</em>. It tiles the whole ladder — from nanometre synapses to
+      the institutions that decide who gets to do science — with no rung
+      skipped, and the same three moves repeating at every rung. Dates show the
+      career ran the ladder twice: down it (2010–2015, engineer to synapse),
+      then back up (2015–2026, synapse to institution).
+    </p>
+    <svg id="spineSvg" viewBox="0 0 1140 720" role="img"
+      aria-label="Diagram sorting the publications onto a ladder of scales: synapse, circuit, brain, person, cohort, institution. Each rung holds several papers, colored by research thread."></svg>
+    <p class="well-caption" style="padding:0; max-width:none;">
+      Chip border = thread color. Rung heights are ordinal, not to scale — the
+      real ladder spans about nine orders of magnitude in metres and then stops
+      having units at all. Details for every chip are in the plates below.
+    </p>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var svg = document.getElementById('spineSvg');
+  if (!svg || typeof SUBJECT === 'undefined') return;
+  var NS = 'http://www.w3.org/2000/svg';
+  var W = 1140;
+  var rungs = [
+    { key: 'institution', label: 'INSTITUTION', sub: 'fields, gates, curricula' },
+    { key: 'cohort', label: 'COHORT', sub: 'teams & programs · 10¹–10² people' },
+    { key: 'person', label: 'PERSON', sub: 'one human, measured · 10⁰ m' },
+    { key: 'brain', label: 'WHOLE BRAIN', sub: 'MRI voxels · 10⁻³–10⁻¹ m' },
+    { key: 'circuit', label: 'CIRCUIT', sub: 'µm–mm volumes · X-ray, EM' },
+    { key: 'synapse', label: 'SYNAPSE', sub: 'the floor · 10⁻⁹–10⁻⁶ m' }
+  ];
+  var rowH = 112, top = 30;
+  var H = top + rungs.length * rowH + 20;
+  svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+
+  var threadColorW = {
+    maps: 'var(--maps-well)', trust: 'var(--trust-well)', archive: 'var(--archive-well)',
+    machines: 'var(--machines-well)', people: 'var(--people-well)'
+  };
+
+  rungs.forEach(function (r, i) {
+    var y = top + i * rowH;
+    var line = document.createElementNS(NS, 'line');
+    line.setAttribute('x1', 20); line.setAttribute('x2', W - 20);
+    line.setAttribute('y1', y + rowH - 8); line.setAttribute('y2', y + rowH - 8);
+    line.setAttribute('class', 'rung-line');
+    svg.appendChild(line);
+    var t = document.createElementNS(NS, 'text');
+    t.setAttribute('x', 24); t.setAttribute('y', y + 18);
+    t.setAttribute('class', 'rung-label'); t.textContent = r.label;
+    svg.appendChild(t);
+    var s = document.createElementNS(NS, 'text');
+    s.setAttribute('x', 24); s.setAttribute('y', y + 34);
+    s.setAttribute('class', 'rung-sub'); s.textContent = r.sub;
+    svg.appendChild(s);
+
+    var members = SUBJECT.papers.filter(function (p) { return p.scale === r.key; })
+      .sort(function (a, b) { return a.year - b.year; });
+    var x = 230, rowY = y + 8, chipH = 24;
+    members.forEach(function (p) {
+      var label = p.short + ' ';
+      var wChip = label.length * 6.4 + p.year.toString().length * 5.6 + 18;
+      if (x + wChip > W - 24) { x = 230; rowY += chipH + 8; }
+      var g = document.createElementNS(NS, 'g');
+      g.setAttribute('class', 'pchip');
+      var rect = document.createElementNS(NS, 'rect');
+      rect.setAttribute('x', x); rect.setAttribute('y', rowY);
+      rect.setAttribute('width', wChip); rect.setAttribute('height', chipH);
+      rect.setAttribute('rx', 4);
+      rect.setAttribute('stroke', threadColorW[p.thread] || 'var(--shared-well)');
+      g.appendChild(rect);
+      var tx = document.createElementNS(NS, 'text');
+      tx.setAttribute('x', x + 8); tx.setAttribute('y', rowY + 16);
+      tx.textContent = p.short;
+      var yr = document.createElementNS(NS, 'tspan');
+      yr.setAttribute('class', 'yr');
+      yr.textContent = ' ' + p.year;
+      tx.appendChild(yr);
+      g.appendChild(tx);
+      var title = document.createElementNS(NS, 'title');
+      title.textContent = p.title;
+      g.appendChild(title);
+      svg.appendChild(g);
+      x += wChip + 8;
+    });
+  });
+});
+</script>
+
+<!-- ================= THE STORY: SIX ACTS ================= -->
+<section class="section" id="story">
+  <div class="col">
+    <p class="eyebrow">The story</p>
+    <h2>Six acts, in the order the ladder implies</h2>
+
+    <div class="act">
+      <div class="act-head"><span class="act-no">Act I · 2003–2012</span><h3>Two threads, started in parallel</h3></div>
+      <p>
+        He begins as an electrical engineer — Vanderbilt, then USC, then years
+        at the Johns Hopkins Applied Physics Laboratory working across
+        "space, submarines, and biomedicine." In 2009, two things start at
+        once, and the order matters: he co-founds the all-volunteer
+        <a href="#pl-collegeprep">College Prep Program</a> with Karla
+        Gray-Roncal, and soon after begins a PhD in computer science while
+        working full-time. The first published move is
+        <a href="#pl-mrcap">MRCAP</a> (2012): the brain becomes a graph,
+        automatically. The gate-widening instinct was there before the science
+        had a name.
+      </p>
+      <p class="papers-line">Plates I, XXI · <a href="https://www.cs.jhu.edu/seminars/2016/fall/september22/william-gray-roncal/">JHU CS seminar bio</a></p>
+    </div>
+
+    <div class="act">
+      <div class="act-head"><span class="act-no">Act II · 2013–2016</span><h3>Down the ladder, to the floor</h3></div>
+      <p>
+        The same year the graphs exist, he starts distrusting them:
+        <a href="#pl-migraine">MIGRAINE</a> shows brain graphs are fingerprints
+        (42/42), and <a href="#pl-tpami">signal-subgraphs</a> shows they carry
+        signal — with a self-warning about how much of the discovered signal is
+        real. Then the descent to the nanometre floor: the
+        <a href="#pl-kasthuri">saturated reconstruction</a> proves the map is
+        possible and that no shortcut exists — proximity does not predict
+        wiring, and hand-tracing costs "two people-years of 24/7" per speck.
+        So he automates: <a href="#pl-vesicle">VESICLE</a> finds the synapses,
+        the <a href="#pl-i2g">images-to-graphs</a> dissertation chains it all
+        with zero humans and publishes its own unflattering score (F1 = 0.16),
+        and <a href="#pl-santiago">SANTIAGO</a> attacks the one error mode —
+        spine necks — that the honest metric exposed.
+      </p>
+      <p class="papers-line">Plates II–VII</p>
+    </div>
+
+    <div class="act">
+      <div class="act-head"><span class="act-no">Act III · 2013–2025</span><h3>The archive is a promise</h3></div>
+      <p>
+        In parallel, the infrastructure thread: the
+        <a href="#pl-ocp">Open Connectome Project</a> serves 75 terabytes of
+        brains to anyone with a browser in 2013, on the astronomy model. When
+        the on-premise cluster hits its wall, the team rebuilds cloud-native as
+        <a href="#pl-bossdb">bossDB</a> — before the petabytes existed, in
+        anticipation of them. Standards follow
+        (<a href="#pl-standards">the card catalog for a petabyte</a>, then the
+        <a href="https://arxiv.org/abs/2401.15251">missing metadata standard</a>
+        for the whole modality), and in 2025 the promise is kept:
+        <a href="#pl-microns">MICrONS</a> — 200,000 cells, half a billion
+        synapses, one mouse — lands in the world's browsers from the archive
+        his team runs.
+      </p>
+      <p class="papers-line">Plates IX, XV, XVI, XX · field notes: SIC, substrate, intern, metadata standards</p>
+    </div>
+
+    <div class="act">
+      <div class="act-head"><span class="act-no">Act IV · 2017–2023</span><h3>Calibrate every judge in sight</h3></div>
+      <p>
+        The pattern discovered in Act II becomes a career-wide reflex.
+        <a href="#pl-nri">NRI</a> catches the field's metrics rewarding the
+        wrong thing; <a href="#pl-confirms">CONFIRMS</a> industrializes the
+        audit; <a href="#pl-ndmg">ndmg</a> catches whole scientific literatures
+        disagreeing about magnitudes while agreeing about signs;
+        <a href="#pl-plos">discriminability</a> turns the fix into a statistic.
+        Then the same move outside neuroscience: the
+        <a href="#pl-cowleyhm">human-baseline framework</a> catches "superhuman
+        AI" claims resting on unmeasured humans (and finds the one-shot cliff),
+        and the <a href="#pl-covid">COVID-19 model</a> is built to say "I don't
+        know" rather than bluff.
+      </p>
+      <p class="papers-line">Plates X–XII, XIV, XVIII, XIX · field notes: aerial-search benchmark, transfer learning, m2g</p>
+    </div>
+
+    <div class="act">
+      <div class="act-head"><span class="act-no">Act V · 2017–2024</span><h3>The gate widens into the pipeline</h3></div>
+      <p>
+        The fusion. MICrONS needs proofreaders at impossible scale; the
+        outreach thread has spent a decade learning how to find talent the
+        gates miss. <a href="#pl-circuit">CIRCUIT</a> connects them: trailblazing
+        undergraduates — first-generation, low-income, no lab pedigree — do the
+        real correction work, inside the real pipeline, and become authors.
+        The loop closes in the bylines: the pilot paper is first-authored by
+        its own students; a 2017 student-team annotator becomes
+        <a href="#pl-confirms">CONFIRMS</a>'s first author; two CIRCUIT alumni
+        first-author the <a href="#pl-standards">standards paper</a> (the
+        portal greets one by name); the program's project manager co-authors
+        the <a href="#pl-ring">fly-compass robot</a> and lead-authors the
+        <a href="#pl-trailblazers">framework papers</a>. The workforce program
+        and the science program are one system — the casebook's name for it is
+        "The Human Correction Layer at Petabyte Scale."
+      </p>
+      <p class="papers-line">Plates XIII, XVII, XXI–XXIII · field notes: BOLT, Net-Hack, curriculum papers</p>
+    </div>
+
+    <div class="act">
+      <div class="act-head"><span class="act-no">Act VI · 2024–2026</span><h3>Up the last rung</h3></div>
+      <p>
+        Finally the method turns on the institutions themselves.
+        <a href="#pl-showyourwork">"Show Your Work"</a> states the whole career
+        as one claim — grades, transcripts and benchmarks certify proxies; only
+        demonstration certifies capability — and the
+        <a href="https://capabilitymatters.org">Capability Matters casebook</a>
+        assembles ~200 cases of systems that failed because "someone couldn't
+        do what the system required." LENS, a new Johns Hopkins M.Ed.
+        concentration launching Fall 2026, makes it a discipline. The synapse
+        counter of 2015 is, by 2026, engineering the systems that decide who
+        gets to count synapses.
+      </p>
+      <p class="papers-line">Plate XXIV · <a href="https://sagroups.ieee.org/icicle/2026/05/18/may-2026-newsletter/">LENS at IEEE ICICLE</a></p>
+    </div>
+
+  </div>
+</section>
