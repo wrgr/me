@@ -1,0 +1,243 @@
+<title>The Unified Theory of Will Gray-Roncal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700;9..144,900&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* ============ tokens ============ */
+:root {
+  --field:   #f4f4f2;
+  --tissue:  #e9e9e5;
+  --well:    #101113;      /* the scope: always dark imaging field */
+  --well-2:  #1a1c1f;
+  --ink:     #26282b;
+  --ink-well:#e8e6e1;      /* text on the well */
+  --faint:   #64676c;
+  --faint-well:#9a9891;
+  --line:    #d2d2cc;
+  --line-well:#2c2e33;
+  --maps:    #0e7f9e;
+  --trust:   #a06508;
+  --archive: #2b8a3e;
+  --machines:#b02a63;
+  --people:  #c74e14;
+  --maps-well:    #53c8e0; /* thread colors as they read on the dark well */
+  --trust-well:   #e8b04b;
+  --archive-well: #6fca7f;
+  --machines-well:#e77fb3;
+  --people-well:  #ff9558;
+  --shared:  #7d7f84;
+  --shared-well:#b9bbc0;
+  --card-shadow: 0 1px 2px rgba(20,21,23,.08), 0 4px 14px rgba(20,21,23,.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --field:   #0e0f11;
+    --tissue:  #17181b;
+    --ink:     #e8e6e1;
+    --faint:   #9a9891;
+    --line:    #2c2e33;
+    --maps:    #53c8e0;
+    --trust:   #e8b04b;
+    --archive: #6fca7f;
+    --machines:#e77fb3;
+    --people:  #ff9558;
+    --shared:  #b9bbc0;
+    --card-shadow: 0 1px 2px rgba(0,0,0,.5), 0 4px 14px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"] {
+  --field:   #0e0f11;
+  --tissue:  #17181b;
+  --ink:     #e8e6e1;
+  --faint:   #9a9891;
+  --line:    #2c2e33;
+  --maps:    #53c8e0;
+  --trust:   #e8b04b;
+  --archive: #6fca7f;
+  --machines:#e77fb3;
+  --people:  #ff9558;
+  --shared:  #b9bbc0;
+  --card-shadow: 0 1px 2px rgba(0,0,0,.5), 0 4px 14px rgba(0,0,0,.35);
+}
+
+/* ============ base ============ */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--field);
+  color: var(--ink);
+  font-family: "Spectral", Georgia, "Times New Roman", serif;
+  font-size: 1.06rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: "Fraunces", Georgia, serif; line-height: 1.12; text-wrap: balance; margin: 0 0 .5em; }
+h2 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); font-weight: 700; }
+h3 { font-size: 1.25rem; font-weight: 600; }
+p { margin: 0 0 1em; }
+a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 42%, transparent); text-underline-offset: 2px; }
+a:hover { text-decoration-color: currentColor; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--maps); outline-offset: 2px; border-radius: 2px; }
+code, .mono { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; }
+figure { margin: 0; }
+
+.col { max-width: 74ch; margin: 0 auto; padding: 0 22px; }
+.section { padding: 3.6rem 0; }
+.eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .74rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--faint); margin: 0 0 1rem;
+}
+.figno { font-weight: 600; color: var(--ink); }
+
+/* full-bleed dark imaging wells */
+.well {
+  background: var(--well); color: var(--ink-well);
+  padding: 3rem 0;
+}
+.well .eyebrow { color: var(--faint-well); }
+.well-caption {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .8rem; line-height: 1.55; color: var(--faint-well);
+  max-width: 74ch; margin: 1.2rem auto 0; padding: 0 22px;
+}
+.well-caption strong { color: var(--ink-well); font-weight: 600; }
+
+/* thread chips */
+.chip {
+  display: inline-block; font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .68rem; letter-spacing: .06em; text-transform: uppercase;
+  padding: .14em .55em; border-radius: 99px; border: 1px solid currentColor;
+}
+.t-maps { color: var(--maps); } .t-trust { color: var(--trust); }
+.t-archive { color: var(--archive); } .t-machines { color: var(--machines); }
+.t-people { color: var(--people); } .t-shared { color: var(--shared); }
+
+@media print {
+  .well, .no-print { display: none !important; }
+  body { font-size: 10.5pt; }
+}
+</style>
+
+<!-- ================= HERO ================= -->
+<header class="well" style="padding:0 0 3rem;">
+  <div style="position:relative;">
+    <canvas id="heroCanvas" width="1600" height="560" aria-hidden="true"
+      style="display:block; width:100%; height:min(46vh,420px); object-fit:cover;"></canvas>
+    <div style="position:absolute; left:0; right:0; bottom:10px;" class="well-caption" aria-hidden="true">
+      <span class="mono">fig. 0 — an image, resolving into a graph. re-runs on load.</span>
+    </div>
+  </div>
+  <div class="col" style="padding-top:2.6rem;">
+    <p class="eyebrow">An illustrated argument · compiled from the public record · August 2026</p>
+    <h1 style="font-size:clamp(2.3rem,6vw,4.2rem); font-weight:900;">The Unified Theory of<br>Will&nbsp;Gray-Roncal</h1>
+    <p style="font-size:1.18rem; max-width:62ch; color:var(--ink-well);">
+      On paper he is six different people: a brain-mapper, an AI researcher, a
+      defense engineer, a learning engineer, a mentor of five hundred students, a
+      public-health data scientist. This page argues the bibliography disagrees.
+      <strong>Every project is the same machine: turn something hard to see into a
+      graph, prove the graph can be trusted, then hand the controls to someone
+      new.</strong>
+    </p>
+    <p class="well-caption" style="padding:0; margin-top:1.4rem;">
+      This is an interpretation, argued from sources — every claim links to one.
+      His own one-line version waits at the end.
+    </p>
+  </div>
+</header>
+
+<script>
+(function () {
+  var canvas = document.getElementById('heroCanvas');
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // deterministic PRNG so the field is identical on every load
+  function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+  var rnd = mulberry32(20160922); // his dissertation-defense-era seed
+
+  var W = canvas.width, H = canvas.height;
+  var threads = ['#53c8e0','#e8b04b','#6fca7f','#e77fb3','#ff9558'];
+
+  // soma field: soft gray blobs (the "image")
+  var somas = [];
+  for (var i = 0; i < 42; i++) {
+    somas.push({
+      x: 60 + rnd() * (W - 120),
+      y: 50 + rnd() * (H - 100),
+      r: 12 + rnd() * 30,
+      thread: Math.floor(rnd() * threads.length)
+    });
+  }
+  // graph edges: connect each soma to 1-2 near neighbours
+  var edges = [];
+  somas.forEach(function (s, i) {
+    var dists = somas.map(function (o, j) {
+      var dx = s.x - o.x, dy = s.y - o.y;
+      return { j: j, d: Math.sqrt(dx * dx + dy * dy) };
+    }).sort(function (a, b) { return a.d - b.d; });
+    var n = 1 + Math.floor(rnd() * 2);
+    for (var k = 1; k <= n && k < dists.length; k++) {
+      if (dists[k].d < 300) edges.push([i, dists[k].j]);
+    }
+  });
+
+  function noiseField() {
+    ctx.fillStyle = '#101113';
+    ctx.fillRect(0, 0, W, H);
+    var g = mulberry32(7);
+    for (var i = 0; i < 2600; i++) {
+      var x = g() * W, y = g() * H, r = g() * 2.2;
+      ctx.fillStyle = 'rgba(160,158,150,' + (0.02 + g() * 0.05) + ')';
+      ctx.beginPath(); ctx.arc(x, y, r, 0, 6.283); ctx.fill();
+    }
+    somas.forEach(function (s) {
+      var grad = ctx.createRadialGradient(s.x, s.y, 1, s.x, s.y, s.r);
+      grad.addColorStop(0, 'rgba(150,149,143,0.34)');
+      grad.addColorStop(1, 'rgba(150,149,143,0)');
+      ctx.fillStyle = grad;
+      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 6.283); ctx.fill();
+    });
+  }
+
+  // sweep: left of x, the image has been "traced" into a graph
+  function draw(sweepX) {
+    noiseField();
+    // scanline
+    if (sweepX < W) {
+      ctx.fillStyle = 'rgba(232,230,225,0.10)';
+      ctx.fillRect(sweepX - 1.5, 0, 3, H);
+    }
+    edges.forEach(function (e) {
+      var a = somas[e[0]], b = somas[e[1]];
+      if (Math.max(a.x, b.x) > sweepX) return;
+      ctx.strokeStyle = threads[a.thread] + 'aa';
+      ctx.lineWidth = 1.4;
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      var mx = (a.x + b.x) / 2 + (a.y - b.y) * 0.18;
+      var my = (a.y + b.y) / 2 + (b.x - a.x) * 0.18;
+      ctx.quadraticCurveTo(mx, my, b.x, b.y);
+      ctx.stroke();
+    });
+    somas.forEach(function (s) {
+      if (s.x > sweepX) return;
+      ctx.fillStyle = threads[s.thread];
+      ctx.beginPath(); ctx.arc(s.x, s.y, 4.4, 0, 6.283); ctx.fill();
+      ctx.strokeStyle = 'rgba(16,17,19,0.9)';
+      ctx.lineWidth = 1.4; ctx.stroke();
+    });
+  }
+
+  if (reduce) { draw(W); return; }
+  var start = null;
+  function tick(t) {
+    if (start === null) start = t;
+    var p = Math.min(1, (t - start) / 3800);
+    // ease
+    var e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+    draw(e * (W + 60));
+    if (p < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+</script>

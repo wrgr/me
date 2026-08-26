@@ -1,0 +1,148 @@
+<!-- ================= HANDOUTS ================= -->
+<style>
+.handout {
+  background: var(--tissue);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.6rem 1.8rem;
+  margin: 1.6rem 0;
+  box-shadow: var(--card-shadow);
+}
+.handout h3 { margin-top: 0; }
+.handout .aud {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--faint);
+}
+.handout .activity {
+  border-top: 1px dashed var(--line);
+  margin-top: 1.1rem; padding-top: 1rem;
+  font-size: .97rem;
+}
+.handout .activity .act-label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--people); display: block; margin-bottom: .4rem;
+}
+@media print {
+  .handout { break-inside: avoid; page-break-inside: avoid; border-color: #999; box-shadow: none; }
+  #handouts { padding-top: 0; }
+}
+</style>
+
+<section class="section" id="handouts">
+  <div class="col">
+    <p class="eyebrow">Handouts — take the story with you</p>
+    <h2>The same theory, at three reading levels</h2>
+    <p>
+      In the spirit of law three, this argument ships with its controls
+      handed over: three printable one-pagers, each with a group activity.
+      Print this page and these survive; the animations don't.
+    </p>
+
+    <div class="handout">
+      <p class="aud">For kids &amp; classrooms (ages ~8–12)</p>
+      <h3>The Brain Mappers</h3>
+      <p>
+        Your brain is made of billions of tiny cells called neurons, joined by
+        even tinier connections called synapses. Scientists like Dr. Will
+        Gray-Roncal take super-zoomed-in pictures of brains and trace every
+        wire, like following one noodle through a bowl of spaghetti — without
+        pulling any noodles out. In 2025, his team helped share a map of a
+        piece of mouse brain the size of a <strong>poppy seed</strong> that
+        held about <strong>200,000 cells</strong> and more than
+        <strong>500 million connections</strong>
+        (<a href="https://doi.org/10.1038/s41586-025-08790-w">the real paper</a>).
+        The map was so big it wouldn't fit on 1,000 laptops, so his team built
+        a giant online library where any scientist — or any curious kid — can
+        look at it for free. And here's the best part: a lot of the map-checking
+        was done by <strong>students</strong>, some not much older than you,
+        who were invited onto the team before anyone said they were "ready."
+        They learned by doing the real thing. That's the whole method: draw the
+        map, check the map, share the map — and invite somebody new.
+      </p>
+      <div class="activity">
+        <span class="act-label">Group activity — be a connectome (20 min)</span>
+        Everyone stands in a circle holding a ball of yarn. The first "neuron"
+        holds the end and tosses the ball to someone across the circle; keep
+        tossing until everyone is connected at least twice. Now you're a brain
+        map! Then pick one "proofreader": they must check three connections by
+        following the yarn hand-over-hand and asking each holder "who sent you
+        this?" If a connection is wrong or remembered differently — that's
+        exactly what brain-map proofreading finds. Talk about it: what made
+        checking hard? What would help? (Real answer from the lab: better
+        tools, clear rules, and more proofreaders.)
+      </div>
+    </div>
+
+    <div class="handout">
+      <p class="aud">For peers — researchers, educators, program builders</p>
+      <h3>A checklist stolen from a bibliography</h3>
+      <p>
+        Thirty-odd papers by one JHU/APL engineer (
+        <a href="https://scholar.google.com/citations?user=54lnkjAAAAAJ">Scholar</a>)
+        keep making the same three moves, in order.
+        <strong>1&nbsp;·&nbsp;Make the graph:</strong> before optimizing
+        anything, extract the actual network of your system — who/what connects
+        to who/what — in a form you can query
+        (<a href="https://doi.org/10.1038/s41598-021-91025-5">DotMotif</a> is
+        the connectomics version; yours might be a spreadsheet).
+        <strong>2&nbsp;·&nbsp;Calibrate the judge:</strong> list every metric,
+        review, or gate your system uses to score people or results, and ask
+        what evidence shows the metric measures what it claims
+        (<a href="https://doi.org/10.3389/fninf.2018.00074">NRI</a> and the
+        <a href="https://doi.org/10.1038/s41598-022-08078-3">human-baseline framework</a>
+        are the worked examples).
+        <strong>3&nbsp;·&nbsp;Widen the gate:</strong> your system is finished
+        when someone new can run it — which means docs, open interfaces, and
+        deliberately recruiting people the current gate filters out
+        (<a href="https://doi.org/10.1109/ISECon.2018.8340503">CIRCUIT</a>
+        wired undergraduates into a petabyte pipeline as working scientists).
+      </p>
+      <div class="activity">
+        <span class="act-label">Group activity — calibrate your judge (45 min)</span>
+        In pairs: each person names one gatekeeping instrument their org uses
+        (an admissions score, a code-review rubric, a model benchmark, an
+        annual review). Swap. Your partner designs the cheapest possible
+        experiment that could show the instrument failing — scoring the wrong
+        thing, or scoring pedigree instead of performance. Reconvene and vote
+        on the one experiment the group should actually run. The uncomfortable
+        rule, from "Show Your Work": if you can't imagine evidence that would
+        fail your instrument, it isn't a measurement — it's a habit.
+      </div>
+    </div>
+
+    <div class="handout">
+      <p class="aud">For everyone else — the two-minute version</p>
+      <h3>Why map a brain the size of a poppy seed?</h3>
+      <p>
+        Because nobody has ever seen how a brain is actually wired, at the
+        level of individual connections, at scale — and you cannot fix, mimic,
+        or marvel at what you cannot see. One team's answer took a relay of
+        institutions: image a speck of mouse brain into
+        <strong>~28,000 slices</strong>, each far thinner than paper; let AI
+        trace the wiring; store the result — about
+        <strong>1.6 petabytes</strong>, a small national library's worth of
+        data — in an open cloud archive
+        (<a href="https://bossdb.org">bossdb.org</a>) that anyone can browse
+        free. The engineer behind that archive spent twenty years on a second,
+        quieter project: proving that the students usually filtered out of
+        science — first-generation, low-income, no lab connections — do
+        publishable work when you hand them real controls. Over
+        <a href="https://will.grayroncal.com/students/">400 students later</a>,
+        some of those "interns" are first authors on the field's standards.
+        The map and the mapmakers were built the same way: carefully, openly,
+        and on purpose.
+      </p>
+      <div class="activity">
+        <span class="act-label">Kitchen-table activity — judge the work (10 min)</span>
+        Two volunteers each fold the same paper airplane design. One narrates
+        their credentials first ("I've watched every paper-airplane video");
+        the other says nothing. Fly both. Ask the room which information
+        predicted the flight — the résumé or the throw. Then the question
+        behind this whole page: how many throws does your school, team, or
+        company never get to see, because the résumé went first?
+      </div>
+    </div>
+  </div>
+</section>

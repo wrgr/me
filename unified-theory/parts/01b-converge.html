@@ -1,0 +1,126 @@
+<!-- ================= FIG A: SCATTERED -> SORTED ================= -->
+<section class="well" id="figA" style="border-top:1px solid var(--line-well);">
+  <div class="graph-wrap" style="max-width:1180px; margin:0 auto; padding:0 22px;">
+    <p class="eyebrow"><span class="figno">Fig. A</span> — the same career, twice</p>
+    <h2 style="color:var(--ink-well); max-width:32ch;">Forty-three publications, filed two ways</h2>
+    <p style="max-width:62ch; color:var(--faint-well);">
+      Filed by <em>field</em>, the record looks like six unrelated careers.
+      Filed by <em>what each paper does</em> — make the graph, calibrate the
+      judge, or widen the gate — it is one method, applied everywhere.
+      Press the button; nothing moves between fields, only the filing changes.
+    </p>
+    <p class="no-print" style="margin:.4rem 0 1rem;">
+      <button id="convergeBtn" style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.8rem; letter-spacing:.05em; background:var(--well-2); color:var(--ink-well); border:1px solid var(--faint-well); border-radius:6px; padding:.55em 1.1em; cursor:pointer;">
+        re-file by what the paper does →
+      </button>
+    </p>
+    <div id="convergeField" role="img"
+      aria-label="The same set of publications shown scattered across six academic fields, then re-sorted into three rows: making graphs, calibrating judges, and widening gates."
+      style="position:relative; height:460px; background:var(--well-2); border-radius:6px; overflow:hidden;"></div>
+    <p class="well-caption" style="padding:0; max-width:none;">
+      Dot color = research thread (same colors everywhere on this page). Left
+      state groups by publication venue's field; right state groups by the move
+      the paper makes. Sources for every dot are in the plates below.
+    </p>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var box = document.getElementById('convergeField');
+  var btn = document.getElementById('convergeBtn');
+  if (!box || typeof SUBJECT === 'undefined') return;
+
+  var fields = ['Neuroscience', 'Databases & cloud', 'Computer vision & AI', 'Statistics & reliability', 'Education & outreach', 'Human performance & clinical'];
+  var moves = ['make the graph', 'calibrate the judge', 'widen the gate'];
+  function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+
+  var papers = SUBJECT.papers.filter(function (p) { return p.field && p.move; });
+  var W = box.clientWidth || 1100, H = 460;
+
+  // headers for both states
+  var headers = [];
+  function addHeaders(list, cls) {
+    list.forEach(function (name, i) {
+      var h = document.createElement('div');
+      h.textContent = name;
+      h.className = 'mono';
+      h.style.cssText = 'position:absolute; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--faint-well); transition:opacity .9s;';
+      h.dataset.state = cls; h.dataset.idx = i;
+      box.appendChild(h);
+      headers.push(h);
+    });
+  }
+  addHeaders(fields, 'field');
+  addHeaders(moves, 'move');
+
+  function layoutHeaders(state) {
+    headers.forEach(function (h) {
+      var i = +h.dataset.idx;
+      if (h.dataset.state === 'field') {
+        var col = i % 3, row = Math.floor(i / 3);
+        h.style.left = (col * (W / 3) + 18) + 'px';
+        h.style.top = (row * (H / 2) + 12) + 'px';
+        h.style.opacity = state === 'field' ? 1 : 0;
+      } else {
+        h.style.left = '18px';
+        h.style.top = (i * (H / 3) + 12) + 'px';
+        h.style.opacity = state === 'move' ? 1 : 0;
+      }
+    });
+  }
+
+  var rnd = mulberry32(828787);
+  var dots = papers.map(function (p) {
+    var d = document.createElement('div');
+    d.title = p.short + ' (' + p.year + ')';
+    d.style.cssText = 'position:absolute; width:13px; height:13px; border-radius:50%; ' +
+      'background:var(--' + p.thread + '-well); box-shadow:0 0 0 1.5px rgba(16,17,19,.85); ' +
+      'transition:left 1.4s cubic-bezier(.5,0,.2,1), top 1.4s cubic-bezier(.5,0,.2,1);';
+    var lbl = document.createElement('span');
+    lbl.textContent = p.short;
+    lbl.className = 'mono';
+    lbl.style.cssText = 'position:absolute; left:16px; top:0; font-size:.58rem; color:var(--faint-well); white-space:nowrap;';
+    d.appendChild(lbl);
+    box.appendChild(d);
+    return { el: d, p: p, jx: rnd(), jy: rnd() };
+  });
+
+  function layout(state) {
+    layoutHeaders(state);
+    if (state === 'field') {
+      fields.forEach(function (f, fi) {
+        var members = dots.filter(function (d) { return d.p.field === f; });
+        var col = fi % 3, row = Math.floor(fi / 3);
+        var x0 = col * (W / 3) + 20, y0 = row * (H / 2) + 40;
+        members.forEach(function (d, i) {
+          d.el.style.left = (x0 + (i % 3) * ((W / 3 - 130) / 3) + d.jx * 16) + 'px';
+          d.el.style.top = (y0 + Math.floor(i / 3) * 30 + d.jy * 10) + 'px';
+        });
+      });
+    } else {
+      moves.forEach(function (m, mi) {
+        var members = dots.filter(function (d) { return d.p.move === m; })
+          .sort(function (a, b) { return a.p.year - b.p.year; });
+        var y0 = mi * (H / 3) + 44;
+        members.forEach(function (d, i) {
+          d.el.style.left = (30 + (i % 6) * ((W - 100) / 6)) + 'px';
+          d.el.style.top = (y0 + Math.floor(i / 6) * 32) + 'px';
+        });
+      });
+    }
+  }
+
+  var state = 'field';
+  layout(state);
+  btn.addEventListener('click', function () {
+    state = state === 'field' ? 'move' : 'field';
+    layout(state);
+    btn.textContent = state === 'field' ? 're-file by what the paper does →' : '← re-file by field';
+  });
+  window.addEventListener('resize', function () {
+    W = box.clientWidth || 1100;
+    layout(state);
+  });
+});
+</script>
