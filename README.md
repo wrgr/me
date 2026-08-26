@@ -26,6 +26,7 @@ bundle exec jekyll serve --livereload
 | Profile links / CV path | `_data/profiles.yml` |
 | Generated CV LaTeX | `cv/will_cv.tex` — **do not hand-edit** |
 | Generated bibliography | `_bibliography/papers.bib` — **do not hand-edit** |
+| Self-hosted open-access PDFs | `assets/pdf/papers/<cite-key>.pdf` — picked up automatically by `bib2jekyll.py` |
 | Publication entry template | `_layouts/bib.html` |
 | Design tokens (colors, dark mode) | `_sass/_tokens.scss` |
 
@@ -58,6 +59,19 @@ python3 cv/bib2jekyll.py  # cv/will_cv.bib  -> _bibliography/papers.bib
 
 Then rebuild the PDF — see [cv/README.md](cv/README.md).
 
+### Self-hosted paper PDFs
+
+For papers whose venue is open access (arXiv, bioRxiv, PLoS, Frontiers,
+eNeuro, the Nature-family OA journals, BMVC), a copy of the PDF is checked
+into `assets/pdf/papers/<cite-key>.pdf` — a master copy that doesn't depend on
+a publisher's site staying up. `bib2jekyll.py` detects the file by cite key
+and adds a `pdf` field to that entry automatically; nothing to edit by hand.
+Every other paper still links out via its `doi`/`url` field only — papers
+behind a subscription paywall (IEEE Xplore, Cell, Nature Methods, ACM, etc.)
+are intentionally **not** self-hosted here, to respect publisher copyright.
+
+To add one: drop `<cite-key>.pdf` in `assets/pdf/papers/`, matching the key
+in `will_cv.bib`, then rerun `python3 cv/bib2jekyll.py`.
 
 
 ## Deployment
