@@ -125,23 +125,25 @@ variation. Two were repaired and should stay repaired:
 ## Advised theses aren't his publications
 
 Cross-referencing Semantic Scholar's author-ID variants of William
-Gray-Roncal against this file surfaces JHU JScholarship (institutional
-repository) records for master's theses he advised but didn't author.
-These are intentionally **not** in `will_cv.bib` — advising is tracked
-once, in the "Research Mentor" entry in `../_data/cv/teaching.yml`, not
-per-thesis. A derivative paper the student co-authored *with* him (e.g.
+Gray-Roncal against this file surfaces JHU institutional-repository
+records for master's theses he advised but didn't author. These are
+intentionally **not** in `will_cv.bib` — advising is tracked once, in
+the "Research Mentor" entry in `../_data/cv/teaching.yml`, not per-thesis.
+A derivative paper the student co-authored *with* him (e.g.
 Norman-Tenazas's Worminator, Continuous State Estimation) is a separate,
 legitimate entry and does belong here.
 
-Known instances, so a future gap-hunt doesn't re-flag them:
+Known instances (confirmed with Will directly), so a future gap-hunt
+doesn't re-flag them — the repository is Cloudflare-protected and blocks
+automated fetches, so these links are for manual reference only:
 
 - **GREMLIN** ("Graph Estimation From MR Images Leading to Inference in
-  Neuroscience") — Gregory Kiar's thesis.
-  `jscholarship.library.jhu.edu`, item `9dad7b26-818f-4dbf-b71f-3773912161d5`
-  (handle `1774.2/39487`).
+  Neuroscience") — Gregory Kiar's thesis, advised by Will.
+  <http://jhir.library.jhu.edu/handle/1774.2/39487> (mirrored at
+  `jscholarship.library.jhu.edu`, item `9dad7b26-818f-4dbf-b71f-3773912161d5`).
 - **"Robust Snake Robot Control Via A Spiking Neuron Central Pattern
-  Generator"** — Raphael Norman-Tenazas's thesis, 2021.
-  `jscholarship.library.jhu.edu`, item `0c249f2b-965b-4a93-81c1-a5e3b87f0386`.
+  Generator"** — Raphael Norman-Tenazas's thesis, 2021, advised by Will.
+  <https://jscholarship.library.jhu.edu/items/0c249f2b-965b-4a93-81c1-a5e3b87f0386>.
 
 ## Gotchas
 
