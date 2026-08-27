@@ -27,7 +27,9 @@ Three falsifiable laws:
    particular — purely by changing the partner-choice rule.
 3. **Combine, don't select — and keep the disagreement.** The linear opinion
    pool beat every single model; APL's own hub entry is an
-   `ensemble_of_hub_models`.
+   `ensemble_of_hub_models`. She qualifies this herself: unvalidated models
+   pooled at equal weight can *lower* ensemble performance, so keep two cohorts
+   — open for diversity, curated for decisions.
 
 And the coda she wrote herself: the Etta Z. Falconer Lecture at Spelman, Spring
 2019, titled *"Noether, Falconer, Mirzakhani, Kovalevsky, & Me"* — five names,
@@ -77,3 +79,11 @@ same-name authors (Wilson SK, Wilson SE, Wilson SA) were removed by hand.
 
 Everything on the page that is interpretation is labelled as interpretation.
 Anything that could not be verified is marked rather than smoothed over.
+
+The first version of this page said plainly that "On the Mark" (*Health
+Security* 2023) could not be read — no deposited abstract, publisher 403. The
+PDF was then supplied directly, and Plate XVI, Law I, Law III and the third
+reproduced figure are now written from its full text. It turns out to contain
+the sentence this page is named after: *"when model outputs are represented
+using predictive intervals rather than individual trajectories, vital
+information is obscured."*

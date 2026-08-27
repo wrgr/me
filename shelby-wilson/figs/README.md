@@ -10,6 +10,8 @@ which permits reproduction with credit.
 | `allogrooming-fig2-embed.jpg` | The above, re-encoded to JPEG q80 at native 780×1212. No other change. | CC BY 4.0 |
 | `smh-fig2.png` | Figure 2 of Howerton E, Contamin L, Mullany LC, *et al.* (incl. Wilson S), "Evaluation of the US COVID-19 Scenario Modeling Hub for informing pandemic response under uncertainty", *Nature Communications* 14:7260 (2023). [doi:10.1038/s41467-023-42680-x](https://doi.org/10.1038/s41467-023-42680-x) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | `smh-fig2-embed.jpg` | The above, downscaled 1200→1150 px wide and re-encoded to JPEG q79. No other change. | CC BY 4.0 |
+| `onthemark-fig4.png` | Figure 4 of Panaggio MJ, Wilson SN, Ratcliff JD, Mullany LC, Freeman JD, Rainwater-Lovett K, "On the Mark: Modeling and Forecasting for Public Health Impact", *Health Security* 21(S1):S79–S88 (2023) — the JHU/APL Gecko-SARIMA state-level forecast. Extracted from the published PDF. [doi:10.1089/hs.2023.0033](https://doi.org/10.1089/hs.2023.0033) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| `onthemark-fig4-embed.jpg` | The above, re-encoded to JPEG q82 at native 927×417. No other change. | CC BY 4.0 |
 
 ## Deliberately not reproduced
 
@@ -21,8 +23,8 @@ Checked per paper, not assumed from "open access":
 - ***eLife*** 2022 and ***PLOS Computational Biology*** 2024 — CC0. Reproducible,
   but the page already had the two figures it needed; nothing was embedded that
   did not earn its place.
-- ***Bulletin of Mathematical Biology***, ***Journal of Theoretical Biology***,
-  the Springer chapters, ***Health Security*** — all-rights-reserved or
-  inaccessible. Read, not republished.
+- ***Bulletin of Mathematical Biology***, ***Journal of Theoretical Biology***
+  and the Springer chapters — all-rights-reserved or inaccessible. Read, not
+  republished.
 
 Every figure embedded in the page was opened and looked at before it was used.
