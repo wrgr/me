@@ -17,7 +17,7 @@ parts/            ordered page fragments — edit these, never index.html
   03-graph.html     Fig. 1 — related-work graph engine
   04-story.html     Fig. 2 — the scale-ladder spine + the acts
   05-gallery.html   Plates I–XII
-  05b-keystone.html the keystone interlude ("From sample to knowledge", 2016)
+  05b-keystone.html marginalia aside ("From sample to knowledge", 2016 preprint)
   06-gallery2.html  Plates continued + field notes index
   07b-handouts.html three printable one-pagers with activities
   08-coda.html      his own one-line version + sources & honesty
