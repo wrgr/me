@@ -2,11 +2,11 @@
 <section class="well" id="figA" style="border-top:1px solid var(--line-well);">
   <div class="graph-wrap" style="max-width:1180px; margin:0 auto; padding:0 22px;">
     <p class="eyebrow"><span class="figno">Fig. A</span> — the same career, twice</p>
-    <h2 style="color:var(--ink-well); max-width:32ch;">Forty-three publications, filed two ways</h2>
+    <h2 style="color:var(--ink-well); max-width:32ch;">Forty-four publications, filed two ways</h2>
     <p style="max-width:62ch; color:var(--faint-well);">
       Filed by <em>field</em>, the record looks like six unrelated careers.
-      Filed by <em>what each paper does</em> — make the graph, calibrate the
-      judge, or widen the gate — it is one method, applied everywhere.
+      Filed by <em>what each paper does</em> — extract the knowledge, calibrate
+      the judge, or widen the gate — it is one method, applied everywhere.
       Press the button; nothing moves between fields, only the filing changes.
     </p>
     <p class="no-print" style="margin:.4rem 0 1rem;">
@@ -15,7 +15,7 @@
       </button>
     </p>
     <div id="convergeField" role="img"
-      aria-label="The same set of publications shown scattered across six academic fields, then re-sorted into three rows: making graphs, calibrating judges, and widening gates."
+      aria-label="The same set of publications shown scattered across six academic fields, then re-sorted into three rows: extracting knowledge, calibrating judges, and widening gates."
       style="position:relative; height:460px; background:var(--well-2); border-radius:6px; overflow:hidden;"></div>
     <p class="well-caption" style="padding:0; max-width:none;">
       Dot color = research thread (same colors everywhere on this page). Left
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!box || typeof SUBJECT === 'undefined') return;
 
   var fields = ['Neuroscience', 'Databases & cloud', 'Computer vision & AI', 'Statistics & reliability', 'Education & outreach', 'Human performance & clinical'];
-  var moves = ['make the graph', 'calibrate the judge', 'widen the gate'];
+  var moves = ['extract the knowledge', 'calibrate the judge', 'widen the gate'];
   function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
 
   var papers = SUBJECT.papers.filter(function (p) { return p.field && p.move; });

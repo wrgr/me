@@ -174,7 +174,8 @@
       '<div class="t">' + kindNote + (d.title || d.label) + '</div>' +
       (meta.length ? '<div class="m">' + meta.join(' · ') + '</div>' : '') +
       '<div>' + (d.note || d.plain || '') +
-      (d.url ? ' <a href="' + d.url + '" target="_blank" rel="noopener">source ↗</a>' : '') + '</div>';
+      (d.url ? ' <a href="' + d.url + '" target="_blank" rel="noopener">source ↗</a>' : '') +
+      (d.pdf ? ' · <a href="' + d.pdf + '" target="_blank" rel="noopener">PDF ↗</a>' : '') + '</div>';
   }
 
   function highlight(n) {

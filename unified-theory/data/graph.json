@@ -8,7 +8,7 @@
    "year": 2012,
    "citations": 60,
    "field": "Neuroscience",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "Magnetic resonance connectome automated pipeline: an overview",
    "authors": "Gray Roncal, Bogovic, J. Vogelstein, Landman, Prince, R.J. Vogelstein",
@@ -42,7 +42,7 @@
    "year": 2013,
    "citations": 26,
    "field": "Statistics & reliability",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": false,
    "title": "Computing Scalable Multivariate Glocal Invariants of Large (Brain-) Graphs",
    "authors": "Mhembere, Gray Roncal, Sussman, …, Burns",
@@ -59,14 +59,14 @@
    "year": 2013,
    "citations": 89,
    "field": "Statistics & reliability",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "Graph classification using signal-subgraphs: applications in statistical connectomics",
    "authors": "J. Vogelstein, Gray Roncal, R.J. Vogelstein, Priebe",
    "venue": "IEEE TPAMI",
    "doi": "10.1109/TPAMI.2012.235",
    "url": "https://doi.org/10.1109/TPAMI.2012.235",
-   "plain": "The payoff of law one: with brains as graphs, classification becomes graph statistics — finding the \"signal subgraph\" that distinguishes classes of connectomes."
+   "plain": "Law one, in its graph representation: once knowledge about brains is held as graphs, classification becomes graph statistics — finding the \"signal subgraph\" that distinguishes classes of connectomes."
   },
   {
    "id": "kasthuri",
@@ -76,7 +76,7 @@
    "year": 2015,
    "citations": 1287,
    "field": "Neuroscience",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "Saturated Reconstruction of a Volume of Neocortex",
    "authors": "Kasthuri, Hayworth, Berger, …, Gray Roncal, …, Lichtman",
@@ -93,13 +93,14 @@
    "year": 2015,
    "citations": 39,
    "field": "Computer vision & AI",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "VESICLE: Volumetric Evaluation of Synaptic Interfaces using Computer vision at Large Scale",
    "authors": "Gray Roncal, Pekala, Kaynig-Fittkau, …, Hager",
    "venue": "BMVC",
    "doi": "10.5244/c.29.81",
    "url": "https://arxiv.org/abs/1403.3724",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2015b.pdf",
    "plain": "Machine vision for the smallest thing on the ladder: automated synapse detection designed to run at the scale where human annotation is impossible."
   },
   {
@@ -110,13 +111,14 @@
    "year": 2015,
    "citations": 33,
    "field": "Neuroscience",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "An Automated Images-to-Graphs Framework for High Resolution Connectomics",
    "authors": "Gray Roncal, Kleissas, J. Vogelstein",
    "venue": "Frontiers in Neuroinformatics",
    "doi": "10.3389/fninf.2015.00020",
    "url": "https://doi.org/10.3389/fninf.2015.00020",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2015a.pdf",
    "plain": "The dissertation, in journal form: the first fully-automated pipeline from raw electron micrographs to a brain graph — and it optimizes for graph error, not pixel error. Law two hiding inside law one."
   },
   {
@@ -126,13 +128,14 @@
    "scale": "synapse",
    "year": 2016,
    "field": "Computer vision & AI",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": false,
    "title": "SANTIAGO: Spine Association for Neuron Topology Improvement",
    "authors": "Gray Roncal, Lea, Baruah, Hager",
    "venue": "arXiv",
    "doi": "10.48550/arXiv.1608.02307",
    "url": "https://arxiv.org/abs/1608.02307",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2016a.pdf",
    "plain": "Cleaning up the map by re-attaching orphaned dendritic spines — small structures whose loss silently corrupts the connectivity graph."
   },
   {
@@ -143,13 +146,14 @@
    "year": 2017,
    "citations": 92,
    "field": "Neuroscience",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "Quantifying mesoscale neuroanatomy using X-ray microtomography",
    "authors": "Dyer, Gray Roncal, …, Kasthuri",
    "venue": "eNeuro",
    "doi": "10.1523/ENEURO.0195-17.2017",
    "url": "https://doi.org/10.1523/ENEURO.0195-17.2017",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Dyer_2017.pdf",
    "plain": "A missing rung filled: X-rays image millimetres of brain without cutting it, mapping cells, vessels and axons at the mesoscale between MRI and EM."
   },
   {
@@ -167,6 +171,7 @@
    "venue": "Scientific Data",
    "doi": "10.1038/s41597-020-00692-y",
    "url": "https://doi.org/10.1038/s41597-020-00692-y",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Prasad_2020.pdf",
    "plain": "The X-ray work handed over as a public dataset: a 3D volume spanning six brain regions, published so others can test their own methods on it."
   },
   {
@@ -176,7 +181,7 @@
    "scale": "circuit",
    "year": 2020,
    "field": "Computer vision & AI",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": false,
    "title": "Leveraging Tools from Autonomous Navigation for Rapid, Robust Neuron Connectivity",
    "authors": "Drenkow, Joyce, Matelsky, …, Gray-Roncal",
@@ -192,7 +197,7 @@
    "scale": "circuit",
    "year": 2021,
    "field": "Neuroscience",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": false,
    "title": "Circuit motifs and graph properties of connectome development in C. elegans",
    "authors": "Matelsky, Norman-Tenazas, Davenport, Reilly, Gray-Roncal",
@@ -216,6 +221,7 @@
    "venue": "Scientific Reports",
    "doi": "10.1038/s41598-021-91025-5",
    "url": "https://doi.org/10.1038/s41598-021-91025-5",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Matelsky_2021a.pdf",
    "plain": "A grammar for asking brains questions: neuroscientists write near-English queries for wiring patterns instead of graph-theory code. The gate to graph analysis, widened."
   },
   {
@@ -226,13 +232,14 @@
    "year": 2025,
    "citations": 456,
    "field": "Neuroscience",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "Functional connectomics spanning multiple areas of mouse visual cortex",
    "authors": "The MICrONS Consortium (incl. Gray-Roncal; APL/bossDB archive)",
    "venue": "Nature",
    "doi": "10.1038/s41586-025-08790-w",
    "url": "https://doi.org/10.1038/s41586-025-08790-w",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/microns2025functional.pdf",
    "plain": "The landmark: ~1 mm³ of mouse visual cortex — >200,000 cells, >500 million synapses, co-registered with the activity of ~75,000 neurons — served to the world from the archive his team built."
   },
   {
@@ -250,6 +257,7 @@
    "venue": "Frontiers in Neuroinformatics",
    "doi": "10.3389/fninf.2018.00074",
    "url": "https://doi.org/10.3389/fninf.2018.00074",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Reilly_2017.pdf",
    "plain": "The keystone of law two: existing metrics judged reconstructions by voxel overlap — rewarding the wrong thing. NRI judges them by whether synapses connect to the right neurons: measure what the map is for."
   },
   {
@@ -301,6 +309,7 @@
    "venue": "PLoS Computational Biology",
    "doi": "10.1371/journal.pcbi.1009279",
    "url": "https://doi.org/10.1371/journal.pcbi.1009279",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Bridgeford_2021.pdf",
    "plain": "The statistical sequel: a measure (discriminability) for how well any pipeline preserves individual identity, used to pick pipelines that replicate — in connectomics and genomics alike."
   },
   {
@@ -335,6 +344,7 @@
    "venue": "Scientific Reports",
    "doi": "10.1038/s41598-022-08078-3",
    "url": "https://doi.org/10.1038/s41598-022-08078-3",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Cowley_2022a.pdf",
    "plain": "\"Superhuman AI\" claims rest on human baselines nobody measured carefully. This framework brings psychometric rigor to the human side of the comparison — calibrating the judge of the machines."
   },
   {
@@ -351,6 +361,7 @@
    "venue": "Frontiers in Psychology",
    "doi": "10.3389/fpsyg.2021.733021",
    "url": "https://doi.org/10.3389/fpsyg.2021.733021",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Rhodes_2021.pdf",
    "plain": "The framework applied: carefully measured human visual-search performance on aerial imagery, so machine claims have a real baseline to beat."
   },
   {
@@ -361,14 +372,32 @@
    "year": 2023,
    "citations": 19,
    "field": "Human performance & clinical",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "Using machine learning on clinical data to identify unexpected patterns in groups of COVID-19 patients",
    "authors": "Cowley, Robinette, Matelsky, …, Garibaldi, Gray-Roncal",
    "venue": "Scientific Reports",
    "doi": "10.1038/s41598-022-26294-9",
    "url": "https://doi.org/10.1038/s41598-022-26294-9",
-   "plain": "Law one at the bedside: patients as points in a graph, clustered to surface patterns clinical intuition missed — the same measurement discipline, turned on a pandemic."
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Cowley_2022b.pdf",
+   "plain": "Law one at the bedside: interpretable patterns wrung from noisy, incomplete hospital records — clusters that surface what intuition missed, from a model built to say \"I don’t know.\""
+  },
+  {
+   "id": "s2k",
+   "short": "sample-to-knowledge",
+   "thread": "trust",
+   "scale": "circuit",
+   "year": 2016,
+   "field": "Neuroscience",
+   "move": "calibrate the judge",
+   "ingraph": true,
+   "title": "From sample to knowledge: Towards an integrated approach for neuroscience discovery",
+   "authors": "Gray Roncal* & Dyer* (equal), Gürsoy, Kording, Kasthuri",
+   "venue": "arXiv",
+   "doi": "10.48550/arXiv.1604.03199",
+   "url": "https://arxiv.org/abs/1604.03199",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2016f.pdf",
+   "plain": "A supporting curiosity — an unreviewed, barely-cited 2016 preprint that sketches the method early: optimize the entire pipeline, acquisition to analysis, against the knowledge you actually want, not each stage’s surrogate metric. Fun corroboration, not evidence."
   },
   {
    "id": "ocp",
@@ -394,7 +423,7 @@
    "scale": "synapse",
    "year": 2013,
    "field": "Databases & cloud",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": false,
    "title": "Large-Scale Synapse Detection Using CAJAL3D",
    "authors": "Kleissas, Gray Roncal, Manavalan, …, R.J. Vogelstein",
@@ -435,6 +464,7 @@
    "venue": "Frontiers in Neuroinformatics",
    "doi": "10.3389/fninf.2022.828787",
    "url": "https://doi.org/10.3389/fninf.2022.828787",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Hider_2022.pdf",
    "plain": "The archive rebuilt for the petabyte era: serverless, autoscaling, swallowing brain volumes at 230 GB per minute — and built before the data existed, in anticipation of MICrONS."
   },
   {
@@ -469,6 +499,7 @@
    "venue": "Frontiers in Neuroinformatics",
    "doi": "10.3389/fninf.2022.828458",
    "url": "https://doi.org/10.3389/fninf.2022.828458",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Sanchez_2022.pdf",
    "plain": "Dropdown-menu queries over 150 million synapses of human cortex, rendered as clickable 3D neurons. First-authored by two CIRCUIT alumni — the gate, verifiably widened."
   },
   {
@@ -485,6 +516,7 @@
    "venue": "arXiv",
    "doi": "10.48550/arXiv.2401.15251",
    "url": "https://arxiv.org/abs/2401.15251",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/wimbish2024em.pdf",
    "plain": "MRI has BIDS; physiology has NWB; nanoscale connectomics had nothing — so his team wrote the missing standard, versioned and governed on GitHub like software."
   },
   {
@@ -511,13 +543,14 @@
    "year": 2021,
    "citations": 67,
    "field": "Computer vision & AI",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "Mine your own view: Self-supervised learning through across-sample prediction",
    "authors": "Azabou, Azar, Liu, …, Gray-Roncal (APL team), …, Dyer",
    "venue": "arXiv",
    "doi": "10.48550/arXiv.2102.10106",
    "url": "https://arxiv.org/abs/2102.10106",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Azabou_2021.pdf",
    "plain": "Self-supervised learning that mines a dataset for its own teaching examples — built for neural data, where labels are the scarcest resource of all."
   },
   {
@@ -528,13 +561,14 @@
    "year": 2022,
    "citations": 13,
    "field": "Computer vision & AI",
-   "move": "make the graph",
+   "move": "extract the knowledge",
    "ingraph": true,
    "title": "Online learning for orientation estimation during translation in an insect ring attractor network",
    "authors": "Robinson, Norman-Tenazas, Cervantes, …, Zhang, Gray-Roncal",
    "venue": "Scientific Reports",
    "doi": "10.1038/s41598-022-05798-4",
    "url": "https://doi.org/10.1038/s41598-022-05798-4",
+   "pdf": "https://will.grayroncal.com/assets/pdf/papers/Robinson_2022.pdf",
    "plain": "The map runs backwards: a fly’s head-direction circuit, mapped by connectomics, re-implemented as a learning algorithm for navigation. Why map brains? This is why."
   },
   {
@@ -881,10 +915,10 @@
  "keywords": [
   {
    "id": "kw-graph",
-   "label": "everything is a graph",
+   "label": "knowledge from noise",
    "thread": "shared",
-   "title": "Shared idea: extract the network first",
-   "note": "The bridge between threads that never cite each other: MRI brains, EM synapses, fly circuits, robot swarms and COVID wards all get the same first move — nodes, edges, and a way to query them."
+   "title": "Shared idea: interpretable knowledge from noisy, incomplete data",
+   "note": "The bridge between threads that never cite each other: MRI brains, EM volumes, fly circuits, unlabelled recordings and COVID wards all get the same first move — extract something interpretable and queryable from messy data. The graph is his favorite representation of it, not the point."
   },
   {
    "id": "kw-judge",
@@ -1034,6 +1068,21 @@
   {
    "s": "nri",
    "t": "i2g",
+   "type": "cites"
+  },
+  {
+   "s": "s2k",
+   "t": "i2g",
+   "type": "cites"
+  },
+  {
+   "s": "s2k",
+   "t": "xray",
+   "type": "cites"
+  },
+  {
+   "s": "s2k",
+   "t": "kasthuri",
    "type": "cites"
   },
   {

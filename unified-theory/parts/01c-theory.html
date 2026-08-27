@@ -31,19 +31,24 @@
     </p>
 
     <div class="law law--maps">
-      <div class="law-name">1. First, make it a graph.</div>
+      <div class="law-name">1. First, wring knowledge from noisy, incomplete data.</div>
       <p>
-        Whatever the substrate — MRI voxels, electron micrographs, X-ray
-        tomograms, a worm's development, a robot swarm, a ward of COVID-19
-        patients — the opening move is always the same: extract the network.
-        Nodes, edges, and a way to ask questions of them. His dissertation
-        title says it without disguise: <em>Images to Graphs for Discovery</em>.
+        The raw material is never clean — electron micrographs with slicing
+        artifacts, MRI scans that vary by scanner and day, clinical records
+        with missing fields, unlabelled neural recordings, human behavior
+        itself. The opening move is always to extract something
+        <em>interpretable</em> from that mess: a structure you can question,
+        test, and act on. His signature container for it is the graph — the
+        dissertation is <em>Images to Graphs for Discovery</em> — but the graph
+        is a representation, not the point: point processes, density maps,
+        clusters and benchmarks appear wherever they serve the question better.
+        Discovery is the point.
       </p>
       <p class="law-ev">
-        evidence: MRCAP (2012) · MIGRAINE (2013) · signal-subgraphs (TPAMI 2013)
-        · images-to-graphs (2015) · X-ray microtomography (2017) · DotMotif
-        (2021) · C. elegans motifs (2021) · SwarmAI testbed (2023) · COVID-19
-        patient clustering (2023)
+        evidence: MRCAP (2012) · signal-subgraphs (TPAMI 2013) ·
+        images-to-graphs (2015) · X-ray cell-density maps (2017) · DotMotif
+        (2021) · MYOW’s label-free representations (2021) · C. elegans motifs
+        (2021) · COVID-19 patient clusters from messy hospital data (2023)
       </p>
     </div>
 
@@ -84,10 +89,33 @@
       </p>
     </div>
 
+    <p style="border-left:3px solid var(--line); padding-left:1.4rem;">
+      <strong>The promised near-exception.</strong> Stated as a sequence —
+      knowledge, <em>then</em> judge, <em>then</em> gate — the theory implies the
+      gate-widening was a conclusion the science led him to. It wasn't. The
+      <a href="#pl-collegeprep">College Prep Program</a> was co-founded in
+      2009: before MRCAP, before any graph existed, before the PhD. Law three
+      ran first, in parallel, the whole time. The three moves survive as a kit
+      he applies everywhere, but not as a derivation chain — and honestly,
+      that's a better story. (A smaller misfit: the scale ladder isn't monotone
+      in time — the mesoscale X-ray rung was filled <em>after</em> the
+      nanometre floor, so Fig.&nbsp;2's "down the ladder, then up" is an
+      idealization the dates only roughly obey.)
+    </p>
     <p>
-      The compressed form: <strong>make the graph, calibrate the judge, widen
-      the gate.</strong> The rest of this page is the evidence — a citation
-      graph, a scale ladder, and every paper retold in plain language.
+      The compressed form: <strong>extract the knowledge, calibrate the judge,
+      widen the gate.</strong> The rest of this page is the evidence — a
+      citation graph, a scale ladder, and every paper retold in plain language.
+    </p>
+    <p style="font-size:.95rem; color:var(--faint);">
+      A fun supporting footnote, weighted accordingly: in 2016 — the hinge of
+      the career — he and Eva Dyer posted an unreviewed, barely-cited arXiv
+      preprint, <a href="https://arxiv.org/abs/1604.03199">“From sample to
+      knowledge”</a>, that sketches this very method: optimize the whole
+      pipeline against the knowledge you want, not each stage’s surrogate
+      metric. It is a preprint, so it anchors nothing here — the laws stand on
+      the reviewed record — but it is lovely evidence that the through-line was
+      articulated, not retrofitted. <a href="#pl-s2k">More below</a>.
     </p>
   </div>
 </section>
