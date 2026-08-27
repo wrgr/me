@@ -16,7 +16,8 @@ parts/            ordered page fragments — edit these, never index.html
   02-data.html      SUBJECT data object: papers, related work, keywords, edges
   03-graph.html     Fig. 1 — related-work graph engine
   04-story.html     Fig. 2 — the scale-ladder spine + the acts
-  05-gallery.html   Plates I–… + embedded CC-BY figures
+  05-gallery.html   Plates I–XII
+  05b-keystone.html the keystone interlude ("From sample to knowledge", 2016)
   06-gallery2.html  Plates continued + field notes index
   07b-handouts.html three printable one-pagers with activities
   08-coda.html      his own one-line version + sources & honesty

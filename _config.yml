@@ -33,6 +33,16 @@ exclude:
   - README.md
   - cv
   - LICENSE
+  # unified-theory build sources: only the generated index.html ships with the
+  # site (served at /unified-theory/). The parts/ fragments must stay out of
+  # _site — they cross-link anchors that only exist once concatenated, which
+  # fails htmlproofer.
+  - unified-theory/parts
+  - unified-theory/figs
+  - unified-theory/data
+  - unified-theory/build.sh
+  - unified-theory/design-plan.md
+  - unified-theory/README.md
 
 sass:
   style: compressed

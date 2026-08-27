@@ -246,7 +246,7 @@ figure { margin: 0; }
 <section class="well" id="figA" style="border-top:1px solid var(--line-well);">
   <div class="graph-wrap" style="max-width:1180px; margin:0 auto; padding:0 22px;">
     <p class="eyebrow"><span class="figno">Fig. A</span> — the same career, twice</p>
-    <h2 style="color:var(--ink-well); max-width:32ch;">Forty-three publications, filed two ways</h2>
+    <h2 style="color:var(--ink-well); max-width:32ch;">Forty-four publications, filed two ways</h2>
     <p style="max-width:62ch; color:var(--faint-well);">
       Filed by <em>field</em>, the record looks like six unrelated careers.
       Filed by <em>what each paper does</em> — make the graph, calibrate the
@@ -460,6 +460,16 @@ document.addEventListener('DOMContentLoaded', function () {
       the gate.</strong> The rest of this page is the evidence — a citation
       graph, a scale ladder, and every paper retold in plain language.
     </p>
+    <p style="font-size:.95rem; color:var(--faint);">
+      And there is a keystone. In 2016 — the exact hinge of the career — he and
+      Eva Dyer published a barely-cited arXiv note,
+      <a href="https://arxiv.org/abs/1604.03199">“From sample to knowledge”</a>
+      (<a href="https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2016f.pdf">PDF</a>),
+      that states the whole method in one place: optimize the entire pipeline
+      against the knowledge you actually want, never against each stage’s
+      surrogate metric. The keystone gets its own plate,
+      <a href="#pl-s2k">below</a>.
+    </p>
   </div>
 </section>
 
@@ -511,30 +521,35 @@ papers: [
     title:'VESICLE: Volumetric Evaluation of Synaptic Interfaces using Computer vision at Large Scale',
     authors:'Gray Roncal, Pekala, Kaynig-Fittkau, …, Hager', venue:'BMVC',
     doi:'10.5244/c.29.81', url:'https://arxiv.org/abs/1403.3724',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2015b.pdf',
     plain:'Machine vision for the smallest thing on the ladder: automated synapse detection designed to run at the scale where human annotation is impossible.' },
   { id:'i2g', short:'images-to-graphs', thread:'maps', scale:'circuit', year:2015, citations:33,
     field:'Neuroscience', move:'make the graph', ingraph:true,
     title:'An Automated Images-to-Graphs Framework for High Resolution Connectomics',
     authors:'Gray Roncal, Kleissas, J. Vogelstein', venue:'Frontiers in Neuroinformatics',
     doi:'10.3389/fninf.2015.00020', url:'https://doi.org/10.3389/fninf.2015.00020',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2015a.pdf',
     plain:'The dissertation, in journal form: the first fully-automated pipeline from raw electron micrographs to a brain graph — and it optimizes for graph error, not pixel error. Law two hiding inside law one.' },
   { id:'santiago', short:'SANTIAGO', thread:'maps', scale:'synapse', year:2016,
     field:'Computer vision & AI', move:'make the graph', ingraph:false,
     title:'SANTIAGO: Spine Association for Neuron Topology Improvement',
     authors:'Gray Roncal, Lea, Baruah, Hager', venue:'arXiv',
     doi:'10.48550/arXiv.1608.02307', url:'https://arxiv.org/abs/1608.02307',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2016a.pdf',
     plain:'Cleaning up the map by re-attaching orphaned dendritic spines — small structures whose loss silently corrupts the connectivity graph.' },
   { id:'xray', short:'X-ray µCT', thread:'maps', scale:'circuit', year:2017, citations:92,
     field:'Neuroscience', move:'make the graph', ingraph:true,
     title:'Quantifying mesoscale neuroanatomy using X-ray microtomography',
     authors:'Dyer, Gray Roncal, …, Kasthuri', venue:'eNeuro',
     doi:'10.1523/ENEURO.0195-17.2017', url:'https://doi.org/10.1523/ENEURO.0195-17.2017',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Dyer_2017.pdf',
     plain:'A missing rung filled: X-rays image millimetres of brain without cutting it, mapping cells, vessels and axons at the mesoscale between MRI and EM.' },
   { id:'thalamo', short:'thalamocortical dataset', thread:'maps', scale:'circuit', year:2020, citations:22,
     field:'Neuroscience', move:'widen the gate', ingraph:false,
     title:'A three-dimensional thalamocortical dataset for characterizing brain heterogeneity',
     authors:'Prasad, Balwani, Johnson, …, Gray Roncal, Kasthuri, Dyer', venue:'Scientific Data',
     doi:'10.1038/s41597-020-00692-y', url:'https://doi.org/10.1038/s41597-020-00692-y',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Prasad_2020.pdf',
     plain:'The X-ray work handed over as a public dataset: a 3D volume spanning six brain regions, published so others can test their own methods on it.' },
   { id:'miccai', short:'SLAM for neurons', thread:'maps', scale:'circuit', year:2020,
     field:'Computer vision & AI', move:'make the graph', ingraph:false,
@@ -553,12 +568,14 @@ papers: [
     title:'DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries',
     authors:'Matelsky, Reilly, Johnson, …, Gray-Roncal', venue:'Scientific Reports',
     doi:'10.1038/s41598-021-91025-5', url:'https://doi.org/10.1038/s41598-021-91025-5',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Matelsky_2021a.pdf',
     plain:'A grammar for asking brains questions: neuroscientists write near-English queries for wiring patterns instead of graph-theory code. The gate to graph analysis, widened.' },
   { id:'microns', short:'MICrONS', thread:'maps', scale:'circuit', year:2025, citations:456,
     field:'Neuroscience', move:'make the graph', ingraph:true,
     title:'Functional connectomics spanning multiple areas of mouse visual cortex',
     authors:'The MICrONS Consortium (incl. Gray-Roncal; APL/bossDB archive)', venue:'Nature',
     doi:'10.1038/s41586-025-08790-w', url:'https://doi.org/10.1038/s41586-025-08790-w',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/microns2025functional.pdf',
     plain:'The landmark: ~1 mm³ of mouse visual cortex — >200,000 cells, >500 million synapses, co-registered with the activity of ~75,000 neurons — served to the world from the archive his team built.' },
 
   /* ---- trust: calibrating the judges ---- */
@@ -567,6 +584,7 @@ papers: [
     title:'Neural Reconstruction Integrity: A metric for assessing the connectivity of reconstructed neural networks',
     authors:'Reilly, Garretson, Gray Roncal, …, Roos', venue:'Frontiers in Neuroinformatics',
     doi:'10.3389/fninf.2018.00074', url:'https://doi.org/10.3389/fninf.2018.00074',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Reilly_2017.pdf',
     plain:'The keystone of law two: existing metrics judged reconstructions by voxel overlap — rewarding the wrong thing. NRI judges them by whether synapses connect to the right neurons: measure what the map is for.' },
   { id:'confirms', short:'CONFIRMS', thread:'trust', scale:'circuit', year:2021, citations:10,
     field:'Neuroscience', move:'calibrate the judge', ingraph:true,
@@ -585,6 +603,7 @@ papers: [
     title:'Eliminating accidental deviations to minimize generalization error and maximize replicability',
     authors:'Bridgeford, Wang, …, Gray-Roncal, …, J. Vogelstein', venue:'PLoS Computational Biology',
     doi:'10.1371/journal.pcbi.1009279', url:'https://doi.org/10.1371/journal.pcbi.1009279',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Bridgeford_2021.pdf',
     plain:'The statistical sequel: a measure (discriminability) for how well any pipeline preserves individual identity, used to pick pipelines that replicate — in connectomics and genomics alike.' },
   { id:'sic', short:'Science in the Cloud', thread:'archive', scale:'brain', year:2017, citations:40,
     field:'Databases & cloud', move:'widen the gate', ingraph:true,
@@ -597,19 +616,30 @@ papers: [
     title:'A framework for rigorous evaluation of human performance in human and machine learning comparison studies',
     authors:'Cowley, Natter, K. Gray-Roncal, …, Gray-Roncal', venue:'Scientific Reports',
     doi:'10.1038/s41598-022-08078-3', url:'https://doi.org/10.1038/s41598-022-08078-3',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Cowley_2022a.pdf',
     plain:'"Superhuman AI" claims rest on human baselines nobody measured carefully. This framework brings psychometric rigor to the human side of the comparison — calibrating the judge of the machines.' },
   { id:'rhodes', short:'aerial-search benchmark', thread:'trust', scale:'person', year:2021,
     field:'Human performance & clinical', move:'calibrate the judge', ingraph:false,
     title:'Benchmarking Human Performance for Visual Search of Aerial Images',
     authors:'Rhodes, Cowley, Huang, Gray-Roncal, Wester, Drenkow', venue:'Frontiers in Psychology',
     doi:'10.3389/fpsyg.2021.733021', url:'https://doi.org/10.3389/fpsyg.2021.733021',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Rhodes_2021.pdf',
     plain:'The framework applied: carefully measured human visual-search performance on aerial imagery, so machine claims have a real baseline to beat.' },
   { id:'covid', short:'COVID-19 patterns', thread:'trust', scale:'person', year:2023, citations:19,
     field:'Human performance & clinical', move:'make the graph', ingraph:true,
     title:'Using machine learning on clinical data to identify unexpected patterns in groups of COVID-19 patients',
     authors:'Cowley, Robinette, Matelsky, …, Garibaldi, Gray-Roncal', venue:'Scientific Reports',
     doi:'10.1038/s41598-022-26294-9', url:'https://doi.org/10.1038/s41598-022-26294-9',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Cowley_2022b.pdf',
     plain:'Law one at the bedside: patients as points in a graph, clustered to surface patterns clinical intuition missed — the same measurement discipline, turned on a pandemic.' },
+
+  { id:'s2k', short:'sample-to-knowledge', thread:'trust', scale:'circuit', year:2016,
+    field:'Neuroscience', move:'calibrate the judge', ingraph:true,
+    title:'From sample to knowledge: Towards an integrated approach for neuroscience discovery',
+    authors:'Gray Roncal* & Dyer* (equal), Gürsoy, Kording, Kasthuri', venue:'arXiv',
+    doi:'10.48550/arXiv.1604.03199', url:'https://arxiv.org/abs/1604.03199',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2016f.pdf',
+    plain:'The keystone: a barely-cited 2016 position paper that states the whole method — optimize the entire pipeline, acquisition to analysis, against the knowledge you actually want, not against each stage’s surrogate metric. Every later thread is this note, executed.' },
 
   /* ---- archive: infrastructure that hands over the controls ---- */
   { id:'ocp', short:'Open Connectome', thread:'archive', scale:'circuit', year:2013, citations:66,
@@ -635,6 +665,7 @@ papers: [
     title:'The Brain Observatory Storage Service and Database (BossDB): A Cloud-Native Approach for Petascale Neuroscience Discovery',
     authors:'Hider, Kleissas, Gion, …, Gray-Roncal, Wester', venue:'Frontiers in Neuroinformatics',
     doi:'10.3389/fninf.2022.828787', url:'https://doi.org/10.3389/fninf.2022.828787',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Hider_2022.pdf',
     plain:'The archive rebuilt for the petabyte era: serverless, autoscaling, swallowing brain volumes at 230 GB per minute — and built before the data existed, in anticipation of MICrONS.' },
   { id:'intern', short:'intern toolkit', thread:'archive', scale:'circuit', year:2021, citations:10,
     field:'Databases & cloud', move:'widen the gate', ingraph:false,
@@ -647,12 +678,14 @@ papers: [
     title:'Connectomics Annotation Metadata Standardization for Increased Accessibility and Queryability',
     authors:'Sanchez, Moore, Johnson, Wester, Lichtman, Gray-Roncal', venue:'Frontiers in Neuroinformatics',
     doi:'10.3389/fninf.2022.828458', url:'https://doi.org/10.3389/fninf.2022.828458',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Sanchez_2022.pdf',
     plain:'Dropdown-menu queries over 150 million synapses of human cortex, rendered as clickable 3D neurons. First-authored by two CIRCUIT alumni — the gate, verifiably widened.' },
   { id:'metadata', short:'EM/XRM standards', thread:'archive', scale:'circuit', year:2024,
     field:'Databases & cloud', move:'widen the gate', ingraph:false,
     title:'EM and XRM Connectomics Imaging and Experimental Metadata Standards',
     authors:'Wimbish, Guittari, Rose, …, Gray-Roncal', venue:'arXiv',
     doi:'10.48550/arXiv.2401.15251', url:'https://arxiv.org/abs/2401.15251',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/wimbish2024em.pdf',
     plain:'MRI has BIDS; physiology has NWB; nanoscale connectomics had nothing — so his team wrote the missing standard, versioned and governed on GitHub like software.' },
 
   /* ---- machines: the map runs backwards ---- */
@@ -667,12 +700,14 @@ papers: [
     title:'Mine your own view: Self-supervised learning through across-sample prediction',
     authors:'Azabou, Azar, Liu, …, Gray-Roncal (APL team), …, Dyer', venue:'arXiv',
     doi:'10.48550/arXiv.2102.10106', url:'https://arxiv.org/abs/2102.10106',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Azabou_2021.pdf',
     plain:'Self-supervised learning that mines a dataset for its own teaching examples — built for neural data, where labels are the scarcest resource of all.' },
   { id:'ring', short:'insect ring attractor', thread:'machines', scale:'circuit', year:2022, citations:13,
     field:'Computer vision & AI', move:'make the graph', ingraph:true,
     title:'Online learning for orientation estimation during translation in an insect ring attractor network',
     authors:'Robinson, Norman-Tenazas, Cervantes, …, Zhang, Gray-Roncal', venue:'Scientific Reports',
     doi:'10.1038/s41598-022-05798-4', url:'https://doi.org/10.1038/s41598-022-05798-4',
+    pdf:'https://will.grayroncal.com/assets/pdf/papers/Robinson_2022.pdf',
     plain:'The map runs backwards: a fly’s head-direction circuit, mapped by connectomics, re-implemented as a learning algorithm for navigation. Why map brains? This is why.' },
   { id:'swarmai', short:'BOLT swarm testbed', thread:'people', scale:'cohort', year:2023,
     field:'Education & outreach', move:'widen the gate', ingraph:false,
@@ -843,6 +878,9 @@ edges: [
   { s:'miccai', t:'kasthuri', type:'cites' },
   { s:'nri', t:'kasthuri', type:'cites' },
   { s:'nri', t:'i2g', type:'cites' },
+  { s:'s2k', t:'i2g', type:'cites' },
+  { s:'s2k', t:'xray', type:'cites' },
+  { s:'s2k', t:'kasthuri', type:'cites' },
   { s:'confirms', t:'nri', type:'cites' },
   { s:'confirms', t:'dotmotif', type:'cites' },
   { s:'confirms', t:'bossdb', type:'cites' },
@@ -1083,7 +1121,8 @@ edges: [
       '<div class="t">' + kindNote + (d.title || d.label) + '</div>' +
       (meta.length ? '<div class="m">' + meta.join(' · ') + '</div>' : '') +
       '<div>' + (d.note || d.plain || '') +
-      (d.url ? ' <a href="' + d.url + '" target="_blank" rel="noopener">source ↗</a>' : '') + '</div>';
+      (d.url ? ' <a href="' + d.url + '" target="_blank" rel="noopener">source ↗</a>' : '') +
+      (d.pdf ? ' · <a href="' + d.pdf + '" target="_blank" rel="noopener">PDF ↗</a>' : '') + '</div>';
   }
 
   function highlight(n) {
@@ -1308,9 +1347,14 @@ document.addEventListener('DOMContentLoaded', function () {
         the <a href="#pl-i2g">images-to-graphs</a> dissertation chains it all
         with zero humans and publishes its own unflattering score (F1 = 0.16),
         and <a href="#pl-santiago">SANTIAGO</a> attacks the one error mode —
-        spine necks — that the honest metric exposed.
+        spine necks — that the honest metric exposed. Then, at the hinge of the
+        whole career, he and Eva Dyer write the method down:
+        <a href="#pl-s2k">“From sample to knowledge”</a> (2016) — optimize the
+        entire pipeline against the knowledge objective, never against each
+        stage’s surrogate score. Almost nobody cited it. Everything after it is
+        that note, executed.
       </p>
-      <p class="papers-line">Plates II–VII</p>
+      <p class="papers-line">Plates II–VII · the keystone interlude</p>
     </div>
 
     <div class="act">
@@ -1329,7 +1373,7 @@ document.addEventListener('DOMContentLoaded', function () {
         synapses, one mouse — lands in the world's browsers from the archive
         his team runs.
       </p>
-      <p class="papers-line">Plates IX, XV, XVI, XX · field notes: SIC, substrate, intern, metadata standards</p>
+      <p class="papers-line">Plates IX, XV, XVI, XX · field notes: SIC, substrate, intern, metadata standards · <a href="https://www.youtube.com/watch?v=lTtYpnOwjwg">watch: his 2020 BRAIN Initiative symposium, “Toward Petascale and Exascale Connectomics”</a></p>
     </div>
 
     <div class="act">
@@ -1599,7 +1643,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>≈11.6 million synapses detected across 20 teravoxels of mouse cortex — in 2015.</li>
         <li>Philosophy stated outright: favor recall; humans can proofread false positives, but a missed connection is gone.</li>
       </ul>
-      <p class="pl-src"><a href="https://arxiv.org/abs/1403.3724">arXiv:1403.3724</a></p>
+      <p class="pl-src"><a href="https://arxiv.org/abs/1403.3724">arXiv:1403.3724</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2015b.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-i2g">
@@ -1628,7 +1672,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>1,856 candidate pipelines searched (~8,000 cluster jobs); the best honest graph F1 was 0.16 — published as the community baseline to beat.</li>
         <li>The best graph does not come from the best individual modules: tiny segmentation errors at spine necks destroy graph topology.</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2015.00020">doi:10.3389/fninf.2015.00020</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2015.00020">doi:10.3389/fninf.2015.00020</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2015a.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-santiago">
@@ -1659,7 +1703,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>Snap the spine necks and the true graph collapses from 31,980 edges to 2,718.</li>
         <li>Re-linking spines alone: graph F1 0.31 → 0.64. Show a human the top-5 candidates and the right shaft is there 89% of the time.</li>
       </ul>
-      <p class="pl-src"><a href="https://arxiv.org/abs/1608.02307">arXiv:1608.02307</a></p>
+      <p class="pl-src"><a href="https://arxiv.org/abs/1608.02307">arXiv:1608.02307</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2016a.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-xray">
@@ -1690,7 +1734,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>~16.6 gigavoxels in ~6 minutes; 48,689 cells auto-detected, analysis on a single workstation.</li>
         <li>The automated segmentation agreed with the expert annotator better than a second human did.</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.1523/ENEURO.0195-17.2017">doi:10.1523/ENEURO.0195-17.2017</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.1523/ENEURO.0195-17.2017">doi:10.1523/ENEURO.0195-17.2017</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/Dyer_2017.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-ocp">
@@ -1780,7 +1824,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>Precision vs recall diagnoses the error type: merges vs splits.</li>
         <li>Tested on a synthetic cortex of 872 neurons and a million synapses — crash-test dummies for connectomics.</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2018.00074">doi:10.3389/fninf.2018.00074</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2018.00074">doi:10.3389/fninf.2018.00074</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/Reilly_2017.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-plos">
@@ -1816,9 +1860,64 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>The classic statistic, ICC, goes <em>negative</em> with 2 outliers in 10 subjects; discriminability shrugs.</li>
         <li>Their own honesty rule: discriminability is “neither necessary, nor sufficient, for a measurement to be practically useful.”</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.1371/journal.pcbi.1009279">doi:10.1371/journal.pcbi.1009279</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.1371/journal.pcbi.1009279">doi:10.1371/journal.pcbi.1009279</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/Bridgeford_2021.pdf">PDF</a></p>
     </article>
 
+  </div>
+</section>
+
+<!-- ================= THE KEYSTONE (interlude between the galleries) ================= -->
+<section class="well" id="keystone" style="border-top:1px solid var(--line-well); border-bottom:1px solid var(--line-well);">
+  <div class="col" id="pl-s2k" style="padding-top:.6rem;">
+    <p class="eyebrow">Interlude — the keystone</p>
+    <h2 style="color:var(--ink-well); max-width:32ch;">The paper that says the quiet part out loud</h2>
+    <figure style="background:var(--well-2); border-radius:6px; margin:1.4rem 0; padding:.4rem;">
+      <svg viewBox="0 0 720 200" role="img" style="display:block; width:100%; height:auto;"
+        aria-label="Three pipeline stages — acquisition, processing, analysis — connected forward by arrows, with feedback loops arcing back from each stage and from a knowledge gauge at the end to every earlier stage.">
+        <g fill="none" stroke="#9a9891">
+          <rect x="40" y="80" width="130" height="46" rx="5"/>
+          <rect x="240" y="80" width="130" height="46" rx="5"/>
+          <rect x="440" y="80" width="130" height="46" rx="5"/>
+          <path d="M170 103 h66 l-7 -6 m7 6 l-7 6 M370 103 h66 l-7 -6 m7 6 l-7 6 M570 103 h44 l-7 -6 m7 6 l-7 6"/>
+        </g>
+        <g style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:12px; fill:#e8e6e1;">
+          <text x="60" y="107">acquisition</text>
+          <text x="262" y="107">processing</text>
+          <text x="475" y="107">analysis</text>
+        </g>
+        <circle cx="648" cy="103" r="26" fill="none" stroke="var(--trust-well)" stroke-width="2.5"/>
+        <path d="M648 103 L662 89" stroke="var(--trust-well)" stroke-width="2.5"/>
+        <text x="618" y="152" style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:10px; fill:var(--trust-well);">knowledge</text>
+        <g fill="none" stroke="var(--trust-well)" stroke-dasharray="4 4" stroke-width="1.6">
+          <path d="M300 80 C280 40 190 40 130 78 M130 78 l-2 -8 m2 8 l8 -3"/>
+          <path d="M500 80 C470 30 300 28 120 76 M120 76 l-2 -8 m2 8 l8 -3"/>
+          <path d="M640 77 C600 20 300 14 105 74 M105 74 l-2 -8 m2 8 l8 -3"/>
+        </g>
+        <text x="40" y="188" style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:10px; fill:#9a9891;">the feedback loops: every stage answers to the final knowledge, not to its own score</text>
+      </svg>
+    </figure>
+    <p class="pl-cite" style="color:var(--faint-well);">Gray Roncal* &amp; Dyer* (equal contribution), Gürsoy, Kording &amp; Kasthuri · “From sample to knowledge: Towards an integrated approach for neuroscience discovery” · arXiv, 2016</p>
+    <p style="color:var(--ink-well); max-width:66ch;">
+      The playbook for this page says a keystone is usually “one paper that
+      states the theory most nakedly — often barely cited.” Here it is,
+      recovered from the newly self-hosted PDFs: a 2016 position paper, written
+      at the exact hinge between the career’s descent and its ascent, arguing
+      that acquisition, processing and analysis must be optimized
+      <em>together, against the knowledge objective</em> — because per-stage
+      surrogate metrics (image quality, pixel accuracy, an arbitrary F1
+      operating point) “may not map smoothly to the overall objective of
+      interest.”
+    </p>
+    <ul class="pl-findings" style="color:var(--ink-well); max-width:66ch;">
+      <li>Law one is in it: graphs and spatial point processes named as the knowledge representations of neuroanatomy — for “neurocartographers,” the same coinage as his dissertation title.</li>
+      <li>Law two is in it: choose metrics from the knowledge you want, then feed them <em>backwards</em> through every stage — the argument NRI, BENCHMARK, the human-baseline framework, and eventually “Show Your Work” each re-make in a new domain.</li>
+      <li>Even the later scale of ambition is in it: a worked case study chaining X-ray microtomography into electron microscopy on the same sample — the exact multimodal design the standards papers formalized eight years later.</li>
+      <li>Replace “imaging pipeline” with “classroom” and the argument reads as the learning-engineering thesis: judge the system by demonstrated capability, not by each stage’s proxy score.</li>
+    </ul>
+    <p class="pl-src" style="color:var(--faint-well);">
+      <a href="https://arxiv.org/abs/1604.03199" style="color:var(--ink-well);">arXiv:1604.03199</a> ·
+      <a href="https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2016f.pdf" style="color:var(--ink-well);">PDF (self-hosted)</a>
+    </p>
   </div>
 </section>
 
@@ -1855,7 +1954,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>Worm brains fan in; mouse cortex fans out — the most common 3-neuron pattern flips between species.</li>
         <li>Random-graph stand-ins for brains always undercount motifs — only degree-preserving shuffles come close.</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-021-91025-5">doi:10.1038/s41598-021-91025-5</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-021-91025-5">doi:10.1038/s41598-021-91025-5</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/Matelsky_2021a.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-confirms">
@@ -1920,7 +2019,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>~2 petabytes of lossless EM imagery stored for MICrONS; 30+ public collections at bossdb.org.</li>
         <li>Every dataset one Neuroglancer link away from any browser.</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2022.828787">doi:10.3389/fninf.2022.828787</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2022.828787">doi:10.3389/fninf.2022.828787</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/Hider_2022.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-standards">
@@ -1953,7 +2052,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>~27 GB of metadata makes ~1.4 petabytes of imagery queryable — 119 query combinations from seven question templates.</li>
         <li>One schema spans two brains: H01 human cortex and the Kasthuri mouse volume (Plate IV).</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2022.828458">doi:10.3389/fninf.2022.828458</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.3389/fninf.2022.828458">doi:10.3389/fninf.2022.828458</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/Sanchez_2022.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-ring">
@@ -1989,7 +2088,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>Estimated to run in ~18.6 microwatts on neuromorphic hardware — insect-grade power.</li>
         <li>The optimal solution rediscovers what animals do: trust distant landmarks, because nearby ones lie when you move.</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-022-05798-4">doi:10.1038/s41598-022-05798-4</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-022-05798-4">doi:10.1038/s41598-022-05798-4</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/Robinson_2022.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-cowleyhm">
@@ -2020,7 +2119,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>The one-shot cliff: a ResNet falls from 92.7% to 54.4% on a class it saw once; humans go 94.6% → 95.8% — no penalty at all.</li>
         <li>The pitfalls list doubles as a field checklist: unmatched trials, careless annotators, no confidence intervals.</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-022-08078-3">doi:10.1038/s41598-022-08078-3</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-022-08078-3">doi:10.1038/s41598-022-08078-3</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/Cowley_2022a.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-covid">
@@ -2050,7 +2149,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>One epoch scored 90% accuracy with precisely zero predictive skill (MCC 0.00) — accuracy theater, exposed.</li>
         <li>Two specific patient clusters generate most false “you’ll be fine” calls — a map of when not to trust the algorithm.</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-022-26294-9">doi:10.1038/s41598-022-26294-9</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41598-022-26294-9">doi:10.1038/s41598-022-26294-9</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/Cowley_2022b.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-microns">
@@ -2086,7 +2185,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li>~4 km of axons in a volume the size of a poppy seed (figure from the project’s public materials).</li>
         <li>The New York Times called it “an advance … once considered impossible.”</li>
       </ul>
-      <p class="pl-src"><a href="https://doi.org/10.1038/s41586-025-08790-w">doi:10.1038/s41586-025-08790-w</a> · <a href="https://bossdb.org">bossdb.org</a></p>
+      <p class="pl-src"><a href="https://doi.org/10.1038/s41586-025-08790-w">doi:10.1038/s41586-025-08790-w</a> · <a href="https://bossdb.org">bossdb.org</a> · <a href="https://will.grayroncal.com/assets/pdf/papers/microns2025functional.pdf">PDF</a></p>
     </article>
 
     <article class="plate" id="pl-collegeprep">
@@ -2236,14 +2335,14 @@ document.addEventListener('DOMContentLoaded', function () {
     </p>
     <ul style="font-size:.9rem; line-height:1.75;">
       <li><span class="chip t-machines">machines</span> <a href="https://arxiv.org/abs/1312.4318">Glocal invariants (2013)</a> — graph statistics for 16-million-vertex brains on one core and 6.5 GB of RAM; coined “glocal.”</li>
-      <li><span class="chip t-maps">maps</span> <a href="https://arxiv.org/abs/1506.02079">Gradient-domain fusion (2015)</a> — color-correcting five-teravoxel EM stacks in a 600 MB memory footprint; the unglamorous plumbing under Plates V–VI.</li>
+      <li><span class="chip t-maps">maps</span> <a href="https://arxiv.org/abs/1506.02079">Gradient-domain fusion (2015)</a> (<a href="https://will.grayroncal.com/assets/pdf/papers/Kazhdan_2015.pdf">PDF</a>) — color-correcting five-teravoxel EM stacks in a 600 MB memory footprint; the unglamorous plumbing under Plates V–VI.</li>
       <li><span class="chip t-archive">archive</span> <a href="https://doi.org/10.1093/gigascience/gix013">Science in the Cloud (2017)</a> — a full connectome pipeline for ~1.4 cents per scan; a live, clickable paper hosted for ~$100/year.</li>
-      <li><span class="chip t-archive">archive</span> <a href="https://doi.org/10.1101/217349">substrate (2017)</a> — composable browser 3D visualization; <a href="https://doi.org/10.1109/EMBC46164.2021.9630199">intern (2021)</a> — one Python interface over every volumetric store; <a href="https://arxiv.org/abs/2401.15251">EM/XRM metadata standards (2024)</a> — the missing BIDS/NWB equivalent for nanoscale data.</li>
-      <li><span class="chip t-maps">maps</span> <a href="https://doi.org/10.1038/s41597-020-00692-y">Thalamocortical dataset (2020)</a> — a cortex-to-hypothalamus “core sample” at micron scale, published for others; <a href="https://doi.org/10.1007/978-3-030-59722-1_11">“Agents” (MICCAI 2020)</a> — virtual rovers borrowed from autonomous navigation, path-finding through brains; <a href="https://doi.org/10.1109/ICIP42928.2021.9506174">multi-scale X-ray segmentation (2021)</a>; <a href="https://www.biorxiv.org/content/10.1101/2021.07.11.451911">C. elegans development (2021)</a> — one motif grows 353-fold from birth to adulthood while triangles grow 9×.</li>
-      <li><span class="chip t-machines">machines</span> <a href="https://arxiv.org/abs/2102.10106">MYOW (2021)</a> — self-supervised learning that mines a dataset for its own teaching examples; beat the supervised baseline on all four monkey-reach datasets. <a href="https://doi.org/10.1109/IEEECONF44664.2019.9048673">Transfer learning for EM workflows (2019)</a> — measuring whether models survive new brains instead of assuming it.</li>
-      <li><span class="chip t-trust">trust</span> <a href="https://doi.org/10.3389/fpsyg.2021.733021">Aerial-search benchmark (2021)</a> — 666 people searched satellite images: targets under ~100×100 px slip past, and on nearly-empty images 57% of “finds” were phantoms. <a href="https://www.biorxiv.org/content/10.1101/2021.11.01.466686">m2g (2021)</a> — the democratized pipeline: any laptop with 16 GB of RAM, ~6,000 scans, every one yielding a plausible connectome.</li>
+      <li><span class="chip t-archive">archive</span> <a href="https://doi.org/10.1101/217349">substrate (2017)</a> — composable browser 3D visualization; <a href="https://doi.org/10.1109/EMBC46164.2021.9630199">intern (2021)</a> — one Python interface over every volumetric store; <a href="https://arxiv.org/abs/2401.15251">EM/XRM metadata standards (2024)</a> (<a href="https://will.grayroncal.com/assets/pdf/papers/wimbish2024em.pdf">PDF</a>) — the missing BIDS/NWB equivalent for nanoscale data.</li>
+      <li><span class="chip t-maps">maps</span> <a href="https://doi.org/10.1038/s41597-020-00692-y">Thalamocortical dataset (2020)</a> (<a href="https://will.grayroncal.com/assets/pdf/papers/Prasad_2020.pdf">PDF</a>) — a cortex-to-hypothalamus “core sample” at micron scale, published for others; <a href="https://doi.org/10.1007/978-3-030-59722-1_11">“Agents” (MICCAI 2020)</a> — virtual rovers borrowed from autonomous navigation, path-finding through brains; <a href="https://doi.org/10.1109/ICIP42928.2021.9506174">multi-scale X-ray segmentation (2021)</a>; <a href="https://www.biorxiv.org/content/10.1101/2021.07.11.451911">C. elegans development (2021)</a> — one motif grows 353-fold from birth to adulthood while triangles grow 9×.</li>
+      <li><span class="chip t-machines">machines</span> <a href="https://arxiv.org/abs/2102.10106">MYOW (2021)</a> (<a href="https://will.grayroncal.com/assets/pdf/papers/Azabou_2021.pdf">PDF</a>) — self-supervised learning that mines a dataset for its own teaching examples; beat the supervised baseline on all four monkey-reach datasets. <a href="https://doi.org/10.1109/IEEECONF44664.2019.9048673">Transfer learning for EM workflows (2019)</a> — measuring whether models survive new brains instead of assuming it.</li>
+      <li><span class="chip t-trust">trust</span> <a href="https://doi.org/10.3389/fpsyg.2021.733021">Aerial-search benchmark (2021)</a> (<a href="https://will.grayroncal.com/assets/pdf/papers/Rhodes_2021.pdf">PDF</a>) — 666 people searched satellite images: targets under ~100×100 px slip past, and on nearly-empty images 57% of “finds” were phantoms. <a href="https://www.biorxiv.org/content/10.1101/2021.11.01.466686">m2g (2021)</a> — the democratized pipeline: any laptop with 16 GB of RAM, ~6,000 scans, every one yielding a plausible connectome.</li>
       <li><span class="chip t-people">people</span> <a href="https://doi.org/10.1109/isecon.2019.8882110">Outreach tech stack (2019)</a>, <a href="https://doi.org/10.1109/ISEC49744.2020.9280735">trailblazer training (2020)</a>, <a href="https://doi.org/10.1109/ISEC57711.2023.10402255">the immersive curriculum (2023)</a> — Learner Blueprints, a git-repo Knowledge Base, stoplight assessments; <a href="https://peer.asee.org/42839">Net-Hack (2023)</a> — a hackathon judged on proposals, not code; <a href="https://peer.asee.org/42515">BOLT (2023)</a> — swarm robotics as laser tag.</li>
-      <li><span class="chip t-shared">the rest</span> ~30 conference abstracts and invited talks (Society for Neuroscience, OHBM, BRAIN Initiative, NeurIPS BigNeuro workshops he organized in 2015 and 2017, a GoogleX talk, SXSW 2022) — catalogued in the <a href="https://github.com/wrgr/me/blob/main/cv/will_cv.bib">source bibliography</a>.</li>
+      <li><span class="chip t-shared">the rest</span> ~30 conference abstracts and invited talks, catalogued in the <a href="https://github.com/wrgr/me/blob/main/cv/will_cv.bib">source bibliography</a> — and no longer all dead ends: several now link to the actual artifacts, including the SfN posters behind the archive thread (<a href="https://doi.org/10.6084/m9.figshare.1585167.v1">Open Connectome &amp; NeuroData, 2015</a>; <a href="https://doi.org/10.6084/m9.figshare.1585150.v2">scalable synapse detection, 2015</a>; <a href="https://doi.org/10.6084/m9.figshare.1585168.v1">whole-brain CLARITY statistics, 2015</a>), the <a href="https://neurips.cc/virtual/2015/workshop/4908">NeurIPS BigNeuro 2015</a> and <a href="https://evadyer.github.io/NIPS-bigneuro-2017.html">2017</a> workshops he co-organized, his <a href="https://aaai.org/conference/aaai/aaai-21/accepted-diversity-and-inclusion-events/">AAAI 2021 workshop on trailblazing STEM students</a>, and a <a href="https://www.youtube.com/watch?v=lTtYpnOwjwg">recording of his 2020 BRAIN Initiative symposium, “Toward Petascale and Exascale Connectomics.”</a></li>
     </ul>
   </div>
 </section>
