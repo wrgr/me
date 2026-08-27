@@ -1,0 +1,355 @@
+<style>
+/* ============================================================
+   FIG. 1 — the related-work graph
+   ============================================================ */
+.graphsec{background:var(--panel-2);border-bottom:1px solid var(--rule)}
+.graph-layout{display:grid;gap:1.25rem}
+@media (min-width:1000px){.graph-layout{grid-template-columns:minmax(0,1fr) 310px;align-items:start}}
+
+.graph-stage{
+  background:var(--panel);border:1px solid var(--rule);border-radius:3px;
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.graph-stage svg{display:block;width:100%;height:auto;touch-action:manipulation}
+
+.gnode{cursor:pointer}
+.gnode:focus{outline:none}
+.gnode:focus-visible .halo,.gnode:hover .halo{opacity:1}
+.halo{opacity:0;transition:opacity .15s ease;pointer-events:none}
+.gnode.dim{opacity:.2}
+.gedge{transition:opacity .2s ease}
+.gedge.dim{opacity:.07}
+.glabel{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.02em;
+  pointer-events:none;
+}
+
+.graph-side{display:flex;flex-direction:column;gap:1rem}
+.gpanel{
+  background:var(--panel);border:1px solid var(--rule);border-radius:3px;
+  padding:1.15rem 1.15rem 1.25rem;min-height:11.5rem;
+}
+.gpanel .kind{
+  font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.12em;
+  text-transform:uppercase;color:var(--th,var(--ink-3));font-weight:600;
+}
+.gpanel h4{font-family:var(--display);font-size:var(--fs-base);line-height:1.28;margin:.5rem 0 .55rem;font-variation-settings:"SOFT" 2,"WONK" 1,"opsz" 24}
+.gpanel .meta{font-family:var(--mono);font-size:var(--fs-xs);color:var(--ink-3);line-height:1.7}
+.gpanel .body{font-size:var(--fs-sm);color:var(--ink-2);margin-top:.6rem;line-height:1.58}
+.gpanel a{color:var(--th,var(--ink))}
+
+.glegend{
+  background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:1.1rem 1.15rem;
+  font-family:var(--mono);font-size:var(--fs-xs);color:var(--ink-2);line-height:1.6;
+}
+.glegend ul{list-style:none;margin:.65rem 0 0;padding:0;display:flex;flex-direction:column;gap:.5rem}
+.glegend li{display:flex;align-items:center;gap:.6rem}
+.glegend svg{flex:0 0 34px}
+.glegend b{display:block;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.glegend .warn{margin-top:.85rem;padding-top:.75rem;border-top:1px solid var(--rule-2);color:var(--ink-3)}
+</style>
+
+<section class="graphsec" id="graph">
+  <div class="wrap">
+    <div class="fig-head">
+      <div>
+        <p class="eyebrow">Fig. 1</p>
+        <h2>The related-work graph</h2>
+        <p>
+          Her papers, the prior work they actually cite, and — drawn differently,
+          because they are my claim and not hers — the shared ideas that bridge threads
+          nothing else connects. Hover or tab to a node.
+        </p>
+      </div>
+    </div>
+
+    <div class="graph-layout">
+      <div class="graph-stage">
+        <svg id="gSvg" viewBox="0 0 960 660" aria-label="Force-directed graph of Shelby Wilson's publications, their cited prior work, and six shared-idea bridge nodes.">
+          <g id="gEdges"></g>
+          <g id="gNodes"></g>
+        </svg>
+      </div>
+
+      <div class="graph-side">
+        <div class="gpanel" id="gPanel" aria-live="polite">
+          <p class="kind">Select a node</p>
+          <h4>Nineteen papers, eight references, six ideas</h4>
+          <p class="body">
+            The bridge nodes are the point. Without them the graph falls into disconnected
+            islands — immunology here, ecology there, epidemiology over there. With them it
+            is one object.
+          </p>
+        </div>
+
+        <div class="glegend">
+          <b>Legend</b>
+          <ul>
+            <li>
+              <svg width="34" height="12" viewBox="0 0 34 12" aria-hidden="true"><line x1="1" y1="6" x2="33" y2="6" stroke="var(--t-model)" stroke-width="2.5"/></svg>
+              <span>same thread</span>
+            </li>
+            <li>
+              <svg width="34" height="12" viewBox="0 0 34 12" aria-hidden="true"><line x1="1" y1="6" x2="33" y2="6" stroke="var(--agg)" stroke-width="1.2"/></svg>
+              <span>cites — real, from reference lists</span>
+            </li>
+            <li>
+              <svg width="34" height="12" viewBox="0 0 34 12" aria-hidden="true"><line x1="1" y1="6" x2="33" y2="6" stroke="var(--agg)" stroke-width="1.2" stroke-dasharray="3 3"/></svg>
+              <span>shared idea — <i>my</i> reading</span>
+            </li>
+            <li>
+              <svg width="34" height="14" viewBox="0 0 34 14" aria-hidden="true"><circle cx="10" cy="7" r="6" fill="var(--t-cell)"/><circle cx="26" cy="7" r="4" fill="none" stroke="var(--agg)" stroke-width="1.4"/></svg>
+              <span>her paper (size = citations) · prior work</span>
+            </li>
+          </ul>
+          <p class="warn">Dashed edges are interpretation. Solid thin edges are checkable against the papers’ own reference lists.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var svg = document.getElementById('gSvg');
+  if(!svg || typeof SUBJECT === 'undefined') return;
+  var NS='http://www.w3.org/2000/svg';
+  var W=960,H=660;
+
+  function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  var rnd=mulberry32(20120512);
+
+  var THREAD={cell:'--t-cell',mouse:'--t-mouse',sleep:'--t-sleep',troop:'--t-troop',model:'--t-model',person:'--t-person'};
+
+  /* ---- build the node set ---- */
+  var nodes=[], byId={};
+  SUBJECT.papers.forEach(function(p){
+    nodes.push({id:p.id,kind:'paper',thread:p.thread,label:p.short,r:6+Math.sqrt(p.citations)*1.15,data:p});
+  });
+  SUBJECT.related.forEach(function(r){
+    nodes.push({id:r.id,kind:r.kind,thread:r.thread,label:r.short,r:5,data:r});
+  });
+  SUBJECT.keywords.forEach(function(k){
+    nodes.push({id:k.id,kind:'kw',thread:'shared',label:k.label,r:9,data:k});
+  });
+  nodes.forEach(function(n){
+    byId[n.id]=n;
+    n.x=W/2+(rnd()-0.5)*520;
+    n.y=H/2+(rnd()-0.5)*400;
+    n.vx=0;n.vy=0;
+  });
+
+  var edges=SUBJECT.edges.filter(function(e){return byId[e.s]&&byId[e.t]});
+  var deg={}; edges.forEach(function(e){deg[e.s]=(deg[e.s]||0)+1;deg[e.t]=(deg[e.t]||0)+1});
+
+  /* ---- deterministic force layout, run to completion up front ---- */
+  var LINK={thread:84,cites:104,kw:142};
+  for(var it=0; it<620; it++){
+    var alpha=1-it/620;
+    /* repulsion */
+    for(var i=0;i<nodes.length;i++){
+      for(var j=i+1;j<nodes.length;j++){
+        var a=nodes[i],b=nodes[j];
+        var dx=b.x-a.x, dy=b.y-a.y, d2=dx*dx+dy*dy||0.01, d=Math.sqrt(d2);
+        var f=2600/d2;
+        var ux=dx/d, uy=dy/d;
+        a.vx-=ux*f; a.vy-=uy*f; b.vx+=ux*f; b.vy+=uy*f;
+      }
+    }
+    /* springs */
+    edges.forEach(function(e){
+      var a=byId[e.s], b=byId[e.t];
+      var dx=b.x-a.x, dy=b.y-a.y, d=Math.sqrt(dx*dx+dy*dy)||0.01;
+      var target=LINK[e.type]||100;
+      var f=(d-target)*0.035;
+      var ux=dx/d, uy=dy/d;
+      a.vx+=ux*f; a.vy+=uy*f; b.vx-=ux*f; b.vy-=uy*f;
+    });
+    /* gravity + integrate */
+    nodes.forEach(function(n){
+      n.vx+=(W/2-n.x)*0.0016; n.vy+=(H/2-n.y)*0.0022;
+      n.x+=n.vx*alpha*0.55; n.y+=n.vy*alpha*0.55;
+      n.vx*=0.82; n.vy*=0.82;
+      n.x=Math.max(46,Math.min(W-46,n.x));
+      n.y=Math.max(34,Math.min(H-34,n.y));
+    });
+  }
+
+  /* ---- fit the settled layout to the frame ----
+     The force pass fixes relative structure; this makes it fill the canvas
+     instead of huddling wherever gravity happened to leave it. */
+  (function fit(){
+    var pad=54;
+    var xs=nodes.map(function(n){return n.x}), ys=nodes.map(function(n){return n.y});
+    var x0=Math.min.apply(null,xs), x1=Math.max.apply(null,xs);
+    var y0=Math.min.apply(null,ys), y1=Math.max.apply(null,ys);
+    var sx=(W-pad*2)/Math.max(1,x1-x0), sy=(H-pad*2)/Math.max(1,y1-y0);
+    var k=Math.min(sx,sy);
+    var cx=(x0+x1)/2, cy=(y0+y1)/2;
+    nodes.forEach(function(n){
+      n.x=W/2+(n.x-cx)*k;
+      n.y=H/2+(n.y-cy)*k;
+    });
+  })();
+
+  /* ---- decide which nodes carry a visible label, greedily, so they
+         do not collide. Keyword nodes always win; then the biggest. ---- */
+  (function labels(){
+    var placed=[];
+    var order=nodes.slice().sort(function(a,b){
+      var pa=(a.kind==='kw'?1000:0)+a.r+(deg[a.id]||0);
+      var pb=(b.kind==='kw'?1000:0)+b.r+(deg[b.id]||0);
+      return pb-pa;
+    });
+    order.forEach(function(n){
+      var hw=n.label.length*3.35+9, hh=12;
+      var bx=n.x, by=n.y+n.r+13;
+      var hit=placed.some(function(q){
+        return Math.abs(bx-q.x)<(hw+q.hw) && Math.abs(by-q.y)<(hh+q.hh);
+      });
+      if(hit){
+        by=n.y-n.r-7;
+        hit=placed.some(function(q){
+          return Math.abs(bx-q.x)<(hw+q.hw) && Math.abs(by-q.y)<(hh+q.hh);
+        });
+      }
+      if(hit){ n.labelAt=null; return; }
+      placed.push({x:bx,y:by,hw:hw,hh:hh});
+      n.labelAt=by;
+    });
+  })();
+
+  /* ---- render ---- */
+  var gE=document.getElementById('gEdges'), gN=document.getElementById('gNodes');
+  var edgeEls=[];
+  edges.forEach(function(e){
+    var a=byId[e.s], b=byId[e.t];
+    var l=document.createElementNS(NS,'line');
+    l.setAttribute('x1',a.x);l.setAttribute('y1',a.y);l.setAttribute('x2',b.x);l.setAttribute('y2',b.y);
+    l.setAttribute('class','gedge');
+    if(e.type==='thread'){
+      l.setAttribute('stroke','var('+THREAD[a.thread]+')');
+      l.setAttribute('stroke-width','2.4');l.setAttribute('opacity','.75');
+    }else if(e.type==='cites'){
+      l.setAttribute('stroke','var(--agg)');l.setAttribute('stroke-width','1.2');l.setAttribute('opacity','.6');
+    }else{
+      l.setAttribute('stroke','var(--agg)');l.setAttribute('stroke-width','1.2');
+      l.setAttribute('stroke-dasharray','3 3');l.setAttribute('opacity','.5');
+    }
+    gE.appendChild(l);
+    edgeEls.push({el:l,e:e});
+  });
+
+  function aria(n){
+    var d=n.data;
+    if(n.kind==='paper') return d.title+' — '+d.authors+', '+d.venue+', '+d.year+'. '+d.citations+' citations.';
+    if(n.kind==='kw')    return 'Shared idea: '+d.label+'. '+d.title;
+    return 'Cited work: '+d.title+' — '+d.authors+', '+d.year+'.';
+  }
+
+  nodes.forEach(function(n){
+    var g=document.createElementNS(NS,'g');
+    g.setAttribute('class','gnode');
+    g.setAttribute('tabindex','0');
+    g.setAttribute('role','button');
+    g.setAttribute('aria-label',aria(n));
+    g.dataset.id=n.id;
+
+    var halo=document.createElementNS(NS,'circle');
+    halo.setAttribute('cx',n.x);halo.setAttribute('cy',n.y);
+    halo.setAttribute('r',n.r+7);
+    halo.setAttribute('class','halo');
+    halo.setAttribute('fill','none');
+    halo.setAttribute('stroke', n.kind==='kw' ? 'var(--agg)' : 'var('+THREAD[n.thread]+')');
+    halo.setAttribute('stroke-width','2');
+    g.appendChild(halo);
+
+    var shape;
+    if(n.kind==='kw'){
+      shape=document.createElementNS(NS,'rect');
+      shape.setAttribute('x',n.x-n.r);shape.setAttribute('y',n.y-n.r);
+      shape.setAttribute('width',n.r*2);shape.setAttribute('height',n.r*2);
+      shape.setAttribute('transform','rotate(45 '+n.x+' '+n.y+')');
+      shape.setAttribute('fill','var(--ground)');
+      shape.setAttribute('stroke','var(--agg)');
+      shape.setAttribute('stroke-width','2');
+    }else if(n.kind==='paper'){
+      shape=document.createElementNS(NS,'circle');
+      shape.setAttribute('cx',n.x);shape.setAttribute('cy',n.y);shape.setAttribute('r',n.r);
+      shape.setAttribute('fill','var('+THREAD[n.thread]+')');
+      shape.setAttribute('opacity','.9');
+    }else{
+      shape=document.createElementNS(NS,'circle');
+      shape.setAttribute('cx',n.x);shape.setAttribute('cy',n.y);shape.setAttribute('r',n.r);
+      shape.setAttribute('fill','var(--ground)');
+      shape.setAttribute('stroke','var(--agg)');
+      shape.setAttribute('stroke-width','1.5');
+    }
+    g.appendChild(shape);
+
+    if(n.labelAt){
+      var t=document.createElementNS(NS,'text');
+      t.setAttribute('x',n.x);t.setAttribute('y',n.labelAt);
+      t.setAttribute('text-anchor','middle');
+      t.setAttribute('class','glabel');
+      t.setAttribute('fill', n.kind==='kw'?'var(--ink-2)':'var('+THREAD[n.thread]+')');
+      t.textContent=n.label;
+      g.appendChild(t);
+    }
+
+    gN.appendChild(g);
+    n.el=g;
+  });
+
+  /* ---- interaction ---- */
+  var panel=document.getElementById('gPanel');
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+  function show(n){
+    var d=n.data, html='';
+    panel.style.setProperty('--th', n.kind==='kw' ? 'var(--agg)' : 'var('+THREAD[n.thread]+')');
+    if(n.kind==='paper'){
+      html='<p class="kind">Plate '+esc(d.plate)+' · '+esc(d.year)+'</p>'
+         + '<h4>'+esc(d.title)+'</h4>'
+         + '<p class="meta">'+esc(d.authors)+'<br>'+esc(d.venue)+'<br>'
+         + '<span class="num">'+d.citations+'</span> citations · <a href="'+esc(d.url)+'">'+esc(d.doi)+'</a></p>'
+         + '<p class="body">'+esc(d.plain)+'</p>';
+    }else if(n.kind==='kw'){
+      html='<p class="kind">Shared idea — interpretation</p>'
+         + '<h4>'+esc(d.title)+'</h4>'
+         + '<p class="body">'+esc(d.note)+'</p>';
+    }else{
+      html='<p class="kind">'+(n.kind==='ref'?'Cited prior work':'Downstream use')+' · '+esc(d.year)+'</p>'
+         + '<h4>'+esc(d.title)+'</h4>'
+         + '<p class="meta">'+esc(d.authors)+(d.venue&&d.venue!=='—'?'<br>'+esc(d.venue):'')+'</p>'
+         + '<p class="body">'+esc(d.note)+'</p>';
+    }
+    panel.innerHTML=html;
+
+    var keep={}; keep[n.id]=1;
+    edgeEls.forEach(function(o){
+      var on=(o.e.s===n.id||o.e.t===n.id);
+      o.el.classList.toggle('dim',!on);
+      if(on){keep[o.e.s]=1;keep[o.e.t]=1}
+    });
+    nodes.forEach(function(m){ m.el.classList.toggle('dim',!keep[m.id]); });
+  }
+  function clear(){
+    edgeEls.forEach(function(o){o.el.classList.remove('dim')});
+    nodes.forEach(function(m){m.el.classList.remove('dim')});
+  }
+
+  nodes.forEach(function(n){
+    n.el.addEventListener('mouseenter',function(){show(n)});
+    n.el.addEventListener('focus',function(){show(n)});
+    n.el.addEventListener('click',function(){show(n)});
+    n.el.addEventListener('keydown',function(ev){
+      if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();show(n)}
+    });
+  });
+  svg.addEventListener('mouseleave',clear);
+  svg.addEventListener('focusout',function(ev){
+    if(!svg.contains(ev.relatedTarget)) clear();
+  });
+})();
+</script>

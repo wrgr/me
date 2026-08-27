@@ -1,0 +1,127 @@
+<style>
+/* ============================================================
+   THE THEORY — three laws
+   ============================================================ */
+.theory{border-bottom:1px solid var(--rule)}
+.theory-head{max-width:var(--measure);margin-bottom:clamp(2.25rem,5vw,3.25rem)}
+.theory-head h2{font-size:clamp(1.9rem,4.4vw,var(--fs-2xl));font-variation-settings:"SOFT" 2,"WONK" 1,"opsz" 60;letter-spacing:-.018em;margin:.5rem 0 1rem}
+.theory-head p{color:var(--ink-2)}
+
+.laws{display:grid;gap:1.25rem}
+@media (min-width:900px){.laws{grid-template-columns:repeat(3,1fr)}}
+
+.law{
+  position:relative;background:var(--panel);border:1px solid var(--rule);
+  border-radius:3px;padding:1.6rem 1.5rem 1.5rem;display:flex;flex-direction:column;gap:.9rem;
+}
+.law::before{
+  content:"";position:absolute;inset:0 auto 0 0;width:3px;
+  background:var(--th);border-radius:3px 0 0 3px;
+}
+.law-n{
+  font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--th);font-weight:600;
+}
+.law h3{
+  font-size:var(--fs-lg);line-height:1.22;letter-spacing:-.012em;
+  font-variation-settings:"SOFT" 3,"WONK" 1,"opsz" 30;
+}
+.law > p{font-size:var(--fs-sm);color:var(--ink-2);line-height:1.62}
+.law-ev{
+  margin-top:auto;padding-top:.95rem;border-top:1px solid var(--rule-2);
+  font-family:var(--mono);font-size:var(--fs-xs);line-height:1.75;color:var(--ink-3);
+}
+.law-ev b{color:var(--ink-2);font-weight:500;display:block;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem}
+.law-ev a{color:var(--th);text-decoration-color:color-mix(in srgb,var(--th) 45%,transparent)}
+
+.caveat{
+  margin-top:1.25rem;background:var(--panel-2);border:1px dashed var(--rule);
+  border-radius:3px;padding:1.35rem 1.5rem;
+}
+.caveat p{font-size:var(--fs-sm);color:var(--ink-2);max-width:78ch}
+.caveat .eyebrow{margin-bottom:.5rem}
+</style>
+
+<section class="theory" id="theory">
+  <div class="wrap">
+    <div class="theory-head">
+      <p class="eyebrow">The theory</p>
+      <h2>Three laws the bibliography obeys</h2>
+      <p class="lede">
+        A through-line is only interesting if it could be wrong. Each of these is
+        falsifiable against her publication record: find a paper that breaks it and
+        the law fails.
+      </p>
+    </div>
+
+    <div class="laws">
+      <article class="law th-mouse">
+        <p class="law-n">Law I</p>
+        <h3>No average is allowed to stand in for its members.</h3>
+        <p>
+          The population curve is never the answer; it is the thing you subtract to
+          find the individual. Her method of choice — mixed-effect modelling — is
+          literally an equation with a private parameter set for every subject
+          bolted onto a shared one.
+        </p>
+        <div class="law-ev">
+          <b>Evidence</b>
+          1,371 tumour measurements across <span class="num">105</span> mice, fitted
+          with a mixed-effect approach —
+          <a href="https://doi.org/10.1002/psp4.12045">Wilson et&nbsp;al., <i>CPT:PSP</i> 2015</a>.
+          Her INRIA postdoc title names the move outright: “…Yields <i>Individualized</i>
+          Predictions for Optimal Combined Cancer Treatment”.
+        </div>
+      </article>
+
+      <article class="law th-troop">
+        <p class="law-n">Law II</p>
+        <h3>Population structure is an outcome, not an input.</h3>
+        <p>
+          She refuses to assume the shape of the group. The organisation is what you
+          get out of the model after individuals follow local rules — which means it
+          can be surprising, and repeatedly is.
+        </p>
+        <div class="law-ev">
+          <b>Evidence</b>
+          The 2018 chapter titles say it:
+          <a href="https://doi.org/10.1007/978-3-319-98083-6_2">“…the Evolution of Social Behaviors and <i>Emergent</i> Population Organization”</a>.
+          In
+          <a href="https://doi.org/10.3389/fevo.2020.00054">Wilson et&nbsp;al., <i>Front. Ecol. Evol.</i> 2020</a>,
+          the same 50 animals self-organise into three hubs groomed by 49 others each
+          — or into nobody in particular — purely by changing who they choose.
+        </div>
+      </article>
+
+      <article class="law th-model">
+        <p class="law-n">Law III</p>
+        <h3>Combine, don’t select — and keep the disagreement.</h3>
+        <p>
+          Given many imperfect individuals, do not pick the best one. Pool them in a
+          way that preserves how much they differ. The spread is not noise around the
+          answer; it is part of the answer.
+        </p>
+        <div class="law-ev">
+          <b>Evidence</b>
+          An ensemble that <i>preserved variation between models</i> (linear opinion
+          pool) beat every single model —
+          <a href="https://doi.org/10.1038/s41467-023-42680-x"><i>Nat. Commun.</i> 2023</a>.
+          APL’s own submission, <span class="mono">JHUAPL-SLPHospEns</span>, is flagged
+          in the hub metadata as an
+          <a href="https://doi.org/10.1038/s41597-022-01517-w"><span class="mono">ensemble_of_hub_models</span></a>
+          — a model made of other people’s models.
+        </div>
+      </article>
+    </div>
+
+    <div class="caveat">
+      <p class="eyebrow">The paper that doesn’t fit</p>
+      <p>
+        Her Spelman undergraduate thesis was on <b>the NTRU public key cryptosystem</b>
+        — lattice cryptography, with no population anywhere in it. It is the one item
+        in the record that the theory cannot absorb, and it is worth saying so plainly.
+        It is also the last problem she worked on before she got to choose her own.
+      </p>
+    </div>
+  </div>
+</section>

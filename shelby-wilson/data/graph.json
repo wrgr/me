@@ -1,0 +1,805 @@
+{
+  "rungs": [
+    {
+      "id": "cell",
+      "thread": "cell",
+      "label": "a cell",
+      "gloss": "T cells, regulatory T cells, a tumour"
+    },
+    {
+      "id": "mouse",
+      "thread": "mouse",
+      "label": "a mouse",
+      "gloss": "xenografted animals on a dosing schedule"
+    },
+    {
+      "id": "sleep",
+      "thread": "sleep",
+      "label": "a sleeper",
+      "gloss": "one body regulating its own temperature"
+    },
+    {
+      "id": "troop",
+      "thread": "troop",
+      "label": "an animal in a troop",
+      "gloss": "who grooms whom, and who benefits"
+    },
+    {
+      "id": "model",
+      "thread": "model",
+      "label": "a model",
+      "gloss": "one team’s forecast among dozens"
+    },
+    {
+      "id": "person",
+      "thread": "person",
+      "label": "a mathematician",
+      "gloss": "a named person, not a demographic"
+    }
+  ],
+  "papers": [
+    {
+      "id": "p1",
+      "short": "T cell contraction",
+      "thread": "cell",
+      "rung": 0,
+      "year": 2010,
+      "plate": "I",
+      "storyTitle": "Who turns the immune response off?",
+      "title": "A Mathematical Model of the Primary T Cell Response with Contraction Governed by Adaptive Regulatory T Cells",
+      "authors": "S. N. Wilson, P. Lee, D. Levy",
+      "venue": "IFMBE Proceedings 32:209–212",
+      "citations": 1,
+      "doi": "10.1007/978-3-642-14998-6_53",
+      "url": "https://doi.org/10.1007/978-3-642-14998-6_53",
+      "form": "proceedings",
+      "plain": "An immune response expands, then shrinks back. This first paper asks what does the shrinking. The proposal: a subpopulation of regulatory T cells that adapts to the response it is watching."
+    },
+    {
+      "id": "p2",
+      "short": "Vaccine + anti-TGF-β",
+      "thread": "cell",
+      "rung": 0,
+      "year": 2012,
+      "plate": "II",
+      "storyTitle": "Two treatments that only work together",
+      "title": "A Mathematical Model of the Enhancement of Tumor Vaccine Efficacy by Immunotherapy",
+      "authors": "S. Wilson, D. Levy",
+      "venue": "Bulletin of Mathematical Biology 74(7)",
+      "citations": 88,
+      "doi": "10.1007/s11538-012-9722-4",
+      "url": "https://doi.org/10.1007/s11538-012-9722-4",
+      "form": "article",
+      "plain": "Blocking the immunosuppressant TGF-β does almost nothing on its own. Give it alongside a tumour vaccine and the response amplifies. A four-equation model — tumour, TGF-β, effector T cells, regulatory T cells — reproduces exactly that pattern."
+    },
+    {
+      "id": "p3",
+      "short": "Treg switching",
+      "thread": "cell",
+      "rung": 0,
+      "year": 2013,
+      "plate": "III",
+      "storyTitle": "A cell that changes sides",
+      "title": "Functional Switching and Stability of Regulatory T Cells",
+      "authors": "S. Wilson, D. Levy",
+      "venue": "Bulletin of Mathematical Biology 75(10)",
+      "citations": 7,
+      "doi": "10.1007/s11538-013-9875-9",
+      "url": "https://doi.org/10.1007/s11538-013-9875-9",
+      "form": "article",
+      "plain": "The biological evidence was in conflict: can a regulatory T cell stop regulating and start promoting? Rather than pick a side, she modelled the switch itself — and found it makes the immune response far less sensitive to how many cells you started with."
+    },
+    {
+      "id": "p4",
+      "short": "Antiangiogenics in xenografts",
+      "thread": "mouse",
+      "rung": 1,
+      "year": 2013,
+      "plate": "IV",
+      "storyTitle": "Blood vessels you can grade",
+      "title": "Theoretical investigation of the efficacy of antiangiogenic drugs combined to chemotherapy in xenografted mice",
+      "authors": "F. Lignet, S. Benzekry, S. Wilson, F. Billy, O. Saut, M. Tod, B. You, and others",
+      "venue": "Journal of Theoretical Biology 320",
+      "citations": 20,
+      "doi": "10.1016/j.jtbi.2012.12.013",
+      "url": "https://doi.org/10.1016/j.jtbi.2012.12.013",
+      "form": "article",
+      "plain": "A multi-scale model that runs from VEGF signalling up to a whole tumour, introducing an index of vasculature quality — the balance of stable to unstable vessels — to work out how long after an antiangiogenic drug you should wait before giving chemotherapy."
+    },
+    {
+      "id": "p5",
+      "short": "Sunitinib / irinotecan timing",
+      "thread": "mouse",
+      "rung": 1,
+      "year": 2015,
+      "plate": "V",
+      "keystone": "method",
+      "storyTitle": "One hundred and five mice, one hundred and five models",
+      "title": "Modeling and predicting optimal treatment scheduling between the antiangiogenic drug sunitinib and irinotecan in preclinical settings",
+      "authors": "S. Wilson, M. Tod, A. Ouerdani, A. Emde, Y. Yarden, B. Ribba, and others",
+      "venue": "CPT: Pharmacometrics & Systems Pharmacology 4(12)",
+      "citations": 13,
+      "doi": "10.1002/psp4.12045",
+      "url": "https://doi.org/10.1002/psp4.12045",
+      "form": "article",
+      "plain": "1,371 tumour measurements from 105 colorectal tumour-bearing mice. A mixed-effect fit gives one population model and, underneath it, a private parameter set for every animal. The payoff is a therapeutic window: not which drugs, but how long to leave between them."
+    },
+    {
+      "id": "p6",
+      "short": "REM/NREM subcircuit",
+      "thread": "sleep",
+      "rung": 2,
+      "year": 2015,
+      "plate": "VI",
+      "storyTitle": "Sleep has an architecture",
+      "title": "Effects of Thermoregulation on Human Sleep Patterns: A Mathematical Model of Sleep–Wake Cycles with REM–NREM Subcircuit",
+      "authors": "S. Bañuelos, J. Best, G. Huguet, A. Prieto-Langarica, P. B. Pyzza, M. H. Schmidt, S. Wilson",
+      "venue": "The IMA Volumes in Mathematics and its Applications 158",
+      "citations": 1,
+      "doi": "10.1007/978-1-4939-2782-1_6",
+      "url": "https://doi.org/10.1007/978-1-4939-2782-1_6",
+      "form": "chapter",
+      "plain": "A night’s sleep is not one state. This model splits sleep into interacting REM and NREM populations of neurons, so the shape of a night emerges from the switching between them rather than being written in by hand."
+    },
+    {
+      "id": "p7",
+      "short": "Thermoregulation & sleep",
+      "thread": "sleep",
+      "rung": 2,
+      "year": 2020,
+      "plate": "VII",
+      "storyTitle": "The room temperature is in the equations",
+      "title": "Modeling the long term effects of thermoregulation on human sleep",
+      "authors": "S. Bañuelos, J. Best, G. Huguet, A. Prieto-Langarica, P. B. Pyzza, S. Wilson",
+      "venue": "Journal of Theoretical Biology 494:110208",
+      "citations": 3,
+      "doi": "10.1016/j.jtbi.2020.110208",
+      "url": "https://doi.org/10.1016/j.jtbi.2020.110208",
+      "form": "article",
+      "plain": "Following a theory that REM sleep is when the body stops paying for thermoregulation, the model adds metabolic heat equations to the sleep circuit — then asks what a too-hot or too-cold room does to the shape of a night, and of several nights running."
+    },
+    {
+      "id": "p8",
+      "short": "Emergent social organisation",
+      "thread": "troop",
+      "rung": 3,
+      "year": 2018,
+      "plate": "VIII",
+      "storyTitle": "Disease as a sculptor of societies",
+      "title": "How Disease Risks Can Impact the Evolution of Social Behaviors and Emergent Population Organization",
+      "authors": "N. D. Williams, H. Z. Brooks, M. E. Hohn, C. R. Price, A. E. Radunskaya, S. S. Sindi, S. N. Wilson, N. H. Fefferman",
+      "venue": "Association for Women in Mathematics Series 14, 31–46",
+      "citations": 3,
+      "doi": "10.1007/978-3-319-98083-6_2",
+      "url": "https://doi.org/10.1007/978-3-319-98083-6_2",
+      "form": "chapter",
+      "plain": "If catching things is a cost of being social, then disease pressure should leave fingerprints on the shape of animal societies. The chapter treats social structure as a thing that evolves rather than a thing you specify."
+    },
+    {
+      "id": "p9",
+      "short": "Structure & parasite load",
+      "thread": "troop",
+      "rung": 3,
+      "year": 2018,
+      "plate": "IX",
+      "storyTitle": "Where the parasites end up",
+      "title": "Mathematical Analysis of the Impact of Social Structure on Ectoparasite Load in Allogrooming Populations",
+      "authors": "H. Z. Brooks, M. E. Hohn, C. R. Price, A. E. Radunskaya, S. S. Sindi, N. D. Williams, S. N. Wilson, N. H. Fefferman",
+      "venue": "Association for Women in Mathematics Series 14, 47–61",
+      "citations": 0,
+      "doi": "10.1007/978-3-319-98083-6_3",
+      "url": "https://doi.org/10.1007/978-3-319-98083-6_3",
+      "form": "chapter",
+      "plain": "The companion analysis: hold the grooming behaviour fixed and vary the social structure, then read off where the parasite burden lands. Both chapters came out of a week-long Women Advancing Mathematical Biology workshop."
+    },
+    {
+      "id": "p10",
+      "short": "Allogrooming vs. ectoparasites",
+      "thread": "troop",
+      "rung": 3,
+      "year": 2020,
+      "plate": "X",
+      "storyTitle": "The best-organised group is the sickest",
+      "title": "How Emergent Social Patterns in Allogrooming Combat Parasitic Infections",
+      "authors": "S. N. Wilson, S. S. Sindi, H. Z. Brooks, M. E. Hohn, C. R. Price, A. E. Radunskaya, N. D. Williams, N. H. Fefferman",
+      "venue": "Frontiers in Ecology and Evolution 8:54",
+      "citations": 11,
+      "doi": "10.3389/fevo.2020.00054",
+      "url": "https://doi.org/10.3389/fevo.2020.00054",
+      "form": "article",
+      "figure": true,
+      "plain": "Fifty animals groom each other for 300 steps. Change nothing but how they pick partners. Choose by popularity and the group collapses into three hubs groomed by 49 others each — and stays riddled with parasites. Choose at random and, if grooming is efficient enough, the outbreak dies out."
+    },
+    {
+      "id": "p11",
+      "short": "Mathematically Gifted and Black",
+      "thread": "person",
+      "rung": 5,
+      "year": 2018,
+      "plate": "XIX",
+      "keystone": "theory",
+      "storyTitle": "One hundred and one names",
+      "title": "The Mathematically Gifted and Black Website",
+      "authors": "E. Graham, R. Higgins, C. Price, S. Wilson",
+      "venue": "Notices of the American Mathematical Society 65(2)",
+      "citations": 1,
+      "doi": "10.1090/noti1633",
+      "url": "https://doi.org/10.1090/noti1633",
+      "form": "essay",
+      "plain": "Four mathematicians build a site that publishes one Black mathematician per day of Black History Month, in their own words, with their own answers to the same questions. Not a statistic about a population — a list of individuals, which is the same operation she performs on mice, on models, and on cells."
+    },
+    {
+      "id": "p12",
+      "short": "MMWR scenario projections",
+      "thread": "model",
+      "rung": 4,
+      "year": 2021,
+      "plate": "XI",
+      "storyTitle": "Six models, four futures",
+      "title": "Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios — United States, April–September 2021",
+      "authors": "R. K. Borchering, C. Viboud, E. Howerton, and 57 others including S. Wilson",
+      "venue": "MMWR Morbidity and Mortality Weekly Report 70(19)",
+      "citations": 148,
+      "doi": "10.15585/mmwr.mm7019e3",
+      "url": "https://doi.org/10.15585/mmwr.mm7019e3",
+      "form": "article",
+      "plain": "Six models, four scenarios crossing vaccination coverage against how fast people stop distancing. The headline finding is an interaction: letting precautions lapse early undoes the vaccination gains over the following two to three months."
+    },
+    {
+      "id": "p13",
+      "short": "Delta resurgence",
+      "thread": "model",
+      "rung": 4,
+      "year": 2022,
+      "plate": "XII",
+      "storyTitle": "Right about the wave, wrong about the size",
+      "title": "Projected resurgence of COVID-19 in the United States in July–December 2021 resulting from the increased transmissibility of the Delta variant and faltering vaccination",
+      "authors": "S. Truelove, C. P. Smith, M. Qin, and 57 others including S. Wilson",
+      "venue": "eLife 11:e73584",
+      "citations": 25,
+      "doi": "10.7554/eLife.73584",
+      "url": "https://doi.org/10.7554/eLife.73584",
+      "form": "article",
+      "plain": "Nine mechanistic models projected a Delta resurgence six months out. They got the occurrence and the timing right and the magnitude badly wrong — undershooting reality. The paper says so in its own abstract, which is the interesting part."
+    },
+    {
+      "id": "p14",
+      "short": "Ensemble forecast evaluation",
+      "thread": "model",
+      "rung": 4,
+      "year": 2022,
+      "plate": "XIII",
+      "keystone": "law3",
+      "storyTitle": "The committee beats the expert",
+      "title": "Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the United States",
+      "authors": "E. Y. Cramer, E. L. Ray, V. K. Lopez, and 292 others including S. Wilson",
+      "venue": "Proceedings of the National Academy of Sciences 119(15)",
+      "citations": 315,
+      "doi": "10.1073/pnas.2113561119",
+      "url": "https://doi.org/10.1073/pnas.2113561119",
+      "form": "article",
+      "plain": "Tens of millions of predictions from more than 90 groups. The multi-model ensemble was the most consistently accurate forecaster of COVID-19 deaths for eighteen months. Two-thirds of individual models beat a naïve baseline; none beat the committee."
+    },
+    {
+      "id": "p15",
+      "short": "Forecast Hub dataset",
+      "thread": "model",
+      "rung": 4,
+      "year": 2022,
+      "plate": "XIV",
+      "storyTitle": "Publishing everybody’s guesses",
+      "title": "The United States COVID-19 Forecast Hub dataset",
+      "authors": "E. Y. Cramer, Y. Huang, Y. Wang, and 425 others including S. Wilson",
+      "venue": "Scientific Data 9:462",
+      "citations": 112,
+      "doi": "10.1038/s41597-022-01517-w",
+      "url": "https://doi.org/10.1038/s41597-022-01517-w",
+      "form": "dataset",
+      "plain": "The infrastructure paper: every forecast every team ever submitted, timestamped, kept, and released. It is what makes the scoring papers possible — you cannot audit a prediction you were allowed to withdraw."
+    },
+    {
+      "id": "p16",
+      "short": "Vaccinating children 5–11",
+      "thread": "model",
+      "rung": 4,
+      "year": 2023,
+      "plate": "XV",
+      "storyTitle": "A decision, priced",
+      "title": "Impact of SARS-CoV-2 vaccination of children ages 5–11 years on COVID-19 disease burden and resilience to new variants in the United States, November 2021–March 2022: a multi-model study",
+      "authors": "R. K. Borchering, L. C. Mullany, E. Howerton, and 60 others including S. Wilson",
+      "venue": "The Lancet Regional Health – Americas 17:100398",
+      "citations": 15,
+      "doi": "10.1016/j.lana.2022.100398",
+      "url": "https://doi.org/10.1016/j.lana.2022.100398",
+      "form": "article",
+      "plain": "Nine teams, four scenarios, one policy question. Vaccinating 5–11-year-olds was projected to cut all-age cumulative cases by 7.2%, hospitalisations by 8.7% and deaths by 9.2% — with the benefit growing if a more transmissible variant arrived."
+    },
+    {
+      "id": "p17",
+      "short": "On the Mark",
+      "thread": "model",
+      "rung": 4,
+      "year": 2023,
+      "plate": "XVI",
+      "keystone": "statement",
+      "storyTitle": "What is a forecast for?",
+      "title": "On the Mark: Modeling and Forecasting for Public Health Impact",
+      "authors": "M. J. Panaggio, S. N. Wilson, J. D. Ratcliff, L. C. Mullany, J. D. Freeman, K. Rainwater-Lovett",
+      "venue": "Health Security 21(S1):S79–S88",
+      "citations": 1,
+      "doi": "10.1089/hs.2023.0033",
+      "url": "https://doi.org/10.1089/hs.2023.0033",
+      "form": "article",
+      "plain": "Six authors from her own lab, second name on the paper, near-zero citations — and the only item in the record that steps back and argues about what modelling is for rather than doing some. The keystone papers are usually the ones nobody cites."
+    },
+    {
+      "id": "p18",
+      "short": "Scenario Modeling Hub",
+      "thread": "model",
+      "rung": 4,
+      "year": 2023,
+      "plate": "XVII",
+      "storyTitle": "Twenty-two weeks of being right",
+      "title": "Evaluation of the US COVID-19 Scenario Modeling Hub for informing pandemic response under uncertainty",
+      "authors": "E. Howerton, L. Contamin, L. C. Mullany, and 80 others including S. Wilson",
+      "venue": "Nature Communications 14:7260",
+      "citations": 60,
+      "doi": "10.1038/s41467-023-42680-x",
+      "url": "https://doi.org/10.1038/s41467-023-42680-x",
+      "form": "article",
+      "figure": true,
+      "plain": "Nearly 1.8 million projections, graded honestly. Scenarios stayed close to reality for 22 weeks on average before a new variant broke their assumptions — and the ensemble that preserved the disagreement between models beat any single model whenever the assumptions held."
+    },
+    {
+      "id": "p19",
+      "short": "Challenges of case forecasting",
+      "thread": "model",
+      "rung": 4,
+      "year": 2024,
+      "plate": "XVIII",
+      "storyTitle": "The honest scorecard",
+      "title": "Challenges of COVID-19 Case Forecasting in the US, 2020–2021",
+      "authors": "V. K. Lopez, E. Y. Cramer, R. Pagano, and 106 others including S. Wilson",
+      "venue": "PLOS Computational Biology 20(5):e1011200",
+      "citations": 42,
+      "doi": "10.1371/journal.pcbi.1011200",
+      "url": "https://doi.org/10.1371/journal.pcbi.1011200",
+      "form": "article",
+      "plain": "9.7 million forecasts from 24 teams, scored. Ensembles again outperformed. And the failure is stated plainly: during the growth phases of the winter 2020, Delta and Omicron waves, coverage of the 95% prediction intervals fell below 50%."
+    }
+  ],
+  "offRecord": [
+    {
+      "id": "o1",
+      "thread": "person",
+      "year": 2006,
+      "label": "B.S. thesis — The NTRU Public Key Cryptosystem",
+      "note": "Spelman College, advisor Prof. Jeffrey Ehme. The one item the theory cannot absorb."
+    },
+    {
+      "id": "o2",
+      "thread": "cell",
+      "year": 2012,
+      "label": "PhD thesis — Mathematical Models of Immune Regulation and Cancer Vaccines",
+      "note": "University of Maryland, advisor Prof. Doron Levy."
+    },
+    {
+      "id": "o3",
+      "thread": "cell",
+      "year": 2016,
+      "label": "Modeling Evolutionary Dynamics of HIV (with T. Johnson)",
+      "note": "Proc. Harriett J. Walton Symposium vol. 14 — an undergraduate she mentored is first author."
+    },
+    {
+      "id": "o4",
+      "thread": "sleep",
+      "year": 2019,
+      "label": "On the dynamics of coupled Morris–Lecar neurons",
+      "note": "Delivered as the Dorothy Wrinch Lecture and at Colorado and Georgia seminars — never published. A whole thread that exists only as talks."
+    },
+    {
+      "id": "o5",
+      "thread": "person",
+      "year": 2019,
+      "label": "Working with students from underrepresented minority groups",
+      "note": "with C. Flores and A. Prieto Langarica, in A Mathematician’s Practical Guide to Mentoring Undergraduate Research, AMS–MAA Press."
+    },
+    {
+      "id": "o6",
+      "thread": "person",
+      "year": 2019,
+      "label": "Etta Z. Falconer Lecture — “Noether, Falconer, Mirzakhani, Kovalevsky, & Me”",
+      "note": "Spelman College, Spring 2019. Her own statement of the theory. See the coda."
+    }
+  ],
+  "related": [
+    {
+      "id": "r1",
+      "kind": "ref",
+      "thread": "cell",
+      "short": "Terabe 2009",
+      "title": "Synergistic enhancement of CD8+ T cell–mediated tumor vaccine efficacy by an anti-TGF-β monoclonal antibody",
+      "authors": "M. Terabe et al.",
+      "venue": "Clinical Cancer Research",
+      "year": 2009,
+      "note": "The mouse experiment the 2012 model was fitted to."
+    },
+    {
+      "id": "r2",
+      "kind": "ref",
+      "thread": "cell",
+      "short": "Kirschner 2003",
+      "title": "On the global dynamics of a model for tumor immunotherapy",
+      "authors": "D. Kirschner et al.",
+      "venue": "—",
+      "year": 2003,
+      "note": "Source of the TGF-β production form and three baseline parameters."
+    },
+    {
+      "id": "r3",
+      "kind": "ref",
+      "thread": "cell",
+      "short": "Kim, Lee & Levy 2010",
+      "title": "Modeling regulatory mechanisms in the immune system",
+      "authors": "P. S. Kim, P. P. Lee, D. Levy",
+      "venue": "—",
+      "year": 2010,
+      "note": "Where the effector→regulatory conversion rate r = 0.01 comes from."
+    },
+    {
+      "id": "r4",
+      "kind": "ref",
+      "thread": "troop",
+      "short": "Fefferman & Ng 2007",
+      "title": "How disease models in static networks can fail to approximate disease in dynamic networks",
+      "authors": "N. H. Fefferman, K. L. Ng",
+      "venue": "Physical Review E",
+      "year": 2007,
+      "note": "The dynamic-network simulation framework the allogrooming work generalises. Fefferman is a co-author on all three."
+    },
+    {
+      "id": "r5",
+      "kind": "ref",
+      "thread": "troop",
+      "short": "Freeman 1977",
+      "title": "A set of measures of centrality based on betweenness",
+      "authors": "L. C. Freeman",
+      "venue": "Sociometry",
+      "year": 1977,
+      "note": "The centrality measures used as partner-choice rules."
+    },
+    {
+      "id": "r6",
+      "kind": "ref",
+      "thread": "mouse",
+      "short": "Ribba 2011",
+      "title": "A model of vascular tumour growth in mice combining longitudinal and structural data",
+      "authors": "B. Ribba et al.",
+      "venue": "—",
+      "year": 2011,
+      "note": "Her INRIA supervisor’s tumour model, the base for the scheduling work."
+    },
+    {
+      "id": "r7",
+      "kind": "cite",
+      "thread": "model",
+      "short": "CDC / covid19forecasthub.org",
+      "title": "US COVID-19 Forecast Hub",
+      "authors": "N. G. Reich et al. and the CDC",
+      "venue": "ongoing",
+      "year": 2020,
+      "note": "The consumer of the forecasts, and the reason the scoring is public."
+    },
+    {
+      "id": "r8",
+      "kind": "cite",
+      "thread": "model",
+      "short": "JHUAPL-Bucky",
+      "title": "Bucky — a metapopulation SEIR model",
+      "authors": "JHU Applied Physics Laboratory",
+      "venue": "Forecast Hub submission",
+      "year": 2020,
+      "note": "APL’s mechanistic entry, alongside SLPHospEns."
+    }
+  ],
+  "keywords": [
+    {
+      "id": "k1",
+      "label": "random effects",
+      "title": "A private parameter set per individual",
+      "note": "The mathematical statement of Law I. Explicit in the mouse scheduling work; the same shape appears as per-cell switching, per-animal grooming, and per-team forecasts."
+    },
+    {
+      "id": "k2",
+      "label": "opinion pooling",
+      "title": "Combine without averaging away",
+      "note": "Law III. Linear opinion pooling in the Scenario Modeling Hub; an ensemble-of-ensembles in APL’s own submission; and, applied to people, a website of named individuals."
+    },
+    {
+      "id": "k3",
+      "label": "emergent structure",
+      "title": "Organisation as an output",
+      "note": "Law II. Social structure in the grooming models, sleep architecture in the REM/NREM circuit — neither is written in by hand."
+    },
+    {
+      "id": "k4",
+      "label": "switching",
+      "title": "A thing that changes what it is",
+      "note": "A regulatory T cell becoming an effector; a TGF-β switch that flips at a critical tumour size; a night switching between REM and NREM; a scenario that stops being valid when a variant arrives."
+    },
+    {
+      "id": "k5",
+      "label": "network centrality",
+      "title": "Who you choose to be near",
+      "note": "Degree, closeness and betweenness as partner-choice rules — the mechanism by which individual preference becomes group shape."
+    },
+    {
+      "id": "k6",
+      "label": "named individuals",
+      "title": "The refusal, stated in public",
+      "note": "Mathematically Gifted and Black, the Network of Mathematicians of Color, CodeHouse, and a lecture titled with five names."
+    }
+  ],
+  "edges": [
+    {
+      "s": "p1",
+      "t": "p2",
+      "type": "thread"
+    },
+    {
+      "s": "p2",
+      "t": "p3",
+      "type": "thread"
+    },
+    {
+      "s": "p4",
+      "t": "p5",
+      "type": "thread"
+    },
+    {
+      "s": "p6",
+      "t": "p7",
+      "type": "thread"
+    },
+    {
+      "s": "p8",
+      "t": "p9",
+      "type": "thread"
+    },
+    {
+      "s": "p9",
+      "t": "p10",
+      "type": "thread"
+    },
+    {
+      "s": "p12",
+      "t": "p13",
+      "type": "thread"
+    },
+    {
+      "s": "p13",
+      "t": "p16",
+      "type": "thread"
+    },
+    {
+      "s": "p14",
+      "t": "p15",
+      "type": "thread"
+    },
+    {
+      "s": "p15",
+      "t": "p19",
+      "type": "thread"
+    },
+    {
+      "s": "p16",
+      "t": "p18",
+      "type": "thread"
+    },
+    {
+      "s": "p17",
+      "t": "p18",
+      "type": "thread"
+    },
+    {
+      "s": "p2",
+      "t": "r1",
+      "type": "cites"
+    },
+    {
+      "s": "p2",
+      "t": "r2",
+      "type": "cites"
+    },
+    {
+      "s": "p2",
+      "t": "r3",
+      "type": "cites"
+    },
+    {
+      "s": "p3",
+      "t": "r3",
+      "type": "cites"
+    },
+    {
+      "s": "p10",
+      "t": "r4",
+      "type": "cites"
+    },
+    {
+      "s": "p10",
+      "t": "r5",
+      "type": "cites"
+    },
+    {
+      "s": "p8",
+      "t": "r4",
+      "type": "cites"
+    },
+    {
+      "s": "p9",
+      "t": "r4",
+      "type": "cites"
+    },
+    {
+      "s": "p5",
+      "t": "r6",
+      "type": "cites"
+    },
+    {
+      "s": "p4",
+      "t": "r6",
+      "type": "cites"
+    },
+    {
+      "s": "p14",
+      "t": "r7",
+      "type": "cites"
+    },
+    {
+      "s": "p15",
+      "t": "r7",
+      "type": "cites"
+    },
+    {
+      "s": "p15",
+      "t": "r8",
+      "type": "cites"
+    },
+    {
+      "s": "p19",
+      "t": "r7",
+      "type": "cites"
+    },
+    {
+      "s": "p5",
+      "t": "k1",
+      "type": "kw"
+    },
+    {
+      "s": "p4",
+      "t": "k1",
+      "type": "kw"
+    },
+    {
+      "s": "p3",
+      "t": "k1",
+      "type": "kw"
+    },
+    {
+      "s": "p18",
+      "t": "k1",
+      "type": "kw"
+    },
+    {
+      "s": "p14",
+      "t": "k1",
+      "type": "kw"
+    },
+    {
+      "s": "p14",
+      "t": "k2",
+      "type": "kw"
+    },
+    {
+      "s": "p15",
+      "t": "k2",
+      "type": "kw"
+    },
+    {
+      "s": "p18",
+      "t": "k2",
+      "type": "kw"
+    },
+    {
+      "s": "p19",
+      "t": "k2",
+      "type": "kw"
+    },
+    {
+      "s": "p12",
+      "t": "k2",
+      "type": "kw"
+    },
+    {
+      "s": "p11",
+      "t": "k2",
+      "type": "kw"
+    },
+    {
+      "s": "p8",
+      "t": "k3",
+      "type": "kw"
+    },
+    {
+      "s": "p9",
+      "t": "k3",
+      "type": "kw"
+    },
+    {
+      "s": "p10",
+      "t": "k3",
+      "type": "kw"
+    },
+    {
+      "s": "p6",
+      "t": "k3",
+      "type": "kw"
+    },
+    {
+      "s": "p7",
+      "t": "k3",
+      "type": "kw"
+    },
+    {
+      "s": "p3",
+      "t": "k4",
+      "type": "kw"
+    },
+    {
+      "s": "p2",
+      "t": "k4",
+      "type": "kw"
+    },
+    {
+      "s": "p6",
+      "t": "k4",
+      "type": "kw"
+    },
+    {
+      "s": "p7",
+      "t": "k4",
+      "type": "kw"
+    },
+    {
+      "s": "p18",
+      "t": "k4",
+      "type": "kw"
+    },
+    {
+      "s": "p10",
+      "t": "k5",
+      "type": "kw"
+    },
+    {
+      "s": "p8",
+      "t": "k5",
+      "type": "kw"
+    },
+    {
+      "s": "p9",
+      "t": "k5",
+      "type": "kw"
+    },
+    {
+      "s": "p11",
+      "t": "k6",
+      "type": "kw"
+    },
+    {
+      "s": "p17",
+      "t": "k6",
+      "type": "kw"
+    }
+  ]
+}

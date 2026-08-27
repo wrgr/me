@@ -1,0 +1,252 @@
+<style>
+/* ============================================================
+   FIG. A — scattered → sorted
+   ============================================================ */
+.converge{background:var(--panel-2);border-bottom:1px solid var(--rule)}
+.fig-head{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:flex-end;justify-content:space-between;margin-bottom:1.75rem}
+.fig-head h2{font-size:var(--fs-xl);font-variation-settings:"SOFT" 2,"WONK" 1,"opsz" 40;letter-spacing:-.015em}
+.fig-head p{max-width:52ch;color:var(--ink-2);font-size:var(--fs-sm);margin-top:.5rem}
+
+.toggle{
+  display:inline-flex;border:1px solid var(--rule);border-radius:2px;
+  background:var(--panel);overflow:hidden;font-family:var(--mono);
+  font-size:var(--fs-xs);letter-spacing:.08em;text-transform:uppercase;
+  flex:0 0 auto;
+}
+.toggle button{
+  appearance:none;border:0;background:transparent;color:var(--ink-2);
+  font:inherit;letter-spacing:inherit;text-transform:inherit;
+  padding:.6rem 1rem;cursor:pointer;transition:background .18s,color .18s;
+}
+.toggle button + button{border-left:1px solid var(--rule)}
+.toggle button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+
+.converge-stage{
+  position:relative;background:var(--panel);border:1px solid var(--rule);
+  border-radius:3px;box-shadow:var(--shadow);
+  overflow-x:auto;overflow-y:hidden;
+}
+.converge-stage svg{display:block;min-width:720px;width:100%;height:auto}
+.cv-dot{transition:cx .95s cubic-bezier(.65,.02,.25,1),cy .95s cubic-bezier(.65,.02,.25,1),r .5s ease}
+.cv-band{transition:opacity .5s ease}
+.cv-label{
+  font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.04em;
+  transition:opacity .5s ease;
+}
+@media (prefers-reduced-motion: reduce){
+  .cv-dot,.cv-band,.cv-label{transition:none}
+}
+.fig-note{
+  font-family:var(--mono);font-size:var(--fs-xs);color:var(--ink-3);
+  margin-top:.85rem;letter-spacing:.03em;line-height:1.7;max-width:78ch;
+}
+</style>
+
+<section class="converge" id="figA">
+  <div class="wrap">
+    <div class="fig-head">
+      <div>
+        <p class="eyebrow">Fig. A</p>
+        <h2>The same nineteen papers, twice</h2>
+        <p>
+          Sorted by field, the record looks like someone who could not settle down.
+          Sorted by <b>what counts as an individual</b> in each paper, it is a single
+          monotone climb — and nothing has moved except the axis.
+        </p>
+      </div>
+      <div class="toggle" role="group" aria-label="Figure A layout">
+        <button type="button" id="cvScatter" aria-pressed="true">By field</button>
+        <button type="button" id="cvSort" aria-pressed="false">By individual</button>
+      </div>
+    </div>
+
+    <div class="converge-stage">
+      <svg id="cvSvg" viewBox="0 0 1100 520" role="img"
+        aria-label="Nineteen dots representing Shelby Wilson's publications. In the first arrangement they are scattered under eight unrelated field headings — immunology, oncology, pharmacometrics, sleep science, ecology, epidemiology, public health, mathematics education. In the second they resolve into six ordered rows: a cell, a mouse, a sleeper, an animal in a troop, a model, a mathematician.">
+        <g id="cvScatterLabels"></g>
+        <g id="cvSortLabels"></g>
+        <g id="cvDots"></g>
+      </svg>
+    </div>
+
+    <p class="fig-note" id="cvNote">
+      Each dot is one peer-reviewed publication, coloured by thread. Positions are
+      deterministic, not decorative — the sorted layout is the spine used for the rest
+      of this page.
+    </p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var svg = document.getElementById('cvSvg');
+  if(!svg) return;
+  var NS = 'http://www.w3.org/2000/svg';
+
+  /* 19 peer-reviewed items, with the rung each one sits on */
+  var P = [
+    {y:2010, f:'Immunology',   rung:0, s:'Primary T cell response'},
+    {y:2012, f:'Immunology',   rung:0, s:'Tumour vaccine + anti-TGF-β'},
+    {y:2013, f:'Immunology',   rung:0, s:'Treg functional switching'},
+    {y:2013, f:'Oncology',     rung:1, s:'Antiangiogenics in xenografts'},
+    {y:2015, f:'Pharmacometrics', rung:1, s:'Sunitinib / irinotecan timing'},
+    {y:2015, f:'Sleep science', rung:2, s:'REM/NREM subcircuit'},
+    {y:2020, f:'Sleep science', rung:2, s:'Thermoregulation & sleep'},
+    {y:2018, f:'Ecology',      rung:3, s:'Emergent social organisation'},
+    {y:2018, f:'Ecology',      rung:3, s:'Social structure & parasite load'},
+    {y:2020, f:'Ecology',      rung:3, s:'Allogrooming vs. ectoparasites'},
+    {y:2021, f:'Epidemiology', rung:4, s:'MMWR scenario projections'},
+    {y:2022, f:'Epidemiology', rung:4, s:'Ensemble forecast evaluation'},
+    {y:2022, f:'Epidemiology', rung:4, s:'Forecast Hub dataset'},
+    {y:2022, f:'Epidemiology', rung:4, s:'Delta resurgence'},
+    {y:2023, f:'Public health',rung:4, s:'Vaccinating children 5–11'},
+    {y:2023, f:'Public health',rung:4, s:'On the Mark'},
+    {y:2023, f:'Epidemiology', rung:4, s:'Scenario Modeling Hub'},
+    {y:2024, f:'Epidemiology', rung:4, s:'Challenges of case forecasting'},
+    {y:2018, f:'Maths education', rung:5, s:'Mathematically Gifted and Black'}
+  ];
+
+  var RUNGS = [
+    {k:'--t-cell',  t:'a cell'},
+    {k:'--t-mouse', t:'a mouse'},
+    {k:'--t-sleep', t:'a sleeper'},
+    {k:'--t-troop', t:'an animal in a troop'},
+    {k:'--t-model', t:'a model'},
+    {k:'--t-person',t:'a mathematician'}
+  ];
+
+  var FIELDS = ['Immunology','Oncology','Pharmacometrics','Sleep science','Ecology','Epidemiology','Public health','Maths education'];
+
+  function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  var rnd = mulberry32(2006);
+
+  /* --- scattered layout: clustered under field headings, jittered --- */
+  var INSET = 34, SPAN = 1100 - INSET * 2;
+  var colW = SPAN / FIELDS.length;
+  var counters = {};
+  P.forEach(function(p){
+    var ci = FIELDS.indexOf(p.f);
+    counters[p.f] = (counters[p.f] || 0);
+    var n = counters[p.f]++;
+    p.ax = INSET + colW * ci + colW/2 + (rnd() - 0.5) * (colW * 0.5);
+    p.ay = 132 + n * 62 + (rnd() - 0.5) * 34;
+  });
+
+  /* --- sorted layout: six rows, ordered by rung then year --- */
+  var byRung = {};
+  P.forEach(function(p){ (byRung[p.rung] = byRung[p.rung] || []).push(p); });
+  Object.keys(byRung).forEach(function(k){
+    byRung[k].sort(function(a,b){ return a.y - b.y; });
+    var row = byRung[k];
+    row.forEach(function(p,i){
+      p.bx = 300 + i * 74;
+      p.by = 78 + Number(k) * 72;
+    });
+  });
+
+  /* --- build --- */
+  var gDots = document.getElementById('cvDots');
+  var gA = document.getElementById('cvScatterLabels');
+  var gB = document.getElementById('cvSortLabels');
+
+  FIELDS.forEach(function(f,i){
+    var t = document.createElementNS(NS,'text');
+    t.setAttribute('x', INSET + colW*i + colW/2);
+    t.setAttribute('y', 74);
+    t.setAttribute('text-anchor','middle');
+    t.setAttribute('class','cv-label');
+    t.setAttribute('fill','var(--ink-3)');
+    t.textContent = f;
+    gA.appendChild(t);
+  });
+  var aTitle = document.createElementNS(NS,'text');
+  aTitle.setAttribute('x',24); aTitle.setAttribute('y',36);
+  aTitle.setAttribute('class','cv-label');
+  aTitle.setAttribute('fill','var(--ink-2)');
+  aTitle.setAttribute('letter-spacing','.12em');
+  aTitle.textContent = 'AXIS: FIELD OF PUBLICATION';
+  gA.appendChild(aTitle);
+
+  RUNGS.forEach(function(r,i){
+    var band = document.createElementNS(NS,'rect');
+    band.setAttribute('x',280); band.setAttribute('y', 78 + i*72 - 24);
+    band.setAttribute('width',800); band.setAttribute('height',48);
+    band.setAttribute('rx',2);
+    band.setAttribute('class','cv-band');
+    band.setAttribute('fill','var(' + r.k + ')');
+    band.setAttribute('opacity','0');
+    band.dataset.on = '.07';
+    gB.appendChild(band);
+
+    var t = document.createElementNS(NS,'text');
+    t.setAttribute('x',262); t.setAttribute('y', 78 + i*72 + 5);
+    t.setAttribute('text-anchor','end');
+    t.setAttribute('class','cv-label');
+    t.setAttribute('fill','var(' + r.k + ')');
+    t.textContent = r.t;
+    gB.appendChild(t);
+  });
+  var bTitle = document.createElementNS(NS,'text');
+  bTitle.setAttribute('x',24); bTitle.setAttribute('y',36);
+  bTitle.setAttribute('class','cv-label');
+  bTitle.setAttribute('fill','var(--ink-2)');
+  bTitle.setAttribute('letter-spacing','.12em');
+  bTitle.textContent = 'AXIS: WHAT COUNTS AS AN INDIVIDUAL';
+  gB.appendChild(bTitle);
+  var bFoot = document.createElementNS(NS,'text');
+  bFoot.setAttribute('x',24); bFoot.setAttribute('y',498);
+  bFoot.setAttribute('class','cv-label');
+  bFoot.setAttribute('fill','var(--ink-3)');
+  bFoot.textContent = '2010 → 2024, left to right within each rung';
+  gB.appendChild(bFoot);
+
+  P.forEach(function(p){
+    var c = document.createElementNS(NS,'circle');
+    c.setAttribute('r', 9);
+    c.setAttribute('cx', p.ax); c.setAttribute('cy', p.ay);
+    c.setAttribute('class','cv-dot');
+    c.setAttribute('fill','var(' + RUNGS[p.rung].k + ')');
+    c.setAttribute('opacity','.88');
+    var ti = document.createElementNS(NS,'title');
+    ti.textContent = p.s + ' (' + p.y + ') — ' + p.f;
+    c.appendChild(ti);
+    p.el = c;
+    gDots.appendChild(c);
+  });
+
+  var state = 'a';
+  function setState(s){
+    state = s;
+    var sorted = (s === 'b');
+    P.forEach(function(p){
+      p.el.setAttribute('cx', sorted ? p.bx : p.ax);
+      p.el.setAttribute('cy', sorted ? p.by : p.ay);
+    });
+    Array.prototype.forEach.call(gA.children, function(n){ n.style.opacity = sorted ? 0 : 1; });
+    Array.prototype.forEach.call(gB.children, function(n){
+      n.style.opacity = sorted ? (n.dataset.on || 1) : 0;
+    });
+    document.getElementById('cvScatter').setAttribute('aria-pressed', String(!sorted));
+    document.getElementById('cvSort').setAttribute('aria-pressed', String(sorted));
+  }
+  setState('a');
+
+  document.getElementById('cvScatter').addEventListener('click', function(){ setState('a'); });
+  document.getElementById('cvSort').addEventListener('click', function(){ setState('b'); });
+
+  /* resolve once, on first sight */
+  if ('IntersectionObserver' in window){
+    var fired = false;
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting && !fired){
+          fired = true;
+          setTimeout(function(){ if (state === 'a') setState('b'); }, 700);
+          io.disconnect();
+        }
+      });
+    }, { threshold: .45 });
+    io.observe(svg);
+  }
+})();
+</script>

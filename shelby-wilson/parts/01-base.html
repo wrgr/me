@@ -1,0 +1,437 @@
+<title>The Individual Inside the Population</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+/* ============================================================
+   TOKENS — complete light palette on bare :root
+   ============================================================ */
+:root{
+  --ground:#FBFAF7;
+  --panel:#FFFFFF;
+  --panel-2:#F3F2EC;
+  --ink:#14181C;
+  --ink-2:#55606B;
+  --ink-3:#828C96;
+  --rule:#DEDFD8;
+  --rule-2:#EBEBE4;
+
+  /* the ramp — cold = microscopic, warm = human */
+  --t-cell:#2E4B9B;
+  --t-mouse:#137E8E;
+  --t-sleep:#2C8757;
+  --t-troop:#B08214;
+  --t-model:#CE5C18;
+  --t-person:#A02330;
+
+  /* grey means one thing on this page: the aggregate */
+  --agg:#6E7781;
+  --agg-fill:rgba(110,119,129,.16);
+
+  --shadow:0 1px 2px rgba(20,24,28,.05),0 8px 28px rgba(20,24,28,.06);
+
+  --fs-xs:.75rem; --fs-sm:.875rem; --fs-base:1.0625rem; --fs-md:1.1875rem;
+  --fs-lg:1.375rem; --fs-xl:1.75rem; --fs-2xl:2.35rem; --fs-3xl:3.1rem; --fs-4xl:4.2rem;
+
+  --measure:64ch;
+  --wide:1180px;
+
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0E1418;
+    --panel:#141C22;
+    --panel-2:#19232A;
+    --ink:#E9ECEE;
+    --ink-2:#9EAAB4;
+    --ink-3:#75828D;
+    --rule:#25313A;
+    --rule-2:#1C262D;
+
+    --t-cell:#7E9BEC;
+    --t-mouse:#4FC4D6;
+    --t-sleep:#5FC98D;
+    --t-troop:#E8B93F;
+    --t-model:#F58A44;
+    --t-person:#EE6D77;
+
+    --agg:#9AA6B1;
+    --agg-fill:rgba(154,166,177,.18);
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0E1418;
+  --panel:#141C22;
+  --panel-2:#19232A;
+  --ink:#E9ECEE;
+  --ink-2:#9EAAB4;
+  --ink-3:#75828D;
+  --rule:#25313A;
+  --rule-2:#1C262D;
+
+  --t-cell:#7E9BEC;
+  --t-mouse:#4FC4D6;
+  --t-sleep:#5FC98D;
+  --t-troop:#E8B93F;
+  --t-model:#F58A44;
+  --t-person:#EE6D77;
+
+  --agg:#9AA6B1;
+  --agg-fill:rgba(154,166,177,.18);
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:var(--fs-base);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.08;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:.06em;text-decoration-color:color-mix(in srgb,currentColor 40%,transparent)}
+a:hover{text-decoration-color:currentColor}
+:focus-visible{outline:2.5px solid var(--t-model);outline-offset:3px;border-radius:2px}
+img{max-width:100%;height:auto}
+figure{margin:0}
+
+.wrap{width:min(100% - 2.5rem,var(--wide));margin-inline:auto}
+.col{width:min(100% - 2.5rem,var(--measure));margin-inline:auto}
+.stack{display:flex;flex-direction:column}
+.flow > * + *{margin-top:1.15em}
+
+.eyebrow{
+  font-family:var(--mono);font-size:var(--fs-xs);font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+}
+.lede{font-size:var(--fs-md);color:var(--ink-2);line-height:1.6}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
+
+section{padding-block:clamp(3.5rem,8vw,6.5rem)}
+.rule{border:0;border-top:1px solid var(--rule);margin:0}
+
+/* thread colour helper — one source of truth for the ramp */
+.th-cell{--th:var(--t-cell)}
+.th-mouse{--th:var(--t-mouse)}
+.th-sleep{--th:var(--t-sleep)}
+.th-troop{--th:var(--t-troop)}
+.th-model{--th:var(--t-model)}
+.th-person{--th:var(--t-person)}
+.th-shared{--th:var(--agg)}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  padding-block:clamp(3rem,7vw,5rem) clamp(2.5rem,6vw,4rem);
+  border-bottom:1px solid var(--rule);
+  overflow:hidden;
+}
+.hero-inner{display:grid;gap:clamp(2rem,4vw,3.25rem)}
+@media (min-width:960px){
+  .hero-inner{grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);align-items:center}
+}
+.hero h1{
+  font-size:clamp(2.6rem,6.6vw,var(--fs-4xl));
+  font-weight:900;
+  font-variation-settings:"SOFT" 0,"WONK" 1,"opsz" 120;
+  letter-spacing:-.022em;
+  margin-block:.5rem .85rem;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--t-model);
+  font-variation-settings:"SOFT" 8,"WONK" 1,"opsz" 120;
+}
+.hero-sub{font-size:var(--fs-md);color:var(--ink-2);max-width:46ch;line-height:1.55}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:.4rem .95rem;margin-top:1.4rem;
+  font-family:var(--mono);font-size:var(--fs-xs);color:var(--ink-3);
+  letter-spacing:.04em;
+}
+.hero-meta span{display:inline-flex;align-items:center;gap:.42rem}
+.hero-meta span::before{
+  content:"";width:.5rem;height:.5rem;border-radius:50%;
+  background:var(--th,var(--agg));
+}
+
+/* the live figure */
+.plot{
+  position:relative;
+  background:var(--panel);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  box-shadow:var(--shadow);
+  padding:.75rem .75rem .4rem;
+}
+.plot canvas{display:block;width:100%;height:auto}
+.plot-cap{
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-family:var(--mono);font-size:var(--fs-xs);color:var(--ink-3);
+  padding:.45rem .15rem .15rem;letter-spacing:.03em;
+}
+.plot-cap b{font-weight:500;color:var(--ink-2)}
+
+.thesis{
+  margin-top:clamp(2.5rem,5vw,3.5rem);
+  padding-top:clamp(2rem,4vw,2.75rem);
+  border-top:1px solid var(--rule);
+}
+.thesis p{
+  font-family:var(--display);
+  font-size:clamp(1.35rem,2.9vw,2rem);
+  font-weight:400;
+  font-variation-settings:"SOFT" 4,"WONK" 1,"opsz" 60;
+  line-height:1.32;
+  letter-spacing:-.012em;
+  max-width:34ch;
+  text-wrap:balance;
+}
+.thesis strong{font-weight:600;color:var(--t-model)}
+.thesis .attrib{
+  font-family:var(--mono);font-size:var(--fs-xs);color:var(--ink-3);
+  letter-spacing:.05em;margin-top:1.25rem;max-width:60ch;line-height:1.7;
+}
+</style>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <p class="eyebrow">A unified theory of &nbsp;·&nbsp; Shelby N. Wilson, PhD</p>
+      <h1>The individual inside&nbsp;the <em>population</em></h1>
+      <p class="hero-sub">
+        Nineteen papers across immunology, cancer pharmacology, sleep, animal social
+        behaviour and pandemic forecasting — plus a website about Black mathematicians.
+        It reads like six careers. It is one problem, restated at six scales.
+      </p>
+      <div class="hero-meta">
+        <span class="th-cell">a cell</span>
+        <span class="th-mouse">a mouse</span>
+        <span class="th-sleep">a sleeper</span>
+        <span class="th-troop">an animal in a troop</span>
+        <span class="th-model">a model</span>
+        <span class="th-person">a mathematician</span>
+      </div>
+    </div>
+
+    <figure class="plot">
+      <canvas id="heroPlot" width="1000" height="640"
+        role="img"
+        aria-label="A mixed-effect spaghetti plot: 105 faint individual tumour-growth curves, one per mouse, drawn in the six thread colours, with a grey population mean and its prediction-interval band laid over the top. The individuals fan widely; the mean passes through the middle of them and matches none."></canvas>
+      <figcaption class="plot-cap">
+        <span><b>Fig. 0</b> &nbsp;105 mice · one population model · 105 private parameter sets</span>
+        <span>after Wilson et al., <i>CPT:PSP</i> 2015</span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap thesis">
+    <p>
+      Every model she has ever built is a machine for refusing to let the
+      <strong>average</strong> stand in for its members.
+    </p>
+    <p class="attrib">
+      This page is an interpretation of a real person's real work, assembled from
+      public sources. The argument is mine; the evidence is hers, and every claim
+      below links to where it came from.
+    </p>
+  </div>
+</header>
+
+<script>
+(function(){
+  var cv = document.getElementById('heroPlot');
+  if(!cv) return;
+  var ctx = cv.getContext('2d');
+  var W = cv.width, H = cv.height;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  /* deterministic PRNG so the figure is identical on every load */
+  function mulberry32(a){
+    return function(){
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      var t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  var THREADS = ['--t-cell','--t-mouse','--t-sleep','--t-troop','--t-model','--t-person'];
+  var C = {};
+  function readTheme(){
+    var cs = getComputedStyle(document.documentElement);
+    C.threads = THREADS.map(function(t){ return cs.getPropertyValue(t).trim(); });
+    C.agg     = cs.getPropertyValue('--agg').trim();
+    C.aggFill = cs.getPropertyValue('--agg-fill').trim();
+    C.rule    = cs.getPropertyValue('--rule').trim();
+    C.ink3    = cs.getPropertyValue('--ink-3').trim();
+    C.panel   = cs.getPropertyValue('--panel').trim();
+  }
+
+  /* ---- the model -----------------------------------------------------
+     Gompertz-ish tumour growth, y(t) = K * exp(-b * exp(-k t)).
+     One population parameter set; every individual gets a random effect
+     on K and k. This is the shape of a mixed-effect model, drawn.        */
+  var N = 105;                       /* mice in Wilson et al. 2015 */
+  var STEPS = 120;
+  var rnd = mulberry32(20150420);
+  var pop = { K: 0.74, b: 3.1, k: 3.0 };
+
+  var indiv = [];
+  for (var i = 0; i < N; i++){
+    /* two independent normals via Box-Muller on the seeded stream */
+    var u1 = Math.max(rnd(), 1e-9), u2 = rnd();
+    var g1 = Math.sqrt(-2*Math.log(u1)) * Math.cos(2*Math.PI*u2);
+    var g2 = Math.sqrt(-2*Math.log(u1)) * Math.sin(2*Math.PI*u2);
+    indiv.push({
+      K: pop.K * Math.exp(0.34 * g1),
+      k: pop.k * Math.exp(0.30 * g2),
+      b: pop.b,
+      thread: i % THREADS.length
+    });
+  }
+
+  function curve(p){
+    var pts = [];
+    for (var s = 0; s <= STEPS; s++){
+      var t = s / STEPS;
+      pts.push([t, p.K * Math.exp(-p.b * Math.exp(-p.k * t))]);
+    }
+    return pts;
+  }
+
+  var PAD = { l: 46, r: 18, t: 22, b: 38 };
+  function X(t){ return PAD.l + t * (W - PAD.l - PAD.r); }
+  function Y(v){ return H - PAD.b - Math.min(v, 1.35) / 1.35 * (H - PAD.t - PAD.b); }
+
+  var curves = indiv.map(curve);
+
+  /* empirical quantiles across individuals, per time step */
+  var qLo = [], qHi = [], qMid = [];
+  for (var s = 0; s <= STEPS; s++){
+    var col = curves.map(function(c){ return c[s][1]; }).sort(function(a,b){ return a-b; });
+    qLo.push(col[Math.floor(0.05 * (N-1))]);
+    qHi.push(col[Math.floor(0.95 * (N-1))]);
+    qMid.push(col[Math.floor(0.50 * (N-1))]);
+  }
+
+  function axes(){
+    ctx.strokeStyle = C.rule; ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(PAD.l, PAD.t - 6); ctx.lineTo(PAD.l, H - PAD.b);
+    ctx.lineTo(W - PAD.r, H - PAD.b);
+    ctx.stroke();
+    ctx.font = '500 15px "IBM Plex Mono", monospace';
+    ctx.fillStyle = C.ink3;
+    ctx.textAlign = 'left';
+    ctx.save();
+    ctx.translate(13, (H - PAD.b + PAD.t) / 2);
+    ctx.rotate(-Math.PI / 2);
+    ctx.textAlign = 'center';
+    ctx.fillText('tumour burden', 0, 0);
+    ctx.restore();
+    ctx.textAlign = 'right';
+    ctx.fillText('time on treatment →', W - PAD.r, H - 12);
+  }
+
+  function drawFrame(nShown, aggAlpha){
+    ctx.clearRect(0, 0, W, H);
+    axes();
+
+    /* individuals */
+    ctx.lineWidth = 1.15;
+    for (var i = 0; i < nShown; i++){
+      var c = curves[i];
+      ctx.strokeStyle = C.threads[indiv[i].thread];
+      ctx.globalAlpha = 0.30;
+      ctx.beginPath();
+      ctx.moveTo(X(c[0][0]), Y(c[0][1]));
+      for (var s = 1; s <= STEPS; s++) ctx.lineTo(X(c[s][0]), Y(c[s][1]));
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+
+    if (aggAlpha <= 0) return;
+
+    /* prediction band */
+    ctx.globalAlpha = aggAlpha;
+    ctx.fillStyle = C.aggFill;
+    ctx.beginPath();
+    ctx.moveTo(X(0), Y(qLo[0]));
+    for (var s2 = 1; s2 <= STEPS; s2++) ctx.lineTo(X(s2/STEPS), Y(qLo[s2]));
+    for (var s3 = STEPS; s3 >= 0; s3--) ctx.lineTo(X(s3/STEPS), Y(qHi[s3]));
+    ctx.closePath();
+    ctx.fill();
+
+    /* the population mean — thick, grey, and true of nobody.
+       A panel-coloured halo underneath keeps it legible through the fan. */
+    ctx.lineJoin = 'round';
+    ctx.beginPath();
+    ctx.moveTo(X(0), Y(qMid[0]));
+    for (var s4 = 1; s4 <= STEPS; s4++) ctx.lineTo(X(s4/STEPS), Y(qMid[s4]));
+    ctx.strokeStyle = C.panel; ctx.lineWidth = 9; ctx.stroke();
+    ctx.strokeStyle = C.agg;   ctx.lineWidth = 4.5; ctx.stroke();
+
+    /* label on a cleared plate, above the bundle */
+    var lx = X(0.60), ly = Y(qMid[Math.round(STEPS * 0.60)]) - 34;
+    ctx.font = '500 15px "IBM Plex Mono", monospace';
+    var tw = ctx.measureText('population mean').width;
+    ctx.fillStyle = C.panel;
+    ctx.fillRect(lx - 6, ly - 14, tw + 12, 20);
+    ctx.fillStyle = C.agg;
+    ctx.textAlign = 'left';
+    ctx.fillText('population mean', lx, ly);
+    ctx.beginPath();
+    ctx.moveTo(lx + tw / 2, ly + 8);
+    ctx.lineTo(lx + tw / 2, Y(qMid[Math.round(STEPS * 0.60)]) - 4);
+    ctx.strokeStyle = C.agg; ctx.lineWidth = 1.2; ctx.stroke();
+    ctx.globalAlpha = 1;
+  }
+
+  var raf = null;
+  function animate(){
+    if (raf) cancelAnimationFrame(raf);
+    var t0 = null;
+    var DRAW = 1500, HOLD = 350, FADE = 900;
+    function step(ts){
+      if (t0 === null) t0 = ts;
+      var e = ts - t0;
+      var n = Math.min(N, Math.round(N * Math.min(1, e / DRAW)));
+      var a = e < DRAW + HOLD ? 0 : Math.min(1, (e - DRAW - HOLD) / FADE);
+      drawFrame(n, a);
+      if (e < DRAW + HOLD + FADE) raf = requestAnimationFrame(step);
+    }
+    raf = requestAnimationFrame(step);
+  }
+
+  function render(){
+    readTheme();
+    if (reduce.matches) drawFrame(N, 1); else animate();
+  }
+
+  render();
+  if (window.matchMedia) {
+    var dm = window.matchMedia('(prefers-color-scheme: dark)');
+    var onChange = function(){ readTheme(); drawFrame(N, 1); };
+    if (dm.addEventListener) dm.addEventListener('change', onChange);
+    if (reduce.addEventListener) reduce.addEventListener('change', render);
+  }
+  new MutationObserver(function(){ readTheme(); drawFrame(N, 1); })
+    .observe(document.documentElement, { attributes:true, attributeFilter:['data-theme'] });
+})();
+</script>

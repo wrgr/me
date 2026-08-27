@@ -1,0 +1,542 @@
+<style>
+/* ============================================================
+   PLATES — one per publication
+   ============================================================ */
+.plates{border-bottom:1px solid var(--rule)}
+.plates-head{max-width:var(--measure);margin-bottom:clamp(2.25rem,5vw,3.25rem)}
+.plates-head h2{font-size:clamp(1.9rem,4.4vw,var(--fs-2xl));font-variation-settings:"SOFT" 2,"WONK" 1,"opsz" 60;letter-spacing:-.018em;margin:.5rem 0 1rem}
+
+.plate{
+  display:grid;gap:1.5rem clamp(1.75rem,3.5vw,3rem);
+  padding-block:clamp(2.25rem,4.5vw,3.25rem);
+  border-top:1px solid var(--rule-2);
+}
+@media (min-width:900px){
+  .plate{grid-template-columns:minmax(0,420px) minmax(0,1fr);align-items:start}
+  .plate.flip > .plate-fig{order:2}
+}
+.plate-fig{
+  background:var(--panel);border:1px solid var(--rule);border-radius:3px;
+  padding:.9rem;box-shadow:var(--shadow);
+}
+.plate-fig svg{display:block;width:100%;height:auto}
+.plate-fig figcaption{
+  font-family:var(--mono);font-size:var(--fs-xs);color:var(--ink-3);
+  padding-top:.6rem;line-height:1.6;letter-spacing:.02em;
+}
+
+.plate-no{
+  font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.16em;
+  text-transform:uppercase;color:var(--th);font-weight:600;
+  display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap;
+}
+.plate-no span{color:var(--ink-3);font-weight:400;letter-spacing:.1em}
+.plate h3{font-size:var(--fs-lg);line-height:1.24;letter-spacing:-.012em;margin:.55rem 0 .7rem;font-variation-settings:"SOFT" 3,"WONK" 1,"opsz" 30}
+.plate-cite{
+  font-family:var(--mono);font-size:var(--fs-xs);color:var(--ink-3);
+  line-height:1.75;margin-bottom:.95rem;
+}
+.plate-cite a{color:var(--th);text-decoration-color:color-mix(in srgb,var(--th) 40%,transparent)}
+.plate-cite i{font-style:normal;color:var(--ink-2)}
+.plate p.writeup{color:var(--ink-2);font-size:var(--fs-sm);line-height:1.65}
+.finds{list-style:none;margin:1.05rem 0 0;padding:0;display:flex;flex-direction:column;gap:.55rem}
+.finds li{
+  position:relative;padding-left:1.15rem;
+  font-size:var(--fs-sm);color:var(--ink-2);line-height:1.55;
+}
+.finds li::before{
+  content:"";position:absolute;left:0;top:.55em;
+  width:.42rem;height:.42rem;background:var(--th);border-radius:50%;
+}
+.finds b{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--ink);font-weight:600}
+.uncertain{color:var(--ink-3);font-style:italic}
+
+/* illustration primitives */
+.ink{stroke:var(--ink-3);fill:none;stroke-width:1.2}
+.axis{stroke:var(--rule);stroke-width:1.2;fill:none}
+.thc{stroke:var(--th);fill:none;stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round}
+.thf{fill:var(--th)}
+.aggc{stroke:var(--agg);fill:none;stroke-width:2.6}
+.aggf{fill:var(--agg)}
+.lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink-3);letter-spacing:.02em}
+.lbl-th{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--th);letter-spacing:.02em}
+</style>
+
+<section class="plates" id="plates">
+  <div class="wrap">
+    <div class="plates-head">
+      <p class="eyebrow">Plates I – XIX</p>
+      <h2>Every publication, drawn and explained</h2>
+      <p class="lede">
+        One illustration per paper, drawn from what that paper actually does rather than
+        from its field. Numbers are quoted from the papers themselves; anything I could
+        not verify is marked as such rather than smoothed over.
+      </p>
+    </div>
+
+    <!-- ========== I ========== -->
+    <article class="plate th-cell">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="An immune response curve rising to a peak and falling back to a memory plateau, with a second, lagging curve of regulatory T cells rising underneath it; an arrow marks the contraction phase as the regulatory population overtakes.">
+          <line class="axis" x1="34" y1="30" x2="34" y2="238"/>
+          <line class="axis" x1="34" y1="238" x2="398" y2="238"/>
+          <path class="thc" d="M34 236 C 92 236, 108 52, 158 50 C 206 48, 214 168, 268 196 C 320 222, 356 214, 396 214"/>
+          <path d="M34 238 C 120 238, 150 214, 196 150 C 236 96, 300 92, 396 100" stroke="var(--agg)" fill="none" stroke-width="2.2" stroke-dasharray="5 4"/>
+          <circle class="thf" cx="158" cy="50" r="4"/>
+          <text class="lbl-th" x="166" y="44">peak</text>
+          <text class="lbl" x="252" y="128" fill="var(--agg)">adaptive Tregs</text>
+          <path d="M214 84 L214 176" stroke="var(--ink-3)" stroke-width="1.2" marker-end="url(#ar1)"/>
+          <defs><marker id="ar1" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7 z" fill="var(--ink-3)"/></marker></defs>
+          <text class="lbl" x="222" y="82">contraction</text>
+          <text class="lbl" x="360" y="232">time</text>
+          <text class="lbl" x="40" y="24">cells</text>
+        </svg>
+        <figcaption>Expansion, contraction, memory — with the contraction handed to a population that adapts to what it is watching.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate I <span>2010 · a cell</span></p>
+        <h3>A Mathematical Model of the Primary T Cell Response with Contraction Governed by Adaptive Regulatory T Cells</h3>
+        <p class="plate-cite">S. N. Wilson, P. Lee, D. Levy · <i>IFMBE Proceedings 32:209–212</i> · <a href="https://doi.org/10.1007/978-3-642-14998-6_53">10.1007/978-3-642-14998-6_53</a></p>
+        <p class="writeup">Her first publication, from the Southern Biomedical Engineering Conference held at her own university. An immune response has three acts — it expands, it contracts, it leaves memory behind — and the question is what performs act two. The proposal is that contraction is not decay but regulation: a subpopulation that adapts to the response it is suppressing.</p>
+        <ul class="finds">
+          <li><b>3</b> authors, including Peter Lee at Stanford and her advisor Doron Levy</li>
+          <li><b>1</b> citation on Crossref — and it is the seed of the two papers that follow</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ========== II ========== -->
+    <article class="plate th-cell flip">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="Four small tumour-growth panels for the four treatment scenarios: no treatment, vaccine alone, anti-TGF-beta alone, and both combined. Only the combined panel shows the tumour curve falling to zero.">
+          <g>
+            <rect x="16" y="18" width="184" height="112" fill="none" stroke="var(--rule)"/>
+            <path d="M22 124 C 70 122, 96 62, 194 34" class="aggc" stroke-width="2"/>
+            <text class="lbl" x="24" y="34">no treatment</text>
+          </g>
+          <g>
+            <rect x="220" y="18" width="184" height="112" fill="none" stroke="var(--rule)"/>
+            <path d="M226 124 C 274 122, 300 76, 398 52" class="aggc" stroke-width="2"/>
+            <text class="lbl" x="228" y="34">vaccine only</text>
+          </g>
+          <g>
+            <rect x="16" y="146" width="184" height="112" fill="none" stroke="var(--rule)"/>
+            <path d="M22 252 C 70 250, 96 194, 194 166" class="aggc" stroke-width="2"/>
+            <text class="lbl" x="24" y="162">anti-TGF-β only</text>
+          </g>
+          <g>
+            <rect x="220" y="146" width="184" height="112" fill="none" stroke="var(--th)" stroke-width="1.6"/>
+            <path d="M226 252 C 258 250, 276 206, 300 208 C 330 210, 350 250, 398 253" class="thc"/>
+            <text class="lbl-th" x="228" y="162">both</text>
+            <circle class="thf" cx="398" cy="253" r="3.5"/>
+          </g>
+        </svg>
+        <figcaption>Four scenarios from the paper. Three tumours escape; the combination is the only one that turns the curve over.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate II <span>2012 · a cell</span></p>
+        <h3>A Mathematical Model of the Enhancement of Tumor Vaccine Efficacy by Immunotherapy</h3>
+        <p class="plate-cite">S. Wilson, D. Levy · <i>Bulletin of Mathematical Biology 74(7)</i> · <a href="https://doi.org/10.1007/s11538-012-9722-4">10.1007/s11538-012-9722-4</a></p>
+        <p class="writeup">Her most-cited paper. TGF-β is an immunoregulatory protein that helps tumours evade the immune system; blocking it alone does little. The model — tumour size, TGF-β concentration, activated cytotoxic effector cells and regulatory T cells — was built to reproduce a specific mouse experiment, and does, including the part where only the combination eradicates the tumour.</p>
+        <ul class="finds">
+          <li><b>4</b> coupled state variables; solved in MATLAB R2010a with <span class="mono">ode23</span></li>
+          <li>Tumour growth rate <b>0.1946</b> day⁻¹ and carrying capacity <b>369</b> mm², both fitted to the control data of Terabe et al. (2009)</li>
+          <li>Vaccine modelled as <b>5,000</b> TGF-β-resistant effector cells added on day 3; simulations run day 3 → day 30</li>
+          <li>Initial condition assumes ~<b>100</b> activated effector cells at the tumour site</li>
+          <li><b>88</b> citations — more than the rest of her pre-2020 work combined</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ========== III ========== -->
+    <article class="plate th-cell">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="Two cell states side by side — a regulatory T cell and an effector T cell — joined by a two-way arrow labelled r, the switching rate. Below, two response curves show that with switching the peak is far less sensitive to the starting number of cells.">
+          <circle cx="118" cy="72" r="34" fill="var(--th)" opacity=".18" stroke="var(--th)" stroke-width="2"/>
+          <text class="lbl-th" x="118" y="70" text-anchor="middle">regulatory</text>
+          <text class="lbl-th" x="118" y="84" text-anchor="middle">Treg</text>
+          <circle cx="302" cy="72" r="34" fill="var(--agg)" opacity=".16" stroke="var(--agg)" stroke-width="2"/>
+          <text class="lbl" x="302" y="70" text-anchor="middle" fill="var(--agg)">effector</text>
+          <text class="lbl" x="302" y="84" text-anchor="middle" fill="var(--agg)">immunostimulatory</text>
+          <path d="M156 62 C 200 44, 224 44, 264 62" stroke="var(--ink-3)" fill="none" stroke-width="1.4" marker-end="url(#ar2)"/>
+          <path d="M264 88 C 224 106, 200 106, 156 88" stroke="var(--ink-3)" fill="none" stroke-width="1.4" marker-end="url(#ar3)"/>
+          <defs>
+            <marker id="ar2" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7 z" fill="var(--ink-3)"/></marker>
+            <marker id="ar3" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7 z" fill="var(--ink-3)"/></marker>
+          </defs>
+          <text class="lbl" x="210" y="40" text-anchor="middle">switching</text>
+          <line class="axis" x1="40" y1="150" x2="40" y2="252"/>
+          <line class="axis" x1="40" y1="252" x2="392" y2="252"/>
+          <path d="M40 250 C 92 250, 104 168, 148 166 C 196 164, 214 226, 268 240 C 320 250, 356 248, 390 248" stroke="var(--agg)" fill="none" stroke-width="1.6" stroke-dasharray="4 3"/>
+          <path d="M40 250 C 92 250, 106 176, 150 174 C 198 172, 216 228, 270 241 C 322 250, 356 249, 390 249" class="thc" stroke-width="2"/>
+          <path d="M40 250 C 92 250, 102 160, 146 158 C 194 156, 212 224, 266 239 C 318 250, 356 248, 390 248" class="thc" stroke-width="2" opacity=".5"/>
+          <text class="lbl" x="40" y="146">peaks stay close across very different starting counts</text>
+        </svg>
+        <figcaption>Let cells change what they are, and the response stops depending on how many you assumed to begin with.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate III <span>2013 · a cell</span></p>
+        <h3>Functional Switching and Stability of Regulatory T Cells</h3>
+        <p class="plate-cite">S. Wilson, D. Levy · <i>Bulletin of Mathematical Biology 75(10)</i> · <a href="https://doi.org/10.1007/s11538-013-9875-9">10.1007/s11538-013-9875-9</a></p>
+        <p class="writeup">The pivotal small paper. The immunology literature disagreed about whether regulatory T cells can lose their regulatory function and become immunostimulatory. Rather than assume an answer, she made the transition a modelled mechanism — in an ODE version and in a more biologically detailed delay-differential version — and asked what it buys you.</p>
+        <ul class="finds">
+          <li>Models with switching still show the normal expansion, contraction and memory phases, but are <b>more robust</b> to the assumed precursor frequency of T cells</li>
+          <li>The paper identifies a <b>biologically testable range</b> for the switching parameter — a modelling result posed as an experiment</li>
+          <li>Conclusion: regulatory T cell switching “may play a key role in controlling immune contraction”</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ========== IV ========== -->
+    <article class="plate th-mouse flip">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="A tumour blood-vessel network drawn with some solid, mature vessels and many dashed, unstable ones, alongside a gauge showing the ratio between them as an index of vasculature quality, and a timeline marking the delay between the antiangiogenic dose and the chemotherapy dose.">
+          <g stroke-linecap="round">
+            <path d="M40 40 C 78 66, 78 106, 44 132" class="ink" stroke-width="2.4" stroke="var(--th)"/>
+            <path d="M44 132 C 82 152, 128 148, 150 120" class="ink" stroke-width="2.4" stroke="var(--th)"/>
+            <path d="M78 66 C 118 60, 146 78, 152 100" class="ink" stroke-width="2.4" stroke="var(--th)"/>
+            <path d="M150 120 C 176 100, 178 62, 152 44" stroke="var(--agg)" fill="none" stroke-width="1.6" stroke-dasharray="4 4"/>
+            <path d="M60 96 C 96 92, 118 116, 108 140" stroke="var(--agg)" fill="none" stroke-width="1.6" stroke-dasharray="4 4"/>
+            <path d="M100 44 C 116 76, 96 108, 66 118" stroke="var(--agg)" fill="none" stroke-width="1.6" stroke-dasharray="4 4"/>
+            <path d="M126 132 C 150 140, 168 132, 178 116" stroke="var(--agg)" fill="none" stroke-width="1.6" stroke-dasharray="4 4"/>
+          </g>
+          <text class="lbl-th" x="200" y="52">— stable</text>
+          <text class="lbl" x="200" y="70" fill="var(--agg)">- - unstable</text>
+          <rect x="200" y="88" width="188" height="14" fill="none" stroke="var(--rule)"/>
+          <rect x="200" y="88" width="76" height="14" class="thf" opacity=".75"/>
+          <text class="lbl" x="200" y="118">index of vasculature quality</text>
+
+          <line class="axis" x1="40" y1="212" x2="392" y2="212"/>
+          <circle class="thf" cx="96" cy="212" r="6"/>
+          <text class="lbl-th" x="96" y="200" text-anchor="middle">antiangiogenic</text>
+          <circle class="aggf" cx="270" cy="212" r="6"/>
+          <text class="lbl" x="270" y="200" text-anchor="middle" fill="var(--agg)">chemotherapy</text>
+          <path d="M104 232 L262 232" stroke="var(--ink-3)" stroke-width="1.2" marker-start="url(#ar4)" marker-end="url(#ar5)"/>
+          <defs>
+            <marker id="ar4" markerWidth="7" markerHeight="7" refX="2" refY="3.5" orient="auto"><path d="M6 0 L0 3.5 L6 7 z" fill="var(--ink-3)"/></marker>
+            <marker id="ar5" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7 z" fill="var(--ink-3)"/></marker>
+          </defs>
+          <text class="lbl" x="183" y="252" text-anchor="middle">optimal delay — the thing being solved for</text>
+        </svg>
+        <figcaption>The paper’s own invention: grade the vessels, then time the second drug against the grade.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate IV <span>2013 · a mouse</span></p>
+        <h3>Theoretical investigation of the efficacy of antiangiogenic drugs combined to chemotherapy in xenografted mice</h3>
+        <p class="plate-cite">F. Lignet, S. Benzekry, S. Wilson, F. Billy, O. Saut, M. Tod, B. You <i>et al.</i> · <i>Journal of Theoretical Biology 320</i> · <a href="https://doi.org/10.1016/j.jtbi.2012.12.013">10.1016/j.jtbi.2012.12.013</a></p>
+        <p class="writeup">A multi-scale model that couples a molecular description of VEGF signalling to a tissue-scale description of tumour growth. Its contribution is a definition: an index of vasculature quality, set by the balance of stable to unstable vessels inside the tumour mass, which converts a vague clinical intuition into an optimisation target.</p>
+        <ul class="finds">
+          <li><b>12</b> authors across the INRIA, Bordeaux and Lyon groups</li>
+          <li>The question posed is explicitly one of timing: <b>how long</b> to wait after the antiangiogenic before delivering chemotherapy</li>
+          <li>Framed as groundwork for translating preclinical scheduling into clinical studies</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ========== V ========== -->
+    <article class="plate th-mouse">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="Many thin individual mouse tumour-growth curves fanning outward, with a single thick grey population curve running through the middle of them, and a highlighted therapeutic window on the time axis.">
+          <line class="axis" x1="36" y1="24" x2="36" y2="222"/>
+          <line class="axis" x1="36" y1="222" x2="398" y2="222"/>
+          <rect x="176" y="24" width="72" height="198" fill="var(--th)" opacity=".1"/>
+          <text class="lbl-th" x="212" y="18" text-anchor="middle">therapeutic window</text>
+          <g stroke="var(--th)" fill="none" stroke-width="1.1" opacity=".5">
+            <path d="M36 220 C 120 216, 190 160, 396 60"/>
+            <path d="M36 220 C 120 218, 190 186, 396 118"/>
+            <path d="M36 220 C 120 214, 190 140, 396 34"/>
+            <path d="M36 220 C 120 219, 190 200, 396 158"/>
+            <path d="M36 220 C 120 217, 190 172, 396 88"/>
+            <path d="M36 220 C 120 219, 190 206, 396 182"/>
+            <path d="M36 220 C 120 215, 190 152, 396 48"/>
+            <path d="M36 220 C 120 218, 190 192, 396 136"/>
+            <path d="M36 220 C 120 216, 190 166, 396 74"/>
+            <path d="M36 220 C 120 219, 190 210, 396 196"/>
+            <path d="M36 220 C 120 214, 190 132, 396 28"/>
+            <path d="M36 220 C 120 217, 190 178, 396 102"/>
+          </g>
+          <path d="M36 220 C 120 217, 190 176, 396 100" class="aggc"/>
+          <text class="lbl" x="330" y="94" fill="var(--agg)">population</text>
+          <text class="lbl" x="46" y="20">tumour size</text>
+          <text class="lbl" x="392" y="242" text-anchor="end">delay between drugs</text>
+          <text class="lbl-th" x="36" y="262">105 mice · 1,371 observations · one model each</text>
+        </svg>
+        <figcaption>A mixed-effect fit, drawn: the population curve and the hundred-and-five deviations from it are estimated together.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate V <span>2015 · a mouse · the method keystone</span></p>
+        <h3>Modeling and predicting optimal treatment scheduling between the antiangiogenic drug sunitinib and irinotecan in preclinical settings</h3>
+        <p class="plate-cite">S. Wilson, M. Tod, A. Ouerdani, A. Emde, Y. Yarden, B. Ribba <i>et al.</i> · <i>CPT: Pharmacometrics &amp; Systems Pharmacology 4(12)</i> · <a href="https://doi.org/10.1002/psp4.12045">10.1002/psp4.12045</a></p>
+        <p class="writeup">The paper where the method and the philosophy are the same object. A system of nonlinear ODEs for tumour growth, vasculature generation and antiangiogenic treatment, fitted to a large longitudinal mouse dataset — and then, crucially, validated against a follow-up experiment it had not seen.</p>
+        <ul class="finds">
+          <li><b>1,371</b> longitudinal tumour size measurements in <b>105</b> colorectal tumour-bearing mice</li>
+          <li>Parameters estimated “either using a mixed-effect approach or by nonlinear least squares”, depending on the dataset</li>
+          <li>A <b>log-likelihood ratio test</b> supports a synergistic interaction between sunitinib and irinotecan</li>
+          <li>Simulations were then compared against a <b>follow-up preclinical experiment</b> — the model had predictive value for the timing window, not just descriptive fit</li>
+          <li>Note: her CV lists this under an earlier title (“…combination scheduling between antiangiogenic drug and chemotherapy”); the published title names the two drugs. The published version is used here.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ========== VI ========== -->
+    <article class="plate th-sleep flip">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="A hypnogram: a stepped line moving between wake, REM and non-REM sleep stages across one night, with the REM and NREM populations shown as two coupled circles feeding the switch.">
+          <g class="lbl">
+            <text x="8" y="52">wake</text><text x="8" y="90">REM</text>
+            <text x="8" y="128">N1</text><text x="8" y="166">N2</text><text x="8" y="204">N3</text>
+          </g>
+          <g class="axis">
+            <line x1="52" y1="48" x2="398" y2="48"/><line x1="52" y1="86" x2="398" y2="86"/>
+            <line x1="52" y1="124" x2="398" y2="124"/><line x1="52" y1="162" x2="398" y2="162"/>
+            <line x1="52" y1="200" x2="398" y2="200"/>
+          </g>
+          <path class="thc" d="M52 48 L74 48 L74 124 L92 124 L92 162 L110 162 L110 200 L142 200 L142 162 L160 162 L160 86 L188 86 L188 162 L206 162 L206 200 L232 200 L232 162 L250 162 L250 86 L288 86 L288 124 L306 124 L306 162 L324 162 L324 86 L364 86 L364 124 L382 124 L382 48 L398 48"/>
+          <circle cx="120" cy="248" r="18" fill="none" stroke="var(--th)" stroke-width="2"/>
+          <text class="lbl-th" x="120" y="252" text-anchor="middle">REM</text>
+          <circle cx="196" cy="248" r="18" fill="none" stroke="var(--th)" stroke-width="2"/>
+          <text class="lbl-th" x="196" y="252" text-anchor="middle">NREM</text>
+          <path d="M140 242 C 158 234, 178 234, 178 240" stroke="var(--ink-3)" fill="none" stroke-width="1.3" marker-end="url(#ar6)"/>
+          <path d="M178 256 C 178 262, 158 262, 140 254" stroke="var(--ink-3)" fill="none" stroke-width="1.3" marker-end="url(#ar7)"/>
+          <defs>
+            <marker id="ar6" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7 z" fill="var(--ink-3)"/></marker>
+            <marker id="ar7" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7 z" fill="var(--ink-3)"/></marker>
+          </defs>
+          <text class="lbl" x="228" y="244">the subcircuit that</text>
+          <text class="lbl" x="228" y="258">shapes the night</text>
+        </svg>
+        <figcaption>The night is not specified; it falls out of two neuronal populations taking turns.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate VI <span>2015 · a sleeper</span></p>
+        <h3>Effects of Thermoregulation on Human Sleep Patterns: A Mathematical Model of Sleep–Wake Cycles with REM–NREM Subcircuit</h3>
+        <p class="plate-cite">S. Bañuelos, J. Best, G. Huguet, A. Prieto-Langarica, P. B. Pyzza, M. H. Schmidt, S. Wilson · <i>The IMA Volumes in Mathematics and its Applications 158</i> · <a href="https://doi.org/10.1007/978-1-4939-2782-1_6">10.1007/978-1-4939-2782-1_6</a></p>
+        <p class="writeup">The first of the sleep papers, from a collaboration of six mathematicians that would keep going for five years. Existing sleep–wake models treated sleep as a single state. This one adds the REM/NREM subcircuit, so that the internal architecture of a night is produced by the model rather than assumed by it.</p>
+        <ul class="finds">
+          <li><b>7</b> authors, including sleep physiologist Markus H. Schmidt — the domain expert inside a mathematics collaboration</li>
+          <li>Published in an IMA volume on <i>Applications of Dynamical Systems in Biology and Medicine</i></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ========== VII ========== -->
+    <article class="plate th-sleep">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="A hypnogram above a body-temperature curve, with a shaded thermoneutral band. Outside the band the sleep trace is shown fragmenting into more frequent stage changes.">
+          <rect x="40" y="176" width="358" height="34" fill="var(--th)" opacity=".12"/>
+          <text class="lbl-th" x="44" y="170">thermoneutral</text>
+          <line class="axis" x1="40" y1="240" x2="398" y2="240"/>
+          <path class="thc" d="M40 196 C 92 186, 120 200, 160 206 C 208 214, 246 196, 288 190 C 330 184, 364 192, 398 198" stroke-width="2"/>
+          <text class="lbl" x="40" y="258">ambient temperature drives the body’s heat balance</text>
+
+          <g class="axis">
+            <line x1="40" y1="34" x2="398" y2="34"/><line x1="40" y1="62" x2="398" y2="62"/>
+            <line x1="40" y1="90" x2="398" y2="90"/><line x1="40" y1="118" x2="398" y2="118"/>
+          </g>
+          <text class="lbl" x="8" y="38">wake</text><text class="lbl" x="8" y="66">REM</text><text class="lbl" x="8" y="122">deep</text>
+          <path class="thc" d="M40 34 L58 34 L58 90 L76 90 L76 118 L104 118 L104 90 L118 90 L118 62 L146 62 L146 118 L176 118 L176 62 L200 62 L200 118 L216 118" stroke-width="2"/>
+          <path d="M216 118 L228 118 L228 62 L238 62 L238 118 L248 118 L248 34 L256 34 L256 90 L266 90 L266 62 L276 62 L276 118 L288 118 L288 34 L296 34 L296 90 L310 90 L310 62 L318 62 L318 118 L332 118 L332 34 L342 34 L342 90 L356 90 L356 62 L366 62 L366 118 L398 118"
+                stroke="var(--agg)" fill="none" stroke-width="2"/>
+          <line x1="216" y1="24" x2="216" y2="130" stroke="var(--ink-3)" stroke-width="1" stroke-dasharray="3 3"/>
+          <text class="lbl" x="222" y="20" fill="var(--agg)">room off thermoneutral →</text>
+        </svg>
+        <figcaption>Put the room temperature in the equations and the architecture of the night changes shape.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate VII <span>2020 · a sleeper</span></p>
+        <h3>Modeling the long term effects of thermoregulation on human sleep</h3>
+        <p class="plate-cite">S. Bañuelos, J. Best, G. Huguet, A. Prieto-Langarica, P. B. Pyzza, S. Wilson · <i>Journal of Theoretical Biology 494:110208</i> · <a href="https://doi.org/10.1016/j.jtbi.2020.110208">10.1016/j.jtbi.2020.110208</a></p>
+        <p class="writeup">The follow-up, five years later, extends the model with equations for the metabolic processes controlling thermoregulation during sleep — motivated by a theory that REM sleep is precisely when energy normally spent on temperature control is diverted elsewhere. The model then answers, quantitatively, how a sleeper adjusts their stage progression when the room is not thermoneutral.</p>
+        <ul class="finds">
+          <li>Simulations cover both <b>a single night</b> and <b>several consecutive nights</b> — the “long term” of the title</li>
+          <li>Stated conclusion: “including the effects of temperature is a vital component of modeling sleep”</li>
+          <li>The illustration’s fragmentation pattern is schematic — it shows the paper’s claim, not digitised output. <span class="uncertain">Per-stage durations were not extracted; the full text is behind a paywall.</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ========== VIII ========== -->
+    <article class="plate th-troop flip">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="On the left, a loose network of animals with no particular structure. An arrow labelled disease risk points right, to a network that has reorganised into a tighter, more clustered shape. Structure is shown as the output of the pressure, not the input.">
+          <g id="v8a">
+            <g stroke="var(--rule)" stroke-width="1.2">
+              <line x1="52" y1="70" x2="102" y2="52"/><line x1="102" y1="52" x2="140" y2="92"/>
+              <line x1="52" y1="70" x2="66" y2="128"/><line x1="66" y1="128" x2="126" y2="150"/>
+              <line x1="126" y1="150" x2="140" y2="92"/><line x1="102" y1="52" x2="66" y2="128"/>
+              <line x1="88" y1="188" x2="126" y2="150"/><line x1="88" y1="188" x2="66" y2="128"/>
+            </g>
+            <g class="thf" opacity=".85">
+              <circle cx="52" cy="70" r="7"/><circle cx="102" cy="52" r="7"/><circle cx="140" cy="92" r="7"/>
+              <circle cx="66" cy="128" r="7"/><circle cx="126" cy="150" r="7"/><circle cx="88" cy="188" r="7"/>
+            </g>
+            <text class="lbl" x="52" y="222">before</text>
+          </g>
+          <path d="M178 120 L242 120" stroke="var(--ink-3)" stroke-width="1.6" marker-end="url(#ar8)"/>
+          <defs><marker id="ar8" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L7 4 L0 8 z" fill="var(--ink-3)"/></marker></defs>
+          <text class="lbl" x="210" y="110" text-anchor="middle">disease risk</text>
+          <text class="lbl" x="210" y="142" text-anchor="middle">as a selective force</text>
+          <g id="v8b">
+            <g stroke="var(--rule)" stroke-width="1.2">
+              <line x1="300" y1="60" x2="348" y2="86"/><line x1="348" y1="86" x2="336" y2="140"/>
+              <line x1="336" y1="140" x2="288" y2="150"/><line x1="288" y1="150" x2="276" y2="98"/>
+              <line x1="276" y1="98" x2="300" y2="60"/><line x1="300" y1="60" x2="336" y2="140"/>
+              <line x1="276" y1="98" x2="336" y2="140"/><line x1="348" y1="86" x2="288" y2="150"/>
+              <line x1="312" y1="196" x2="288" y2="150"/><line x1="312" y1="196" x2="336" y2="140"/>
+            </g>
+            <g class="thf">
+              <circle cx="300" cy="60" r="7"/><circle cx="348" cy="86" r="7"/><circle cx="336" cy="140" r="8.5"/>
+              <circle cx="276" cy="98" r="7"/><circle cx="288" cy="150" r="8.5"/><circle cx="312" cy="196" r="7"/>
+            </g>
+            <text class="lbl" x="252" y="222">after — an outcome</text>
+          </g>
+        </svg>
+        <figcaption>Law II in one picture: the shape of the society is what comes out, not what goes in.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate VIII <span>2018 · an animal in a troop</span></p>
+        <h3>How Disease Risks Can Impact the Evolution of Social Behaviors and Emergent Population Organization</h3>
+        <p class="plate-cite">N. D. Williams, H. Z. Brooks, M. E. Hohn, C. R. Price, A. E. Radunskaya, S. S. Sindi, S. N. Wilson, N. H. Fefferman · <i>Association for Women in Mathematics Series 14, 31–46</i> · <a href="https://doi.org/10.1007/978-3-319-98083-6_2">10.1007/978-3-319-98083-6_2</a></p>
+        <p class="writeup">The first output of the workshop project. If being social means being exposed, then infection pressure ought to be one of the forces that shaped animal societies in the first place — which reframes social structure from a fixed setting into an evolved outcome.</p>
+        <ul class="finds">
+          <li><b>8</b> authors, all women, from a Mathematical Biosciences Institute <i>Women Advancing Mathematical Biology</i> workshop (March 2017) where Wilson was a group co-lead</li>
+          <li>Published in the <i>Understanding Complex Biological Systems with Mathematics</i> volume of the AWM Series</li>
+          <li><b>3</b> citations — the ideas travelled through the 2020 paper instead</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ========== IX ========== -->
+    <article class="plate th-troop">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="The same social network drawn four times as small bar charts, one per structure, showing final ectoparasite load. The structured arrangements carry a heavier burden than the unstructured one.">
+          <line class="axis" x1="52" y1="34" x2="52" y2="212"/>
+          <line class="axis" x1="52" y1="212" x2="398" y2="212"/>
+          <g>
+            <rect x="82" y="122" width="52" height="90" class="thf" opacity=".55"/>
+            <rect x="164" y="56" width="52" height="156" class="thf" opacity=".8"/>
+            <rect x="246" y="76" width="52" height="136" class="thf" opacity=".7"/>
+            <rect x="328" y="66" width="52" height="146" class="thf" opacity=".75"/>
+          </g>
+          <g class="lbl" text-anchor="middle">
+            <text x="108" y="230">random</text>
+            <text x="190" y="230">degree</text>
+            <text x="272" y="230">closeness</text>
+            <text x="354" y="230">between-</text><text x="354" y="242">ness</text>
+          </g>
+          <text class="lbl" x="58" y="28">ectoparasite load</text>
+          <line x1="52" y1="46" x2="398" y2="46" stroke="var(--agg)" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <text class="lbl" x="398" y="40" text-anchor="end" fill="var(--agg)">saturation</text>
+          <text class="lbl-th" x="52" y="262">structure changes where the burden lands</text>
+        </svg>
+        <figcaption>Schematic of the chapter’s central comparison: hold behaviour fixed, vary structure, read off the load.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate IX <span>2018 · an animal in a troop</span></p>
+        <h3>Mathematical Analysis of the Impact of Social Structure on Ectoparasite Load in Allogrooming Populations</h3>
+        <p class="plate-cite">H. Z. Brooks, M. E. Hohn, C. R. Price, A. E. Radunskaya, S. S. Sindi, N. D. Williams, S. N. Wilson, N. H. Fefferman · <i>Association for Women in Mathematics Series 14, 47–61</i> · <a href="https://doi.org/10.1007/978-3-319-98083-6_3">10.1007/978-3-319-98083-6_3</a></p>
+        <p class="writeup">The companion chapter, running the comparison the other way: fix the grooming behaviour, vary the social structure, and see where the parasite burden ends up. It is the analysis that the 2020 paper turns into a full simulation study.</p>
+        <ul class="finds">
+          <li>Same <b>8</b> authors, adjacent pages in the same volume — the pair is really one piece of work</li>
+          <li><b>0</b> Crossref citations. It is a load-bearing step in the argument that nobody has cited, which is the ordinary fate of chapters</li>
+          <li>The bar heights above are schematic, taking their ordering from the 2020 paper’s published results. <span class="uncertain">The chapter’s own figures were not accessible.</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ========== X ========== -->
+    <article class="plate th-troop flip">
+      <figure class="plate-fig">
+        <svg viewBox="0 0 420 280" role="img" aria-label="Two grooming networks of fifty animals. On the left, partners chosen by popularity: three large hub animals with 49 spokes each. On the right, partners chosen at random: an even mesh where nobody has more than about ten groomers.">
+          <g>
+            <g stroke="var(--rule)" stroke-width=".7" opacity=".9" id="hubspokes"></g>
+            <circle cx="104" cy="98" r="13" class="thf"/>
+            <circle cx="70" cy="140" r="12" class="thf"/>
+            <circle cx="140" cy="142" r="12" class="thf"/>
+            <text class="lbl-th" x="104" y="212" text-anchor="middle">3 hubs · 49 groomers each</text>
+            <text class="lbl" x="104" y="228" text-anchor="middle">chosen by popularity</text>
+          </g>
+          <line x1="210" y1="40" x2="210" y2="196" stroke="var(--rule)" stroke-width="1"/>
+          <g>
+            <g stroke="var(--rule)" stroke-width=".7" opacity=".9" id="meshedges"></g>
+            <g id="meshnodes"></g>
+            <text class="lbl-th" x="316" y="212" text-anchor="middle">max ≈ 10 groomers</text>
+            <text class="lbl" x="316" y="228" text-anchor="middle">chosen at random</text>
+          </g>
+          <text class="lbl" x="210" y="252" text-anchor="middle">only the right-hand population clears</text>
+          <text class="lbl" x="210" y="266" text-anchor="middle">the outbreak, at g = 0.004</text>
+        </svg>
+        <figcaption>Reproduced structurally from Fig. 2 of the paper. The real figure appears further down.</figcaption>
+      </figure>
+      <div>
+        <p class="plate-no">Plate X <span>2020 · an animal in a troop</span></p>
+        <h3>How Emergent Social Patterns in Allogrooming Combat Parasitic Infections</h3>
+        <p class="plate-cite">S. N. Wilson, S. S. Sindi, H. Z. Brooks, M. E. Hohn, C. R. Price, A. E. Radunskaya, N. D. Williams, N. H. Fefferman · <i>Frontiers in Ecology and Evolution 8:54</i> · <a href="https://doi.org/10.3389/fevo.2020.00054">10.3389/fevo.2020.00054</a></p>
+        <p class="writeup">Wilson is first author. Fifty animals, each grooming five neighbours; every step they drop their two lowest-ranked partners and pick two new ones. Grooming both removes parasites from the groomee and moves parasites along the edge. The only thing that varies between conditions is the rule for choosing partners.</p>
+        <ul class="finds">
+          <li><b>N = 50</b> hosts, <b>5</b> connections each, <b>2</b> partners swapped per step, <b>300</b> steps, <b>100</b> trials per condition, in MATLAB R2019a</li>
+          <li>Network organises for the first <b>150</b> steps; parasites are introduced to a single host at step 150</li>
+          <li>Under degree-preference, exactly <b>3</b> core nodes end up with <b>49</b> groomers each; every other node averages fewer than <b>5</b></li>
+          <li>Grooming efficiencies tested: <b>g = 0, 0.001, 0.004, 0.008</b>. At <b>g = 0.004</b> only the random-affiliation population extinguishes the outbreak</li>
+          <li>Other parameters: max load <b>m = 1</b>, reproduction factor <b>r = 0.01</b>, bidirectional spread factor <b>α = 0.15</b>, transmission taken as <b>10%</b> of a host’s neighbours’ average load</li>
+          <li>Discussion: fighting an endemic parasite “requires a fundamentally different social structure than preventing the spread of a novel invasive threat”</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+
+  /* Plate X — hub-and-spoke on the left, even mesh on the right */
+  var spokes=document.getElementById('hubspokes');
+  var mesh=document.getElementById('meshedges');
+  var mnodes=document.getElementById('meshnodes');
+  if(!spokes||!mesh||!mnodes) return;
+
+  var rnd=mulberry32(2020054);
+  var hubs=[[104,98],[70,140],[140,142]];
+  var peri=[];
+  for(var i=0;i<44;i++){
+    var a=rnd()*Math.PI*2, rr=44+rnd()*44;
+    peri.push([104+Math.cos(a)*rr, 122+Math.sin(a)*rr*0.82]);
+  }
+  peri.forEach(function(p){
+    hubs.forEach(function(h){
+      var l=document.createElementNS(NS,'line');
+      l.setAttribute('x1',p[0]);l.setAttribute('y1',p[1]);
+      l.setAttribute('x2',h[0]);l.setAttribute('y2',h[1]);
+      spokes.appendChild(l);
+    });
+    var c=document.createElementNS(NS,'circle');
+    c.setAttribute('cx',p[0]);c.setAttribute('cy',p[1]);c.setAttribute('r',2.6);
+    c.setAttribute('class','thf');c.setAttribute('opacity','.55');
+    spokes.parentNode.appendChild(c);
+  });
+
+  var rnd2=mulberry32(77), pts=[];
+  for(var j=0;j<50;j++){
+    var b=rnd2()*Math.PI*2, r2=Math.sqrt(rnd2())*72;
+    pts.push([316+Math.cos(b)*r2, 122+Math.sin(b)*r2*0.82]);
+  }
+  pts.forEach(function(p,k){
+    var order=pts.map(function(q,m){return [m,(q[0]-p[0])*(q[0]-p[0])+(q[1]-p[1])*(q[1]-p[1])]})
+                 .sort(function(x,y){return x[1]-y[1]}).slice(1,6);
+    order.forEach(function(o){
+      if(o[0]<k) return;
+      var q=pts[o[0]];
+      var l=document.createElementNS(NS,'line');
+      l.setAttribute('x1',p[0]);l.setAttribute('y1',p[1]);
+      l.setAttribute('x2',q[0]);l.setAttribute('y2',q[1]);
+      mesh.appendChild(l);
+    });
+    var c=document.createElementNS(NS,'circle');
+    c.setAttribute('cx',p[0]);c.setAttribute('cy',p[1]);c.setAttribute('r',4);
+    c.setAttribute('class','thf');c.setAttribute('opacity','.8');
+    mnodes.appendChild(c);
+  });
+})();
+</script>

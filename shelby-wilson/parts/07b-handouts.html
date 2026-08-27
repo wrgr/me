@@ -1,0 +1,153 @@
+<style>
+/* ============================================================
+   HANDOUTS — three audiences, three activities
+   ============================================================ */
+.handouts{border-bottom:1px solid var(--rule)}
+.ho-grid{display:grid;gap:1.25rem}
+@media (min-width:920px){.ho-grid{grid-template-columns:repeat(3,1fr)}}
+.ho{
+  background:var(--panel);border:1px solid var(--rule);border-radius:3px;
+  padding:1.6rem 1.5rem;display:flex;flex-direction:column;gap:.9rem;
+  break-inside:avoid;
+}
+.ho-aud{
+  font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--th);font-weight:600;
+}
+.ho h3{font-size:var(--fs-lg);line-height:1.22;font-variation-settings:"SOFT" 3,"WONK" 1,"opsz" 30}
+.ho p{font-size:var(--fs-sm);color:var(--ink-2);line-height:1.62}
+.ho .act-box{
+  margin-top:auto;padding-top:1rem;border-top:1px solid var(--rule-2);
+}
+.ho .act-box h4{
+  font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:.55rem;
+}
+.ho ol{margin:0;padding-left:1.15rem;font-size:var(--fs-sm);color:var(--ink-2);line-height:1.6}
+.ho ol li + li{margin-top:.4rem}
+.ho .kicker{font-family:var(--body);font-style:italic;color:var(--ink);font-size:var(--fs-sm)}
+
+.print-hint{
+  margin-top:1.5rem;font-family:var(--mono);font-size:var(--fs-xs);
+  color:var(--ink-3);letter-spacing:.03em;
+}
+
+@media print{
+  body{background:#fff;color:#000}
+  .hero,.converge,.graphsec,.spine-sec,.acts,.plates,.realfigs,.coda-sec,.print-hint{display:none !important}
+  .handouts{padding:0;border:0}
+  .ho-grid{display:block}
+  .ho{border:0;border-top:2px solid #000;padding:1.25rem 0;page-break-after:always;background:#fff}
+  .ho-aud,.ho h3,.ho p,.ho ol{color:#000}
+  .ho .act-box h4{color:#333}
+}
+</style>
+
+<section class="handouts" id="handouts">
+  <div class="wrap">
+    <div class="fig-head">
+      <div>
+        <p class="eyebrow">Handouts</p>
+        <h2>The same idea, told three ways</h2>
+        <p>
+          One story for a classroom, one for a seminar room, one for a stranger.
+          Each ends with something a group can actually do. These print one to a page —
+          use your browser’s print dialog and everything else on this page drops away.
+        </p>
+      </div>
+    </div>
+
+    <div class="ho-grid">
+      <article class="ho th-troop">
+        <p class="ho-aud">For kids · ages 9–13</p>
+        <h3>The class average doesn’t have a favourite colour</h3>
+        <p class="kicker">Nobody in your class is 11.4 years old with 1.8 pets.</p>
+        <p>
+          If you add up everyone’s age and divide, you get a number that describes the class
+          and belongs to nobody. That’s an <b>average</b>. Averages are useful — but they
+          delete people.
+        </p>
+        <p>
+          Shelby Wilson is a mathematician who spends her whole career refusing to let that
+          happen. When she studied cancer drugs, she didn’t build one model for “a mouse” —
+          she built a model for <b>each of 105 mice</b>. When she studied grooming in animal
+          groups, she found something surprising: the group with the three most popular
+          animals — the ones everybody groomed — was the group that stayed <b>sickest</b>.
+          The group where everyone groomed <b>randomly</b> got better.
+        </p>
+        <div class="act-box">
+          <h4>Group activity — the vanishing classroom</h4>
+          <ol>
+            <li>Everyone writes down three numbers about themselves: height in cm, hours slept last night, number of letters in their first name.</li>
+            <li>Work out the class average for each. Write “The Average Student” on the board with those three numbers.</li>
+            <li>Now go round the room: does <b>anyone</b> match all three? Usually nobody does.</li>
+            <li>Plot everyone’s three numbers as dots. Draw the average as a big dot in the middle.</li>
+            <li>Discuss: if you had to buy one chair for The Average Student, would it fit anybody? When is an average a good idea — and when is it a way of not looking?</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="ho th-mouse">
+        <p class="ho-aud">For peers · seminar</p>
+        <h3>One estimator, six substrates</h3>
+        <p class="kicker">The claim: her career is a single methodological commitment applied at ascending scales.</p>
+        <p>
+          Wilson’s work is usually described by domain — immunology, oncology, sleep,
+          behavioural ecology, epidemic forecasting. Sorted that way it reads as itinerant.
+          Sorted by <b>what unit carries the random effect</b>, it is monotone: a cell
+          (2010–13), a mouse (2013–15), a sleeper (2015–20), an animal in a troop (2018–20),
+          a model (2021–24), a mathematician (2016–).
+        </p>
+        <p>
+          The load-bearing observation is that the mixed-effect model and the linear opinion
+          pool are the same commitment run in opposite directions. One decomposes a
+          population into shared plus individual structure; the other composes individuals
+          into a population without collapsing their variance. Both refuse the point estimate.
+          Both appear in her record, twelve years apart, in fields that do not cite each other.
+        </p>
+        <div class="act-box">
+          <h4>Group activity — the isomorphism test</h4>
+          <ol>
+            <li>Take three of her papers that look least related — say the 2013 Treg switching paper, the 2020 allogrooming paper, and the 2023 Scenario Modeling Hub evaluation.</li>
+            <li>Write each on a card in three slots only: <i>what is the population · what is the individual · what is being refused</i>.</li>
+            <li>Compare cards. If the slots fill the same way across unrelated fields, that is a real structural claim rather than a nice sentence.</li>
+            <li>Then adversarially: find the paper that <b>breaks</b> it. Argue for the NTRU undergraduate thesis, or the multi-scale VEGF model, as genuine counterexamples.</li>
+            <li>Repeat the exercise on a researcher in your own department whose CV looks scattered. Does an axis exist that makes it monotone?</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="ho th-model">
+        <p class="ho-aud">For the public</p>
+        <h3>Why the pandemic forecast was a committee</h3>
+        <p class="kicker">During COVID-19 the number you saw on the news was not one scientist’s guess. It was dozens, deliberately kept apart and then added up.</p>
+        <p>
+          More than ninety research groups submitted forecasts to a public archive every
+          week. Every submission was timestamped and kept, including the wrong ones. When
+          researchers later scored them, the <b>combination</b> of all those forecasts was
+          more consistently accurate than any single group — for eighteen months straight.
+        </p>
+        <p>
+          Two things are worth knowing. First: the combination works because it keeps the
+          disagreement. The width of the shaded band on those charts <i>is</i> how much the
+          modellers disagreed, and it is information, not embarrassment. Second: they
+          published their failures. When forecasts of new cases were wrong, they said how
+          wrong — during three big waves, ranges advertised as right 19 times out of 20 were
+          right fewer than 1 time in 2.
+        </p>
+        <div class="act-box">
+          <h4>Group activity — the jar and the crowd</h4>
+          <ol>
+            <li>Fill a jar with sweets, marbles, anything countable. Only one person knows the true number.</li>
+            <li>Everyone writes a private guess <b>and</b> a range they’re 90% sure contains the answer. No discussion.</li>
+            <li>Collect all guesses. Compute the median. Compare it with each individual guess.</li>
+            <li>Count how many people’s 90% ranges actually contained the truth. If far fewer than 90% did, you have just reproduced the paper’s central finding: people’s ranges are too narrow.</li>
+            <li>Now let everyone talk for two minutes and guess again. Does the crowd get better — or just more confident? That difference is the whole problem.</li>
+          </ol>
+        </div>
+      </article>
+    </div>
+
+    <p class="print-hint">Printing this page yields the three handouts only, one per sheet.</p>
+  </div>
+</section>

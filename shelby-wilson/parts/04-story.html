@@ -1,0 +1,428 @@
+<style>
+/* ============================================================
+   FIG. 2 — the spine, and the acts
+   ============================================================ */
+.spine-sec{border-bottom:1px solid var(--rule)}
+.spine{
+  background:var(--panel);border:1px solid var(--rule);border-radius:3px;
+  box-shadow:var(--shadow);overflow-x:auto;overflow-y:hidden;
+}
+.spine svg{display:block;min-width:760px;width:100%;height:auto}
+.spine-rung-label{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.03em}
+.spine-gloss{font-family:"Newsreader",Georgia,serif;font-size:13px;font-style:italic}
+.spine-dot{cursor:default}
+.spine-year{font-family:"IBM Plex Mono",monospace;font-size:11px}
+
+.acts{border-bottom:1px solid var(--rule)}
+.acts-head{max-width:var(--measure);margin-bottom:clamp(2.5rem,5vw,3.5rem)}
+.acts-head h2{font-size:clamp(1.9rem,4.4vw,var(--fs-2xl));font-variation-settings:"SOFT" 2,"WONK" 1,"opsz" 60;letter-spacing:-.018em;margin:.5rem 0 1rem}
+
+.act{
+  display:grid;gap:0 clamp(1.5rem,3vw,2.5rem);
+  padding-block:clamp(2rem,4vw,3rem);
+  border-top:1px solid var(--rule-2);
+  position:relative;
+}
+.act:first-of-type{border-top:0}
+@media (min-width:880px){
+  .act{grid-template-columns:210px minmax(0,var(--measure));align-items:start}
+}
+.act-rail{position:relative;padding-left:1.4rem}
+.act-rail::before{
+  content:"";position:absolute;left:0;top:.35rem;bottom:0;width:3px;
+  background:var(--th);border-radius:2px;
+}
+.act-rung{
+  font-family:var(--display);font-size:var(--fs-lg);color:var(--th);
+  font-weight:600;line-height:1.15;font-variation-settings:"SOFT" 3,"WONK" 1,"opsz" 30;
+}
+.act-n{font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.35rem}
+.act-gloss{font-size:var(--fs-sm);color:var(--ink-3);margin-top:.5rem;font-style:italic}
+.act-years{font-family:var(--mono);font-size:var(--fs-xs);color:var(--ink-3);margin-top:.75rem;letter-spacing:.06em}
+
+.act-body h3{font-size:var(--fs-xl);letter-spacing:-.015em;margin-bottom:.9rem;font-variation-settings:"SOFT" 2,"WONK" 1,"opsz" 40}
+.act-body p + p{margin-top:1.05em}
+.act-body a{color:var(--th);text-decoration-color:color-mix(in srgb,var(--th) 40%,transparent)}
+@media (max-width:879px){
+  .act-rail{padding-left:1rem;margin-bottom:1.4rem}
+}
+.pull{
+  margin:1.4rem 0;padding:1.05rem 1.25rem;background:var(--panel-2);
+  border-left:3px solid var(--th);border-radius:0 3px 3px 0;
+}
+.pull p{font-family:var(--mono);font-size:var(--fs-sm);color:var(--ink-2);line-height:1.7}
+.pull b{color:var(--ink);font-weight:600}
+</style>
+
+<section class="spine-sec" id="spine">
+  <div class="wrap">
+    <div class="fig-head">
+      <div>
+        <p class="eyebrow">Fig. 2</p>
+        <h2>The spine</h2>
+        <p>
+          The nineteen papers again, on the only axis that makes them monotone:
+          the size of the thing being protected from its own average. It climbs
+          from a cell to a person, and it very nearly climbs in chronological
+          order too — but not quite, and the exceptions are the interesting part.
+        </p>
+      </div>
+    </div>
+    <div class="spine">
+      <svg id="spineSvg" viewBox="0 0 960 470" role="img"
+        aria-label="A ladder of six rungs — a cell, a mouse, a sleeper, an animal in a troop, a model, a mathematician — with each publication plotted on its rung by year of publication, from 2010 at the left to 2024 at the right.">
+        <g id="spineG"></g>
+      </svg>
+    </div>
+    <p class="fig-note">
+      Horizontal position is year of publication (2010–2024). Vertical position is the
+      rung. The single dot on the bottom rung sits in 2018, in the middle of everything
+      else — the community work is not a late-career turn, it runs underneath the whole thing.
+    </p>
+  </div>
+</section>
+
+<section class="acts" id="story">
+  <div class="wrap">
+    <div class="acts-head">
+      <p class="eyebrow">The story</p>
+      <h2>Six rungs, one move</h2>
+      <p class="lede">
+        Read in spine order rather than date order, the record stops looking like
+        someone changing fields and starts looking like someone taking the same
+        question up a ladder, testing whether it still holds at the next size.
+      </p>
+    </div>
+
+    <article class="act th-cell">
+      <div class="act-rail">
+        <p class="act-n">Rung one</p>
+        <p class="act-rung">a cell</p>
+        <p class="act-gloss">T cells, regulatory T cells, a tumour</p>
+        <p class="act-years">2010 · 2012 · 2013</p>
+      </div>
+      <div class="act-body">
+        <h3>She starts with a population that argues with itself</h3>
+        <p>
+          Her doctoral work under Doron Levy at Maryland is about the immune system,
+          and specifically about the awkward fact that an immune response has to know
+          when to stop. Her first publication,
+          <a href="https://doi.org/10.1007/978-3-642-14998-6_53">a 2010 conference paper</a>,
+          proposes that the stopping is done by a subpopulation of regulatory T cells that
+          adapts to the response it is watching.
+        </p>
+        <p>
+          The 2012 paper that followed is her most-cited work by a wide margin.
+          <a href="https://doi.org/10.1007/s11538-012-9722-4">Wilson and Levy</a>
+          build a four-equation model — tumour, TGF-β, effector cells, regulatory cells —
+          to explain why blocking TGF-β does nearly nothing alone but transforms the
+          effect of a tumour vaccine. The model reproduces the experiment it was fitted to,
+          which was the point: it was built to be checkable against
+          <a href="https://doi.org/10.1158/1078-0432.CCR-08-2478">Terabe et al.’s mice</a>.
+        </p>
+        <p>
+          Then, in <a href="https://doi.org/10.1007/s11538-013-9875-9">2013</a>, the move
+          that turns out to be the whole career. The biology was in conflict: some evidence
+          said regulatory T cells could stop regulating and start promoting, some said they
+          could not. She did not pick a side and she did not average the two. She made the
+          switching itself a parameter, modelled the population as containing cells that
+          could change what they were, and found that this made the immune response
+          dramatically <em>less</em> sensitive to how many cells you assumed at the start.
+        </p>
+        <div class="pull">
+          <p><b>The move:</b> when a population is internally inconsistent, do not resolve
+          the inconsistency by averaging. Model the thing that lets individuals differ.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="act th-mouse">
+      <div class="act-rail">
+        <p class="act-n">Rung two</p>
+        <p class="act-rung">a mouse</p>
+        <p class="act-gloss">xenografted animals on a dosing schedule</p>
+        <p class="act-years">2013 · 2015</p>
+      </div>
+      <div class="act-body">
+        <h3>At INRIA she learns the equation for the whole idea</h3>
+        <p>
+          After the PhD she goes to INRIA Grenoble, to Benjamin Ribba’s group, and the
+          subject changes from immunology to pharmacology: when, exactly, should you give
+          chemotherapy relative to a drug that is busy remodelling the tumour’s blood supply?
+          <a href="https://doi.org/10.1016/j.jtbi.2012.12.013">The 2013 multi-scale model</a>
+          answers it by inventing something to measure — an index of vasculature <em>quality</em>,
+          the balance of stable to unstable vessels — so that “wait for the vessels to normalise”
+          becomes a number you can optimise against.
+        </p>
+        <p>
+          But the paper that matters here is
+          <a href="https://doi.org/10.1002/psp4.12045">the 2015 scheduling study</a>, and
+          it matters because of its method. 1,371 tumour measurements across
+          <b>105 colorectal tumour-bearing mice</b>, fitted with a <em>mixed-effect</em>
+          approach: one population model, plus a private parameter set for every single
+          animal. The title of the postdoc project she was hired for says it outright —
+          “The Stochastic Approximation of Expectation Maximization Yields
+          <em>Individualized</em> Predictions for Optimal Combined Cancer Treatment.”
+        </p>
+        <p>
+          This is Law I with an equation attached. A mixed-effect model is, structurally,
+          a formal apparatus for saying <em>the average is not the subject</em>: you fit the
+          population and the deviation from it at the same time, and the deviations are data,
+          not error.
+        </p>
+      </div>
+    </article>
+
+    <article class="act th-sleep">
+      <div class="act-rail">
+        <p class="act-n">Rung three</p>
+        <p class="act-rung">a sleeper</p>
+        <p class="act-gloss">one body regulating its own temperature</p>
+        <p class="act-years">2015 · 2020 · (talks, 2015–2019)</p>
+      </div>
+      <div class="act-body">
+        <h3>The individual becomes a whole organism, and gains a room</h3>
+        <p>
+          The sleep work comes out of a long-running collaboration with five other
+          mathematicians — Bañuelos, Best, Huguet, Prieto-Langarica, Pyzza — and it makes
+          the same move one level up. A night’s sleep is not one state; it is a population
+          of interacting neuronal subcircuits.
+          <a href="https://doi.org/10.1007/978-1-4939-2782-1_6">The 2015 chapter</a>
+          splits sleep into REM and NREM populations so that the architecture of a night
+          <em>emerges</em> from switching between them rather than being written in by hand.
+        </p>
+        <p>
+          <a href="https://doi.org/10.1016/j.jtbi.2020.110208">The 2020 paper</a> then does
+          something quietly radical for a sleep model: it puts the room in the equations.
+          Following the theory that REM sleep is when the body stops paying the metabolic
+          bill for thermoregulation, the model adds heat-balance equations to the circuit
+          and asks what an ambient temperature away from thermoneutral does to the shape of
+          a night — and then of several nights running. Their conclusion is blunt: including
+          temperature “is a vital component of modeling sleep.”
+        </p>
+        <p>
+          There is a fourth thread on this rung that never became a paper. Between 2015 and
+          2019 she gave talks on <em>the dynamics of coupled Morris–Lecar neurons</em> at
+          Colorado, at Georgia, at a SIAM meeting, at SACNAS, and as the Dorothy Wrinch
+          Lecture in Biomathematics. None of it is in the publication record. A bibliography
+          is itself a population summary, and it loses individuals.
+        </p>
+      </div>
+    </article>
+
+    <article class="act th-troop">
+      <div class="act-rail">
+        <p class="act-n">Rung four</p>
+        <p class="act-rung">an animal in a troop</p>
+        <p class="act-gloss">who grooms whom, and who benefits</p>
+        <p class="act-years">2018 · 2018 · 2020</p>
+      </div>
+      <div class="act-body">
+        <h3>The most surprising result she has published</h3>
+        <p>
+          In March 2017, at a Mathematical Biosciences Institute workshop, eight women —
+          Brooks, Hohn, Price, Radunskaya, Sindi, Williams, Wilson and Nina Fefferman —
+          started a project on ectoparasites and allogrooming. It produced
+          <a href="https://doi.org/10.1007/978-3-319-98083-6_2">two chapters in 2018</a>
+          and <a href="https://doi.org/10.3389/fevo.2020.00054">a paper in 2020</a> on which
+          Wilson is first author.
+        </p>
+        <p>
+          The setup: fifty animals, each grooming five neighbours, dropping two partners and
+          picking two new ones every step for 300 steps. Nothing varies but the rule for
+          choosing partners — at random, or by preferring the most connected, the most
+          central, or the best-bridging animals. Then parasites are introduced.
+        </p>
+        <p>
+          Choose partners by popularity and the group organises itself into
+          <b>three hub animals groomed by 49 others each</b>, with everyone else averaging
+          fewer than five groomers — a picture of a dominance hierarchy that arises without
+          anyone imposing it. That population stays saturated with parasites at every
+          grooming efficiency tested. Choose partners at random, and if grooming is efficient
+          enough, the outbreak dies out entirely.
+        </p>
+        <div class="pull">
+          <p><b>The finding:</b> the most organised society is the sickest one. The authors’
+          reading is that allogrooming is probably about social bonding, and has to
+          <em>overcome</em> a parasite penalty to pay for itself — not the other way round.</p>
+        </div>
+        <p>
+          And the sting in the discussion, which reads differently after 2020: fighting an
+          endemic parasite “requires a fundamentally different social structure than
+          preventing the spread of a novel invasive threat.” A population optimised against
+          the disease it already has is the population most exposed to the one it has not met.
+        </p>
+      </div>
+    </article>
+
+    <article class="act th-model">
+      <div class="act-rail">
+        <p class="act-n">Rung five</p>
+        <p class="act-rung">a model</p>
+        <p class="act-gloss">one team’s forecast among dozens</p>
+        <p class="act-years">2021 · 2022 ×3 · 2023 ×3 · 2024</p>
+      </div>
+      <div class="act-body">
+        <h3>Where the individual is somebody else’s model</h3>
+        <p>
+          She joined the Johns Hopkins Applied Physics Laboratory in 2020, and the rung
+          changes again: now the population is a population of <em>models</em>, and the
+          individual whose difference must be preserved is another team’s SEIR code.
+          Eight papers in four years, with author counts of 60, 63, 83, 109, 295 and 428 —
+          numbers that are themselves the argument.
+        </p>
+        <p>
+          <a href="https://doi.org/10.1073/pnas.2113561119">The PNAS evaluation</a> scored
+          tens of millions of predictions from more than 90 groups: the multi-model ensemble
+          was the most consistently accurate forecaster of COVID-19 deaths for eighteen
+          months, while two-thirds of individual models merely beat a naïve baseline.
+          <a href="https://doi.org/10.1038/s41467-023-42680-x">The Nature Communications
+          evaluation</a> of the Scenario Modeling Hub graded nearly 1.8 million projections
+          and found that scenarios stayed close to reality for <b>22 weeks on average</b>
+          before an unanticipated variant broke their assumptions — and that the ensemble
+          which <em>preserved variation between models</em> was consistently more reliable
+          than any single one.
+        </p>
+        <p>
+          The pooling method has a name — the linear opinion pool — and it does precisely
+          what a mixed-effect model does, in the other direction: it keeps the members
+          distinguishable inside the aggregate. APL’s own entry to the Forecast Hub,
+          <span class="mono">JHUAPL-SLPHospEns</span>, is flagged in
+          <a href="https://doi.org/10.1038/s41597-022-01517-w">the hub dataset</a> as an
+          <span class="mono">ensemble_of_hub_models</span>: a model whose members are other
+          people’s models.
+        </p>
+        <p>
+          What makes this thread trustworthy rather than triumphal is how much of it is
+          published failure. <a href="https://doi.org/10.7554/eLife.73584">The Delta paper</a>
+          says in its own abstract that the models got the surge and its timing right and the
+          magnitude “substantially underestimated.”
+          <a href="https://doi.org/10.1371/journal.pcbi.1011200">The 2024 case-forecasting
+          review</a> reports that during the growth phases of the winter 2020, Delta and
+          Omicron waves, coverage of the 95% prediction intervals fell below 50% — a
+          forecast advertised as right nineteen times in twenty being right fewer than
+          one time in two.
+        </p>
+      </div>
+    </article>
+
+    <article class="act th-person">
+      <div class="act-rail">
+        <p class="act-n">Rung six</p>
+        <p class="act-rung">a mathematician</p>
+        <p class="act-gloss">a named person, not a demographic</p>
+        <p class="act-years">2016 · 2017– · 2018 · 2019</p>
+      </div>
+      <div class="act-body">
+        <h3>The same operation, performed on her own field</h3>
+        <p>
+          In 2017, with Erica Graham, Raegan Higgins and Candice Price, she launched
+          <a href="https://mathematicallygiftedandblack.com/">Mathematically Gifted and Black</a>,
+          and wrote it up the next year
+          <a href="https://doi.org/10.1090/noti1633">in the Notices of the AMS</a>.
+          The site publishes one Black mathematician per day of Black History Month, each
+          answering the same handful of questions in their own words.
+        </p>
+        <p>
+          It is easy to file this under outreach and move on. Read it against the rest of
+          the record and it is the same technique. A diversity statistic is a population
+          average; it tells you a proportion and erases every member. MGB replaces the
+          statistic with the individuals — named, photographed, quoted, each with their own
+          parameters. That is the linear opinion pool applied to people: combine, but do not
+          average away.
+        </p>
+        <p>
+          The same instinct runs through the rest of this rung — co-founding the Network of
+          Mathematicians of Color and CodeHouse, co-organising AIM workshops, a chapter on
+          <a href="https://bookstore.ams.org/clrm-55">working with students from
+          underrepresented groups</a>, and a list of named undergraduates in her CV whose
+          projects she supervised, one of whom is a Rhodes Scholar and several of whom went
+          on to graduate school. She keeps the names.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script>
+(function(){
+  var g=document.getElementById('spineG');
+  if(!g||typeof SUBJECT==='undefined') return;
+  var NS='http://www.w3.org/2000/svg';
+  var THREAD={cell:'--t-cell',mouse:'--t-mouse',sleep:'--t-sleep',troop:'--t-troop',model:'--t-model',person:'--t-person'};
+  var W=960,H=470,L=250,R=48,T=52,B=52;
+  var Y0=2009.4,Y1=2024.6;
+  function X(y){return L+(y-Y0)/(Y1-Y0)*(W-L-R)}
+  function ROW(i){return T+i*((H-T-B)/5)}
+
+  /* year axis */
+  [2010,2012,2014,2016,2018,2020,2022,2024].forEach(function(y){
+    var l=document.createElementNS(NS,'line');
+    l.setAttribute('x1',X(y));l.setAttribute('x2',X(y));
+    l.setAttribute('y1',T-22);l.setAttribute('y2',H-B+14);
+    l.setAttribute('stroke','var(--rule)');l.setAttribute('stroke-width','1');
+    g.appendChild(l);
+    var t=document.createElementNS(NS,'text');
+    t.setAttribute('x',X(y));t.setAttribute('y',H-B+32);
+    t.setAttribute('text-anchor','middle');t.setAttribute('class','spine-year');
+    t.setAttribute('fill','var(--ink-3)');t.textContent=y;
+    g.appendChild(t);
+  });
+
+  SUBJECT.rungs.forEach(function(r,i){
+    var y=ROW(i);
+    var line=document.createElementNS(NS,'line');
+    line.setAttribute('x1',L-14);line.setAttribute('x2',W-R);
+    line.setAttribute('y1',y);line.setAttribute('y2',y);
+    line.setAttribute('stroke','var('+THREAD[r.thread]+')');
+    line.setAttribute('stroke-width','2');line.setAttribute('opacity','.28');
+    g.appendChild(line);
+
+    var lab=document.createElementNS(NS,'text');
+    lab.setAttribute('x',L-26);lab.setAttribute('y',y-3);
+    lab.setAttribute('text-anchor','end');lab.setAttribute('class','spine-rung-label');
+    lab.setAttribute('fill','var('+THREAD[r.thread]+')');
+    lab.textContent=r.label;
+    g.appendChild(lab);
+
+    var gl=document.createElementNS(NS,'text');
+    gl.setAttribute('x',L-26);gl.setAttribute('y',y+14);
+    gl.setAttribute('text-anchor','end');gl.setAttribute('class','spine-gloss');
+    gl.setAttribute('fill','var(--ink-3)');
+    gl.textContent=r.gloss;
+    g.appendChild(gl);
+  });
+
+  /* jitter co-published papers vertically so none hide */
+  var seen={};
+  SUBJECT.papers.forEach(function(p){
+    var key=p.rung+':'+p.year;
+    var n=(seen[key]=(seen[key]||0)+1)-1;
+    var cx=X(p.year), cy=ROW(p.rung)+(n%2===0? -n*0 : 0)+(n>0?(n%2?-13:13)*Math.ceil(n/2):0);
+    var c=document.createElementNS(NS,'circle');
+    c.setAttribute('cx',cx);c.setAttribute('cy',cy);
+    c.setAttribute('r',5+Math.sqrt(p.citations)*0.75);
+    c.setAttribute('fill','var('+THREAD[p.thread]+')');
+    c.setAttribute('opacity','.9');
+    c.setAttribute('class','spine-dot');
+    var ti=document.createElementNS(NS,'title');
+    ti.textContent='Plate '+p.plate+' — '+p.short+' ('+p.year+'), '+p.citations+' citations';
+    c.appendChild(ti);
+    g.appendChild(c);
+  });
+
+  var cap=document.createElementNS(NS,'text');
+  cap.setAttribute('x',L-26);cap.setAttribute('y',T-28);
+  cap.setAttribute('text-anchor','end');cap.setAttribute('class','spine-year');
+  cap.setAttribute('fill','var(--ink-3)');cap.setAttribute('letter-spacing','.12em');
+  cap.textContent='THE INDIVIDUAL IS…';
+  g.appendChild(cap);
+
+  var cap2=document.createElementNS(NS,'text');
+  cap2.setAttribute('x',W-R);cap2.setAttribute('y',T-28);
+  cap2.setAttribute('text-anchor','end');cap2.setAttribute('class','spine-year');
+  cap2.setAttribute('fill','var(--ink-3)');
+  cap2.textContent='dot size = citations (Crossref)';
+  g.appendChild(cap2);
+})();
+</script>
