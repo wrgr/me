@@ -122,6 +122,19 @@ variation. Two were repaired and should stay repaired:
 - `{Roncal, Gray}, William R` put the comma inside the braces. Now
   `{Gray Roncal}, William R`.
 
+## Known gaps
+
+- **GREMLIN** ("Graph Estimation From MR Images Leading to Inference in
+  Neuroscience") turned up while cross-referencing Semantic Scholar's
+  author-ID variants of William Gray-Roncal against this file — it's a
+  record at Johns Hopkins' JScholarship repository
+  (`jscholarship.library.jhu.edu`, item `9dad7b26-818f-4dbf-b71f-3773912161d5`
+  / handle `1774.2/39487`), thematically identical to the already-recorded
+  GruteDB/m2g pipeline work. The repository is Cloudflare-protected and
+  returned no author metadata to automated fetches, so his authorship
+  (vs. e.g. having advised a student thesis of the same name) couldn't be
+  confirmed. Not added — check manually if you want it on the CV.
+
 ## Gotchas
 
 - `\cventry`'s last argument is **not** `\long` — a blank line inside it breaks
