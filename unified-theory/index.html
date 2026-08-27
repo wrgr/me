@@ -133,9 +133,10 @@ figure { margin: 0; }
       On paper he is six different people: a brain-mapper, an AI researcher, a
       defense engineer, a learning engineer, a mentor of five hundred students, a
       public-health data scientist. This page argues the bibliography disagrees.
-      <strong>Every project is the same machine: turn something hard to see into a
-      graph, prove the graph can be trusted, then hand the controls to someone
-      new.</strong>
+      <strong>Every project is the same machine: wring trustworthy, interpretable
+      knowledge out of noisy, incomplete data — the graph is just his favorite
+      container for it — calibrate whoever judges that knowledge, then hand the
+      controls to someone new.</strong>
     </p>
     <p class="well-caption" style="padding:0; margin-top:1.4rem;">
       This is an interpretation, argued from sources — every claim links to one.
@@ -249,8 +250,8 @@ figure { margin: 0; }
     <h2 style="color:var(--ink-well); max-width:32ch;">Forty-four publications, filed two ways</h2>
     <p style="max-width:62ch; color:var(--faint-well);">
       Filed by <em>field</em>, the record looks like six unrelated careers.
-      Filed by <em>what each paper does</em> — make the graph, calibrate the
-      judge, or widen the gate — it is one method, applied everywhere.
+      Filed by <em>what each paper does</em> — extract the knowledge, calibrate
+      the judge, or widen the gate — it is one method, applied everywhere.
       Press the button; nothing moves between fields, only the filing changes.
     </p>
     <p class="no-print" style="margin:.4rem 0 1rem;">
@@ -259,7 +260,7 @@ figure { margin: 0; }
       </button>
     </p>
     <div id="convergeField" role="img"
-      aria-label="The same set of publications shown scattered across six academic fields, then re-sorted into three rows: making graphs, calibrating judges, and widening gates."
+      aria-label="The same set of publications shown scattered across six academic fields, then re-sorted into three rows: extracting knowledge, calibrating judges, and widening gates."
       style="position:relative; height:460px; background:var(--well-2); border-radius:6px; overflow:hidden;"></div>
     <p class="well-caption" style="padding:0; max-width:none;">
       Dot color = research thread (same colors everywhere on this page). Left
@@ -276,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!box || typeof SUBJECT === 'undefined') return;
 
   var fields = ['Neuroscience', 'Databases & cloud', 'Computer vision & AI', 'Statistics & reliability', 'Education & outreach', 'Human performance & clinical'];
-  var moves = ['make the graph', 'calibrate the judge', 'widen the gate'];
+  var moves = ['extract the knowledge', 'calibrate the judge', 'widen the gate'];
   function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
 
   var papers = SUBJECT.papers.filter(function (p) { return p.field && p.move; });
@@ -402,19 +403,24 @@ document.addEventListener('DOMContentLoaded', function () {
     </p>
 
     <div class="law law--maps">
-      <div class="law-name">1. First, make it a graph.</div>
+      <div class="law-name">1. First, wring knowledge from noisy, incomplete data.</div>
       <p>
-        Whatever the substrate — MRI voxels, electron micrographs, X-ray
-        tomograms, a worm's development, a robot swarm, a ward of COVID-19
-        patients — the opening move is always the same: extract the network.
-        Nodes, edges, and a way to ask questions of them. His dissertation
-        title says it without disguise: <em>Images to Graphs for Discovery</em>.
+        The raw material is never clean — electron micrographs with slicing
+        artifacts, MRI scans that vary by scanner and day, clinical records
+        with missing fields, unlabelled neural recordings, human behavior
+        itself. The opening move is always to extract something
+        <em>interpretable</em> from that mess: a structure you can question,
+        test, and act on. His signature container for it is the graph — the
+        dissertation is <em>Images to Graphs for Discovery</em> — but the graph
+        is a representation, not the point: point processes, density maps,
+        clusters and benchmarks appear wherever they serve the question better.
+        Discovery is the point.
       </p>
       <p class="law-ev">
-        evidence: MRCAP (2012) · MIGRAINE (2013) · signal-subgraphs (TPAMI 2013)
-        · images-to-graphs (2015) · X-ray microtomography (2017) · DotMotif
-        (2021) · C. elegans motifs (2021) · SwarmAI testbed (2023) · COVID-19
-        patient clustering (2023)
+        evidence: MRCAP (2012) · signal-subgraphs (TPAMI 2013) ·
+        images-to-graphs (2015) · X-ray cell-density maps (2017) · DotMotif
+        (2021) · MYOW’s label-free representations (2021) · C. elegans motifs
+        (2021) · COVID-19 patient clusters from messy hospital data (2023)
       </p>
     </div>
 
@@ -457,7 +463,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p style="border-left:3px solid var(--line); padding-left:1.4rem;">
       <strong>The promised near-exception.</strong> Stated as a sequence —
-      graph, <em>then</em> judge, <em>then</em> gate — the theory implies the
+      knowledge, <em>then</em> judge, <em>then</em> gate — the theory implies the
       gate-widening was a conclusion the science led him to. It wasn't. The
       <a href="#pl-collegeprep">College Prep Program</a> was co-founded in
       2009: before MRCAP, before any graph existed, before the PhD. Law three
@@ -469,9 +475,9 @@ document.addEventListener('DOMContentLoaded', function () {
       idealization the dates only roughly obey.)
     </p>
     <p>
-      The compressed form: <strong>make the graph, calibrate the judge, widen
-      the gate.</strong> The rest of this page is the evidence — a citation
-      graph, a scale ladder, and every paper retold in plain language.
+      The compressed form: <strong>extract the knowledge, calibrate the judge,
+      widen the gate.</strong> The rest of this page is the evidence — a
+      citation graph, a scale ladder, and every paper retold in plain language.
     </p>
     <p style="font-size:.95rem; color:var(--faint);">
       A fun supporting footnote, weighted accordingly: in 2016 — the hinge of
@@ -492,7 +498,7 @@ document.addEventListener('DOMContentLoaded', function () {
      fields (Fig A left state): Neuroscience · Computer vision & AI ·
        Databases & cloud · Statistics & reliability · Human performance & clinical ·
        Education & outreach
-     moves (Fig A right state): make the graph | calibrate the judge | widen the gate
+     moves (Fig A right state): extract the knowledge | calibrate the judge | widen the gate
      citations: Google Scholar profile 54lnkjAAAAAJ, retrieved 2026-08-26 (omitted where not listed)
 -->
 <script>
@@ -500,7 +506,7 @@ var SUBJECT = {
 papers: [
   /* ---- maps: getting graphs out of images ---- */
   { id:'mrcap', short:'MRCAP', thread:'maps', scale:'brain', year:2012, citations:60,
-    field:'Neuroscience', move:'make the graph', ingraph:true,
+    field:'Neuroscience', move:'extract the knowledge', ingraph:true,
     title:'Magnetic resonance connectome automated pipeline: an overview',
     authors:'Gray Roncal, Bogovic, J. Vogelstein, Landman, Prince, R.J. Vogelstein', venue:'IEEE Pulse',
     doi:'10.1109/MPUL.2011.2181023', url:'https://doi.org/10.1109/MPUL.2011.2181023',
@@ -512,46 +518,46 @@ papers: [
     doi:'10.1109/globalsip.2013.6736878', url:'https://arxiv.org/abs/1312.4875',
     plain:'One year after building the graph-maker, he builds the machine that measures whether its graphs can be trusted — test–retest reliability for connectomes.' },
   { id:'glocal', short:'glocal invariants', thread:'machines', scale:'brain', year:2013, citations:26,
-    field:'Statistics & reliability', move:'make the graph', ingraph:false,
+    field:'Statistics & reliability', move:'extract the knowledge', ingraph:false,
     title:'Computing Scalable Multivariate Glocal Invariants of Large (Brain-) Graphs',
     authors:'Mhembere, Gray Roncal, Sussman, …, Burns', venue:'IEEE GlobalSIP',
     doi:'10.1109/globalsip.2013.6736874', url:'https://arxiv.org/abs/1312.4318',
     plain:'Once brains are graphs, they need graph statistics that scale: fast global-and-local invariants computed on graphs with millions of vertices.' },
   { id:'tpami', short:'signal-subgraphs', thread:'machines', scale:'brain', year:2013, citations:89,
-    field:'Statistics & reliability', move:'make the graph', ingraph:true,
+    field:'Statistics & reliability', move:'extract the knowledge', ingraph:true,
     title:'Graph classification using signal-subgraphs: applications in statistical connectomics',
     authors:'J. Vogelstein, Gray Roncal, R.J. Vogelstein, Priebe', venue:'IEEE TPAMI',
     doi:'10.1109/TPAMI.2012.235', url:'https://doi.org/10.1109/TPAMI.2012.235',
-    plain:'The payoff of law one: with brains as graphs, classification becomes graph statistics — finding the "signal subgraph" that distinguishes classes of connectomes.' },
+    plain:'Law one, in its graph representation: once knowledge about brains is held as graphs, classification becomes graph statistics — finding the "signal subgraph" that distinguishes classes of connectomes.' },
   { id:'kasthuri', short:'saturated reconstruction', thread:'maps', scale:'synapse', year:2015, citations:1287,
-    field:'Neuroscience', move:'make the graph', ingraph:true,
+    field:'Neuroscience', move:'extract the knowledge', ingraph:true,
     title:'Saturated Reconstruction of a Volume of Neocortex',
     authors:'Kasthuri, Hayworth, Berger, …, Gray Roncal, …, Lichtman', venue:'Cell',
     doi:'10.1016/j.cell.2015.06.054', url:'https://doi.org/10.1016/j.cell.2015.06.054',
     plain:'His most-cited work: every wire in a speck of mouse cortex traced completely. The bombshell finding — physical proximity does not predict connectivity — means you cannot shortcut the map. You have to trace it all.' },
   { id:'vesicle', short:'VESICLE', thread:'maps', scale:'synapse', year:2015, citations:39,
-    field:'Computer vision & AI', move:'make the graph', ingraph:true,
+    field:'Computer vision & AI', move:'extract the knowledge', ingraph:true,
     title:'VESICLE: Volumetric Evaluation of Synaptic Interfaces using Computer vision at Large Scale',
     authors:'Gray Roncal, Pekala, Kaynig-Fittkau, …, Hager', venue:'BMVC',
     doi:'10.5244/c.29.81', url:'https://arxiv.org/abs/1403.3724',
     pdf:'https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2015b.pdf',
     plain:'Machine vision for the smallest thing on the ladder: automated synapse detection designed to run at the scale where human annotation is impossible.' },
   { id:'i2g', short:'images-to-graphs', thread:'maps', scale:'circuit', year:2015, citations:33,
-    field:'Neuroscience', move:'make the graph', ingraph:true,
+    field:'Neuroscience', move:'extract the knowledge', ingraph:true,
     title:'An Automated Images-to-Graphs Framework for High Resolution Connectomics',
     authors:'Gray Roncal, Kleissas, J. Vogelstein', venue:'Frontiers in Neuroinformatics',
     doi:'10.3389/fninf.2015.00020', url:'https://doi.org/10.3389/fninf.2015.00020',
     pdf:'https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2015a.pdf',
     plain:'The dissertation, in journal form: the first fully-automated pipeline from raw electron micrographs to a brain graph — and it optimizes for graph error, not pixel error. Law two hiding inside law one.' },
   { id:'santiago', short:'SANTIAGO', thread:'maps', scale:'synapse', year:2016,
-    field:'Computer vision & AI', move:'make the graph', ingraph:false,
+    field:'Computer vision & AI', move:'extract the knowledge', ingraph:false,
     title:'SANTIAGO: Spine Association for Neuron Topology Improvement',
     authors:'Gray Roncal, Lea, Baruah, Hager', venue:'arXiv',
     doi:'10.48550/arXiv.1608.02307', url:'https://arxiv.org/abs/1608.02307',
     pdf:'https://will.grayroncal.com/assets/pdf/papers/GrayRoncal_2016a.pdf',
     plain:'Cleaning up the map by re-attaching orphaned dendritic spines — small structures whose loss silently corrupts the connectivity graph.' },
   { id:'xray', short:'X-ray µCT', thread:'maps', scale:'circuit', year:2017, citations:92,
-    field:'Neuroscience', move:'make the graph', ingraph:true,
+    field:'Neuroscience', move:'extract the knowledge', ingraph:true,
     title:'Quantifying mesoscale neuroanatomy using X-ray microtomography',
     authors:'Dyer, Gray Roncal, …, Kasthuri', venue:'eNeuro',
     doi:'10.1523/ENEURO.0195-17.2017', url:'https://doi.org/10.1523/ENEURO.0195-17.2017',
@@ -565,13 +571,13 @@ papers: [
     pdf:'https://will.grayroncal.com/assets/pdf/papers/Prasad_2020.pdf',
     plain:'The X-ray work handed over as a public dataset: a 3D volume spanning six brain regions, published so others can test their own methods on it.' },
   { id:'miccai', short:'SLAM for neurons', thread:'maps', scale:'circuit', year:2020,
-    field:'Computer vision & AI', move:'make the graph', ingraph:false,
+    field:'Computer vision & AI', move:'extract the knowledge', ingraph:false,
     title:'Leveraging Tools from Autonomous Navigation for Rapid, Robust Neuron Connectivity',
     authors:'Drenkow, Joyce, Matelsky, …, Gray-Roncal', venue:'MICCAI',
     doi:'10.1007/978-3-030-59722-1_11', url:'https://doi.org/10.1007/978-3-030-59722-1_11',
     plain:'Cross-domain move: treat tracing a neuron like a self-driving car navigating a road, borrowing robustness tools from autonomous navigation.' },
   { id:'celegans', short:'C. elegans motifs', thread:'maps', scale:'circuit', year:2021,
-    field:'Neuroscience', move:'make the graph', ingraph:false,
+    field:'Neuroscience', move:'extract the knowledge', ingraph:false,
     title:'Circuit motifs and graph properties of connectome development in C. elegans',
     authors:'Matelsky, Norman-Tenazas, Davenport, Reilly, Gray-Roncal', venue:'bioRxiv',
     doi:'10.1101/2021.07.11.451911', url:'https://www.biorxiv.org/content/10.1101/2021.07.11.451911',
@@ -584,7 +590,7 @@ papers: [
     pdf:'https://will.grayroncal.com/assets/pdf/papers/Matelsky_2021a.pdf',
     plain:'A grammar for asking brains questions: neuroscientists write near-English queries for wiring patterns instead of graph-theory code. The gate to graph analysis, widened.' },
   { id:'microns', short:'MICrONS', thread:'maps', scale:'circuit', year:2025, citations:456,
-    field:'Neuroscience', move:'make the graph', ingraph:true,
+    field:'Neuroscience', move:'extract the knowledge', ingraph:true,
     title:'Functional connectomics spanning multiple areas of mouse visual cortex',
     authors:'The MICrONS Consortium (incl. Gray-Roncal; APL/bossDB archive)', venue:'Nature',
     doi:'10.1038/s41586-025-08790-w', url:'https://doi.org/10.1038/s41586-025-08790-w',
@@ -639,12 +645,12 @@ papers: [
     pdf:'https://will.grayroncal.com/assets/pdf/papers/Rhodes_2021.pdf',
     plain:'The framework applied: carefully measured human visual-search performance on aerial imagery, so machine claims have a real baseline to beat.' },
   { id:'covid', short:'COVID-19 patterns', thread:'trust', scale:'person', year:2023, citations:19,
-    field:'Human performance & clinical', move:'make the graph', ingraph:true,
+    field:'Human performance & clinical', move:'extract the knowledge', ingraph:true,
     title:'Using machine learning on clinical data to identify unexpected patterns in groups of COVID-19 patients',
     authors:'Cowley, Robinette, Matelsky, …, Garibaldi, Gray-Roncal', venue:'Scientific Reports',
     doi:'10.1038/s41598-022-26294-9', url:'https://doi.org/10.1038/s41598-022-26294-9',
     pdf:'https://will.grayroncal.com/assets/pdf/papers/Cowley_2022b.pdf',
-    plain:'Law one at the bedside: patients as points in a graph, clustered to surface patterns clinical intuition missed — the same measurement discipline, turned on a pandemic.' },
+    plain:'Law one at the bedside: interpretable patterns wrung from noisy, incomplete hospital records — clusters that surface what intuition missed, from a model built to say "I don\u2019t know."' },
 
   { id:'s2k', short:'sample-to-knowledge', thread:'trust', scale:'circuit', year:2016,
     field:'Neuroscience', move:'calibrate the judge', ingraph:true,
@@ -662,7 +668,7 @@ papers: [
     doi:'10.1145/2484838.2484870', url:'https://arxiv.org/abs/1306.3543',
     plain:'The astronomy playbook applied to brains: 75+ TB across 50+ datasets served openly from a hand-built cluster, with 20 trillion voxels of mouse cortex browsable over the web — in 2013.' },
   { id:'cajal3d', short:'CAJAL3D', thread:'archive', scale:'synapse', year:2013,
-    field:'Databases & cloud', move:'make the graph', ingraph:false,
+    field:'Databases & cloud', move:'extract the knowledge', ingraph:false,
     title:'Large-Scale Synapse Detection Using CAJAL3D',
     authors:'Kleissas, Gray Roncal, Manavalan, …, R.J. Vogelstein', venue:'Neuroinformatics Congress',
     doi:'10.3389/conf.fninf.2013.09.00037', url:'https://doi.org/10.3389/conf.fninf.2013.09.00037',
@@ -709,14 +715,14 @@ papers: [
     doi:'10.1109/IEEECONF44664.2019.9048673', url:'https://doi.org/10.1109/IEEECONF44664.2019.9048673',
     plain:'Do EM segmentation models trained on one brain volume survive contact with another? Measuring generalization instead of assuming it.' },
   { id:'myow', short:'MYOW', thread:'machines', scale:'circuit', year:2021, citations:67,
-    field:'Computer vision & AI', move:'make the graph', ingraph:true,
+    field:'Computer vision & AI', move:'extract the knowledge', ingraph:true,
     title:'Mine your own view: Self-supervised learning through across-sample prediction',
     authors:'Azabou, Azar, Liu, …, Gray-Roncal (APL team), …, Dyer', venue:'arXiv',
     doi:'10.48550/arXiv.2102.10106', url:'https://arxiv.org/abs/2102.10106',
     pdf:'https://will.grayroncal.com/assets/pdf/papers/Azabou_2021.pdf',
     plain:'Self-supervised learning that mines a dataset for its own teaching examples — built for neural data, where labels are the scarcest resource of all.' },
   { id:'ring', short:'insect ring attractor', thread:'machines', scale:'circuit', year:2022, citations:13,
-    field:'Computer vision & AI', move:'make the graph', ingraph:true,
+    field:'Computer vision & AI', move:'extract the knowledge', ingraph:true,
     title:'Online learning for orientation estimation during translation in an insect ring attractor network',
     authors:'Robinson, Norman-Tenazas, Cervantes, …, Zhang, Gray-Roncal', venue:'Scientific Reports',
     doi:'10.1038/s41598-022-05798-4', url:'https://doi.org/10.1038/s41598-022-05798-4',
@@ -848,9 +854,9 @@ related: [
 ],
 
 keywords: [
-  { id:'kw-graph', label:'everything is a graph', thread:'shared',
-    title:'Shared idea: extract the network first',
-    note:'The bridge between threads that never cite each other: MRI brains, EM synapses, fly circuits, robot swarms and COVID wards all get the same first move — nodes, edges, and a way to query them.' },
+  { id:'kw-graph', label:'knowledge from noise', thread:'shared',
+    title:'Shared idea: interpretable knowledge from noisy, incomplete data',
+    note:'The bridge between threads that never cite each other: MRI brains, EM volumes, fly circuits, unlabelled recordings and COVID wards all get the same first move — extract something interpretable and queryable from messy data. The graph is his favorite representation of it, not the point.' },
   { id:'kw-judge', label:'measure the measurer', thread:'shared',
     title:'Shared idea: calibrate the judge',
     note:'NRI does it to segmentation metrics; MIGRAINE and discriminability to pipelines; the human-baseline framework to "superhuman AI" claims; Show Your Work to grades and admissions. Same move, five fields.' },
@@ -1916,8 +1922,9 @@ document.addEventListener('DOMContentLoaded', function () {
           barely-cited note argues that acquisition, processing and analysis
           should be optimized <em>together, against the knowledge objective</em>
           — not against each stage’s surrogate metric — with graphs and point
-          processes as the knowledge, and “neurocartographers” as the audience.
-          The three laws, sketched early, in the authors’ own hand.
+          processes named explicitly as <em>representations</em> of the
+          knowledge, not the knowledge itself, and “neurocartographers” as the
+          audience. The three laws, sketched early, in the authors’ own hand.
         </p>
         <p style="color:var(--faint-well); font-size:.9rem;">
           It never went through peer review, so this page treats it as
@@ -2488,11 +2495,12 @@ document.addEventListener('DOMContentLoaded', function () {
         Thirty-odd papers by one JHU/APL engineer (
         <a href="https://scholar.google.com/citations?user=54lnkjAAAAAJ">Scholar</a>)
         keep making the same three moves, in order.
-        <strong>1&nbsp;·&nbsp;Make the graph:</strong> before optimizing
-        anything, extract the actual network of your system — who/what connects
-        to who/what — in a form you can query
-        (<a href="https://doi.org/10.1038/s41598-021-91025-5">DotMotif</a> is
-        the connectomics version; yours might be a spreadsheet).
+        <strong>1&nbsp;·&nbsp;Extract the knowledge:</strong> decide what you
+        actually need to learn from your noisy, incomplete data, then hold it
+        in a representation you can query — his is usually a graph
+        (<a href="https://doi.org/10.1038/s41598-021-91025-5">DotMotif</a>);
+        yours might be a cluster map or a spreadsheet. The representation
+        serves the question, never the reverse.
         <strong>2&nbsp;·&nbsp;Calibrate the judge:</strong> list every metric,
         review, or gate your system uses to score people or results, and ask
         what evidence shows the metric measures what it claims
