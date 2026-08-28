@@ -43,6 +43,14 @@ exclude:
   - unified-theory/build.sh
   - unified-theory/design-plan.md
   - unified-theory/README.md
+  # karla-gray-roncal build sources: same rule — only the generated
+  # index.html ships (served at /karla-gray-roncal/).
+  - karla-gray-roncal/parts
+  - karla-gray-roncal/figs
+  - karla-gray-roncal/data
+  - karla-gray-roncal/build.sh
+  - karla-gray-roncal/design-plan.md
+  - karla-gray-roncal/README.md
 
 sass:
   style: compressed

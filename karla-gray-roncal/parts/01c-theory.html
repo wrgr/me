@@ -1,0 +1,142 @@
+<style>
+.laws{display:grid;gap:1.4rem;margin:2.4rem 0 0}
+.law{
+  position:relative;padding:1.5rem 1.5rem 1.5rem 1.75rem;border-radius:5px;
+  background:var(--panel);border:1px solid var(--hair);
+  border-left:3px solid var(--t,var(--faint));
+}
+.law-n{
+  font-family:var(--mono);font-size:.625rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--t,var(--faint));display:block;margin-bottom:.55rem;
+}
+.law h3{font-size:clamp(1.25rem,2.6vw,1.6rem);margin:0 0 .7rem;line-height:1.22}
+.law p{margin:0 0 .8rem;color:var(--ink-soft);font-size:1rem}
+.law p:last-child{margin-bottom:0}
+.ev{
+  font-family:var(--mono);font-size:.75rem;line-height:1.6;color:var(--faint);
+  border-top:1px dashed var(--hair);padding-top:.8rem;margin-top:1rem;
+}
+.ev b{color:var(--ink-soft);font-weight:500}
+.ev-num{color:var(--t,var(--ink-soft));font-weight:700}
+.caveat{
+  margin-top:2.4rem;padding:1.3rem 1.5rem;border-radius:5px;
+  border:1px dashed var(--trace);background:transparent;
+}
+.caveat h3{font-family:var(--mono);font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--faint);margin:0 0 .6rem;font-weight:700}
+.caveat p{margin:0 0 .7rem;font-size:.9375rem;color:var(--ink-soft)}
+.caveat p:last-child{margin:0}
+</style>
+
+<section class="sec" id="theory">
+  <div class="col">
+    <span class="sec-num">The theory &mdash; three laws the bibliography obeys</span>
+    <h2>She has never once blamed the person being measured.</h2>
+    <p class="lede">
+      Take the three works in this record that look least related &mdash; a 2008 submarine
+      sonar study, a 2022 machine-learning benchmark paper, and a 2021 paper about race and
+      multiple sclerosis &mdash; and write each one out as <i>who is being measured / by what
+      instrument / who gets misread when the instrument is wrong.</i> The three slots fill the
+      same way every time. That is not a theme. That is a method, and it has been running
+      since 2003.
+    </p>
+
+    <div class="laws">
+
+      <article class="law t-bench">
+        <span class="law-n">Law I</span>
+        <h3>When a person appears to fail a system, instrument the system.</h3>
+        <p>
+          The reflex everywhere else in science is to treat a low score as a fact about the
+          performer. Her reflex is to treat it as a fact about the measurement, and then go
+          build a better one. This is the load-bearing law: it is why the submarine work and
+          the neurology work are the same work.
+        </p>
+        <p>
+          It cuts both ways, which is what makes it a method rather than an advocacy position.
+          Her framework paper is equally worried about human baselines that are
+          <i>too flattering</i> &mdash; a human who brings outside knowledge to a task will make
+          an algorithm look worse than it is.
+        </p>
+        <div class="ev">
+          <b>Evidence.</b> The 2022 <i>Scientific Reports</i> framework exists because
+          human baselines in ML papers are built carelessly: it points out that the paper
+          titled <i>&ldquo;Surpassing human-level performance on ImageNet classification&rdquo;</i>
+          rested its claim on <span class="ev-num">one</span> human annotator. Failing to control
+          for human memory, the authors write, &ldquo;may result in artificially low performance
+          measures for human participants.&rdquo;
+          &mdash; and in 2008 her job was writing the quantitative test measures that had been
+          missing for submarine watch standers.
+        </div>
+      </article>
+
+      <article class="law t-clinic">
+        <span class="law-n">Law II</span>
+        <h3>An outcome nobody schedules is an outcome nobody sees.</h3>
+        <p>
+          Detection, in her record, is never passive. Nothing is assumed to arrive on its own:
+          not a relapse, not a symptom, not an insult, not a student. Somebody has to decide in
+          advance to go and ask, and the asking has to be systematic, and then the thing that
+          was supposedly rare turns out not to be.
+        </p>
+        <p>
+          This is the law with the cleanest number attached to it, and the number is
+          embarrassing for the field: it says that a large share of what randomised MS trials
+          record as &ldquo;no relapse&rdquo; is really &ldquo;nobody asked.&rdquo;
+        </p>
+        <div class="ev">
+          <b>Evidence.</b> In <span class="ev-num">165</span> participants in the VIDAMS
+          trial, the odds of detecting a confirmed relapse in the two weeks <i>after</i> a
+          scheduled coordinator check-in, versus the two weeks before, were
+          <span class="ev-num">2.93&times;</span> higher (95% CI 1.30&ndash;6.60,
+          <i>p</i>&nbsp;=&nbsp;0.01). The intervention is a phone call with specific questions
+          on it.
+        </div>
+      </article>
+
+      <article class="law t-gap">
+        <span class="law-n">Law III</span>
+        <h3>Measure the obvious explanation properly, so that what survives it is real.</h3>
+        <p>
+          The lazy version of a disparities paper reports a gap. The lazy rebuttal says the gap
+          is really about money. Her 2021 paper does the harder thing: it measures the money
+          &mdash; four separate ways &mdash; puts it in the model, and then reports what is
+          still standing on the other side.
+        </p>
+        <p>
+          That is the same move as adjusting a human baseline for memory and language before
+          comparing it to an algorithm. Control for the explanation you already believe, and
+          the residual becomes evidence instead of an argument.
+        </p>
+        <div class="ev">
+          <b>Evidence.</b> Across <span class="ev-num">1,214</span> Black American and
+          <span class="ev-num">7,530</span> White American participants in the MS PATHS cohort,
+          with education, employment and insurance carried as covariates, Black Americans had
+          <span class="ev-num">1.47&times;</span> the odds of severe versus mild disability
+          (95% CI 1.18&ndash;1.86), scored <span class="ev-num">5.06</span> fewer correct on
+          processing speed (95% CI 4.41&ndash;5.72), walked <span class="ev-num">0.66&nbsp;s</span>
+          slower (95% CI 0.36&ndash;0.96), and had <span class="ev-num">0.77&nbsp;mL</span> less
+          thalamic volume (95% CI 0.64&ndash;0.91). A separate within-race analysis used
+          9-digit ZIP codes to reach neighbourhood-level socioeconomic status &mdash; a
+          deliberately harder instrument than asking.
+        </div>
+      </article>
+
+    </div>
+
+    <div class="caveat">
+      <h3>Where the theory strains</h3>
+      <p>
+        One publication does not fit and we are not going to pretend it does. A 2015 review
+        written as a Georgetown medical student &mdash; on the risk of gonadal failure in
+        children treated for blood cancer &mdash; is a survivorship and fertility review. You
+        can force it into the frame by calling late effects an unmeasured outcome, and that
+        reading is not absurd, but it is a stretch and a stretch is worth admitting.
+      </p>
+      <p>
+        The rest of the record fits without being bent, including the parts written under a
+        different surname, in a different discipline, seventeen years apart.
+      </p>
+    </div>
+  </div>
+</section>

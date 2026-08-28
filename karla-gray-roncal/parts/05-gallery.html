@@ -1,0 +1,426 @@
+<style>
+.plates{display:grid;gap:1.5rem;grid-template-columns:1fr;margin-top:2.2rem}
+@media(min-width:56rem){.plates{grid-template-columns:1fr 1fr}}
+.plate{
+  display:flex;flex-direction:column;background:var(--panel);
+  border:1px solid var(--hair);border-top:3px solid var(--t,var(--faint));
+  border-radius:4px;padding:1.35rem 1.4rem 1.5rem;min-width:0;
+}
+.plate-h{display:flex;align-items:baseline;justify-content:space-between;gap:.75rem;margin-bottom:.15rem}
+.plate-num{
+  font-family:var(--mono);font-size:.6875rem;font-weight:700;letter-spacing:.16em;
+  color:var(--t,var(--faint));
+}
+.plate-yr{
+  font-family:var(--mono);font-size:.625rem;letter-spacing:.1em;color:var(--room);
+  font-variant-numeric:tabular-nums;
+  background:var(--t,var(--faint));border-radius:999px;padding:.16rem .5rem;white-space:nowrap;
+}
+.plate-instr{
+  font-family:var(--mono);font-size:.5625rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--faint);margin:0 0 .55rem;
+}
+.plate h3{font-size:1.2rem;line-height:1.24;margin:0 0 .9rem}
+.plate figure{margin:0 0 1rem}
+.plate svg{display:block;width:100%;height:auto;background:var(--well);border-radius:3px}
+.plate .body{font-size:.9375rem;line-height:1.6;color:var(--ink-soft);margin:0 0 .9rem}
+.plate .find{
+  font-family:var(--mono);font-size:.75rem;line-height:1.62;color:var(--faint);
+  font-variant-numeric:tabular-nums;
+  border-top:1px dashed var(--trace);padding-top:.75rem;margin:auto 0 .8rem;
+}
+.plate .find b{color:var(--t,var(--ink-soft));font-weight:700}
+.plate .src{
+  font-family:var(--mono);font-size:.6875rem;color:var(--faint);
+  margin:0;padding-top:.6rem;border-top:1px solid var(--hair);
+}
+.plate .src a{color:var(--t,var(--ink-soft))}
+.plate .src .noaccess{color:var(--faint);font-style:normal}
+/* illustration primitives */
+.i-bg{fill:none}
+.i-line{stroke:var(--t);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.i-thin{stroke:#93959d;fill:none;stroke-width:1;stroke-linecap:round}
+.i-fill{fill:var(--t)}
+.i-dim{fill:#93959d}
+.i-txt{font-family:var(--mono);font-size:8px;fill:#93959d;letter-spacing:.05em}
+.i-txt-b{font-family:var(--mono);font-size:8px;fill:var(--t);letter-spacing:.05em;font-weight:700}
+</style>
+
+<section class="sec" id="plates">
+  <div class="col">
+    <span class="sec-num">Plates I&ndash;XIX &mdash; every publication, drawn</span>
+    <h2>The atlas.</h2>
+    <p class="lede">
+      One plate per work, in ladder order. Each illustration is drawn from what that
+      publication actually does &mdash; not a stock icon &mdash; and the colour is its thread.
+      Where a source cannot be linked, the plate says why rather than leaving a dead end.
+    </p>
+  </div>
+
+  <div class="wide">
+    <div class="plates">
+
+      <!-- I -->
+      <article class="plate t-console">
+        <div class="plate-h"><span class="plate-num">Plate I</span><span class="plate-yr">2008</span></div>
+        <p class="plate-instr">Rung 1 &middot; a console</p>
+        <h3>Role of Watch Section Task Analysis in the Development of Advanced Processor Builds</h3>
+        <figure>
+          <svg viewBox="0 0 300 150" role="img" aria-label="A sonar waterfall display with an operator seated at it. A measurement bracket encloses both the operator and the console together, not the console alone.">
+            <rect x="0" y="0" width="300" height="150" fill="#0e1015"/>
+            <rect x="150" y="24" width="86" height="80" rx="2" class="i-line"/>
+            <g class="i-fill" opacity=".55">
+              <rect x="158" y="32" width="2" height="64"/><rect x="176" y="30" width="2" height="66"/>
+              <rect x="196" y="34" width="2" height="62"/><rect x="214" y="28" width="2" height="68"/>
+            </g>
+            <g class="i-dim" opacity=".35">
+              <rect x="164" y="40" width="1.4" height="8"/><rect x="186" y="60" width="1.4" height="10"/>
+              <rect x="205" y="48" width="1.4" height="7"/><rect x="224" y="70" width="1.4" height="9"/>
+              <rect x="169" y="76" width="1.4" height="6"/><rect x="200" y="86" width="1.4" height="6"/>
+            </g>
+            <circle cx="86" cy="52" r="11" class="i-line"/>
+            <path d="M68 104 q18 -30 36 0" class="i-line"/>
+            <path d="M104 74 h40" class="i-thin" stroke-dasharray="3 3"/>
+            <path d="M44 118 h208" class="i-line" opacity=".9"/>
+            <path d="M44 112 v12 M252 112 v12" class="i-line" opacity=".9"/>
+            <text x="148" y="140" text-anchor="middle" class="i-txt-b">measure the pair, not the box</text>
+          </svg>
+        </figure>
+        <p class="body">
+          Her first publication, under her earlier surname, Roncal. New sonar processing was
+          reaching submarines faster than anyone could say whether it helped, because the tests
+          measured the system and not the watch section using it. She helped build the
+          quantitative and qualitative test measures for assessing crew and console as one
+          object.
+        </p>
+        <p class="find"><b>The move.</b> The unit of analysis becomes operator&nbsp;+&nbsp;machine. Every later paper on this page inherits that choice.</p>
+        <p class="src">T. Roy*, K. Roncal*, et al. &middot; Submarine Technology Symposium, JHU/APL &middot; <span class="noaccess">no public record: the symposium is classified, so no DOI exists or ever will</span></p>
+      </article>
+
+      <!-- II -->
+      <article class="plate t-console">
+        <div class="plate-h"><span class="plate-num">Plate II</span><span class="plate-yr">2010</span></div>
+        <p class="plate-instr">Rung 1 &middot; a console</p>
+        <h3>APB Technologies to Support Multi-Mission Submarine Maritime Theater Operations</h3>
+        <figure>
+          <svg viewBox="0 0 300 150" role="img" aria-label="Successive processor builds stacked as layers, each having to pass through a gate labelled operator-machine interface before reaching the operator.">
+            <rect x="0" y="0" width="300" height="150" fill="#0e1015"/>
+            <g class="i-line" opacity=".75">
+              <rect x="22" y="26" width="66" height="16" rx="2"/>
+              <rect x="22" y="50" width="66" height="16" rx="2"/>
+              <rect x="22" y="74" width="66" height="16" rx="2"/>
+              <rect x="22" y="98" width="66" height="16" rx="2"/>
+            </g>
+            <text x="55" y="126" text-anchor="middle" class="i-txt">processor builds</text>
+            <path d="M92 34 h44 M92 58 h44 M92 82 h44 M92 106 h44" class="i-thin"/>
+            <rect x="138" y="20" width="26" height="100" rx="3" class="i-line" stroke-dasharray="4 3"/>
+            <text x="151" y="136" text-anchor="middle" class="i-txt-b">O.M.I.</text>
+            <path d="M166 70 h36" class="i-line"/>
+            <circle cx="228" cy="56" r="12" class="i-line"/>
+            <path d="M208 110 q20 -32 40 0" class="i-line"/>
+            <text x="228" y="132" text-anchor="middle" class="i-txt">the operator</text>
+          </svg>
+        </figure>
+        <p class="body">
+          By now she is assistant programme manager for Advanced Processor Build and mentoring
+          a team of ten analysts. The recurring job, in her own CV's words, is leading the
+          introduction of <b>Operator Machine Interfaces</b> into the Navy's advanced
+          development process &mdash; so that new capability has to prove itself against the
+          person who will use it, not only on a bench.
+        </p>
+        <p class="find"><b>The phrase.</b> &ldquo;Operator machine interface&rdquo; is her actual job title in 2010. It is also, this page argues, what she has worked on ever since.</p>
+        <p class="src">K. Roncal, G. Banta, et al. &middot; Submarine Technology Symposium, JHU/APL &middot; <span class="noaccess">no public record: classified symposium</span></p>
+      </article>
+
+      <!-- III -->
+      <article class="plate t-console">
+        <div class="plate-h"><span class="plate-num">Plate III</span><span class="plate-yr">2011</span></div>
+        <p class="plate-instr">Rung 2 &middot; a ward</p>
+        <h3>Task analysis of Intensive Care Units at Johns Hopkins</h3>
+        <figure>
+          <svg viewBox="0 0 300 150" role="img" aria-label="A plan view of an intensive care unit. Beds, monitors and a nursing station, with staff movement paths traced between them as dashed lines — the same task-mapping method used on submarines.">
+            <rect x="0" y="0" width="300" height="150" fill="#0e1015"/>
+            <rect x="16" y="18" width="268" height="102" rx="3" class="i-thin"/>
+            <g class="i-line" opacity=".8">
+              <rect x="30" y="30" width="40" height="24" rx="2"/>
+              <rect x="30" y="76" width="40" height="24" rx="2"/>
+              <rect x="230" y="30" width="40" height="24" rx="2"/>
+              <rect x="230" y="76" width="40" height="24" rx="2"/>
+            </g>
+            <g class="i-dim">
+              <rect x="74" y="34" width="9" height="7" rx="1"/><rect x="74" y="80" width="9" height="7" rx="1"/>
+              <rect x="217" y="34" width="9" height="7" rx="1"/><rect x="217" y="80" width="9" height="7" rx="1"/>
+            </g>
+            <rect x="126" y="54" width="48" height="30" rx="2" class="i-line"/>
+            <path d="M70 42 q40 14 56 18 M70 88 q40 -10 56 -14 M230 42 q-40 14 -56 18 M230 88 q-40 -10 -56 -14"
+                  class="i-thin" stroke-dasharray="3 3"/>
+            <circle cx="150" cy="69" r="3" class="i-fill"/>
+            <text x="150" y="136" text-anchor="middle" class="i-txt-b">the same map, a different room</text>
+          </svg>
+        </figure>
+        <p class="body">
+          The hinge of the career, and almost invisible because it produced a mock-up room
+          rather than a paper. She takes the submarine methodology &mdash; watch the operators,
+          map the task, find the seams where technology and people fail to meet &mdash; and
+          points it at an ICU, to inform design across multiple stakeholders and machine
+          interfaces.
+        </p>
+        <p class="find"><b>The date.</b> 2011. Eight years before she finishes medical school, her method is already inside a hospital.</p>
+        <p class="src">K. Gray-Roncal, human factors engineer, JHU/APL &middot; <span class="noaccess">internal project; described in her CV, no publication</span></p>
+      </article>
+
+      <!-- IV -->
+      <article class="plate t-console">
+        <div class="plate-h"><span class="plate-num">Plate IV</span><span class="plate-yr">2015</span></div>
+        <p class="plate-instr">Rung 2 &middot; a ward</p>
+        <h3>Pressure Ulcer Solutions Project &mdash; a medical lexicon for engineers</h3>
+        <figure>
+          <svg viewBox="0 0 300 150" role="img" aria-label="Two columns of words, engineering terms on one side and clinical terms on the other, joined by a bridge of paired links — a glossary drawn as an interface.">
+            <rect x="0" y="0" width="300" height="150" fill="#0e1015"/>
+            <g class="i-dim" opacity=".8">
+              <rect x="26" y="32" width="58" height="5" rx="2.5"/><rect x="26" y="48" width="46" height="5" rx="2.5"/>
+              <rect x="26" y="64" width="62" height="5" rx="2.5"/><rect x="26" y="80" width="40" height="5" rx="2.5"/>
+              <rect x="26" y="96" width="54" height="5" rx="2.5"/>
+            </g>
+            <g class="i-dim" opacity=".8">
+              <rect x="216" y="32" width="58" height="5" rx="2.5"/><rect x="228" y="48" width="46" height="5" rx="2.5"/>
+              <rect x="212" y="64" width="62" height="5" rx="2.5"/><rect x="234" y="80" width="40" height="5" rx="2.5"/>
+              <rect x="220" y="96" width="54" height="5" rx="2.5"/>
+            </g>
+            <g class="i-line" opacity=".85">
+              <path d="M92 34 C132 34 168 34 208 34"/><path d="M80 50 C126 50 174 50 224 50"/>
+              <path d="M96 66 C134 66 170 66 206 66"/><path d="M74 82 C124 82 180 82 230 82"/>
+              <path d="M88 98 C130 98 174 98 216 98"/>
+            </g>
+            <text x="55" y="126" text-anchor="middle" class="i-txt">engineering</text>
+            <text x="245" y="126" text-anchor="middle" class="i-txt">medicine</text>
+            <text x="150" y="140" text-anchor="middle" class="i-txt-b">the deliverable was the bridge</text>
+          </svg>
+        </figure>
+        <p class="body">
+          Systems engineers were asked to solve pressure ulcers &mdash; injuries that kill
+          people in hospitals &mdash; and could not read the clinical literature. Her
+          deliverable was a lexicon guide introducing non-clinical staff to medical language,
+          so that the stakeholders could hear each other.
+        </p>
+        <p class="find"><b>The literal version.</b> Of everything in this record, this is the most on-the-nose: an interface between two systems, shipped as a document.</p>
+        <p class="src">K. Gray-Roncal, JHU/APL &middot; <span class="noaccess">internal project; described in her CV</span></p>
+      </article>
+
+      <!-- V -->
+      <article class="plate t-gap">
+        <div class="plate-h"><span class="plate-num">Plate V</span><span class="plate-yr">2015</span></div>
+        <p class="plate-instr">Rung 2 &middot; a ward &middot; the exception</p>
+        <h3>Risk of gonadal failure in pediatric blood cancer patients</h3>
+        <figure>
+          <svg viewBox="0 0 300 150" role="img" aria-label="A treatment timeline in childhood, with the measured endpoint marked early and a late effect appearing far downstream, outside the window anyone was watching.">
+            <rect x="0" y="0" width="300" height="150" fill="#0e1015"/>
+            <path d="M26 78 h248" class="i-thin"/>
+            <g class="i-fill"><rect x="40" y="66" width="4" height="24" rx="2"/><rect x="52" y="66" width="4" height="24" rx="2"/><rect x="64" y="66" width="4" height="24" rx="2"/></g>
+            <text x="54" y="56" text-anchor="middle" class="i-txt">treatment</text>
+            <path d="M94 62 v32" class="i-line" stroke-dasharray="3 3"/>
+            <text x="94" y="108" text-anchor="middle" class="i-txt">cure measured</text>
+            <circle cx="238" cy="78" r="7" class="i-line"/>
+            <circle cx="238" cy="78" r="2.6" class="i-fill"/>
+            <text x="238" y="56" text-anchor="middle" class="i-txt-b">years later</text>
+            <path d="M110 78 h116" class="i-thin" stroke-dasharray="2 5"/>
+            <text x="150" y="132" text-anchor="middle" class="i-txt">the outcome nobody was still watching for</text>
+          </svg>
+        </figure>
+        <p class="body">
+          Written as a Georgetown medical student: a review of fertility loss in children
+          treated for blood cancer, and what might be done to preserve reproductive options in
+          survivors. <b>This is the publication that fits the theory least well</b>, and we are
+          not going to bend it. You can call a late effect an unmeasured outcome, but that is a
+          stretch, and a stretch is worth admitting.
+        </p>
+        <p class="find"><b>Why it stays.</b> A theory with no exceptions is usually a theory that has been trimmed to fit.</p>
+        <p class="src">L. Antognoli, N. Apseloff, J. Lu, K. Roncal &middot; Current Opinions in Sexual Development and Reproduction 7(M1), Georgetown University Medical Center &middot; <span class="noaccess">student-run journal; no DOI registered, not indexed anywhere</span></p>
+      </article>
+
+      <!-- VI -->
+      <article class="plate t-bench">
+        <div class="plate-h"><span class="plate-num">Plate VI</span><span class="plate-yr">2018</span></div>
+        <p class="plate-instr">Rung 3 &middot; a benchmark</p>
+        <h3>IARPA MICrONS &mdash; Human&ndash;Machine Baseline Task Lead</h3>
+        <figure>
+          <svg viewBox="0 0 300 150" role="img" aria-label="A cube of cortex densely wired with neurons and synapses, observed from the left by a human eye and from the right by a machine sensor, with a scale bar reading one cubic millimetre.">
+            <rect x="0" y="0" width="300" height="150" fill="#0e1015"/>
+            <path d="M116 40 l34 -14 34 14 v52 l-34 14 -34 -14 z" class="i-line" opacity=".85"/>
+            <path d="M116 40 l34 14 34 -14 M150 54 v52" class="i-thin"/>
+            <g class="i-fill" opacity=".85">
+              <circle cx="132" cy="58" r="1.8"/><circle cx="146" cy="70" r="1.8"/><circle cx="163" cy="62" r="1.8"/>
+              <circle cx="140" cy="86" r="1.8"/><circle cx="170" cy="82" r="1.8"/><circle cx="156" cy="94" r="1.8"/>
+            </g>
+            <path d="M132 58 L146 70 L163 62 M146 70 L140 86 M163 62 L170 82 M140 86 L156 94" class="i-line" opacity=".5" stroke-width="1"/>
+            <path d="M28 66 q14 -12 28 0 q-14 12 -28 0z" class="i-line"/>
+            <circle cx="42" cy="66" r="4" class="i-fill"/>
+            <text x="42" y="92" text-anchor="middle" class="i-txt">human</text>
+            <rect x="248" y="56" width="24" height="20" rx="2" class="i-line"/>
+            <circle cx="260" cy="66" r="4.5" class="i-line"/>
+            <text x="260" y="92" text-anchor="middle" class="i-txt">algorithm</text>
+            <path d="M60 66 h50 M244 66 h-50" class="i-thin" stroke-dasharray="3 3"/>
+            <path d="M116 122 h68" class="i-thin"/><path d="M116 118 v8 M184 118 v8" class="i-thin"/>
+            <text x="150" y="138" text-anchor="middle" class="i-txt-b">1 mm&#179; &middot; ~100,000 neurons</text>
+          </svg>
+        </figure>
+        <p class="body">
+          She led the design and implementation of the paradigm for comparing human and
+          algorithm performance inside MICrONS &mdash; IARPA's programme to close the gap
+          between human analysts and automated pattern recognition by reverse-engineering the
+          brain's own algorithms from a densely mapped cubic millimetre of cortex.
+        </p>
+        <p class="find"><b>The division of labour.</b> Her half was not the algorithm. It was making sure the humans it would be measured against had been measured properly.</p>
+        <p class="src">K. Gray-Roncal, JHU/APL &middot; IARPA MICrONS programme &middot; <a href="https://www.iarpa.gov/research-programs/microns" target="_blank" rel="noopener">programme page &#8599;</a> &middot; her role is documented in her CV</p>
+      </article>
+
+      <!-- VII -->
+      <article class="plate t-bench">
+        <div class="plate-h"><span class="plate-num">Plate VII</span><span class="plate-yr">2022</span></div>
+        <p class="plate-instr">Rung 3 &middot; a benchmark &middot; keystone</p>
+        <h3>A framework for rigorous evaluation of human performance in human and machine learning comparison studies</h3>
+        <figure>
+          <svg viewBox="0 0 300 168" role="img" aria-label="A chart of accuracy in the one-shot learning study. Given five examples, the algorithm scores 92.7 percent and humans 94.6 percent. Given one example, the algorithm falls to 54.4 percent while humans rise slightly to 95.8 percent.">
+            <rect x="0" y="0" width="300" height="168" fill="#0e1015"/>
+            <path d="M40 24 v96 h236" class="i-thin"/>
+            <text x="34" y="28" text-anchor="end" class="i-txt">100%</text>
+            <text x="34" y="122" text-anchor="end" class="i-txt">0</text>
+            <!-- 5 examples -->
+            <rect x="66" y="30.6" width="20" height="89.4" class="i-fill" opacity=".9"/>
+            <rect x="90" y="28.8" width="20" height="91.2" fill="#93959d" opacity=".85"/>
+            <text x="88" y="134" text-anchor="middle" class="i-txt">5 examples</text>
+            <text x="76" y="26" text-anchor="middle" class="i-txt-b" style="font-size:7px">92.7</text>
+            <text x="100" y="26" text-anchor="middle" class="i-txt" style="font-size:7px">94.6</text>
+            <!-- 1 example -->
+            <rect x="176" y="67.8" width="20" height="52.2" class="i-fill" opacity=".9"/>
+            <rect x="200" y="27.6" width="20" height="92.4" fill="#93959d" opacity=".85"/>
+            <text x="198" y="134" text-anchor="middle" class="i-txt">1 example</text>
+            <text x="186" y="63" text-anchor="middle" class="i-txt-b" style="font-size:7px">54.4</text>
+            <text x="210" y="25" text-anchor="middle" class="i-txt" style="font-size:7px">95.8</text>
+            <path d="M86 34 C130 34 138 66 176 66" class="i-line" stroke-dasharray="3 3" opacity=".7"/>
+            <text x="150" y="150" text-anchor="middle" class="i-txt-b">algorithm</text>
+            <text x="150" y="161" text-anchor="middle" class="i-txt">vs. human (grey)</text>
+          </svg>
+        </figure>
+        <p class="body">
+          The keystone. Machine learning papers routinely claim to beat people without saying
+          how many people, who they were, or how they were recruited &mdash; the paper titled
+          <i>&ldquo;Surpassing human-level performance on ImageNet classification&rdquo;</i>
+          rested that claim on <b>one</b> annotator. The framework sets out how to build a human
+          baseline that means something: control for memory, language and prior experience,
+          match the trials, and run it like a psychology study, ethics review included.
+        </p>
+        <p class="find">
+          <b>134</b> participants &middot; <b>200</b> matched trials &middot; 45% easy / 45% hard / 10% attention checks.
+          Drop from five examples to one and the algorithm falls <b>92.7% &rarr; 54.4%</b>; the humans go <b>94.6% &rarr; 95.8%</b>.
+          <b>But it cuts both ways</b> &mdash; the paper warns equally about baselines that flatter humans and make an algorithm look worse than it is.
+        </p>
+        <p class="src">H. P. Cowley, M. Natter, <b>K. Gray-Roncal</b>, R. E. Rhodes, E. C. Johnson, N. Drenkow, T. M. Shead, F. S. Chance, B. Wester, W. Gray-Roncal &middot; <i>Scientific Reports</i> 12, 5444 &middot; <a href="https://doi.org/10.1038/s41598-022-08078-3" target="_blank" rel="noopener">10.1038/s41598-022-08078-3 &#8599;</a> &middot; CC BY 4.0</p>
+      </article>
+
+      <!-- VIII -->
+      <article class="plate t-bench">
+        <div class="plate-h"><span class="plate-num">Plate VIII</span><span class="plate-yr">2022</span></div>
+        <p class="plate-instr">Rung 3 &middot; a benchmark</p>
+        <h3>Author Correction to the framework paper</h3>
+        <figure>
+          <svg viewBox="0 0 300 150" role="img" aria-label="A reference list in which one entry is struck through and two replacement entries are added beneath it.">
+            <rect x="0" y="0" width="300" height="150" fill="#0e1015"/>
+            <g class="i-dim" opacity=".7">
+              <rect x="54" y="30" width="150" height="5" rx="2.5"/>
+              <rect x="54" y="46" width="126" height="5" rx="2.5"/>
+            </g>
+            <rect x="54" y="62" width="140" height="5" rx="2.5" fill="#93959d" opacity=".35"/>
+            <path d="M48 64.5 h152" class="i-line" opacity=".95"/>
+            <g class="i-fill" opacity=".95">
+              <rect x="66" y="80" width="120" height="5" rx="2.5"/>
+              <rect x="66" y="94" width="134" height="5" rx="2.5"/>
+            </g>
+            <path d="M56 82.5 h-6 v14 h6" class="i-thin"/>
+            <g class="i-dim" opacity=".7"><rect x="54" y="110" width="110" height="5" rx="2.5"/></g>
+            <text x="222" y="67" class="i-txt">ref. 7</text>
+            <text x="212" y="90" class="i-txt-b">8, 9</text>
+            <text x="150" y="138" text-anchor="middle" class="i-txt">a paper about rigour, correcting itself</text>
+          </svg>
+        </figure>
+        <p class="body">
+          A short correction: one citation was reassigned to two more appropriate sources, and
+          a further example of a well-executed human&ndash;algorithm comparison was added. It is
+          included here rather than tidied away because a paper arguing for rigorous evaluation,
+          which then publicly fixes its own reference list, is being consistent rather than
+          embarrassed.
+        </p>
+        <p class="find"><b>A small irony we checked and are reporting.</b> The correction's added sentence dates its new reference to 2009; the paper it names is from 2019. That slip has never itself been corrected.</p>
+        <p class="src">Same ten authors &middot; <i>Scientific Reports</i> 12, 11559 &middot; <a href="https://doi.org/10.1038/s41598-022-15857-5" target="_blank" rel="noopener">10.1038/s41598-022-15857-5 &#8599;</a> &middot; CC BY 4.0</p>
+      </article>
+
+      <!-- IX -->
+      <article class="plate t-gap">
+        <div class="plate-h"><span class="plate-num">Plate IX</span><span class="plate-yr">2018</span></div>
+        <p class="plate-instr">Rung 3 &middot; a benchmark</p>
+        <h3>The College Prep Program at APL: an experiential model to help high-achieving, underserved students trailblaze and achieve success</h3>
+        <figure>
+          <svg viewBox="0 0 300 150" role="img" aria-label="A sieve through which some bright particles pass and others are blocked, with a second route around the sieve that lets the blocked particles through.">
+            <rect x="0" y="0" width="300" height="150" fill="#0e1015"/>
+            <g class="i-fill" opacity=".9">
+              <circle cx="86" cy="22" r="3"/><circle cx="112" cy="18" r="3"/><circle cx="138" cy="24" r="3"/>
+              <circle cx="164" cy="18" r="3"/><circle cx="190" cy="23" r="3"/><circle cx="126" cy="34" r="3"/>
+              <circle cx="152" cy="34" r="3"/><circle cx="100" cy="34" r="3"/>
+            </g>
+            <path d="M70 52 h140" class="i-line"/>
+            <g class="i-thin"><path d="M84 52 v9"/><path d="M100 52 v9"/><path d="M116 52 v9"/><path d="M132 52 v9"/><path d="M148 52 v9"/><path d="M164 52 v9"/><path d="M180 52 v9"/><path d="M196 52 v9"/></g>
+            <text x="140" y="46" text-anchor="end" class="i-txt">the usual filter</text>
+            <g class="i-fill" opacity=".9"><circle cx="108" cy="86" r="3"/><circle cx="140" cy="94" r="3"/><circle cx="172" cy="88" r="3"/></g>
+            <g fill="#93959d" opacity=".45"><circle cx="90" cy="44" r="3"/><circle cx="122" cy="44" r="3"/><circle cx="158" cy="44" r="3"/><circle cx="192" cy="44" r="3"/></g>
+            <path d="M212 46 q34 6 22 34 q-10 26 -48 24" class="i-line" stroke-dasharray="4 3"/>
+            <text x="252" y="96" text-anchor="middle" class="i-txt-b">the</text>
+            <text x="252" y="106" text-anchor="middle" class="i-txt-b">programme</text>
+            <text x="150" y="132" text-anchor="middle" class="i-txt">same students, different instrument</text>
+          </svg>
+        </figure>
+        <p class="body">
+          She co-founded this all-volunteer summer programme in 2009 and ran it for eleven
+          years; she is first and corresponding author here, with a second affiliation to her
+          own <b>Preparation Meets Opportunity Foundation</b>. Its premise is a measurement
+          claim rather than a charitable one: there are students with the desire and academic
+          potential to excel who will not be identified, because the instruments that select
+          for college are also quietly measuring mentoring and resources.
+        </p>
+        <p class="find"><b>220+</b> students mentored; nearly all on track to earn a degree. Recognised by a Howard County Volunteer of the Year award in 2014.</p>
+        <p class="src">K. Gray-Roncal, L. Huynh, T. Kolarik, M. Roncal, M. A. Saunders, W. Gray-Roncal &middot; IEEE ISEC 2018, pp. 90&ndash;97 &middot; <a href="https://doi.org/10.1109/ISECON.2018.8340511" target="_blank" rel="noopener">10.1109/ISECON.2018.8340511 &#8599;</a> &middot; <span class="noaccess">IEEE, closed access</span></p>
+      </article>
+
+      <!-- X -->
+      <article class="plate t-gap">
+        <div class="plate-h"><span class="plate-num">Plate X</span><span class="plate-yr">2019</span></div>
+        <p class="plate-instr">Rung 3 &middot; a benchmark</p>
+        <h3>An accessible, distributed, technology-based approach for student and mentor engagement</h3>
+        <figure>
+          <svg viewBox="0 0 300 150" role="img" aria-label="A central mentoring hub connected outward to scattered student nodes at a distance, replacing a single shared room.">
+            <rect x="0" y="0" width="300" height="150" fill="#0e1015"/>
+            <rect x="126" y="56" width="48" height="34" rx="3" class="i-line" stroke-dasharray="4 3" opacity=".5"/>
+            <circle cx="150" cy="73" r="7" class="i-fill"/>
+            <g class="i-thin">
+              <path d="M143 66 L64 36"/><path d="M143 80 L62 104"/><path d="M157 66 L238 34"/>
+              <path d="M157 80 L240 100"/><path d="M150 66 L150 26"/><path d="M150 82 L150 122"/>
+            </g>
+            <g class="i-fill" opacity=".85">
+              <circle cx="60" cy="34" r="4"/><circle cx="58" cy="106" r="4"/><circle cx="242" cy="32" r="4"/>
+              <circle cx="244" cy="102" r="4"/><circle cx="150" cy="22" r="4"/><circle cx="150" cy="126" r="4"/>
+            </g>
+            <text x="150" y="144" text-anchor="middle" class="i-txt-b">mentorship, without the room</text>
+          </svg>
+        </figure>
+        <p class="body">
+          The scaling problem for the College Prep model. Mentorship works, and mentorship does
+          not travel. This paper describes the low-cost, extensible ecosystem they built over
+          ten programme cycles to keep students, mentors and leadership connected across
+          distance, adapting corporate collaboration tools to an all-volunteer outreach setting.
+        </p>
+        <p class="find"><b>The pattern.</b> An operator&ndash;machine interface applied to the one relationship everyone assumed required a shared room.</p>
+        <p class="src">L. Huynh, K. Gray-Roncal, M. Roncal, W. Gray-Roncal &middot; IEEE ISEC 2019, pp. 142&ndash;148 &middot; <a href="https://doi.org/10.1109/ISECon.2019.8882110" target="_blank" rel="noopener">10.1109/ISECon.2019.8882110 &#8599;</a> &middot; <span class="noaccess">IEEE, closed access</span></p>
+      </article>
+
+    </div>
+  </div>
+</section>

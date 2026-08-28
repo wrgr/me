@@ -1,0 +1,155 @@
+<style>
+.handouts{display:grid;gap:1.6rem;margin-top:2.4rem}
+@media(min-width:60rem){.handouts{grid-template-columns:repeat(3,1fr)}}
+.ho{
+  display:flex;flex-direction:column;padding:1.5rem;border-radius:5px;
+  background:var(--panel);border:1px solid var(--hair);border-top:4px solid var(--t,var(--faint));
+}
+.ho-aud{
+  font-family:var(--mono);font-size:.625rem;font-weight:700;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--t,var(--faint));margin:0 0 .5rem;
+}
+.ho h3{font-size:1.4rem;margin:0 0 .8rem;line-height:1.16}
+.ho > p{margin:0 0 .85rem;font-size:.9375rem;line-height:1.62;color:var(--ink-soft)}
+.ho-act{
+  margin-top:auto;padding-top:1rem;border-top:1px dashed var(--trace);
+}
+.ho-act h4{
+  font-family:var(--mono);font-size:.625rem;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--faint);margin:0 0 .55rem;
+}
+.ho-act p{margin:0 0 .5rem;font-size:.875rem;line-height:1.58;color:var(--ink-soft)}
+.ho-act ol{margin:.4rem 0 0;padding-left:1.15rem;font-size:.875rem;line-height:1.55;color:var(--ink-soft)}
+.ho-act li{margin-bottom:.35rem}
+.ho-punch{
+  font-family:var(--mono);font-size:.75rem;line-height:1.55;color:var(--t,var(--ink-soft));
+  margin:.7rem 0 0;font-weight:500;
+}
+.printnote{
+  font-family:var(--mono);font-size:.6875rem;letter-spacing:.06em;color:var(--faint);
+  margin-top:1.6rem;
+}
+@media print{
+  .themebar,.graph-shell,.ghint,#waterfall{display:none!important}
+  .handouts{display:block}
+  .ho{break-after:page;break-inside:avoid;border:0;padding:0;background:none}
+  .ho:last-child{break-after:auto}
+  .ho h3{font-size:22pt}
+  body{font-size:11pt}
+  .printnote{display:none}
+}
+</style>
+
+<section class="sec" id="handouts">
+  <div class="col">
+    <span class="sec-num">Handouts &mdash; three audiences, three activities</span>
+    <h2>The same idea, told three ways.</h2>
+    <p class="lede">
+      One page each, designed to be printed and handed out. The claim underneath all three is
+      identical: <i>before you decide something about a person, check the thing you measured
+      them with.</i>
+    </p>
+  </div>
+
+  <div class="wide">
+    <div class="handouts">
+
+      <article class="ho t-console">
+        <p class="ho-aud">For kids &middot; ages 8&ndash;12</p>
+        <h3>The ruler with the end snapped off</h3>
+        <p>
+          Imagine measuring your whole class with a ruler that's missing its first three
+          centimetres, and nobody notices. Everyone comes out three centimetres shorter than
+          they really are. If you only look at the numbers, you'd think it was a very short
+          class. The class is fine. The <i>ruler</i> is broken.
+        </p>
+        <p>
+          There's a scientist named Karla who does this for a living. First she checked the
+          machines on submarines, to see whether the sailors were really making mistakes or
+          whether the screens were confusing. Then she went to school to become a brain doctor
+          and did exactly the same thing &mdash; except the ruler was the way doctors decide
+          how sick somebody is.
+        </p>
+        <div class="ho-act">
+          <h4>Activity &mdash; the unfair test</h4>
+          <ol>
+            <li>Two teams. Everyone will be timed naming ten animals.</li>
+            <li>Secretly, give Team B a list written in tiny, blurry handwriting.</li>
+            <li>Time everyone. Write the times on the board. Team B looks slower.</li>
+            <li>Now ask the room: <i>&ldquo;Is Team B slower at animals?&rdquo;</i></li>
+            <li>Show them the two lists. Ask again.</li>
+          </ol>
+          <p class="ho-punch">The measurement said something about the people. It was really saying something about the paper.</p>
+        </div>
+      </article>
+
+      <article class="ho t-clinic">
+        <p class="ho-aud">For peers &middot; clinicians &amp; engineers</p>
+        <h3>Your outcome measure is an intervention</h3>
+        <p>
+          The methodological claim in this record is uncomfortable and well evidenced: passive
+          ascertainment does not merely add noise, it biases downward, and the bias is not
+          distributed at random across your participants.
+        </p>
+        <p>
+          In the VIDAMS trial, the odds of catching a confirmed relapse were
+          <b>2.93&times;</b> higher in the fortnight after a scheduled coordinator contact than
+          the fortnight before it (95% CI 1.30&ndash;6.60, <i>p</i> = 0.01). The contact was not
+          treatment. It was somebody asking specific questions on a schedule &mdash; and it moved
+          the primary endpoint.
+        </p>
+        <p>
+          The parallel in ML is exact. A human baseline assembled without controlling for
+          memory, language and fatigue produces &ldquo;artificially low performance measures for
+          human participants,&rdquo; and every algorithm compared against it inherits the error.
+        </p>
+        <div class="ho-act">
+          <h4>Activity &mdash; the ascertainment audit</h4>
+          <p>Bring one live protocol or benchmark to the table. In pairs, twenty minutes:</p>
+          <ol>
+            <li>Name your primary outcome. Now say, out loud, the exact mechanism by which it reaches your database.</li>
+            <li>Who has to <i>act</i> for it to be recorded? A participant deciding to call? A clinician noticing?</li>
+            <li>Which participants are least likely to take that action &mdash; and is that group also your comparison of interest?</li>
+            <li>Design the cheapest scheduled prompt that would remove the dependence. Estimate what it would cost.</li>
+          </ol>
+          <p class="ho-punch">If nobody has to act, you have a measurement. If somebody does, you have a behaviour &mdash; and you are measuring that instead.</p>
+        </div>
+      </article>
+
+      <article class="ho t-gap">
+        <p class="ho-aud">For everyone &middot; patients &amp; the public</p>
+        <h3>&ldquo;Nobody asked&rdquo; is not the same as &ldquo;nothing happened&rdquo;</h3>
+        <p>
+          A lot of medicine runs on you noticing something and deciding it's worth a phone call.
+          That sounds neutral. It isn't. It quietly measures how easy it is for you to call,
+          how sure you feel that you'll be believed, and whether you can afford to be wrong
+          about it.
+        </p>
+        <p>
+          When researchers started ringing multiple sclerosis trial participants on a schedule
+          and asking specific questions, they found nearly three times as many confirmed
+          relapses. Those relapses had been happening the whole time.
+        </p>
+        <p>
+          The same logic runs through the disparities work. Black Americans with MS in one large
+          study had more disability and more visible damage on brain scans &mdash; and the study
+          measured income, education, employment, insurance and even neighbourhood first,
+          precisely so that nobody could wave the finding away.
+        </p>
+        <div class="ho-act">
+          <h4>Activity &mdash; the appointment you actually get</h4>
+          <p>For a family, a support group, or a waiting room. Take ten minutes together:</p>
+          <ol>
+            <li>Each person writes down one symptom or worry they had in the last year and did <i>not</i> report to a doctor.</li>
+            <li>Next to it, write why not. (&ldquo;Seemed small.&rdquo; &ldquo;Didn't want to be a bother.&rdquo; &ldquo;No appointment for six weeks.&rdquo;)</li>
+            <li>Read only the <i>reasons</i> aloud, anonymously. Notice how few are about the symptom.</li>
+            <li>Pick one. Put it on the agenda for the next visit, in writing, before you go.</li>
+          </ol>
+          <p class="ho-punch">You are allowed to be the scheduled contact.</p>
+        </div>
+      </article>
+
+    </div>
+    <p class="printnote">These three panels are print-optimised &mdash; one handout per page, colour rules retained, page furniture dropped.</p>
+  </div>
+</section>

@@ -1,0 +1,248 @@
+<style>
+.graphwrap{position:relative}
+.graph-shell{
+  position:relative;border:1px solid #ffffff1a;border-radius:6px;
+  background:#0e1015;overflow:hidden;margin-top:1.6rem;
+}
+#kgrGraph{display:block;width:100%;height:auto;touch-action:pan-y}
+.gnode{cursor:pointer}
+.gnode circle{transition:r .12s ease, fill-opacity .12s ease}
+.gnode text{
+  font-family:var(--mono);font-size:7.2px;letter-spacing:.02em;
+  fill:var(--well-faint);pointer-events:none;
+  paint-order:stroke;stroke:#0e1015;stroke-width:2.6px;stroke-linejoin:round;
+}
+.gnode.is-paper text{fill:#d9d6d0;font-size:8px}
+.gnode.is-kw text{fill:#e9e6e0;font-size:8.4px;letter-spacing:.09em;text-transform:uppercase}
+.gnode:hover circle,.gnode:focus-visible circle{fill-opacity:1}
+.gnode:focus-visible{outline:none}
+.gnode:focus-visible circle{stroke:#fff;stroke-width:1.6}
+.gdim{opacity:.13}
+.gedge{fill:none}
+.gedge-cites{stroke-dasharray:none}
+.gedge-kw{stroke-dasharray:1.5 3}
+.graph-legend{
+  display:flex;flex-wrap:wrap;gap:.5rem 1.3rem;margin-top:1.1rem;
+  font-family:var(--mono);font-size:.625rem;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--well-faint);
+}
+.graph-legend i{display:inline-block;width:.55rem;height:.55rem;margin-right:.35rem;vertical-align:-1px}
+.graph-legend i.dot{border-radius:50%;background:currentColor}
+.graph-legend i.ring{border-radius:50%;border:1.4px solid currentColor}
+.graph-legend i.sq{transform:rotate(45deg);background:var(--well-ink)}
+.graph-legend i.ln{width:1.4rem;height:0;border-top:1.4px solid currentColor;vertical-align:3px}
+.graph-legend i.lnd{width:1.4rem;height:0;border-top:1.4px dashed currentColor;vertical-align:3px}
+.gdetail{
+  margin-top:1.1rem;min-height:6.5rem;padding:1rem 1.15rem;border-radius:5px;
+  background:#00000047;border:1px solid #ffffff14;border-left:3px solid var(--well-faint);
+}
+.gdetail .k{
+  font-family:var(--mono);font-size:.625rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--well-faint);display:block;margin-bottom:.4rem;
+}
+.gdetail h4{font-family:var(--serif);font-weight:600;font-size:1rem;line-height:1.4;margin:0 0 .35rem;color:var(--well-ink)}
+.gdetail p{margin:.3rem 0 0;font-size:.875rem;line-height:1.55;color:#c9c6c0}
+.gdetail .meta{font-family:var(--mono);font-size:.6875rem;color:var(--well-faint);margin-top:.5rem}
+.gdetail a{color:var(--well-ink)}
+.ghint{font-family:var(--mono);font-size:.625rem;letter-spacing:.08em;text-transform:uppercase;color:var(--well-faint);margin:.8rem 0 0}
+@media print{.graph-shell{break-inside:avoid}}
+</style>
+
+<section class="well" id="figure-1">
+  <div class="wide">
+    <span class="sec-num">Fig. 1 &mdash; the related-work graph</span>
+    <h2 style="font-size:clamp(1.6rem,3.4vw,2.4rem);margin:0 0 .7rem;max-width:26ch">What her papers hold on to</h2>
+    <p class="lede" style="color:var(--well-ink);max-width:62ch;margin:0">
+      Her nineteen works, the prior work they cite, the work that has cited them since, and
+      &mdash; drawn as squares &mdash; the shared ideas that connect threads which otherwise
+      share no reference list at all. The squares are the argument. Everything else is
+      bookkeeping. Cited and citing works are unlabelled to keep the field readable; hover or
+      focus any circle to name it.
+    </p>
+
+    <div class="graph-shell graphwrap">
+      <svg id="kgrGraph" viewBox="0 0 900 620" role="application"
+           aria-label="Interactive related-work graph. Use Tab to move between nodes and Enter to read details."></svg>
+    </div>
+
+    <div class="graph-legend">
+      <span style="color:var(--console)"><i class="dot"></i>console</span>
+      <span style="color:var(--bench)"><i class="dot"></i>benchmark</span>
+      <span style="color:var(--scan)"><i class="dot"></i>scanner</span>
+      <span style="color:var(--clinic)"><i class="dot"></i>clinic</span>
+      <span style="color:var(--gap)"><i class="dot"></i>the room</span>
+      <span style="color:var(--well-faint)"><i class="ring"></i>cited / citing work</span>
+      <span style="color:var(--well-faint)"><i class="sq"></i>shared idea</span>
+      <span style="color:var(--well-faint)"><i class="ln"></i>real citation edge</span>
+      <span style="color:var(--well-faint)"><i class="lnd"></i>thematic edge (ours)</span>
+    </div>
+
+    <div class="gdetail" id="gdetail" aria-live="polite">
+      <span class="k">Select a node</span>
+      <h4>Nineteen works, five threads, one axis.</h4>
+      <p>Tap or focus any node to read what it is and why it sits where it does. Solid lines are
+      real citation edges taken from reference lists. Dashed lines are thematic &mdash; ours, not
+      hers &mdash; and they are the claim this page is making.</p>
+    </div>
+    <p class="ghint">Tab to traverse &middot; Enter or click to inspect &middot; layout is deterministic</p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var svg=document.getElementById('kgrGraph');
+  if(!svg||typeof SUBJECT==='undefined')return;
+  var NS='http://www.w3.org/2000/svg';
+  var W=900,H=620;
+
+  /* ---------- assemble nodes ---------- */
+  var nodes=[],byId={};
+  function add(o){ if(byId[o.id])return; nodes.push(o); byId[o.id]=o; }
+  SUBJECT.papers.forEach(function(p){ add({id:p.id,kind:'paper',label:p.short,thread:p.thread,d:p}); });
+  SUBJECT.related.forEach(function(r){ add({id:r.id,kind:r.kind,label:r.short,thread:r.thread,d:r}); });
+  SUBJECT.keywords.forEach(function(k){ add({id:k.id,kind:'kw',label:k.label,thread:'shared',d:k}); });
+  var edges=SUBJECT.edges.filter(function(e){return byId[e.s]&&byId[e.t]});
+
+  var deg={}; edges.forEach(function(e){deg[e.s]=(deg[e.s]||0)+1;deg[e.t]=(deg[e.t]||0)+1});
+
+  /* ---------- deterministic seeding ---------- */
+  var rnd=mulberry32(20030614);
+  var TH=['console','bench','scan','clinic','gap'];
+  nodes.forEach(function(n,i){
+    var ti=TH.indexOf(n.thread);
+    var ang, rad;
+    if(n.kind==='kw'){ ang=rnd()*Math.PI*2; rad=60+rnd()*50; }
+    else if(ti>=0){ ang=(ti/5)*Math.PI*2 + (rnd()-.5)*1.05; rad=(n.kind==='paper'?190:310)+rnd()*80; }
+    else { ang=rnd()*Math.PI*2; rad=320+rnd()*100; }
+    n.x=W/2+Math.cos(ang)*rad; n.y=H/2+Math.sin(ang)*rad*0.95;
+    n.vx=0; n.vy=0;
+    n.r = n.kind==='paper' ? 7.2 : (n.kind==='kw' ? 6.4 : 4.1);
+    n.m = n.kind==='paper' ? 2.6 : (n.kind==='kw' ? 2.2 : 1);
+  });
+
+  /* ---------- force layout, run to completion, then render ---------- */
+  var LINK={thread:96,cites:150,kw:132};
+  for(var step=0;step<700;step++){
+    var alpha=Math.max(.02, 1-step/700)*0.55;
+    /* repulsion */
+    for(var i=0;i<nodes.length;i++)for(var j=i+1;j<nodes.length;j++){
+      var a=nodes[i],b=nodes[j],dx=b.x-a.x,dy=b.y-a.y,d2=dx*dx+dy*dy||.01;
+      if(d2>160000)continue;
+      var d=Math.sqrt(d2), f=(6400/d2)*alpha;
+      var ux=dx/d*f, uy=dy/d*f;
+      a.vx-=ux/a.m; a.vy-=uy/a.m; b.vx+=ux/b.m; b.vy+=uy/b.m;
+    }
+    /* springs */
+    edges.forEach(function(e){
+      var a=byId[e.s],b=byId[e.t],dx=b.x-a.x,dy=b.y-a.y;
+      var d=Math.sqrt(dx*dx+dy*dy)||.01, L=LINK[e.type]||90;
+      var f=((d-L)/d)*0.055*alpha*10;
+      var ux=dx*f, uy=dy*f;
+      a.vx+=ux/a.m; a.vy+=uy/a.m; b.vx-=ux/b.m; b.vy-=uy/b.m;
+    });
+    /* gravity toward centre, gentle vertical squash */
+    nodes.forEach(function(n){
+      n.vx+=(W/2-n.x)*0.0011*alpha*10;
+      n.vy+=(H/2-n.y)*0.0011*alpha*10;
+      n.x+=n.vx; n.y+=n.vy; n.vx*=0.82; n.vy*=0.82;
+      n.x=Math.max(58,Math.min(W-58,n.x));
+      n.y=Math.max(30,Math.min(H-26,n.y));
+    });
+  }
+
+  /* ---------- render ---------- */
+  function el(t,at){var e=document.createElementNS(NS,t);for(var k in at)e.setAttribute(k,at[k]);return e}
+  var gE=el('g',{'stroke-linecap':'round'}), gN=el('g',{});
+  function col(th){ return th==='shared' ? 'var(--well-ink)' : 'var(--'+th+')'; }
+
+  edges.forEach(function(e,i){
+    var a=byId[e.s],b=byId[e.t];
+    var stroke = e.type==='kw' ? 'var(--well-ink)' : col(a.kind==='paper'?a.thread:b.thread);
+    var ln=el('line',{x1:a.x.toFixed(1),y1:a.y.toFixed(1),x2:b.x.toFixed(1),y2:b.y.toFixed(1),
+      stroke:stroke,'stroke-width':e.type==='thread'?1.5:1,
+      'stroke-opacity':e.type==='kw'?.34:(e.type==='thread'?.5:.26)});
+    ln.setAttribute('class','gedge gedge-'+e.type);
+    ln.dataset.s=e.s; ln.dataset.t=e.t;
+    gE.appendChild(ln);
+  });
+
+  nodes.forEach(function(n){
+    var g=el('g',{tabindex:'0',role:'button','class':'gnode is-'+(n.kind==='paper'?'paper':n.kind)});
+    g.dataset.id=n.id;
+    var name = n.kind==='paper' ? (n.d.title||n.label) : (n.kind==='kw' ? ('Shared idea: '+n.label) : (n.d.title||n.label));
+    g.setAttribute('aria-label', name);
+    var t=el('title',{}); t.textContent=name; g.appendChild(t);
+    if(n.kind==='kw'){
+      var sq=el('rect',{x:(n.x-n.r).toFixed(1),y:(n.y-n.r).toFixed(1),width:(n.r*2).toFixed(1),height:(n.r*2).toFixed(1),
+        transform:'rotate(45 '+n.x.toFixed(1)+' '+n.y.toFixed(1)+')',fill:'var(--well-ink)','fill-opacity':.9});
+      g.appendChild(sq);
+      /* keep a circle for uniform hover styling hooks */
+      g.appendChild(el('circle',{cx:n.x.toFixed(1),cy:n.y.toFixed(1),r:'0.01',fill:'none'}));
+    } else if(n.kind==='paper'){
+      g.appendChild(el('circle',{cx:n.x.toFixed(1),cy:n.y.toFixed(1),r:n.r,fill:col(n.thread),'fill-opacity':.92}));
+    } else {
+      g.appendChild(el('circle',{cx:n.x.toFixed(1),cy:n.y.toFixed(1),r:n.r,fill:'none',
+        stroke:col(n.thread),'stroke-width':1.3,'stroke-opacity':.72}));
+      g.appendChild(el('circle',{cx:n.x.toFixed(1),cy:n.y.toFixed(1),r:n.r,fill:col(n.thread),'fill-opacity':.10}));
+    }
+    if(n.kind!=='ref'&&n.kind!=='cite'){
+      var lbl=(n.label||'').length>26?n.label.slice(0,25)+'…':n.label;
+      var tx=el('text',{x:n.x.toFixed(1),y:(n.y+n.r+8.6).toFixed(1),'text-anchor':'middle'});
+      tx.textContent=lbl; g.appendChild(tx);
+    }
+    gN.appendChild(g);
+  });
+
+  svg.appendChild(gE); svg.appendChild(gN);
+
+  /* ---------- interaction ---------- */
+  var detail=document.getElementById('gdetail');
+  var adj={}; edges.forEach(function(e){ (adj[e.s]=adj[e.s]||{})[e.t]=1; (adj[e.t]=adj[e.t]||{})[e.s]=1; });
+
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+  function show(id){
+    var n=byId[id]; if(!n)return;
+    var d=n.d, h='';
+    if(n.kind==='paper'){
+      h='<span class="k">'+esc(n.thread==='shared'?'shared':n.thread)+' &middot; '+esc(d.form||'paper')+' &middot; '+esc(d.year)+'</span>'
+        +'<h4>'+esc(d.title)+'</h4>'
+        +(d.plain?'<p>'+esc(d.plain)+'</p>':'')
+        +'<p class="meta">'+esc(d.authors||'')+'<br>'+esc(d.venue||'')
+        +(d.url?' &middot; <a href="'+esc(d.url)+'" target="_blank" rel="noopener">source &#8599;</a>':'')+'</p>';
+    } else if(n.kind==='kw'){
+      h='<span class="k">shared idea &middot; thematic edge</span><h4>'+esc(d.title||d.label)+'</h4>'
+        +(d.note?'<p>'+esc(d.note)+'</p>':'');
+    } else {
+      h='<span class="k">'+(n.kind==='ref'?'prior work she cites':'work that cites her')+' &middot; '+esc(d.year)+'</span>'
+        +'<h4>'+esc(d.title)+'</h4>'
+        +(d.note?'<p>'+esc(d.note)+'</p>':'')
+        +'<p class="meta">'+esc(d.authors||'')+'<br>'+esc(d.venue||'')
+        +(d.doi?' &middot; <a href="https://doi.org/'+esc(d.doi)+'" target="_blank" rel="noopener">doi &#8599;</a>':'')+'</p>';
+    }
+    detail.innerHTML=h;
+    detail.style.borderLeftColor = n.thread==='shared' ? 'var(--well-ink)' : col(n.thread);
+    /* dim everything not adjacent */
+    gN.querySelectorAll('.gnode').forEach(function(g){
+      var gid=g.dataset.id;
+      g.classList.toggle('gdim', !(gid===id || (adj[id]&&adj[id][gid])));
+    });
+    gE.querySelectorAll('line').forEach(function(l){
+      l.classList.toggle('gdim', !(l.dataset.s===id||l.dataset.t===id));
+    });
+  }
+  function clear(){
+    gN.querySelectorAll('.gdim').forEach(function(g){g.classList.remove('gdim')});
+    gE.querySelectorAll('.gdim').forEach(function(l){l.classList.remove('gdim')});
+  }
+  gN.addEventListener('mouseover',function(e){var g=e.target.closest('.gnode');if(g)show(g.dataset.id)});
+  gN.addEventListener('mouseleave',clear);
+  gN.addEventListener('focusin',function(e){var g=e.target.closest('.gnode');if(g)show(g.dataset.id)});
+  gN.addEventListener('click',function(e){var g=e.target.closest('.gnode');if(g)show(g.dataset.id)});
+  gN.addEventListener('keydown',function(e){
+    if(e.key!=='Enter'&&e.key!==' ')return;
+    var g=e.target.closest('.gnode'); if(!g)return;
+    e.preventDefault(); show(g.dataset.id);
+  });
+})();
+</script>

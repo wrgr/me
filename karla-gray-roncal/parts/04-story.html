@@ -1,0 +1,355 @@
+<style>
+.spine-svg{display:block;width:100%;height:auto;margin-top:1.8rem}
+.sp-rung{font-family:var(--mono);font-size:9px;fill:var(--well-ink);letter-spacing:.03em}
+.sp-yr{font-family:var(--mono);font-size:8px;fill:var(--well-faint);letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.sp-w{font-family:var(--mono);font-size:7.4px;fill:var(--well-faint)}
+.sp-n{font-family:var(--mono);font-size:8px;fill:var(--well-faint);letter-spacing:.1em}
+
+.acts{margin-top:1rem}
+.act{padding:2.6rem 0;border-top:1px solid var(--hair)}
+.act:first-of-type{border-top:0}
+.act-h{display:flex;align-items:baseline;gap:.85rem;flex-wrap:wrap;margin-bottom:.2rem}
+.act-n{
+  font-family:var(--mono);font-size:.625rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--t,var(--faint));
+}
+.act-instr{
+  font-family:var(--mono);font-size:.625rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--faint);
+}
+.act h3{font-size:clamp(1.5rem,3.2vw,2.1rem);margin:.2rem 0 1rem;line-height:1.15}
+.act p{margin:0 0 1rem;color:var(--ink-soft)}
+.act p:last-child{margin-bottom:0}
+.act .pull{
+  font-family:var(--display);font-size:clamp(1.25rem,2.6vw,1.6rem);line-height:1.3;
+  color:var(--ink);border-left:3px solid var(--t,var(--faint));
+  padding:.1rem 0 .1rem 1.15rem;margin:1.5rem 0;
+}
+.cite{
+  display:inline;font-family:var(--mono);font-size:.75rem;
+  color:var(--t,var(--faint));text-decoration:none;border-bottom:1px solid var(--t-soft,var(--hair));
+  overflow-wrap:anywhere;
+}
+.cite:hover{border-bottom-color:var(--t,var(--faint))}
+.nolink{
+  font-family:var(--mono);font-size:.75rem;color:var(--faint);
+  border-bottom:1px dotted var(--trace);
+}
+</style>
+
+<section class="well" id="figure-2">
+  <div class="wide">
+    <span class="sec-num">Fig. 2 &mdash; the spine</span>
+    <h2 style="font-size:clamp(1.6rem,3.4vw,2.4rem);margin:0 0 .7rem;max-width:28ch">The instrument walks toward the patient</h2>
+    <p class="lede" style="color:var(--well-ink);max-width:62ch;margin:0">
+      Seven rungs, ordered by how close the measuring instrument gets to the person being
+      measured &mdash; from a machine that scores an operator, to a person asking another
+      person a question. The median year rises at every rung. That is the claim, and it is
+      checkable against the dates on the right.
+    </p>
+
+    <svg class="spine-svg" viewBox="0 0 900 470" role="img"
+      aria-label="A ladder of seven rungs. From the bottom: a console (2008, 2010, median year 2009); a ward (2011, 2015, median 2015); a benchmark (2018 to 2022, median 2019); a test in the patient's own hands (2018 to 2024, median 2019.5); the body itself (2024, 2025, median 2024.5); a question nobody had asked (2024, 2025, median 2024.5); a conversation (2026). The median year rises monotonically from bottom to top.">
+      <defs>
+        <linearGradient id="spineGrad" gradientUnits="userSpaceOnUse" x1="70" y1="430" x2="70" y2="56">
+          <stop offset="0" stop-color="#9a8ce8"/><stop offset=".3" stop-color="#e07ac8"/>
+          <stop offset=".58" stop-color="#f4738d"/><stop offset=".8" stop-color="#fb9f5c"/>
+          <stop offset="1" stop-color="#e6c258"/>
+        </linearGradient>
+      </defs>
+
+      <text x="26" y="24" class="sp-n">RUNG</text>
+      <text x="700" y="24" class="sp-n">MEDIAN YEAR</text>
+      <line x1="26" y1="34" x2="874" y2="34" stroke="var(--well-faint)" stroke-opacity=".3"/>
+
+      <line x1="70" y1="430" x2="70" y2="56" stroke="url(#spineGrad)" stroke-width="2.5"/>
+
+      <!-- rung 1 -->
+      <circle cx="70" cy="430" r="6" fill="var(--console)"/>
+      <text x="92" y="426" class="sp-rung">1 &middot; a console</text>
+      <text x="92" y="440" class="sp-w">Watch Section Task Analysis 2008 &middot; APB technologies 2010</text>
+      <text x="874" y="430" text-anchor="end" class="sp-yr">2009</text>
+      <!-- rung 2 -->
+      <circle cx="70" cy="368" r="6" fill="var(--console)"/>
+      <text x="92" y="364" class="sp-rung">2 &middot; a ward</text>
+      <text x="92" y="378" class="sp-w">ICU task analysis 2011 &middot; medical lexicon 2015 &middot; gonadal failure review 2015</text>
+      <text x="874" y="368" text-anchor="end" class="sp-yr">2015</text>
+      <!-- rung 3 -->
+      <circle cx="70" cy="306" r="6" fill="var(--bench)"/>
+      <text x="92" y="302" class="sp-rung">3 &middot; a benchmark</text>
+      <text x="92" y="316" class="sp-w">MICrONS baseline 2018 &middot; College Prep 2018 &middot; mentorship 2019 &middot; human-vs-algorithm framework 2022</text>
+      <text x="874" y="306" text-anchor="end" class="sp-yr">2019</text>
+      <!-- rung 4 -->
+      <circle cx="70" cy="244" r="6" fill="var(--clinic)"/>
+      <text x="92" y="240" class="sp-rung">4 &middot; a test in the patient&rsquo;s own hands</text>
+      <text x="92" y="254" class="sp-w">disparities first report 2018 &middot; PROSe headache app 2018 &middot; MS PATHS disability 2021 &middot; pediatric-onset MS 2024</text>
+      <text x="874" y="244" text-anchor="end" class="sp-yr">2019.5</text>
+      <!-- rung 5 -->
+      <circle cx="70" cy="182" r="6" fill="var(--scan)"/>
+      <text x="92" y="178" class="sp-rung">5 &middot; the body itself</text>
+      <text x="92" y="192" class="sp-w">MRI lesion-prediction algorithm 2024 &middot; neurofilament light chain 2025</text>
+      <text x="874" y="182" text-anchor="end" class="sp-yr">2024.5</text>
+      <!-- rung 6 -->
+      <circle cx="70" cy="120" r="6" fill="var(--gap)"/>
+      <text x="92" y="116" class="sp-rung">6 &middot; a question nobody had asked</text>
+      <text x="92" y="130" class="sp-w">activating STEM talent 2024 &middot; racist microaggressions in neurology encounters 2025</text>
+      <text x="874" y="120" text-anchor="end" class="sp-yr">2024.5</text>
+      <!-- rung 7 -->
+      <circle cx="70" cy="58" r="7.5" fill="var(--clinic)"/>
+      <circle cx="70" cy="58" r="13" fill="none" stroke="var(--clinic)" stroke-opacity=".45"/>
+      <text x="92" y="54" class="sp-rung">7 &middot; a conversation</text>
+      <text x="92" y="68" class="sp-w">increased contact improves relapse detection 2026</text>
+      <text x="874" y="58" text-anchor="end" class="sp-yr">2026</text>
+    </svg>
+
+    <p class="cap" style="max-width:78ch">
+      <b>Fig. 2.</b> The ordering axis. Colour is the thread, as everywhere on this page.
+      Two things are worth noticing: the ladder is <b>not</b> a timeline &mdash; she works
+      several rungs at once, and the 2018 items sit three rungs apart &mdash; and yet the
+      median year climbs without a single reversal. The direction of travel over
+      twenty-three years is toward the person.
+    </p>
+  </div>
+</section>
+
+<section class="sec" id="story">
+  <div class="col">
+    <span class="sec-num">The story &mdash; seven acts, in the order the spine implies</span>
+    <h2>One job, told from the bottom of the ladder.</h2>
+    <p class="lede">
+      Told chronologically this is a career-change story: engineer becomes doctor. Told along
+      the axis, it is not a change at all. It is one method being carried, deliberately,
+      closer and closer to the person it is about.
+    </p>
+
+    <div class="acts">
+
+      <article class="act t-console">
+        <div class="act-h"><span class="act-n">Act I</span><span class="act-instr">Rung 1 &middot; a console</span></div>
+        <h3>The sailors were not slow</h3>
+        <p>
+          She arrives at the Johns Hopkins Applied Physics Laboratory in 2003 with an
+          electrical engineering degree, and is put on submarines. The Navy is pushing new
+          sonar processing onto boats faster than anyone can say whether it helps. The
+          question sounds technical and isn't: <i>how do you tell whether a new system made
+          the watch section better?</i>
+        </p>
+        <p>
+          You cannot answer it by testing the software, because the software does not stand
+          a watch. You have to measure the operator and the machine as one object. Her
+          contribution to <span class="nolink">Watch Section Task Analysis (2008)</span> and
+          <span class="nolink">APB Technologies (2010)</span> is the test measures themselves
+          &mdash; the quantitative and qualitative instruments for assessing a crew and a
+          console together. By 2010 she is running the introduction of Operator Machine
+          Interfaces into the Navy's development process, which is to say: making new
+          capability prove itself against the person who has to use it.
+        </p>
+        <p class="pull">
+          The first two entries in this bibliography cannot be read by anyone. The Submarine
+          Technology Symposium is classified; there is no DOI and there never will be. A career
+          about making performance measurable begins in a room where the results are not.
+        </p>
+      </article>
+
+      <article class="act t-console">
+        <div class="act-h"><span class="act-n">Act II</span><span class="act-instr">Rung 2 &middot; a ward</span></div>
+        <h3>The same method, pointed at a hospital</h3>
+        <p>
+          In 2011 she runs a task analysis of intensive care units at Johns Hopkins. This is
+          the hinge of the whole career and it is almost invisible, because it produced a
+          mockup room rather than a paper. She takes the submarine methodology &mdash; watch
+          the operators, map the task, find the seams where technology and people fail to meet
+          &mdash; and points it at an ICU.
+        </p>
+        <p>
+          Then, in 2015, the most literal artefact in the record: asked to help engineers solve
+          pressure ulcers, she finds they cannot read the clinical literature, and writes them a
+          <b>medical lexicon</b>. A glossary. A translation layer between two professions that
+          cannot yet hear each other. Eight years before she finishes medical school, the
+          interface she is engineering is already the one between engineering and medicine.
+        </p>
+        <p>
+          This rung also holds the one publication that does not fit &mdash; a
+          <span class="nolink">2015 review of gonadal failure in children treated for blood
+          cancer</span>, written as a Georgetown student, which is a survivorship paper and not
+          a measurement paper. It is here because it was written, not because it helps.
+        </p>
+      </article>
+
+      <article class="act t-bench">
+        <div class="act-h"><span class="act-n">Act III</span><span class="act-instr">Rung 3 &middot; a benchmark</span></div>
+        <h3>One annotator</h3>
+        <p>
+          By 2018 she is leading the human&ndash;machine baseline task for
+          <b>IARPA's MICrONS</b> programme &mdash; an effort to close the gap between human
+          analysts and automated pattern recognition by reverse-engineering the brain's own
+          algorithms, from a densely mapped cubic millimetre of cortex containing roughly a
+          hundred thousand neurons. Her job in it is the unglamorous half: not building the
+          algorithm, but making sure the humans it would be measured against had been measured
+          properly.
+        </p>
+        <p>
+          That work becomes
+          <a class="cite" href="https://doi.org/10.1038/s41598-022-08078-3" target="_blank" rel="noopener">Cowley et&nbsp;al., <i>Sci Rep</i> 2022&nbsp;&#8599;</a>,
+          and it is the keystone of this page. The field routinely announces that an algorithm
+          has beaten people without reporting how many people, who they were, or how they were
+          recruited. The paper whose title claims to be
+          <i>&ldquo;surpassing human-level performance&rdquo;</i> on ImageNet rested that claim
+          on <b>one</b> human annotator.
+        </p>
+        <p>
+          Their own demonstration is the tell. Given five examples, a ResNet-18 scored
+          <b>92.7%</b> and humans <b>94.6%</b> &mdash; comparable. Given one example, the
+          algorithm collapsed to <b>54.4%</b> while the humans went to <b>95.8%</b>, slightly
+          <i>up</i>. But the framework's discipline is that it cuts both ways: it warns just as
+          hard about human baselines that are too flattering, where a person's outside knowledge
+          makes the machine look worse than it is. The point was never that humans win.
+        </p>
+        <p class="pull">
+          The same year and the same rung, aimed at a different population: the College Prep
+          Program at APL, which she co-founded in 2009 and ran for eleven years.
+        </p>
+        <p>
+          <a class="cite" href="https://doi.org/10.1109/ISECON.2018.8340511" target="_blank" rel="noopener">Gray-Roncal et&nbsp;al., IEEE ISEC 2018&nbsp;&#8599;</a>
+          is the programme written up, and she is first and corresponding author on it, with a
+          second affiliation to her own <b>Preparation Meets Opportunity Foundation</b>. Its
+          premise is a measurement claim, not a charitable one: there exist students with the
+          potential to excel who will not be identified, because the instruments that select for
+          college are also quietly measuring mentoring and resources. Over 220 students
+          mentored; nearly all on track to a degree. The follow-ups take on the scaling problem
+          &mdash;
+          <a class="cite" href="https://doi.org/10.1109/ISECon.2019.8882110" target="_blank" rel="noopener">mentorship at a distance, 2019&nbsp;&#8599;</a>
+          &mdash; and it is worth sitting with the fact that a submarine human-factors engineer
+          and a volunteer college programme are, structurally, the same paper.
+        </p>
+      </article>
+
+      <article class="act t-clinic">
+        <div class="act-h"><span class="act-n">Act IV</span><span class="act-instr">Rung 4 &middot; a test in the patient&rsquo;s own hands</span></div>
+        <h3>The gap that survived the explanation</h3>
+        <p>
+          She is a medical student now, and also still the department's engineer &mdash; her CV
+          records that during 2017&ndash;2019 she was simultaneously doing clinical research on
+          MS disparities and &ldquo;providing engineering support for upcoming technology-based
+          clinical research studies.&rdquo; Both jobs, same building, same person.
+        </p>
+        <p>
+          The engineering job produces the
+          <span class="nolink">PROSe headache app pilot (ANA 2018)</span>, tested on children
+          with chronic headache. Note what it measures: not headache, but whether patients will
+          <i>use the instrument at all</i>. An instrument nobody uses records nothing.
+        </p>
+        <p>
+          The research job produces
+          <a class="cite" href="https://doi.org/10.1212/WNL.0000000000012362" target="_blank" rel="noopener">Gray-Roncal et&nbsp;al., <i>Neurology</i> 2021&nbsp;&#8599;</a>,
+          her most-cited work, first presented as an abstract in 2018. Across 8,744 people with
+          MS, Black Americans had worse disability, worse scores on every objective test, more
+          lesion volume and less grey matter than White Americans. The instruments are a tablet
+          the patient operates themselves: a walking test, a nine-hole-peg analogue, a
+          processing-speed test.
+        </p>
+        <p>
+          What makes it her paper rather than one more disparities paper is the middle move.
+          It measures the obvious explanation &mdash; education, employment, insurance, and
+          then, harder, neighbourhood deprivation reached through 9-digit ZIP codes &mdash; puts
+          it in the model, and reports what is left. What is left is
+          <b>1.47&times;</b> the odds of severe disability, <b>5.06</b> fewer correct on
+          processing speed, <b>0.77&nbsp;mL</b> less thalamus.
+        </p>
+        <p class="pull">
+          And then the finding inside the finding: lower neighbourhood status tracked worse
+          scores among White Americans. Among Black Americans, that association was much less
+          clear. Money bought one group a better outcome and did not appear to buy the other
+          the same one.
+        </p>
+        <p>
+          One detail makes the volumetric result bite, and it comes from a paper she cites. In
+          <i>healthy</i> cohorts, Black Americans have <i>greater</i> brain volumes than White
+          Americans. In MS the sign flips. The deficit she measures is not a baseline
+          difference being rediscovered; it is the disease landing differently.
+        </p>
+      </article>
+
+      <article class="act t-scan">
+        <div class="act-h"><span class="act-n">Act V</span><span class="act-instr">Rung 5 &middot; the body itself</span></div>
+        <h3>Ask the tissue instead</h3>
+        <p>
+          MS monitoring means repeated MRI on a schedule nobody has individualised &mdash;
+          expensive, burdensome, and set by expert opinion. With 1,131 patients from the Hopkins
+          MS Center, the
+          <a class="cite" href="https://www.medrxiv.org/content/10.1101/2024.06.20.24309267v3" target="_blank" rel="noopener">lesion-prediction algorithm&nbsp;&#8599;</a>
+          asks who will actually show something new on their next scan: AUC <b>0.80</b>,
+          sensitivity <b>0.72</b>, specificity <b>0.75</b>, identifying <b>772</b> people who
+          could safely wait longer.
+        </p>
+        <p>
+          The design choice is the interesting part. The threshold is deliberately tuned toward
+          sensitivity &mdash; toward not missing lesions &mdash; rather than toward looking
+          accurate. That is a human-factors decision about what a false negative costs a person,
+          made inside a machine-learning paper. Her
+          <span class="nolink">neurofilament light chain work (CMSC and ANA 2025)</span> pushes
+          the same idea further: a protein that leaks into blood when nerve fibres are damaged,
+          checked against a person's own baseline, might flag damage before the scan does.
+        </p>
+      </article>
+
+      <article class="act t-gap">
+        <div class="act-h"><span class="act-n">Act VI</span><span class="act-instr">Rung 6 &middot; a question nobody had asked</span></div>
+        <h3>Building the instrument that did not exist</h3>
+        <p>
+          Her 2021 paper ends by saying the residual points past socioeconomic status toward
+          &ldquo;other societal constructs (e.g., systemic racism).&rdquo; The standard objection
+          to that sentence is that you cannot measure such a thing, so the sentence is a gesture.
+        </p>
+        <p>
+          <span class="nolink">Gray-Roncal, Freeman &amp; Mowry, ACTRIMS Forum 2025</span> is her
+          answer, and the answer is a verb. The title is <i>&ldquo;<b>Identifying</b> racist
+          microaggressions in health system encounters with people participating in neurology
+          care and research.&rdquo;</i> Having found a gap that survived every instrument she
+          had, she went and built the missing one.
+        </p>
+        <p>
+          The same rung holds
+          <a class="cite" href="https://osf.io/29kam" target="_blank" rel="noopener">Toward a Framework for Providing Equitable Opportunities to Activate STEM Talent (2024)&nbsp;&#8599;</a>,
+          fifteen years of the College Prep Program written up as a systems approach. The
+          operative word is <b>activate</b>: the talent is modelled as already present and
+          unexpressed, and the thing being designed is the opportunity that would reveal it.
+          That is the same sentence as the machine learning paper, addressed to a different
+          room.
+        </p>
+      </article>
+
+      <article class="act t-clinic">
+        <div class="act-h"><span class="act-n">Act VII</span><span class="act-instr">Rung 7 &middot; a conversation</span></div>
+        <h3>Somebody has to call</h3>
+        <p>
+          Twenty-three years after she started writing test measures for sonar consoles, the
+          instrument at the top of the ladder is a person with a list of questions and a phone.
+        </p>
+        <p>
+          <a class="cite" href="https://doi.org/10.1177/13524585251373002" target="_blank" rel="noopener">Gray-Roncal et&nbsp;al., <i>Mult Scler</i> 2026&nbsp;&#8599;</a>
+          &mdash; she is first author &mdash; looks at the VIDAMS vitamin D trial, where
+          coordinators contacted the 165 participants between visits to ask specific questions
+          about symptoms. The odds of a confirmed relapse being detected in the two weeks
+          <i>after</i> that contact, versus the two weeks before, were <b>2.93&times;</b> higher
+          (95% CI 1.3&ndash;6.60, <i>p</i> = 0.01).
+        </p>
+        <p>
+          Nothing biological happens at the moment of a phone call. The relapses in the
+          &ldquo;before&rdquo; windows were happening too, and going uncounted &mdash; and
+          confirmed relapse is the endpoint that phase 3 MS trials are powered on, the number
+          that decides whether a drug works. She has spent a career on measurement, and the
+          finding she puts her own name first on is that the field's most expensive instrument
+          is leaking, and the patch is a scheduled conversation.
+        </p>
+        <p class="pull">
+          The fellowship funding this work is named for Sylvia Lawry, who in 1945 placed a
+          classified advertisement in a newspaper asking anyone who had recovered from multiple
+          sclerosis to write to her, and who founded the National MS Society on the fifty
+          replies. The field began with somebody deciding to ask a question systematically.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>

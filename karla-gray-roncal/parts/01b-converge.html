@@ -1,0 +1,148 @@
+<style>
+.well{background:var(--well);color:var(--well-ink);padding:clamp(2.5rem,5vw,4rem) 0;overflow:hidden}
+.well .sec-num,.well figcaption,.well .cap{color:var(--well-faint)}
+.well figcaption b,.well .cap b{color:var(--well-ink)}
+.well h2{color:var(--well-ink)}
+.figa-grid{display:grid;gap:clamp(1.5rem,3vw,2.5rem);grid-template-columns:1fr;margin-top:2rem}
+@media(min-width:56rem){.figa-grid{grid-template-columns:1fr 1fr}}
+.figa-panel{min-width:0}
+.figa-panel h3{
+  font-family:var(--mono);font-size:.6875rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--well-ink);margin:0 0 .2rem;
+}
+.figa-panel p.sub{font-size:.8125rem;line-height:1.5;color:var(--well-faint);margin:0 0 .9rem;max-width:44ch}
+.figa-panel svg{display:block;width:100%;height:auto}
+.fa-bl{font-family:var(--mono);font-size:8.5px;fill:var(--well-faint);letter-spacing:.06em}
+.fa-ttl{font-family:var(--mono);font-size:9px;fill:var(--well-ink);letter-spacing:.12em;text-transform:uppercase}
+.figa-key{
+  display:flex;flex-wrap:wrap;gap:.45rem .95rem;margin-top:1.4rem;
+  font-family:var(--mono);font-size:.625rem;letter-spacing:.08em;text-transform:uppercase;color:var(--well-faint);
+}
+.figa-key i{display:inline-block;width:.55rem;height:.55rem;border-radius:50%;margin-right:.35rem;vertical-align:-1px}
+</style>
+
+<section class="well" id="figure-a">
+  <div class="wide">
+    <span class="sec-num">Fig. A &mdash; the same nineteen works, filed twice</span>
+    <h2 style="font-size:clamp(1.6rem,3.4vw,2.4rem);margin:0 0 .6rem;max-width:24ch">Scattered in space. Not scattered at all.</h2>
+    <p class="lede" style="color:var(--well-ink);max-width:60ch;margin:0">
+      Multiple sclerosis is the one disease defined by proving that scattered things are
+      a single process &mdash; lesions disseminated in space and in time, no one of which
+      is a diagnosis. Her bibliography has the same problem, and takes the same solution.
+    </p>
+
+    <div class="figa-grid">
+      <figure class="figa-panel" style="margin:0">
+        <h3>&#9312; Filed by field</h3>
+        <p class="sub">Sorted the way a CV sorts: by which literature published it. Six fields that do not cite each other. No through-line is visible, and none is available.</p>
+        <svg viewBox="0 0 500 330" role="img" aria-label="Nineteen publications scattered across six unrelated fields — naval engineering, STEM education, machine learning, MS neurology, neuroimaging and health equity — in no order.">
+          <text x="0" y="20" class="fa-ttl">six literatures</text>
+          <line x1="0" y1="30" x2="500" y2="30" stroke="var(--well-faint)" stroke-opacity=".25"/>
+          <line x1="52" y1="66" x2="52" y2="292" stroke="var(--well-faint)" stroke-opacity=".18" stroke-dasharray="2 4"/>
+          <text x="52" y="308" text-anchor="middle" class="fa-bl">Naval</text>
+          <text x="52" y="320" text-anchor="middle" class="fa-bl">engineering</text>
+          <line x1="128" y1="66" x2="128" y2="292" stroke="var(--well-faint)" stroke-opacity=".18" stroke-dasharray="2 4"/>
+          <text x="128" y="308" text-anchor="middle" class="fa-bl">STEM ed.</text>
+          <text x="128" y="320" text-anchor="middle" class="fa-bl">outreach</text>
+          <line x1="204" y1="66" x2="204" y2="292" stroke="var(--well-faint)" stroke-opacity=".18" stroke-dasharray="2 4"/>
+          <text x="204" y="308" text-anchor="middle" class="fa-bl">Machine</text>
+          <text x="204" y="320" text-anchor="middle" class="fa-bl">learning</text>
+          <line x1="280" y1="66" x2="280" y2="292" stroke="var(--well-faint)" stroke-opacity=".18" stroke-dasharray="2 4"/>
+          <text x="280" y="308" text-anchor="middle" class="fa-bl">MS</text>
+          <text x="280" y="320" text-anchor="middle" class="fa-bl">neurology</text>
+          <line x1="356" y1="66" x2="356" y2="292" stroke="var(--well-faint)" stroke-opacity=".18" stroke-dasharray="2 4"/>
+          <text x="356" y="308" text-anchor="middle" class="fa-bl">Neuro-</text>
+          <text x="356" y="320" text-anchor="middle" class="fa-bl">imaging</text>
+          <line x1="432" y1="66" x2="432" y2="292" stroke="var(--well-faint)" stroke-opacity=".18" stroke-dasharray="2 4"/>
+          <text x="432" y="308" text-anchor="middle" class="fa-bl">Health</text>
+          <text x="432" y="320" text-anchor="middle" class="fa-bl">equity</text>
+          <circle cx="71.0" cy="96.1" r="4.6" fill="var(--console)" fill-opacity=".82"/>
+          <circle cx="45.1" cy="208.8" r="4.6" fill="var(--console)" fill-opacity=".82"/>
+          <circle cx="30.4" cy="80.4" r="4.6" fill="var(--console)" fill-opacity=".82"/>
+          <circle cx="68.6" cy="200.2" r="4.6" fill="var(--console)" fill-opacity=".82"/>
+          <circle cx="444.6" cy="226.8" r="4.6" fill="var(--gap)" fill-opacity=".82"/>
+          <circle cx="118.9" cy="174.4" r="4.6" fill="var(--gap)" fill-opacity=".82"/>
+          <circle cx="147.6" cy="130.9" r="4.6" fill="var(--gap)" fill-opacity=".82"/>
+          <circle cx="113.4" cy="100.0" r="4.6" fill="var(--gap)" fill-opacity=".82"/>
+          <circle cx="185.6" cy="222.5" r="4.6" fill="var(--bench)" fill-opacity=".82"/>
+          <circle cx="189.7" cy="167.3" r="4.6" fill="var(--bench)" fill-opacity=".82"/>
+          <circle cx="212.0" cy="254.2" r="4.6" fill="var(--bench)" fill-opacity=".82"/>
+          <circle cx="268.4" cy="73.8" r="4.6" fill="var(--clinic)" fill-opacity=".82"/>
+          <circle cx="262.7" cy="217.6" r="4.6" fill="var(--clinic)" fill-opacity=".82"/>
+          <circle cx="267.3" cy="85.7" r="4.6" fill="var(--clinic)" fill-opacity=".82"/>
+          <circle cx="375.2" cy="229.0" r="4.6" fill="var(--scan)" fill-opacity=".82"/>
+          <circle cx="369.7" cy="154.0" r="4.6" fill="var(--scan)" fill-opacity=".82"/>
+          <circle cx="297.5" cy="79.1" r="4.6" fill="var(--gap)" fill-opacity=".82"/>
+          <circle cx="268.1" cy="157.4" r="4.6" fill="var(--gap)" fill-opacity=".82"/>
+          <circle cx="437.8" cy="97.1" r="4.6" fill="var(--gap)" fill-opacity=".82"/>
+        </svg>
+      </figure>
+
+      <figure class="figa-panel" style="margin:0">
+        <h3>&#9313; Filed by how close the instrument gets</h3>
+        <p class="sub">Sorted by how close the measuring instrument gets to the person being measured. The same nineteen works climb one ladder, from a machine that scores you to somebody asking you a question. Median year rises at every rung: 2009, 2015, 2019, 2019.5, 2024.5, 2024.5, 2026.</p>
+        <svg viewBox="0 0 500 330" role="img" aria-label="The same nineteen publications re-sorted onto a single ladder of seven rungs, ordered by how close the measuring instrument gets to the person: a console, a ward, a benchmark, a test in the patient's own hands, the body itself, a question nobody had asked, and a conversation.">
+          <text x="0" y="20" class="fa-ttl">one axis</text>
+          <line x1="0" y1="30" x2="500" y2="30" stroke="var(--well-faint)" stroke-opacity=".25"/>
+          <defs><linearGradient id="figaClimb" gradientUnits="userSpaceOnUse" x1="200" y1="292" x2="200" y2="40">
+            <stop offset="0" stop-color="var(--console)"/><stop offset=".28" stop-color="var(--bench)"/>
+            <stop offset=".55" stop-color="var(--scan)"/><stop offset=".78" stop-color="var(--clinic)"/>
+            <stop offset="1" stop-color="var(--gap)"/>
+          </linearGradient></defs>
+          <line x1="200" y1="292" x2="200" y2="40" stroke="url(#figaClimb)" stroke-width="2" stroke-opacity=".55"/>
+          <line x1="196" y1="292" x2="470" y2="292" stroke="var(--well-faint)" stroke-opacity=".16"/>
+          <text x="188" y="295.5" text-anchor="end" class="fa-bl">a console</text>
+          <line x1="196" y1="254" x2="470" y2="254" stroke="var(--well-faint)" stroke-opacity=".16"/>
+          <text x="188" y="257.5" text-anchor="end" class="fa-bl">a ward</text>
+          <line x1="196" y1="216" x2="470" y2="216" stroke="var(--well-faint)" stroke-opacity=".16"/>
+          <text x="188" y="219.5" text-anchor="end" class="fa-bl">a benchmark</text>
+          <line x1="196" y1="178" x2="470" y2="178" stroke="var(--well-faint)" stroke-opacity=".16"/>
+          <text x="188" y="181.5" text-anchor="end" class="fa-bl">a test in their hands</text>
+          <line x1="196" y1="140" x2="470" y2="140" stroke="var(--well-faint)" stroke-opacity=".16"/>
+          <text x="188" y="143.5" text-anchor="end" class="fa-bl">the body itself</text>
+          <line x1="196" y1="102" x2="470" y2="102" stroke="var(--well-faint)" stroke-opacity=".16"/>
+          <text x="188" y="105.5" text-anchor="end" class="fa-bl">a question nobody asked</text>
+          <line x1="196" y1="64" x2="470" y2="64" stroke="var(--well-faint)" stroke-opacity=".16"/>
+          <text x="188" y="67.5" text-anchor="end" class="fa-bl">a conversation</text>
+          <circle cx="214" cy="292" r="4.6" fill="var(--console)" fill-opacity=".9"/>
+          <circle cx="240" cy="292" r="4.6" fill="var(--console)" fill-opacity=".9"/>
+          <circle cx="214" cy="254" r="4.6" fill="var(--console)" fill-opacity=".9"/>
+          <circle cx="240" cy="254" r="4.6" fill="var(--console)" fill-opacity=".9"/>
+          <circle cx="266" cy="254" r="4.6" fill="var(--gap)" fill-opacity=".9"/>
+          <circle cx="214" cy="216" r="4.6" fill="var(--bench)" fill-opacity=".9"/>
+          <circle cx="240" cy="216" r="4.6" fill="var(--bench)" fill-opacity=".9"/>
+          <circle cx="266" cy="216" r="4.6" fill="var(--bench)" fill-opacity=".9"/>
+          <circle cx="292" cy="216" r="4.6" fill="var(--gap)" fill-opacity=".9"/>
+          <circle cx="318" cy="216" r="4.6" fill="var(--gap)" fill-opacity=".9"/>
+          <circle cx="214" cy="178" r="4.6" fill="var(--clinic)" fill-opacity=".9"/>
+          <circle cx="240" cy="178" r="4.6" fill="var(--gap)" fill-opacity=".9"/>
+          <circle cx="266" cy="178" r="4.6" fill="var(--gap)" fill-opacity=".9"/>
+          <circle cx="292" cy="178" r="4.6" fill="var(--clinic)" fill-opacity=".9"/>
+          <circle cx="214" cy="140" r="4.6" fill="var(--scan)" fill-opacity=".9"/>
+          <circle cx="240" cy="140" r="4.6" fill="var(--scan)" fill-opacity=".9"/>
+          <circle cx="214" cy="102" r="4.6" fill="var(--gap)" fill-opacity=".9"/>
+          <circle cx="240" cy="102" r="4.6" fill="var(--gap)" fill-opacity=".9"/>
+          <circle cx="214" cy="64" r="4.6" fill="var(--clinic)" fill-opacity=".9"/>
+          <text x="470" y="304" text-anchor="end" class="fa-bl" style="fill:var(--console)">instrument far from the person</text>
+          <text x="470" y="34" text-anchor="end" class="fa-bl" style="fill:var(--gap)">instrument is the person</text>
+        </svg>
+      </figure>
+    </div>
+
+    <div class="figa-key" aria-hidden="true">
+      <span><i style="background:var(--console)"></i>console</span>
+      <span><i style="background:var(--bench)"></i>benchmark</span>
+      <span><i style="background:var(--scan)"></i>scanner</span>
+      <span><i style="background:var(--clinic)"></i>clinic</span>
+      <span><i style="background:var(--gap)"></i>the room</span>
+    </div>
+
+    <p class="cap" style="max-width:78ch">
+      <b>Fig. A.</b> Left: nineteen works placed in the field that published them; vertical
+      position is arbitrary. Right: the same nineteen on the ordering axis this page argues
+      is the real one. Colour is the thread and means the same thing in every figure on this
+      page. The dissemination-in-space-and-time framing is <b>our</b> interpretive device,
+      borrowed from the McDonald diagnostic criteria &mdash; it is not a claim she has made.
+    </p>
+  </div>
+</section>

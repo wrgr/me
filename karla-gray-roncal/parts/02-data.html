@@ -1,0 +1,327 @@
+<script>
+/* ============================================================
+   SUBJECT — the data model behind Fig. 1 and the plates.
+   thread: console | bench | scan | clinic | gap
+   rung: the ordering axis — how close the instrument gets to the person.
+           1 a console · 2 a ward · 3 a benchmark · 4 a test in the patient's
+           own hands · 5 the body itself · 6 a question nobody had asked ·
+           7 a conversation.  Median year rises monotonically along it:
+           2009, 2015, 2019, 2019.5, 2024.5, 2024.5, 2026.
+   citations: OpenAlex (A5020072529), retrieved August 2026. 0 = uncited or unindexed.
+   Note: she has no Google Scholar profile; her ORCID (0009-0006-3512-7978) is empty.
+   ============================================================ */
+var SUBJECT = {
+
+papers: [
+
+/* ---------- rung 1–2 : the console and the room ---------- */
+{ id:'wsta08', short:'Watch Section Task Analysis', storyTitle:'The sailors were not slow',
+  title:'Role of Watch Section Task Analysis in the Development of Advanced Processor Builds',
+  authors:'T. Roy*, K. Roncal*, et al. (*equal contribution)',
+  venue:'Submarine Technology Symposium, JHU/APL \u2014 a classified symposium; proceedings are not publicly published', year:2008, citations:0,
+  doi:null, url:null, thread:'console', form:'proceedings', rung:1,
+  plain:'Her first published work, published under her earlier surname, Roncal. Submarine sonar systems were being upgraded faster than anyone could say whether the upgrades helped. The problem was not the sailors and not the hardware — it was that no one had built a way to measure the pair of them together. She helped write the quantitative and qualitative test measures for assessing how a watch section actually performs with a new system.' },
+
+{ id:'apb10', short:'APB submarine technologies', storyTitle:'Measuring the whole watch',
+  title:'APB Technologies to Support Multi-Mission Submarine Maritime Theater Operations',
+  authors:'K. Roncal, G. Banta, et al.',
+  venue:'Submarine Technology Symposium, JHU/APL \u2014 a classified symposium; proceedings are not publicly published', year:2010, citations:0,
+  doi:null, url:null, thread:'console', form:'proceedings', rung:1,
+  plain:'The programme-level companion to the 2008 paper. By now she was assistant programme manager for Advanced Processor Build and mentoring a team of ten analysts. The recurring job: introduce Operator Machine Interfaces into the Navy’s development process, so that a new capability had to prove itself against the operator who would use it, not just on a bench.' },
+
+{ id:'icu11', short:'ICU task analysis', storyTitle:'The same method, pointed at a hospital',
+  title:'Task analysis of Intensive Care Units at Johns Hopkins (project)',
+  authors:'K. Gray-Roncal, as human factors engineer, JHU/APL',
+  venue:'JHU/APL project; described in her CV', year:2011, citations:0,
+  doi:null, url:null, thread:'console', form:'project', rung:2,
+  plain:'The hinge. She took the submarine methodology — watch the operators, map the task, find where the technology and the people fail to meet — and pointed it at an intensive care unit. The work led to a mockup ICU built to inform design across multiple stakeholders and machine interfaces. Eight years before medical school, the instrument had already moved into a hospital.' },
+
+{ id:'lex15', short:'Medical lexicon guide', storyTitle:'Two professions, one glossary',
+  title:'Pressure Ulcer Solutions Project: medical literature review and a medical lexicon guide for non-clinical staff',
+  authors:'K. Gray-Roncal, JHU/APL',
+  venue:'JHU/APL project; described in her CV', year:2015, citations:0,
+  doi:null, url:null, thread:'console', form:'project', rung:2,
+  plain:'Systems engineers were being asked to solve bedsores, a problem that kills people in hospitals, and could not read the literature. Her deliverable was a lexicon — a translation layer between engineering and medicine. It is the most literal possible statement of what her whole career does: build the interface between two systems that cannot yet hear each other.' },
+
+{ id:'gon15', short:'Gonadal failure review', storyTitle:'The exception',
+  title:'Risk of gonadal failure in pediatric blood cancer patients: An intervention for reproductive success in survivors',
+  authors:'L. Antognoli, N. Apseloff, J. Lu, K. Roncal (equal contribution)',
+  venue:'Current Opinions in Sexual Development and Reproduction, Georgetown University Medical Center, 7(M1)', year:2015, citations:0,
+  doi:null, url:null, thread:'gap', form:'review', rung:2,
+  plain:'Written as a medical student. A review of fertility loss in children treated for blood cancer. This is the publication that fits the theory least well, and we say so plainly rather than bending it: you can call late effects an unmeasured outcome, but that is a stretch.' },
+
+/* ---------- rung 3 : the benchmark ---------- */
+{ id:'micrn18', short:'MICrONS human–machine baseline', storyTitle:'Designing the fair fight',
+  title:'Machine Intelligence from Cortical Networks (MICrONS): Human–Machine Baseline Task Lead',
+  authors:'K. Gray-Roncal, JHU/APL',
+  venue:'IARPA MICrONS programme; described in her CV', year:2018, citations:0,
+  doi:null, url:null, thread:'bench', form:'project', rung:3,
+  plain:'She led the design and implementation of the paradigm for comparing human and algorithm performance inside MICrONS — a large national BRAIN Initiative programme building single-synapse maps of the brain in order to improve machine intelligence. Her job was not to build the algorithm. It was to make sure the humans it would be measured against had been measured properly.' },
+
+{ id:'srep22', short:'Human vs. algorithm framework', storyTitle:'One annotator',
+  title:'A framework for rigorous evaluation of human performance in human and machine learning comparison studies',
+  authors:'H. P. Cowley, M. Natter, K. Gray-Roncal, R. E. Rhodes, E. C. Johnson, N. Drenkow, T. M. Shead, F. S. Chance, B. Wester, W. Gray-Roncal',
+  venue:'Scientific Reports 12, 5444', year:2022, citations:56,
+  doi:'10.1038/s41598-022-08078-3', url:'https://doi.org/10.1038/s41598-022-08078-3',
+  thread:'bench', form:'journal article', rung:3,
+  plain:'The keystone. Machine learning papers routinely claim to beat humans without saying how many humans they tested, who they were, or how they were recruited. The paper that announced "surpassing human-level performance" on ImageNet used a single annotator. This framework sets out how to build a human baseline that means something — control for memory, language and fatigue; match the trials; run it like a psychology study, ethics review included.' },
+
+{ id:'srep22c', short:'Author Correction', storyTitle:'Correcting the correction',
+  title:'Author Correction: A framework for rigorous evaluation of human performance in human and machine learning comparison studies',
+  authors:'H. P. Cowley, M. Natter, K. Gray-Roncal, et al.',
+  venue:'Scientific Reports 12, 11559', year:2022, citations:2,
+  doi:'10.1038/s41598-022-15857-5', url:'https://doi.org/10.1038/s41598-022-15857-5',
+  thread:'bench', form:'correction', rung:3,
+  plain:'A short correction re-assigning one citation and adding a second example of a well-executed comparison. Included here because a paper about doing evaluation rigorously, which then publicly fixes its own citation, is being consistent rather than embarrassed.' },
+
+/* ---------- rung 4 : the scanner ---------- */
+{ id:'mri24', short:'MRI lesion-prediction algorithm', storyTitle:'Which scan, and who pays for it',
+  title:'An Algorithm to Predict New Magnetic Resonance Imaging Lesions to Support Improved Disease Surveillance in Multiple Sclerosis',
+  authors:'M. S. Robinette, K. Gray-Roncal, K. C. Fitzgerald, K. Ferryman, C. Overby Taylor, J. Scott, E. S. Sotirchos, P. A. Calabresi, E. M. Mowry, W. R. Gray-Roncal',
+  venue:'medRxiv preprint (v1 June 2024; v3 March 2026); presented at ANA 2024', year:2024, citations:0,
+  doi:'10.1101/2024.06.20.24309267', url:'https://www.medrxiv.org/content/10.1101/2024.06.20.24309267v3',
+  thread:'scan', form:'preprint', rung:5,
+  plain:'Both halves of her training in one author list. MS monitoring means repeated MRI on a schedule nobody has individualised, which is expensive and burdensome. Using 1,131 patients from the Johns Hopkins MS Center, the model predicts who will show a new lesion on their next scan \u2014 AUC 0.80, sensitivity 0.72, specificity 0.75 at a deliberately sensitivity-favouring threshold. It identified 772 people who could safely wait longer. Note the asymmetry she chose: the threshold is tuned to avoid missing lesions, not to look accurate.' },
+
+{ id:'nfl25', short:'Neurofilament light chain', storyTitle:'A blood test for damage you cannot see yet',
+  title:'Association of serum neurofilament light chain deviation levels to new lesions on magnetic resonance imaging in people with multiple sclerosis',
+  authors:'K. M. Gray-Roncal, K. C. Fitzgerald, S. C. Cassard, E. M. Mowry',
+  venue:'Consortium of MS Centers Annual Meeting 2025; American Neurological Association 2025', year:2025, citations:0,
+  doi:null, url:null, thread:'scan', form:'conference abstract', rung:5,
+  plain:'Neurofilament light chain is a protein that leaks into the blood when nerve fibres are damaged. The question is whether a deviation in someone’s own baseline level flags new lesions before the scan does — swapping an expensive scheduled instrument for a cheap frequent one. Same move as the phone call, at the molecular scale.' },
+
+/* ---------- rung 5 : the questionnaire ---------- */
+{ id:'dis18', short:'Disparities (first report)', storyTitle:'The finding, three years early',
+  title:'US-based African Americans with multiple sclerosis have greater disability and lower socio-economic status than Caucasian Americans',
+  authors:'K. Gray-Roncal, K. C. Fitzgerald, L. Zhovtis-Ryerson, L. Charvet, R. Naismith, P. Calabresi, E. M. Mowry',
+  venue:'American Neurological Association 2018; ECTRIMS 2018; JHU Neurology & Neurosurgery Research Retreat 2018', year:2018, citations:0,
+  doi:null, url:null, thread:'gap', form:'conference abstract', rung:4,
+  plain:'Presented while she was still a medical student, three years before the journal paper. Her CV records that during this period she was simultaneously "providing engineering support for upcoming technology-based clinical research studies" in the same department — a medical student who was also the department’s engineer.' },
+
+{ id:'prose18', short:'PROSe headache app', storyTitle:'Getting a symptom into a database',
+  title:'Acceptability and Usage of the PROSe Mobile System Among Pediatric Patients with Chronic Headache: A Pilot Study',
+  authors:'K. Gray-Roncal, E. S. Probasco, C. Oakley, R. J. Steele, W. Stewart, M. Baker, J. Pinelis, N. Horton, A. Stanfield, H. A. Puttgen, S. Swetz, J. Probasco',
+  venue:'American Neurological Association 2018', year:2018, citations:0,
+  doi:null, url:null, thread:'clinic', form:'conference abstract', rung:4,
+  plain:'The migraine app she had project-managed in 2015, tested on children with chronic headache. She led its design through a think-tank that put human factors engineers, graphic artists, neurologists and an actual migraine patient in one room. The outcome measured here is not headache — it is whether patients will use the instrument at all. An instrument nobody uses records nothing.' },
+
+{ id:'neuro21', short:'Disease severity and SES', storyTitle:'The gap that survived the explanation',
+  title:'Association of Disease Severity and Socioeconomic Status in Black and White Americans With Multiple Sclerosis',
+  authors:'K. Gray-Roncal, K. C. Fitzgerald, L. Zhovtis Ryerson, L. Charvet, S. D. Cassard, R. Naismith, D. Ontaneda, K. Mahajan, W. Castro-Borrero, E. M. Mowry',
+  venue:'Neurology 97(9), e881–e889', year:2021, citations:60,
+  doi:'10.1212/WNL.0000000000012362', url:'https://doi.org/10.1212/WNL.0000000000012362',
+  thread:'gap', form:'journal article', rung:4,
+  plain:'Her most-cited work. Across 8,744 people with MS, Black Americans had worse disability, worse scores on every objective test, more lesion volume and less grey matter than White Americans — after adjusting for education, employment and insurance. The paper then does something rarer: it reports that lower neighbourhood socioeconomic status tracked worse scores among White Americans, but that this association was much less clear among Black Americans. Money did not buy the same outcome.' },
+
+{ id:'peds24', short:'Pediatric-onset MS', storyTitle:'Finding it earlier',
+  title:'POMS: A Clinical View \u2014 pediatric-onset multiple sclerosis',
+  authors:'H. Chen, K. Gray-Roncal (her CV records equal contribution)',
+  venue:'eMultipleSclerosis Review 6(2), CME issue and podcast, 15 September 2024', year:2024, citations:0,
+  doi:null, url:'https://elit.dkbmed.com/issues/209/preview', thread:'clinic', form:'CME review & podcast', rung:4,
+  plain:'A clinical education review on children with MS, where the detection problem is at its worst: symptoms get attributed to something else, diagnosis is late, and treatment decisions are made on thin evidence. The through-line is identification — the same word, one more time.' },
+
+/* ---------- rung 6 : the phone call ---------- */
+{ id:'rel25', short:'Relapse detection by contact', storyTitle:'Somebody has to call',
+  title:'Increased contact with clinical trial participants may improve confirmed multiple sclerosis relapse detection',
+  authors:'K. Gray-Roncal, M. J. Appiah, K. Zorn, K. C. Smith, S. D. Cassard, K. Fitzgerald, E. M. Mowry',
+  venue:'Multiple Sclerosis Journal 32(4), 440–443', year:2026, citations:0,
+  doi:'10.1177/13524585251373002', url:'https://doi.org/10.1177/13524585251373002',
+  thread:'clinic', form:'journal article', rung:7,
+  plain:'First author, and the cleanest statement of the whole method. In the VIDAMS vitamin D trial, coordinators contacted participants between visits and asked specific questions about symptoms. The odds of a confirmed relapse being detected in the two weeks after that contact, versus the two weeks before, were 2.93 times higher. The relapses were always there. The asking is what changed.' },
+
+/* ---------- rung 7 : the question nobody had asked ---------- */
+{ id:'mic25', short:'Racist microaggressions', storyTitle:'Building the instrument that did not exist',
+  title:'Identifying racist microaggressions in health system encounters with people participating in neurology care and research',
+  authors:'K. M. Gray-Roncal, S. Freeman, E. M. Mowry',
+  venue:'ACTRIMS Forum 2025', year:2025, citations:0,
+  doi:null, url:null, thread:'gap', form:'conference abstract', rung:6,
+  plain:'The end of the ladder. Her 2021 paper concluded that the disparity survived every socioeconomic explanation it could measure, and pointed at "other societal constructs (e.g., systemic racism)" as the place to look next. The obvious objection is that you cannot measure that. This is her going and building the instrument. The verb in the title is identifying.' },
+
+/* ---------- the pipeline (rungs 3 and 7, the other population) ---------- */
+{ id:'prep18', short:'College Prep Program', storyTitle:'Talent nobody was looking for',
+  title:'The College Prep Program at APL: An Experiential Model to Help High-Achieving, Underserved Students Trailblaze and Achieve Success',
+  authors:'K. Gray-Roncal, L. Huynh, T. Kolarik, M. Roncal, M. A. Saunders, W. Gray-Roncal',
+  venue:'IEEE Integrated STEM Education Conference (ISEC) 2018, pp. 90\u201397', year:2018, citations:3,
+  doi:'10.1109/ISECON.2018.8340511', url:'https://doi.org/10.1109/ISECON.2018.8340511', thread:'gap', form:'conference paper', rung:3,
+  plain:'She co-founded this all-volunteer summer programme in 2009 and ran it for eleven years. Its premise is a measurement claim: there exist students with the desire and the academic potential to excel who will not be identified by the instruments that select for college, because those instruments are also measuring mentoring and resources. Over 220 students mentored; nearly all on track to a degree.' },
+
+{ id:'mentor19', short:'Distributed mentorship', storyTitle:'Mentoring at a distance',
+  title:'An Accessible, Distributed, Technology-Based Approach for Student and Mentor Engagement',
+  authors:'L. Huynh, K. Gray-Roncal, M. Roncal, W. Gray-Roncal',
+  venue:'IEEE Integrated STEM Education Conference (ISEC) 2019, pp. 142\u2013148', year:2019, citations:2,
+  doi:'10.1109/ISECon.2019.8882110', url:'https://doi.org/10.1109/ISECon.2019.8882110', thread:'gap', form:'conference paper', rung:3,
+  plain:'The scaling problem for the College Prep model: mentorship works, and mentorship does not travel. A technology-based approach to keeping students and mentors engaged across distance — the operator-machine interface applied to the one relationship that had been assumed to require a room.' },
+
+{ id:'stem24', short:'Activating STEM talent', storyTitle:'A framework, twenty-one years in',
+  title:'Toward a Framework for Providing Equitable Opportunities to Activate STEM Talent',
+  authors:'S. Floryanzia, A. Jayabharathi, K. A. Carr, K. Gray-Roncal, W. Gray-Roncal',
+  venue:'IEEE ISEC 2024, pp. 1\u20134; open version OSF Preprints (CC BY 4.0)', year:2024, citations:0,
+  doi:'10.1109/ISEC61299.2024.10664684', url:'https://osf.io/29kam', thread:'gap', form:'conference paper', rung:6,
+  plain:'Fifteen years of running the programme, written up as a framework. The word that matters is activate: the talent is modelled as already present and unexpressed, and the thing being designed is the opportunity that would reveal it. That is the same sentence as her 2022 machine learning paper, addressed to a different population.' }
+
+],
+
+/* ---------- related work: real citation edges ---------- */
+related: [
+{ id:'firestone20', kind:'ref', thread:'bench', short:'Firestone 2020',
+  title:'Performance vs. competence in human–machine comparisons', authors:'C. Firestone',
+  venue:'PNAS 117(43)', year:2020, doi:'10.1073/pnas.1905334117',
+  note:'The framework her 2022 paper builds on directly. Firestone argues you must "limit machines like humans", "limit humans like machines", and align the task across species. Cowley et al. set out to operationalise the last two.' },
+
+{ id:'he15', kind:'ref', thread:'bench', short:'He et al. 2015',
+  title:'Delving deep into rectifiers: Surpassing human-level performance on ImageNet classification',
+  authors:'K. He, X. Zhang, S. Ren, J. Sun', venue:'ICCV 2015', year:2015, doi:'10.1109/ICCV.2015.123',
+  note:'The cautionary example. A paper whose title claims to surpass human-level performance, resting that claim on one human annotator with no stated evaluation method. Cited twice in her paper, under two different reference numbers.' },
+
+{ id:'hart88', kind:'ref', thread:'console', short:'NASA-TLX',
+  title:'Development of NASA-TLX (Task Load Index): Results of empirical and theoretical research',
+  authors:'S. G. Hart, L. E. Staveland', venue:'Advances in Psychology 52', year:1988, doi:'10.1016/S0166-4115(08)62386-9',
+  note:'The workload instrument used in the 2022 study to check the task was hard enough to engage participants but not so hard as to confound them. It is a human-factors tool from aviation — the discipline she trained in — doing duty in a machine learning paper.' },
+
+{ id:'brickman08', kind:'ref', thread:'gap', short:'Brickman et al. 2008',
+  title:'Brain morphology in older African Americans, Caribbean Hispanics, and Whites from Northern Manhattan',
+  authors:'A. M. Brickman, N. Schupf, J. J. Manly, et al.', venue:'Archives of Neurology 65(8)', year:2008,
+  doi:'10.1001/archneur.65.8.1053',
+  note:'The reference that makes the 2021 finding bite. In healthy cohorts, Black Americans have greater brain volumes than White Americans. In MS the relationship reverses — so the deficit she measures is not a baseline difference.' },
+
+{ id:'kind14', kind:'ref', thread:'gap', short:'Area Deprivation Index',
+  title:'Neighborhood socioeconomic disadvantage and 30-day rehospitalizations',
+  authors:'A. Kind, S. Jencks, J. Brock, et al.', venue:'Annals of Internal Medicine 161', year:2014,
+  doi:'10.7326/M13-2946',
+  note:'The composite index of 17 socioeconomic measures she used, via 9-digit ZIP codes, to reach neighbourhood-level deprivation — a deliberately harder instrument than asking someone their income.' },
+
+{ id:'rao20', kind:'ref', thread:'scan', short:'MS Performance Test',
+  title:'Multiple Sclerosis Performance Test: validation of self-administered neuroperformance modules',
+  authors:'S. M. Rao, R. Galioto, M. Sokolowski, et al.', venue:'European Journal of Neurology 27(5)', year:2020,
+  doi:'10.1111/ene.14162',
+  note:'The iPad instrument that produced the walking, dexterity and processing-speed numbers in her 2021 paper. A tablet that a patient operates with minimal help from staff — an operator-machine interface, in a clinic.' },
+
+{ id:'waltrip21', kind:'ref', thread:'clinic', short:'Waltrip et al. 2021',
+  title:'Effect of health care providers’ focused discussion and proactive education about relapse management on patient reporting of multiple sclerosis relapse',
+  authors:'R. W. Waltrip, N. Mahler, A. Ahsan, L. B. Herbert', venue:'International Journal of MS Care', year:2021,
+  doi:'10.7224/1537-2073.2020-018',
+  note:'The direct predecessor to her relapse paper: proactive provider discussion increases patient reporting. Her contribution is to run the same idea inside a randomised trial, where confirmation required a blinded neurologist rather than a patient’s account.' },
+
+{ id:'cassard23', kind:'ref', thread:'clinic', short:'VIDAMS primary results',
+  title:'High-dose vitamin D3 supplementation in relapsing-remitting multiple sclerosis: a randomised clinical trial',
+  authors:'S. D. Cassard, K. C. Fitzgerald, P. Qian, et al.', venue:'eClinicalMedicine 59, 101957', year:2023,
+  doi:'10.1016/j.eclinm.2023.101957',
+  note:'The parent trial: 172 randomised, 165 analysed, 96 weeks, 16 US sites. Its between-visit contacts — phone or email, checking adherence and screening for relapse symptoms — are the exposure her 2026 paper analyses.' },
+
+{ id:'mowry20', kind:'ref', thread:'scan', short:'MS PATHS cohort',
+  title:'Harnessing real-world data to inform decision-making: Multiple Sclerosis Partners Advancing Technology and Health Solutions',
+  authors:'E. M. Mowry, R. A. Bermel, J. R. Williams, et al.', venue:'Frontiers in Neurology 11, 632', year:2020,
+  doi:'10.3389/fneur.2020.00632',
+  note:'The cohort behind the 2021 paper: standardised measurements captured during ordinary clinic visits rather than research visits, across ten MS centres. Instrumenting the encounter that was already happening.' },
+
+{ id:'mcdonald25', kind:'cite', thread:'gap', short:'McDonald criteria 2024 revision',
+  title:'Diagnosis of multiple sclerosis: 2024 revisions of the McDonald criteria',
+  authors:'X. Montalban, C. Lebrun-Frénay, J. Oh, et al.', venue:'Lancet Neurology', year:2025,
+  doi:'10.1016/S1474-4422(25)00270-4',
+  note:'Her 2021 paper is cited in the diagnostic criteria for the disease itself — the document that defines how dissemination in space and time is established.' },
+
+{ id:'langer25', kind:'cite', thread:'gap', short:'Structural racism & MS',
+  title:'Embodiment of structural racism and multiple sclerosis risk and outcomes in the USA',
+  authors:'A. M. Langer-Gould, T. Cepon-Robins, J. Benn Torres, et al.', venue:'Nature Reviews Neurology', year:2025,
+  doi:'10.1038/s41582-025-01096-5',
+  note:'The direct uptake of her closing sentence. Her paper said the residual points beyond socioeconomic status toward systemic racism; this is the field taking that up as a research programme.' },
+
+{ id:'amezcua24', kind:'cite', thread:'gap', short:'Amezcua et al. 2024',
+  title:'Differential diagnosis of suspected multiple sclerosis: considerations in people from minority ethnic and racial backgrounds',
+  authors:'L. Amezcua, D. Rotstein, A. Shirani, et al.', venue:'Lancet Neurology', year:2024,
+  doi:'10.1016/S1474-4422(24)00288-6',
+  note:'Cites the 2021 paper in the course of rewriting how clinicians should approach diagnosis in minoritised patients — measurement feeding back into practice.' },
+
+{ id:'ross24', kind:'cite', thread:'scan', short:'Pediatric-onset MS & SDOH',
+  title:'Association of Social Determinants of Health With Brain MRI Outcomes in Individuals With Pediatric Onset Multiple Sclerosis',
+  authors:'R. Ross, K. A. O’Neill, R. A. Betensky, et al.', venue:'Neurology', year:2024,
+  doi:'10.1212/WNL.0000000000210140',
+  note:'Her method — social determinants against quantitative MRI outcomes — applied to children, by another group. She is not an author; the citation is the inheritance.' },
+
+{ id:'stream25', kind:'cite', thread:'bench', short:'STREAM (ChemBio)',
+  title:'STREAM (ChemBio): A Standard for Transparently Reporting Evaluations in AI Model Reports',
+  authors:'T. McCaslin, J. Alaga, S. Nedungadi, S. Donoughe', venue:'arXiv preprint', year:2025,
+  doi:'10.48550/arXiv.2508.09853',
+  note:'The most surprising downstream use: her human-baseline framework being pulled into standards for how frontier AI model evaluations should be reported. A submarine human-factors lineage arriving at AI safety.' },
+
+{ id:'okai22', kind:'cite', thread:'gap', short:'Okai et al. 2022',
+  title:'Advancing Care and Outcomes for African American Patients With Multiple Sclerosis',
+  authors:'A. Okai, A. M. Howard, M. Williams, et al.', venue:'Neurology', year:2022,
+  doi:'10.1212/WNL.0000000000200791',
+  note:'A clinical-practice response in the same journal, one year later.' },
+
+{ id:'barui22', kind:'cite', thread:'bench', short:'Barui et al. 2022',
+  title:'Perception without preconception: comparison between the human and machine learner in recognition of tissues from histological sections',
+  authors:'S. Barui, P. Sanyal, K. S. Rajmohan, A. Malik', venue:'Scientific Reports', year:2022,
+  doi:'10.1038/s41598-022-20012-1',
+  note:'A pathology group using the framework to compare human and machine tissue recognition — the intended use, in a clinical domain.' }
+],
+
+/* ---------- the bridges: shared ideas, thematic edges, ours not hers ---------- */
+keywords: [
+{ id:'kw-ascert', label:'ascertainment', thread:'shared',
+  title:'Ascertainment — nothing is recorded unless somebody acts',
+  note:'The idea connecting a randomised trial, a headache app and a study of racist microaggressions. In each, the outcome only enters the record if a person decides to report it, and that decision is not evenly distributed. Her fix is always the same: schedule the asking, and make the questions specific.' },
+
+{ id:'kw-baseline', label:'the human baseline', thread:'shared',
+  title:'The human baseline — measure the person properly before you judge them',
+  note:'Submarine watch standers in 2008, MTurk participants in 2022, and MS patients on an iPad in 2021 are all being scored on a task. In every case her contribution is to the scoring instrument, not to the performer. This is the single strongest structural link between the defence work and the medicine.' },
+
+{ id:'kw-residual', label:'the adjusted residual', thread:'shared',
+  title:'The adjusted residual — control for the explanation you already believe',
+  note:'In the 2022 framework: control for memory, language and prior experience, then whatever difference is left is really about the algorithm. In the 2021 paper: control for education, employment, insurance and neighbourhood, then whatever gap is left is really about something else. Identical logic, ten years and two disciplines apart.' },
+
+{ id:'kw-omi', label:'operator–machine interface', thread:'shared',
+  title:'The operator–machine interface — her actual job title, twice',
+  note:'Her CV says she "led the introduction of Operator Machine Interfaces into the Navy’s advanced development process." A sonar console, an ICU, a tablet-based disability test, a migraine app and an MRI protocol are all interfaces where a person and a machine meet and one of them gets scored. She never changed jobs; the console did.' },
+
+{ id:'kw-room', label:'who is in the room', thread:'shared',
+  title:'Who is in the room — and who the instrument was never built for',
+  note:'The bridge between the education work and the disparities work, which share no reference list at all. A college-selection process and a clinical outcome measure are both instruments that were calibrated on a population, and both mis-read people outside it. "Activate STEM talent" and "identify racist microaggressions" are the same sentence pointed at different rooms.' }
+],
+
+/* ---------- edges ---------- */
+edges: [
+/* thread spines */
+{s:'wsta08',t:'apb10',type:'thread'},{s:'apb10',t:'icu11',type:'thread'},
+{s:'icu11',t:'lex15',type:'thread'},
+{s:'micrn18',t:'srep22',type:'thread'},{s:'srep22',t:'srep22c',type:'thread'},
+{s:'mri24',t:'nfl25',type:'thread'},
+{s:'prose18',t:'peds24',type:'thread'},{s:'peds24',t:'rel25',type:'thread'},
+{s:'dis18',t:'neuro21',type:'thread'},{s:'neuro21',t:'mic25',type:'thread'},
+{s:'prep18',t:'mentor19',type:'thread'},{s:'mentor19',t:'stem24',type:'thread'},
+{s:'gon15',t:'dis18',type:'thread'},
+
+/* real citation edges */
+{s:'srep22',t:'firestone20',type:'cites'},{s:'srep22',t:'he15',type:'cites'},
+{s:'srep22',t:'hart88',type:'cites'},
+{s:'neuro21',t:'brickman08',type:'cites'},{s:'neuro21',t:'kind14',type:'cites'},
+{s:'neuro21',t:'rao20',type:'cites'},{s:'neuro21',t:'mowry20',type:'cites'},
+{s:'rel25',t:'waltrip21',type:'cites'},{s:'rel25',t:'cassard23',type:'cites'},
+{s:'mcdonald25',t:'neuro21',type:'cites'},{s:'langer25',t:'neuro21',type:'cites'},
+{s:'amezcua24',t:'neuro21',type:'cites'},{s:'okai22',t:'neuro21',type:'cites'},
+{s:'ross24',t:'neuro21',type:'cites'},
+{s:'stream25',t:'srep22',type:'cites'},{s:'barui22',t:'srep22',type:'cites'},
+
+/* thematic bridges — ours */
+{s:'kw-ascert',t:'rel25',type:'kw'},{s:'kw-ascert',t:'mic25',type:'kw'},
+{s:'kw-ascert',t:'prose18',type:'kw'},{s:'kw-ascert',t:'peds24',type:'kw'},
+{s:'kw-ascert',t:'nfl25',type:'kw'},
+
+{s:'kw-baseline',t:'wsta08',type:'kw'},{s:'kw-baseline',t:'srep22',type:'kw'},
+{s:'kw-baseline',t:'neuro21',type:'kw'},{s:'kw-baseline',t:'micrn18',type:'kw'},
+{s:'kw-baseline',t:'apb10',type:'kw'},
+
+{s:'kw-residual',t:'neuro21',type:'kw'},{s:'kw-residual',t:'srep22',type:'kw'},
+{s:'kw-residual',t:'mic25',type:'kw'},
+
+{s:'kw-omi',t:'icu11',type:'kw'},{s:'kw-omi',t:'lex15',type:'kw'},
+{s:'kw-omi',t:'prose18',type:'kw'},{s:'kw-omi',t:'mri24',type:'kw'},
+{s:'kw-omi',t:'wsta08',type:'kw'},
+
+{s:'kw-room',t:'prep18',type:'kw'},{s:'kw-room',t:'stem24',type:'kw'},
+{s:'kw-room',t:'mentor19',type:'kw'},{s:'kw-room',t:'neuro21',type:'kw'},
+{s:'kw-room',t:'mic25',type:'kw'}
+]
+};
+</script>
