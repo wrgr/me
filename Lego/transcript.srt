@@ -1,0 +1,7072 @@
+1
+00:00:00,680 --> 00:00:04,759
+hey what is up everybody Jason here sorry I'm a bit late
+
+2
+00:00:04,759 --> 00:00:10,160
+as usual things never go according to plan in the JK brickworks
+
+3
+00:00:10,160 --> 00:00:13,519
+household uh but I think we're all ready to go uh today
+
+4
+00:00:13,519 --> 00:00:18,080
+we are going to be building the Space Roller Coaster set and
+
+5
+00:00:18,080 --> 00:00:21,160
+we're going to try and make it move in some way stick
+
+6
+00:00:21,160 --> 00:00:23,199
+some Motors on it try and make the coaster move on its
+
+7
+00:00:23,199 --> 00:00:28,960
+own so let's just uh not mess around Jump Right In
+
+8
+00:00:28,960 --> 00:00:32,699
+uh crack this
+
+9
+00:00:33,800 --> 00:00:38,600
+open I'm actually really excited to look at some of the new
+
+10
+00:00:38,600 --> 00:00:43,800
+curved track pieces in this I don't have any of the uh
+
+11
+00:00:43,800 --> 00:00:48,960
+sloped corner pieces yet so
+
+12
+00:00:48,960 --> 00:00:54,719
+uh that will be exciting check them out
+
+13
+00:00:54,719 --> 00:00:57,600
+uh let's see what we got going on here there's some slopes
+
+14
+00:00:57,600 --> 00:01:01,559
+or tracks there's some tracks who do we got in the chat
+
+15
+00:01:01,559 --> 00:01:07,040
+R hamburg's in the chat cheers welcome and welcome everybody else
+
+16
+00:01:07,040 --> 00:01:09,880
+as always just English in the chat so everybody knows what's going
+
+17
+00:01:09,880 --> 00:01:15,420
+on oh there's bag one two I'll leave
+
+18
+00:01:16,799 --> 00:01:18,299
+there
+
+19
+00:01:21,960 --> 00:01:27,619
+three better to actually four
+
+20
+00:01:27,680 --> 00:01:30,340
+five six
+
+21
+00:01:34,200 --> 00:01:39,520
+we'll make sure to keep six and nine properly kept track of
+
+22
+00:01:39,520 --> 00:01:43,240
+since I made that mistake last time instructions we don't need we
+
+23
+00:01:43,240 --> 00:01:49,259
+got them up on the screen so we are ready to
+
+24
+00:01:51,320 --> 00:01:55,799
+go this might be a while it'll probably take me I don't
+
+25
+00:01:55,799 --> 00:01:57,920
+know I probably say an hour and a half or so to
+
+26
+00:01:57,920 --> 00:02:02,799
+maybe uh build the coaster and then we'll see what we can
+
+27
+00:02:02,799 --> 00:02:07,159
+do for motorizing it uh all right who do we got in
+
+28
+00:02:07,159 --> 00:02:11,020
+the chat let's see some regular
+
+29
+00:02:12,040 --> 00:02:16,459
+faces ah man it's already already
+
+30
+00:02:18,480 --> 00:02:21,840
+hopping who do we got brook film studio is back cheers welcome
+
+31
+00:02:21,840 --> 00:02:27,879
+back hi from Germany hello f
+
+32
+00:02:27,879 --> 00:02:30,379
+f Aubrey
+
+33
+00:02:31,560 --> 00:02:34,660
+Enzo as4 gaming
+
+34
+00:02:36,560 --> 00:02:41,980
+cheers hi happy Friday from Poland happy Friday as well my
+
+35
+00:02:42,280 --> 00:02:47,400
+friend okay here we go one and two we
+
+36
+00:02:47,400 --> 00:02:51,920
+start building some coasters okay let's just let's just jump right in
+
+37
+00:02:51,920 --> 00:02:54,860
+well apparently I put one and two
+
+38
+00:02:55,920 --> 00:03:00,900
+together oh we got a little mini fig little space fig that's
+
+39
+00:03:03,239 --> 00:03:08,400
+exciting can't have enough little tiny
+
+40
+00:03:08,400 --> 00:03:09,900
+baby
+
+41
+00:03:11,680 --> 00:03:17,680
+Spaceman MTH America hey from Hungary cheers hey from Denmark whoop ass
+
+42
+00:03:17,680 --> 00:03:22,959
+Bill oh he's so cute he's so
+
+43
+00:03:22,959 --> 00:03:28,000
+cute the little oh little space dude
+
+44
+00:03:28,000 --> 00:03:30,260
+he's so cute
+
+45
+00:03:31,080 --> 00:03:35,840
+who doesn't like miniature Lego pieces and then we got some random
+
+46
+00:03:35,840 --> 00:03:41,780
+dude in a suit of some sort oh he's got funky
+
+47
+00:03:41,840 --> 00:03:46,720
+hair I don't think I have this hairpiece yet cool oh on
+
+48
+00:03:46,720 --> 00:03:51,760
+to the good stuff okay we're going to be building a
+
+49
+00:03:51,760 --> 00:03:54,840
+space roller coaster did everybody see the new set Actually I don't
+
+50
+00:03:54,840 --> 00:03:57,920
+even know if they were officially announced were they there's a bunch
+
+51
+00:03:57,920 --> 00:04:03,459
+of new sets coming for 2024 including the Technic
+
+52
+00:04:05,120 --> 00:04:09,239
+a which actually wasn't too excited about the look of to be
+
+53
+00:04:09,239 --> 00:04:13,319
+honest um I'm really excited to see all the mechanics they have
+
+54
+00:04:13,319 --> 00:04:16,680
+in it but uh The Styling I really wish it was more
+
+55
+00:04:16,680 --> 00:04:19,780
+system instead of Technic
+
+56
+00:04:21,079 --> 00:04:24,240
+uh well bill just opened the Lego City admin calendar oh we
+
+57
+00:04:24,240 --> 00:04:27,000
+have the Advent calendar I have not opened it yet today actually
+
+58
+00:04:27,000 --> 00:04:29,960
+I'll wait till Crystal comes home from work and then we can
+
+59
+00:04:29,960 --> 00:04:35,280
+open it together uh Enzo hi from Brazil
+
+60
+00:04:35,280 --> 00:04:40,360
+welcome finish the nine Ranger s oh Mr Sing excellent yes I
+
+61
+00:04:40,360 --> 00:04:44,600
+just put it together it's on the table as well put in
+
+62
+00:04:44,600 --> 00:04:48,800
+the mantle I made a little short about it which I just
+
+63
+00:04:48,800 --> 00:04:51,539
+posted on all social
+
+64
+00:04:56,280 --> 00:05:01,840
+media that is a uh Staple in our
+
+65
+00:05:01,840 --> 00:05:07,120
+household cranks little half stud offset cranks love these pieces
+
+66
+00:05:07,120 --> 00:05:12,199
+I use them all the time for well actually
+
+67
+00:05:12,199 --> 00:05:16,240
+in the reindeer uses these a lot of these to make the
+
+68
+00:05:16,240 --> 00:05:20,680
+reindeer Gallop it's a great way to get just really subtle motion
+
+69
+00:05:20,680 --> 00:05:25,759
+instead of you [Music] know normally when
+
+70
+00:05:25,759 --> 00:05:28,520
+you build a crank with normal Technic pieces the range of motion
+
+71
+00:05:28,520 --> 00:05:32,319
+is you know at least a full stud but or two studs
+
+72
+00:05:32,319 --> 00:05:36,380
+but uh with this you can make a nice little half
+
+73
+00:05:38,680 --> 00:05:43,460
+stud offset on the radius anyway
+
+74
+00:05:43,800 --> 00:05:48,880
+uh okay I'm looking for Technic connector oh there
+
+75
+00:05:48,880 --> 00:05:52,819
+it is well there it
+
+76
+00:05:53,520 --> 00:05:57,319
+is uh nothing can beat the cat one yeah the a uh
+
+77
+00:05:57,319 --> 00:05:59,479
+I actually do like the look of the cat one much better
+
+78
+00:05:59,479 --> 00:06:02,440
+I mean I may be a little bit biased in that but
+
+79
+00:06:02,440 --> 00:06:05,720
+uh I do love I do like the look of the brickbuilt
+
+80
+00:06:05,720 --> 00:06:10,960
+planets better than the like the big just curve round Sun
+
+81
+00:06:10,960 --> 00:06:14,360
+I haven't taken a really really close look at it cuz I
+
+82
+00:06:14,360 --> 00:06:17,599
+mean I'm going to get it obviously and uh build it on
+
+83
+00:06:17,599 --> 00:06:20,000
+stream at some point I don't even know when it comes out
+
+84
+00:06:20,000 --> 00:06:21,500
+but
+
+85
+00:06:22,240 --> 00:06:27,360
+uh but I don't really like the ah yeah I just don't
+
+86
+00:06:27,360 --> 00:06:29,880
+really I'm not really a big fan of the look over look
+
+87
+00:06:29,880 --> 00:06:35,580
+of it yes please don't spell what was in the Advent calendar
+
+88
+00:06:35,960 --> 00:06:39,319
+today uh what T today today we have actually I haven't even
+
+89
+00:06:39,319 --> 00:06:43,160
+tasted yet I just pulled a random bag out of the box
+
+90
+00:06:43,160 --> 00:06:45,840
+it's a fruity tea for sure I think it's wild I think
+
+91
+00:06:45,840 --> 00:06:49,580
+it's wild berry just random mix of
+
+92
+00:06:52,639 --> 00:06:55,780
+berries Victor hi from Poland
+
+93
+00:06:56,560 --> 00:06:59,720
+cheers uh can you say what the weather status it is sunny
+
+94
+00:06:59,720 --> 00:07:05,039
+out actually I'm like 4° C uh which
+
+95
+00:07:05,039 --> 00:07:09,599
+is pretty warm for this time of year here for December 1st
+
+96
+00:07:09,599 --> 00:07:12,160
+I will take it hopefully Crystal I actually we're going to the
+
+97
+00:07:12,160 --> 00:07:17,199
+climbing gym when Crystal gets home okay here we have a little
+
+98
+00:07:17,199 --> 00:07:21,259
+crankshaft which is cool I am a big fan of
+
+99
+00:07:22,199 --> 00:07:27,500
+crankshafts let's see what we get putting onto
+
+100
+00:07:28,319 --> 00:07:29,819
+this
+
+101
+00:07:30,800 --> 00:07:33,520
+I claim to build a roller coaster and little did I know
+
+102
+00:07:33,520 --> 00:07:36,539
+I am going to be building
+
+103
+00:07:37,720 --> 00:07:43,080
+some uh automat we're going to build some kinetic
+
+104
+00:07:43,080 --> 00:07:46,560
+movement everybody's a big fan why is this move so slow oh
+
+105
+00:07:46,560 --> 00:07:48,180
+I rammed
+
+106
+00:07:49,280 --> 00:07:52,080
+that I feel like there's a lot of friction in this for
+
+107
+00:07:52,080 --> 00:07:53,580
+some
+
+108
+00:07:57,960 --> 00:08:03,319
+reason anyway okay we will see okay
+
+109
+00:08:03,319 --> 00:08:07,940
+uh but we're making a little piston here which is really
+
+110
+00:08:12,840 --> 00:08:17,440
+cool I do love myself a good PR piston Mr Sing bought
+
+111
+00:08:17,440 --> 00:08:21,180
+two of these Space sets in order to build all three models
+
+112
+00:08:21,840 --> 00:08:25,080
+o yeah I actually to be honest I haven't even really looked
+
+113
+00:08:25,080 --> 00:08:30,259
+at the other models for this three in one uh
+
+114
+00:08:31,000 --> 00:08:36,260
+I'll take a look at the instructions after I'm done with
+
+115
+00:08:38,320 --> 00:08:43,800
+this maybe there's some other possibilities for motor
+
+116
+00:08:43,800 --> 00:08:46,060
+motorization and
+
+117
+00:08:49,839 --> 00:08:52,839
+such from all my models the cata solar system is the set
+
+118
+00:08:52,839 --> 00:08:55,920
+everyone finds interesting our Hamburg yeah I mean it is a pretty
+
+119
+00:08:55,920 --> 00:09:01,740
+interesting set Crystal uses it all the time for science
+
+120
+00:09:01,760 --> 00:09:07,399
+class every year when she does the uh her teaching module on
+
+121
+00:09:07,399 --> 00:09:12,720
+you know the solar system she makes them watch the a video
+
+122
+00:09:12,720 --> 00:09:18,279
+which is a bit crazy um and uh
+
+123
+00:09:18,279 --> 00:09:22,160
+you know it's pretty I mean obviously it's not completely accurate but
+
+124
+00:09:22,160 --> 00:09:26,500
+uh it's pretty pretty good illustration about how the
+
+125
+00:09:27,360 --> 00:09:30,820
+uh Earth and the moon
+
+126
+00:09:39,000 --> 00:09:43,480
+rotate oh man Milo yesterday was minus 13 here in Sweden whoa
+
+127
+00:09:43,480 --> 00:09:47,320
+yeah it's chil it's coming to Canada too well at least at
+
+128
+00:09:47,320 --> 00:09:50,339
+my part part of Canada for sure
+
+129
+00:09:51,040 --> 00:09:55,899
+uh it's coming I'm enjoying the warm weather while it
+
+130
+00:09:57,600 --> 00:10:01,200
+lasts ja hey I'm watching with my two sons 4 and six
+
+131
+00:10:01,200 --> 00:10:03,320
+Frank and Johnny yeah if you can say hello to them hey
+
+132
+00:10:03,320 --> 00:10:06,459
+how's it going we're in
+
+133
+00:10:08,519 --> 00:10:11,600
+Poland huge fan of Lego yeah who isn't a huge fan of
+
+134
+00:10:11,600 --> 00:10:17,220
+Lego okay uh well welcome to the stream
+
+135
+00:10:17,240 --> 00:10:22,399
+hopefully you're building cool stuff it is the season
+
+136
+00:10:22,399 --> 00:10:28,120
+to enjoy Lego even more I think once Christmas comes
+
+137
+00:10:28,120 --> 00:10:33,180
+if you celebrate Christmas that is or whatever holidays you happen to
+
+138
+00:10:34,000 --> 00:10:39,279
+uh celebrate this time of year uh
+
+139
+00:10:39,279 --> 00:10:43,480
+okay we're building a little shuttle it's pretty cool I need a
+
+140
+00:10:43,480 --> 00:10:47,459
+round one by one
+
+141
+00:10:48,959 --> 00:10:54,000
+really what is that I'll add that later
+
+142
+00:10:54,000 --> 00:10:56,260
+I'm sure it'll come out in the
+
+143
+00:10:58,040 --> 00:10:59,540
+wash
+
+144
+00:11:00,160 --> 00:11:06,079
+white cheese slopes minus 11 in Germany yesterday whoa
+
+145
+00:11:06,079 --> 00:11:08,579
+also too
+
+146
+00:11:10,800 --> 00:11:16,240
+chil when motorizing mocks is heat a concern could fully enclosed LEGO
+
+147
+00:11:16,240 --> 00:11:22,040
+motor overheat while running for prolonged periods of time uh
+
+148
+00:11:22,040 --> 00:11:24,839
+yeah I mean Motors definitely wear out if you're running them for
+
+149
+00:11:24,839 --> 00:11:26,540
+like a full
+
+150
+00:11:27,959 --> 00:11:32,459
+day it depends on a lot of factors how much
+
+151
+00:11:33,160 --> 00:11:37,560
+uh stress their load they put under I know like the GBC
+
+152
+00:11:37,560 --> 00:11:42,079
+guys go through Motors pretty often you know motor might last for
+
+153
+00:11:42,079 --> 00:11:46,600
+like a full few- day event but uh I mean actually that
+
+154
+00:11:46,600 --> 00:11:49,820
+being said I have not ever burnt out
+
+155
+00:11:51,800 --> 00:11:55,760
+a what any of my Motors yet actually but I don't really
+
+156
+00:11:55,760 --> 00:12:01,980
+run things for most things for a very long period of
+
+157
+00:12:03,000 --> 00:12:07,040
+time and most of the stuff I build isn't put doesn't put
+
+158
+00:12:07,040 --> 00:12:09,420
+the motors under a lot of
+
+159
+00:12:16,360 --> 00:12:21,519
+stress little space mini pig mini space
+
+160
+00:12:21,519 --> 00:12:25,620
+dude oh I see this goes on
+
+161
+00:12:26,839 --> 00:12:31,959
+here oh yeah that's cool that's cool we got a little little
+
+162
+00:12:31,959 --> 00:12:33,459
+space
+
+163
+00:12:35,800 --> 00:12:41,480
+ride it's very unpredictable but uh actually works really
+
+164
+00:12:41,480 --> 00:12:46,980
+well a little floppy that is
+
+165
+00:12:49,120 --> 00:12:55,320
+cool okay now we are on to building the
+
+166
+00:12:55,320 --> 00:12:59,339
+base of the coaster I assume
+
+167
+00:13:01,519 --> 00:13:05,519
+oh Jacob bought this for my son for Christmas oh that's awesome
+
+168
+00:13:05,519 --> 00:13:07,699
+it'll be a great Christmas
+
+169
+00:13:11,040 --> 00:13:17,139
+present oh my gosh our hamburg's car wi start yesterday that's
+
+170
+00:13:20,079 --> 00:13:22,920
+unfortunate and in Brazil it's too hot to even go in the
+
+171
+00:13:22,920 --> 00:13:24,420
+car
+
+172
+00:13:27,760 --> 00:13:29,260
+yeah
+
+173
+00:13:34,639 --> 00:13:39,120
+could tell a bit more about circuit cubes how many do you
+
+174
+00:13:39,120 --> 00:13:40,620
+have
+
+175
+00:13:41,360 --> 00:13:45,839
+uh circuit cubes yeah I mean they're pretty awesome I have uh
+
+176
+00:13:45,839 --> 00:13:48,160
+what do I have I think I have like three or four
+
+177
+00:13:48,160 --> 00:13:53,839
+Cubit Motors and maybe a couple of battery boxes
+
+178
+00:13:53,839 --> 00:13:56,519
+all you really need is the all I ever use are the
+
+179
+00:13:56,519 --> 00:14:02,000
+Cubit Motors so they're like that clear like transparent uh
+
+180
+00:14:02,000 --> 00:14:08,300
+2x4 brick ones bit they're like two 2x4 bricks tall I
+
+181
+00:14:10,240 --> 00:14:15,240
+think Cubit motor and then the Bluetooth battery box is uh what
+
+182
+00:14:15,240 --> 00:14:18,459
+I use although you can use the standard battery box
+
+183
+00:14:22,399 --> 00:14:26,279
+too and obviously you need a wire to connect them which I
+
+184
+00:14:26,279 --> 00:14:30,860
+believe should come with whatever you buy I don't even remember anymore
+
+185
+00:14:34,240 --> 00:14:39,680
+but okay I assume these are all the same cuz Lego
+
+186
+00:14:39,680 --> 00:14:43,220
+is like that make sure I put that one stud off
+
+187
+00:14:48,000 --> 00:14:53,279
+yep uh do anyone do the Lego Star Wars ad
+
+188
+00:14:53,279 --> 00:14:58,160
+encounter I don't have the Star Wars one this year actually I
+
+189
+00:14:58,160 --> 00:15:02,040
+might oh I should see if uh might try and pick up
+
+190
+00:15:02,040 --> 00:15:07,519
+the Marvel one actually I don't think I've ever built
+
+191
+00:15:07,519 --> 00:15:10,279
+a Marvel admin calendar I have the we have the city one
+
+192
+00:15:10,279 --> 00:15:13,860
+right now but the more of the
+
+193
+00:15:20,519 --> 00:15:24,920
+marer oh hello from India did I buy anything on Black Friday
+
+194
+00:15:24,920 --> 00:15:29,880
+actually you know what I never did I very tempted there were
+
+195
+00:15:29,880 --> 00:15:34,880
+like tons of sales in North America like the lion Knights Castle
+
+196
+00:15:34,880 --> 00:15:40,240
+was 25% off but I restrained myself I
+
+197
+00:15:40,240 --> 00:15:45,940
+knew realistically that they would just kind of if I bought
+
+198
+00:15:45,959 --> 00:15:49,040
+stuff especially big sets like that I just would never build it
+
+199
+00:15:49,040 --> 00:15:50,540
+anyway
+
+200
+00:15:52,920 --> 00:15:59,100
+so I was very proud of myself for showing restraint
+
+201
+00:16:06,399 --> 00:16:09,800
+oh my God G Jacobson when he worked outside all the time
+
+202
+00:16:09,800 --> 00:16:14,279
+anything above minus 17 was warm yeah I mean it's all relative
+
+203
+00:16:14,279 --> 00:16:16,620
+to what you're used to I
+
+204
+00:16:18,360 --> 00:16:23,399
+guess the human body can put up with a lot of stress
+
+205
+00:16:23,399 --> 00:16:24,899
+if
+
+206
+00:16:27,519 --> 00:16:29,019
+needed
+
+207
+00:16:33,560 --> 00:16:35,740
+okay we're getting
+
+208
+00:16:36,639 --> 00:16:40,259
+uh a lot of basic brick in
+
+209
+00:16:41,680 --> 00:16:45,019
+this make a nice secure
+
+210
+00:16:46,120 --> 00:16:49,259
+stand which I guess is
+
+211
+00:16:50,160 --> 00:16:53,579
+smart well Eric's got the friends
+
+212
+00:16:54,240 --> 00:16:59,500
+calendar for the animals oh yeah cuz it was on special
+
+213
+00:17:01,480 --> 00:17:04,740
+I don't know if I ever if I've ever had the friends
+
+214
+00:17:08,280 --> 00:17:13,160
+calendar man it's definitely a good basic brick parts pack jeez got
+
+215
+00:17:13,160 --> 00:17:17,299
+tons of uh 2x6
+
+216
+00:17:27,400 --> 00:17:28,900
+bricks
+
+217
+00:17:32,480 --> 00:17:38,400
+oh I definitely forgot some pieces at the top here
+
+218
+00:17:38,400 --> 00:17:43,559
+there we go good to go back on track well our
+
+219
+00:17:43,559 --> 00:17:47,020
+Hamburg bought a huge Star Wars ship saved 80
+
+220
+00:17:56,360 --> 00:18:02,700
+cool well indie has the Star Wars Advent calendar cheers
+
+221
+00:18:07,360 --> 00:18:10,440
+awesome uh what are we building we were building the Space 3
+
+222
+00:18:10,440 --> 00:18:14,960
+in1 roller coaster and then we're going to stick a motor on
+
+223
+00:18:14,960 --> 00:18:19,340
+it somehow or some Motors on
+
+224
+00:18:23,520 --> 00:18:26,159
+it we're going to see if we can actually get it to
+
+225
+00:18:26,159 --> 00:18:28,820
+run on its own
+
+226
+00:18:32,400 --> 00:18:34,720
+cuz nobody wants to play with things by hand anymore I me
+
+227
+00:18:34,720 --> 00:18:36,220
+come
+
+228
+00:18:37,120 --> 00:18:41,280
+on actually I'm super I'm sure it's super fun to play with
+
+229
+00:18:41,280 --> 00:18:45,539
+uh just pushing it around with your hand as well but
+
+230
+00:18:46,400 --> 00:18:51,520
+uh I'm a big fan of uh you know seeing
+
+231
+00:18:51,520 --> 00:18:54,059
+what's possible
+
+232
+00:18:54,960 --> 00:18:59,320
+obviously in terms of motorization and automation so that is what we're
+
+233
+00:18:59,320 --> 00:19:03,960
+going to do Daniel which Motors will you use and will you
+
+234
+00:19:03,960 --> 00:19:07,919
+use Mindstorms no I think I'm just for this video actually I
+
+235
+00:19:07,919 --> 00:19:12,280
+was thinking about how I could integrate mind storms into this system
+
+236
+00:19:12,280 --> 00:19:14,880
+but for this video I think I'm just going to stick some
+
+237
+00:19:14,880 --> 00:19:17,539
+power functions on it we're just going to run it
+
+238
+00:19:18,320 --> 00:19:24,020
+continuously but I was thinking for like a layout of some
+
+239
+00:19:24,559 --> 00:19:29,520
+sort you could definitely use mind storms to like stop and start
+
+240
+00:19:29,520 --> 00:19:33,840
+the whatever you have running on the roller coaster track that way
+
+241
+00:19:33,840 --> 00:19:38,740
+if you had some kind of like City transport
+
+242
+00:19:38,960 --> 00:19:42,280
+system a trolley or something that you had on the roller coaster
+
+243
+00:19:42,280 --> 00:19:48,080
+track you could uh have it run intermittently which would be pretty
+
+244
+00:19:48,080 --> 00:19:50,580
+cool I
+
+245
+00:19:55,200 --> 00:19:59,539
+think well that is clearly not the way that goes
+
+246
+00:20:01,400 --> 00:20:04,580
+uh I need another one of
+
+247
+00:20:07,039 --> 00:20:11,059
+these green 2x2 jumper plate looks
+
+248
+00:20:13,360 --> 00:20:18,799
+cool weird cool weird color yeah it's like bright
+
+249
+00:20:18,799 --> 00:20:22,240
+green uh is this Lego set of element stores yeah it actually
+
+250
+00:20:22,240 --> 00:20:27,120
+came out relatively recently it's pretty new uh so yeah it should
+
+251
+00:20:27,120 --> 00:20:31,260
+be available unless it's sold
+
+252
+00:20:37,799 --> 00:20:41,100
+out all right we need two of
+
+253
+00:20:42,760 --> 00:20:45,980
+these yes please no
+
+254
+00:20:51,320 --> 00:20:56,419
+spamming what made you get interested in Lego
+
+255
+00:20:56,960 --> 00:21:01,760
+uh well like most kids I was uh probably a gift from
+
+256
+00:21:01,760 --> 00:21:05,059
+my parents when I was
+
+257
+00:21:07,280 --> 00:21:13,380
+young that's how I started building was a long long time
+
+258
+00:21:18,320 --> 00:21:21,860
+ago of course I put that in the wrong
+
+259
+00:21:27,039 --> 00:21:28,539
+spot
+
+260
+00:21:32,600 --> 00:21:34,100
+1977
+
+261
+00:21:35,720 --> 00:21:39,880
+forklift yeah actually it probably wasn't the very first set I got
+
+262
+00:21:39,880 --> 00:21:42,559
+I think the first set we got was probably just Universal building
+
+263
+00:21:42,559 --> 00:21:47,940
+blocks just one of the like basic sets
+
+264
+00:21:48,919 --> 00:21:52,779
+um and then maybe I got some
+
+265
+00:21:55,520 --> 00:21:58,860
+space sets after that
+
+266
+00:22:01,039 --> 00:22:06,279
+classic space and then eventually the Technic forklift
+
+267
+00:22:06,279 --> 00:22:08,520
+which yeah I keep uh I keep forgetting I need to add
+
+268
+00:22:08,520 --> 00:22:12,659
+that to like a I need to somehow get the parts for
+
+269
+00:22:13,080 --> 00:22:16,000
+that so we can build it on stream that would be a
+
+270
+00:22:16,000 --> 00:22:19,620
+cool Retro Retro build
+
+271
+00:22:23,799 --> 00:22:28,460
+stream any suggestions of how to get in the mock building
+
+272
+00:22:29,159 --> 00:22:32,360
+well first you need some pieces for one thing take some sets
+
+273
+00:22:32,360 --> 00:22:35,360
+apart I mean actually the crater 3 in one sets would be
+
+274
+00:22:35,360 --> 00:22:40,679
+a great start for that just pick up a small one
+
+275
+00:22:40,679 --> 00:22:43,640
+Whatever theme you're interested in you know and just see what else
+
+276
+00:22:43,640 --> 00:22:47,480
+you can build using it I mean it might not be very
+
+277
+00:22:47,480 --> 00:22:51,539
+pretty or anything don't worry don't even worry about that but just
+
+278
+00:22:51,960 --> 00:22:56,960
+uh you know start putting bricks together and seeing what you can
+
+279
+00:22:56,960 --> 00:22:58,460
+do
+
+280
+00:23:01,400 --> 00:23:06,760
+the other strategy is just to uh you could use
+
+281
+00:23:06,760 --> 00:23:11,880
+Studio to build things digitally uh if you don't have a lot
+
+282
+00:23:11,880 --> 00:23:14,900
+of pieces on hand or you don't want to take a set
+
+283
+00:23:14,919 --> 00:23:18,700
+apart I don't know just start start building
+
+284
+00:23:22,679 --> 00:23:27,600
+walls Britney Campbell is this your first live video no definitely not
+
+285
+00:23:27,600 --> 00:23:31,900
+uh you already built with the basic bricks
+
+286
+00:23:33,159 --> 00:23:38,279
+box is that a question for me I have no
+
+287
+00:23:38,279 --> 00:23:41,960
+idea ever thought of doing like stop motion Lego oh my gosh
+
+288
+00:23:41,960 --> 00:23:45,760
+my friend yes I have done stop motion Lego what you don't
+
+289
+00:23:45,760 --> 00:23:49,720
+you don't remember the stop motion videos I made 20 years ago
+
+290
+00:23:49,720 --> 00:23:51,220
+very
+
+291
+00:23:51,919 --> 00:23:55,320
+disappointed actually my friend Dean and I had a very popular one
+
+292
+00:23:55,320 --> 00:24:00,179
+back in the day probably over 20 years ago
+
+293
+00:24:01,400 --> 00:24:04,279
+now but uh no I have no interest in doing stop motion
+
+294
+00:24:04,279 --> 00:24:07,340
+anymore it's just way way too much
+
+295
+00:24:08,440 --> 00:24:12,559
+work I mean maybe at some point I might play around with
+
+296
+00:24:12,559 --> 00:24:16,340
+it again but I doubt it I really don't have
+
+297
+00:24:18,039 --> 00:24:23,340
+time I'd rather design new models to be
+
+298
+00:24:26,799 --> 00:24:28,299
+honest
+
+299
+00:24:29,080 --> 00:24:34,140
+okay our frame is coming along coming along
+
+300
+00:24:38,360 --> 00:24:43,539
+well big gray frame everybody
+
+301
+00:24:43,679 --> 00:24:46,580
+loves everybody loves
+
+302
+00:24:56,480 --> 00:25:00,960
+that there saw I'm sorry for not seeing I will find it
+
+303
+00:25:00,960 --> 00:25:05,240
+Lego Battle Master oh no don't be sorry that was like 20
+
+304
+00:25:05,240 --> 00:25:08,919
+years ago my friend uh it's also not on this channel it's
+
+305
+00:25:08,919 --> 00:25:14,279
+on my secondary Channel if you search for the rescue
+
+306
+00:25:14,279 --> 00:25:18,559
+uh I mean it's terrible by today's standards it's like really low
+
+307
+00:25:18,559 --> 00:25:23,640
+res I actually use some software to upsample it
+
+308
+00:25:23,640 --> 00:25:28,179
+I think I we originally shot it in like 240
+
+309
+00:25:29,039 --> 00:25:33,320
+uh like 320 by 240 like super low Reds because at the
+
+310
+00:25:33,320 --> 00:25:36,679
+time this was 20 years ago remember we had just a crappy
+
+311
+00:25:36,679 --> 00:25:42,059
+web camera uh to do
+
+312
+00:25:45,120 --> 00:25:49,100
+it haa stand in the
+
+313
+00:25:56,679 --> 00:25:58,179
+corner
+
+314
+00:26:00,640 --> 00:26:03,120
+uh how many subscribers I have I mean you can just look
+
+315
+00:26:03,120 --> 00:26:05,220
+that up quite
+
+316
+00:26:06,559 --> 00:26:11,100
+easily I Believe YouTube tells you right at the top
+
+317
+00:26:17,600 --> 00:26:21,020
+somewhere uh okay oh
+
+318
+00:26:22,640 --> 00:26:27,679
+interesting why am I missing did I put an
+
+319
+00:26:27,679 --> 00:26:32,760
+extra one of those somewhere that I wasn't supposed to Palisade
+
+320
+00:26:32,760 --> 00:26:35,340
+brick is it in the
+
+321
+00:26:37,840 --> 00:26:42,020
+bag I bet I'm just going to get a new
+
+322
+00:26:43,240 --> 00:26:48,539
+one nobody hunts for bricks when I can just jump to the
+
+323
+00:26:53,760 --> 00:26:58,039
+collection uh yeah g Jacobson has got a good suggestion bu used
+
+324
+00:26:58,039 --> 00:27:03,520
+Lego lot watch YouTube video experiment with Lego connections and get creative
+
+325
+00:27:03,520 --> 00:27:08,960
+that's my advice yep yeah I mean I think
+
+326
+00:27:08,960 --> 00:27:14,220
+a lot of times inspiration just comes from like randomly putting pieces
+
+327
+00:27:15,600 --> 00:27:20,200
+together you know just see see what you can do let's build
+
+328
+00:27:20,200 --> 00:27:23,080
+some table scraps that's what we call them when you're just like
+
+329
+00:27:23,080 --> 00:27:28,020
+playing around with pieces and seeing what happens
+
+330
+00:27:31,200 --> 00:27:33,419
+well I guess we need
+
+331
+00:27:36,320 --> 00:27:39,260
+some roller coaster
+
+332
+00:27:49,279 --> 00:27:52,279
+track oh I hate it when Lego says have missing pizzas as
+
+333
+00:27:52,279 --> 00:27:55,820
+well I wish all my Lego sets came with
+
+334
+00:27:56,519 --> 00:27:58,019
+pizza
+
+335
+00:28:02,279 --> 00:28:04,880
+but yeah no that's terrible when they actually come with I mean
+
+336
+00:28:04,880 --> 00:28:06,919
+I don't know if this is actually a missing piece that could
+
+337
+00:28:06,919 --> 00:28:10,519
+have just might still be in the bag or something but yeah
+
+338
+00:28:10,519 --> 00:28:14,480
+it' be super annoying if it was actually missing a [Music]
+
+339
+00:28:15,480 --> 00:28:21,120
+piece well that's a I need a regular
+
+340
+00:28:21,120 --> 00:28:26,480
+curved yeah so actually these uh sloped curved rails
+
+341
+00:28:26,480 --> 00:28:28,700
+these are the first ones
+
+342
+00:28:30,200 --> 00:28:34,360
+first ones I have which are pretty cool it's an interesting piece
+
+343
+00:28:34,360 --> 00:28:39,220
+you can make some like spiral Spiral
+
+344
+00:28:41,320 --> 00:28:42,820
+thingies
+
+345
+00:28:43,360 --> 00:28:48,320
+uh did you build the melan Falcon from the Valentine's oh no
+
+346
+00:28:48,320 --> 00:28:54,260
+I never did I still have the original melan Falon in a
+
+347
+00:28:55,840 --> 00:28:58,340
+box uh
+
+348
+00:28:59,360 --> 00:29:02,500
+I doubt I will ever build it to be
+
+349
+00:29:07,039 --> 00:29:10,200
+honest Milo I've W Lego Power functions mode in a battery box
+
+350
+00:29:10,200 --> 00:29:13,100
+but the battery box got damaged oh that
+
+351
+00:29:16,120 --> 00:29:21,279
+sucks that is a shame oops I jumped ahead whoa
+
+352
+00:29:21,279 --> 00:29:24,640
+whoa where am I here okay oh now we get to build
+
+353
+00:29:24,640 --> 00:29:27,820
+what I can only assume is the Earth
+
+354
+00:29:30,919 --> 00:29:33,100
+or at least some kind of
+
+355
+00:29:45,519 --> 00:29:50,880
+planet get some round dishes
+
+356
+00:29:50,880 --> 00:29:55,059
+o on boat stud these
+
+357
+00:29:56,159 --> 00:30:00,059
+funky the they're kind of
+
+358
+00:30:01,120 --> 00:30:06,240
+semi-transparent or translucent very vaguely but like kind of
+
+359
+00:30:06,240 --> 00:30:07,740
+shimmery
+
+360
+00:30:08,880 --> 00:30:14,779
+metallic I don't think I have anything in this color it's
+
+361
+00:30:26,240 --> 00:30:30,799
+cool I see we get to stick this on the side some
+
+362
+00:30:30,799 --> 00:30:33,179
+random Planet that's
+
+363
+00:30:34,159 --> 00:30:36,899
+cool that is
+
+364
+00:30:41,360 --> 00:30:45,120
+cool I missed the dark ray cheese wedges on the small stand
+
+365
+00:30:45,120 --> 00:30:46,620
+yeah
+
+366
+00:30:53,679 --> 00:30:57,740
+probably that'll happen oh there's the nose of the
+
+367
+00:31:02,880 --> 00:31:08,600
+spaceship dark wedge oh yeah there it is dark wedge
+
+368
+00:31:08,600 --> 00:31:13,460
+dark gray wedge cheese slope there we go
+
+369
+00:31:15,639 --> 00:31:20,760
+excellent and what else we got here a little flag
+
+370
+00:31:20,760 --> 00:31:25,840
+exploration flag somebody dropped on the train oh yeah I
+
+371
+00:31:25,840 --> 00:31:28,139
+see I assume these are
+
+372
+00:31:31,159 --> 00:31:36,200
+Footprints somebody Footprints leading to a flag that's cool it's a nice
+
+373
+00:31:36,200 --> 00:31:37,700
+little
+
+374
+00:31:38,360 --> 00:31:44,419
+detail oh there's the missing piece thanks good eye good eye my
+
+375
+00:31:47,639 --> 00:31:52,840
+friend okay that's it for bag number number
+
+376
+00:31:52,840 --> 00:31:57,659
+one and two so now we need three and four
+
+377
+00:32:00,950 --> 00:32:02,450
+[Music]
+
+378
+00:32:03,679 --> 00:32:07,200
+have I heard what Lego is doing to that small store you
+
+379
+00:32:07,200 --> 00:32:09,740
+no I have not heard anything about
+
+380
+00:32:10,399 --> 00:32:13,760
+that I got a duplicate in my Harry Potter admin calendar last
+
+381
+00:32:13,760 --> 00:32:18,799
+year oo the drel and Owl but
+
+382
+00:32:18,799 --> 00:32:23,500
+miss the owy that's
+
+383
+00:32:26,080 --> 00:32:27,580
+unfortunate
+
+384
+00:32:29,000 --> 00:32:34,320
+how much do this Lego set I have no idea to be
+
+385
+00:32:34,320 --> 00:32:36,940
+honest I can't
+
+386
+00:32:38,440 --> 00:32:43,480
+remember 120 Canadian maybe 130 Canadian I don't know maybe
+
+387
+00:32:43,480 --> 00:32:45,740
+100 bucks [Music]
+
+388
+00:32:48,679 --> 00:32:51,580
+us we need a monreal
+
+389
+00:32:52,159 --> 00:32:57,360
+remake yeah I believe that ship is sailed okay hey
+
+390
+00:32:57,360 --> 00:33:03,170
+we got some space [Music]
+
+391
+00:33:04,039 --> 00:33:09,679
+people excellent some scientists
+
+392
+00:33:09,679 --> 00:33:15,279
+an astronaut in full get up
+
+393
+00:33:15,279 --> 00:33:20,480
+where my heads where my heads at
+
+394
+00:33:20,480 --> 00:33:23,899
+it's cool it's quite the elaborate
+
+395
+00:33:25,960 --> 00:33:27,460
+outfit
+
+396
+00:33:29,559 --> 00:33:32,299
+I guess we'll just give her hair for
+
+397
+00:33:34,880 --> 00:33:40,299
+now little Command Center woman little astronaut
+
+398
+00:33:40,730 --> 00:33:42,230
+[Music]
+
+399
+00:33:44,399 --> 00:33:48,740
+lady that is cool where my legs
+
+400
+00:33:49,360 --> 00:33:53,340
+at I'm sure I'll find them
+
+401
+00:33:55,960 --> 00:33:57,460
+okay
+
+402
+00:34:01,159 --> 00:34:02,659
+on
+
+403
+00:34:05,519 --> 00:34:08,019
+to part
+
+404
+00:34:25,879 --> 00:34:27,379
+two
+
+405
+00:34:33,960 --> 00:34:39,440
+uh Milo has built a moving tank with the motor in it
+
+406
+00:34:39,440 --> 00:34:45,139
+but yeah since the B box is broken that's less useful for
+
+407
+00:34:49,639 --> 00:34:54,119
+sure have a little ladder it's important for the Minifigs to have
+
+408
+00:34:54,119 --> 00:35:00,020
+ways to get around t my friend actually I don't drink
+
+409
+00:35:01,280 --> 00:35:06,619
+coffee I never ever really started to be honest and
+
+410
+00:35:07,480 --> 00:35:08,980
+uh
+
+411
+00:35:10,680 --> 00:35:14,060
+yeah apparently I don't need
+
+412
+00:35:17,599 --> 00:35:21,859
+it okay uh we have some random
+
+413
+00:35:23,720 --> 00:35:27,300
+propeller I don't know what that's all about
+
+414
+00:35:29,760 --> 00:35:33,760
+it's on a friction pin so you can't even spin it oh
+
+415
+00:35:33,760 --> 00:35:37,859
+you can't spin it interesting oh because
+
+416
+00:35:39,599 --> 00:35:44,240
+the the pin Joiner is on a non-f friction pin at the
+
+417
+00:35:44,240 --> 00:35:45,740
+bottom
+
+418
+00:35:48,480 --> 00:35:52,500
+excellent well now I think we're building some kind of Command
+
+419
+00:35:54,400 --> 00:36:00,119
+Module oh yeah there's the white legs good eye
+
+420
+00:36:00,119 --> 00:36:04,760
+10:35 a.m. here in Michigan us yes same time as I am
+
+421
+00:36:04,760 --> 00:36:08,420
+eastern time Canada or
+
+422
+00:36:25,720 --> 00:36:27,220
+us
+
+423
+00:36:35,560 --> 00:36:38,700
+okay lot of useful white
+
+424
+00:36:40,480 --> 00:36:45,040
+pieces after building the ski hill I've had my feel of building
+
+425
+00:36:45,040 --> 00:36:50,240
+with white the ski hill and the Sant the reindeer there's
+
+426
+00:36:50,240 --> 00:36:51,940
+a lot of
+
+427
+00:36:54,400 --> 00:36:58,660
+white but uh yeah this looks pretty cool cool so
+
+428
+00:37:18,000 --> 00:37:23,520
+far oh was a Turn Style I see
+
+429
+00:37:23,520 --> 00:37:28,720
+that makes sense to get on the ride I guess it
+
+430
+00:37:28,720 --> 00:37:32,599
+is and here I was thinking it was some kind of realistic
+
+431
+00:37:32,599 --> 00:37:38,079
+uh space uh Outpost or something but I guess really it's just
+
+432
+00:37:38,079 --> 00:37:40,220
+an amusement park
+
+433
+00:37:55,599 --> 00:37:57,099
+ride
+
+434
+00:37:57,640 --> 00:37:59,940
+this must be the
+
+435
+00:38:03,000 --> 00:38:05,940
+entrance slash Command
+
+436
+00:38:11,400 --> 00:38:14,540
+Module or maybe the gift
+
+437
+00:38:25,520 --> 00:38:27,020
+shop
+
+438
+00:38:29,359 --> 00:38:32,220
+bartender have you thought about building your own Lego
+
+439
+00:38:33,240 --> 00:38:37,200
+Clock uh yeah I mean I was thinking about it back in
+
+440
+00:38:37,200 --> 00:38:42,819
+I mean I built a I built the ball clock 15 years
+
+441
+00:38:42,880 --> 00:38:46,720
+ago actually it's like the first video I ever made that went
+
+442
+00:38:46,720 --> 00:38:51,880
+viral was the ball clock back in the day
+
+443
+00:38:51,880 --> 00:38:57,420
+mind you it doesn't keep any accurate time but uh you know
+
+444
+00:39:02,200 --> 00:39:05,640
+okay uh and then uh yeah every once in a while I
+
+445
+00:39:05,640 --> 00:39:09,240
+think about building a clock but I feel like a lot of
+
+446
+00:39:09,240 --> 00:39:12,880
+people have built clocks over the years so I don't think I
+
+447
+00:39:12,880 --> 00:39:15,740
+really there's anything I can really add to
+
+448
+00:39:20,960 --> 00:39:26,940
+the putting on backwards obviously because that's what I do
+
+449
+00:39:29,680 --> 00:39:31,300
+there we
+
+450
+00:39:37,000 --> 00:39:40,339
+go well allergies are kicking
+
+451
+00:39:48,480 --> 00:39:52,960
+in oh my God it's the problem with living in this place
+
+452
+00:39:52,960 --> 00:39:54,460
+in
+
+453
+00:39:55,400 --> 00:39:56,900
+winter
+
+454
+00:40:02,960 --> 00:40:05,740
+staying inside all the time there's so much
+
+455
+00:40:06,720 --> 00:40:10,819
+dust the allergies hit
+
+456
+00:40:17,440 --> 00:40:22,520
+okay this is kind of a funky little building we have like
+
+457
+00:40:22,520 --> 00:40:27,579
+inner doors curved walls like what's that
+
+458
+00:40:28,280 --> 00:40:31,819
+about we can't even really like get inside
+
+459
+00:40:32,960 --> 00:40:35,460
+to to
+
+460
+00:40:38,720 --> 00:40:43,099
+play it's definitely sparsely decorated as
+
+461
+00:40:55,160 --> 00:40:59,760
+well uh G Jacobson your ball clock was a cool build oh
+
+462
+00:40:59,760 --> 00:41:03,020
+cheers thanks really appreciate
+
+463
+00:41:04,359 --> 00:41:09,520
+that bless me thank you very much allergic to Lego actually
+
+464
+00:41:09,520 --> 00:41:13,599
+I do think uh maybe not the Lego but all the like
+
+465
+00:41:13,599 --> 00:41:16,480
+Storage Solutions and stuff I have in here some of the plastic
+
+466
+00:41:16,480 --> 00:41:22,099
+I'm sure is not very like healthy all the off Casas
+
+467
+00:41:25,240 --> 00:41:26,740
+thing
+
+468
+00:41:29,000 --> 00:41:33,619
+it is probably not the greatest environment to be constantly exposed to
+
+469
+00:41:38,400 --> 00:41:42,560
+24/7 I always feel so much better when we're traveling in the
+
+470
+00:41:42,560 --> 00:41:46,280
+summer but it's hard to tell if that's like environmental cuz we
+
+471
+00:41:46,280 --> 00:41:50,119
+spend a lot of time in the desert which in general is
+
+472
+00:41:50,119 --> 00:41:55,280
+much better for if you have allergies and stuff than Ottawa
+
+473
+00:41:55,280 --> 00:41:59,619
+at least anyway there's just too many things growing
+
+474
+00:42:10,359 --> 00:42:15,440
+here okay we got some other see some Technic things going on
+
+475
+00:42:15,440 --> 00:42:19,140
+here do we get some other kind of
+
+476
+00:42:20,880 --> 00:42:26,660
+uh things that move oh maybe not
+
+477
+00:42:27,760 --> 00:42:29,740
+what are we building
+
+478
+00:42:37,480 --> 00:42:43,119
+here some kind of Hydroponics green and blue
+
+479
+00:42:43,119 --> 00:42:45,260
+something must be
+
+480
+00:42:49,960 --> 00:42:53,319
+living how do you prevent your builds from collecting dust usually I
+
+481
+00:42:53,319 --> 00:42:59,319
+don't have them on display they usually live in boxes actually there's
+
+482
+00:42:59,319 --> 00:43:02,200
+there's stuff like on the shelf behind me and on this shelf
+
+483
+00:43:02,200 --> 00:43:06,319
+over here they're pretty dusty now but uh all the all the
+
+484
+00:43:06,319 --> 00:43:09,000
+models I have on display upstairs are in a glass cabinet so
+
+485
+00:43:09,000 --> 00:43:13,880
+that helps a lot and then uh a lot of the stuff
+
+486
+00:43:13,880 --> 00:43:17,480
+I'm working on is in a actually you might be able to
+
+487
+00:43:17,480 --> 00:43:22,280
+see it yeah this cabinet here has doors on it so this
+
+488
+00:43:22,280 --> 00:43:27,200
+is where I store a lot of Works in progress or models
+
+489
+00:43:27,200 --> 00:43:31,200
+that I set aside for a little while or even models that
+
+490
+00:43:31,200 --> 00:43:36,359
+are finished that just need a place to go and uh that's
+
+491
+00:43:36,359 --> 00:43:39,520
+definitely a good way to keep the dust off them and then
+
+492
+00:43:39,520 --> 00:43:42,099
+a lot of stuff just lives in
+
+493
+00:43:47,319 --> 00:43:48,819
+boxes
+
+494
+00:43:50,839 --> 00:43:56,579
+okay uh where does this go opposite flag
+
+495
+00:43:57,960 --> 00:44:01,520
+looks like some kind of air locky thing it's interesting we put
+
+496
+00:44:01,520 --> 00:44:05,359
+all those trans clear uh bricks inside and we don't even get
+
+497
+00:44:05,359 --> 00:44:06,980
+to see
+
+498
+00:44:09,359 --> 00:44:14,520
+them o Super Chat from hosan cheers
+
+499
+00:44:14,520 --> 00:44:19,599
+thanks very much appreciated loves my videos
+
+500
+00:44:19,599 --> 00:44:25,000
+that's uh that's awesome thanks so much for the
+
+501
+00:44:25,000 --> 00:44:29,240
+donation bartender oh yes the ball clock very nice not seen it
+
+502
+00:44:29,240 --> 00:44:31,579
+before yeah it's pretty
+
+503
+00:44:33,640 --> 00:44:36,640
+old uh in France here we do have a great thing like
+
+504
+00:44:36,640 --> 00:44:39,540
+Lego but not that
+
+505
+00:44:40,480 --> 00:44:45,440
+big Dr magic must have patience to do all this construction uh
+
+506
+00:44:45,440 --> 00:44:48,780
+yeah obviously it takes a little while
+
+507
+00:44:50,160 --> 00:44:55,280
+um but uh a lot of people find it therapeutic it's calming
+
+508
+00:44:55,280 --> 00:45:00,059
+and relaxing it's very satisfying to put pieces
+
+509
+00:45:01,720 --> 00:45:05,480
+together it's also real really satisfying when you start building your own
+
+510
+00:45:05,480 --> 00:45:10,520
+models to when they finally come together sometimes it can be
+
+511
+00:45:10,520 --> 00:45:15,680
+frustrating when things don't work out but uh uh
+
+512
+00:45:15,680 --> 00:45:18,520
+what do we got with this guy each one of these is
+
+513
+00:45:18,520 --> 00:45:20,020
+slightly
+
+514
+00:45:24,520 --> 00:45:27,700
+different oo portal
+
+515
+00:45:32,520 --> 00:45:37,400
+gold uh do you get neck back pain from building for too
+
+516
+00:45:37,400 --> 00:45:43,260
+long oh AR now gets it uh
+
+517
+00:45:44,160 --> 00:45:49,680
+whoa Planet just went flying in general no because I
+
+518
+00:45:49,680 --> 00:45:52,839
+do when I'm building normally I do walk around a lot to
+
+519
+00:45:52,839 --> 00:45:57,920
+go get parts and stuff when I'm live streaming actually sometimes
+
+520
+00:45:57,920 --> 00:46:01,400
+my back gets a little sore because I'm not cuz I'm just
+
+521
+00:46:01,400 --> 00:46:05,400
+standing in the same place pretty much the entire time wow I
+
+522
+00:46:05,400 --> 00:46:07,960
+mean if I'm only doing like an hour or an hour and
+
+523
+00:46:07,960 --> 00:46:11,400
+a half live stream it's fine but when I do a three-hour
+
+524
+00:46:11,400 --> 00:46:16,520
+live stream it does get a little hard on the
+
+525
+00:46:16,520 --> 00:46:21,680
+body man I love these curved pieces you can make some
+
+526
+00:46:21,680 --> 00:46:26,740
+nice cool smooth shaping these days with Lego
+
+527
+00:46:27,000 --> 00:46:29,859
+oh this is definitely some kind of hydroponic
+
+528
+00:46:30,800 --> 00:46:35,839
+Bay we have some soil and what I
+
+529
+00:46:35,839 --> 00:46:40,540
+assume will be some kind of plants that's
+
+530
+00:46:46,480 --> 00:46:51,339
+cool we definitely need to make food to feed the
+
+531
+00:46:54,800 --> 00:46:56,300
+astronauts
+
+532
+00:47:01,720 --> 00:47:07,200
+do you build standing up yes I'm standing up right now
+
+533
+00:47:07,200 --> 00:47:11,839
+and actually yeah I do have a desk over there it's actually
+
+534
+00:47:11,839 --> 00:47:16,119
+standup convertible sit down standup desk but I don't actually use it
+
+535
+00:47:16,119 --> 00:47:19,220
+anymore it's just full of crap right
+
+536
+00:47:20,920 --> 00:47:25,400
+now uh where will you put it after where will put this
+
+537
+00:47:25,400 --> 00:47:29,099
+uh probably just take it apart to be honest
+
+538
+00:47:31,680 --> 00:47:34,760
+uh I have I made recommendation for your channel to a person
+
+539
+00:47:34,760 --> 00:47:39,640
+from another country oh cheers thanks much appreciated o deep deep my
+
+540
+00:47:39,640 --> 00:47:42,940
+videos are so satisfying yeah the shorts
+
+541
+00:47:44,960 --> 00:47:50,079
+are seem to be quite popular oh we got our little
+
+542
+00:47:50,079 --> 00:47:53,180
+Greenhouse at the top super
+
+543
+00:47:54,720 --> 00:47:56,220
+cool
+
+544
+00:47:58,800 --> 00:48:01,440
+uh I have a Star Wars X-Wing to build but I'm afraid
+
+545
+00:48:01,440 --> 00:48:04,079
+to lose a piece well yeah you definitely want to be an
+
+546
+00:48:04,079 --> 00:48:10,240
+environment where you don't lose pieces losing pieces is
+
+547
+00:48:10,240 --> 00:48:13,819
+uh undesirable for
+
+548
+00:48:16,240 --> 00:48:21,480
+sure oh yes that's cool got a little
+
+549
+00:48:21,480 --> 00:48:26,540
+hatch for our for our Greenhouse
+
+550
+00:48:28,440 --> 00:48:33,440
+well very nice I love the style of the top of this
+
+551
+00:48:33,440 --> 00:48:35,660
+it's really cool
+
+552
+00:48:37,920 --> 00:48:42,319
+design do I build standing up yes I am I'm standing up
+
+553
+00:48:42,319 --> 00:48:44,599
+uh nothing better than the new brick smell when you open a
+
+554
+00:48:44,599 --> 00:48:48,780
+new Lego set yeah it is pretty nice
+
+555
+00:48:49,720 --> 00:48:56,099
+uh where are you based I am in Canada
+
+556
+00:48:59,760 --> 00:49:05,520
+Ottawa uh congrats on my work cheers thanks much appreciated
+
+557
+00:49:05,520 --> 00:49:07,559
+uh do you ever wish to go back in time to Toys
+
+558
+00:49:07,559 --> 00:49:10,920
+R Us and just get all those medieval sets in blue coat
+
+559
+00:49:10,920 --> 00:49:12,700
+sets for
+
+560
+00:49:13,880 --> 00:49:15,380
+cheap
+
+561
+00:49:17,440 --> 00:49:22,440
+yeah I mean there are definitely some cool classic sets that would
+
+562
+00:49:22,440 --> 00:49:26,859
+be nice to go back and get some of but uh
+
+563
+00:49:27,960 --> 00:49:30,819
+sadly that ship is
+
+564
+00:49:34,000 --> 00:49:39,040
+sailed in each pack you have an explication I'm not sure what
+
+565
+00:49:39,040 --> 00:49:42,000
+you're saying there uh how do you feel about too many new
+
+566
+00:49:42,000 --> 00:49:48,180
+specialized pieces or now yeah uh well that does not go
+
+567
+00:49:48,440 --> 00:49:51,920
+there yeah I'm definitely not a fan of specialized pieces I am
+
+568
+00:49:51,920 --> 00:49:56,020
+a fan of like new pieces that kind of complete the system
+
+569
+00:49:57,880 --> 00:50:00,400
+um but yeah you know it is what it is I mean
+
+570
+00:50:00,400 --> 00:50:04,579
+Lego is definitely pumping out new pieces like crazy these days
+
+571
+00:50:09,799 --> 00:50:14,440
+uh it almost seems a bit overwhelming sometimes because there's just uh
+
+572
+00:50:14,440 --> 00:50:18,940
+so many new pieces to keep track
+
+573
+00:50:20,520 --> 00:50:25,640
+of get some Rando antennas that's cool little antenna array that's that's
+
+574
+00:50:25,640 --> 00:50:29,299
+pretty awesome communication is
+
+575
+00:50:30,640 --> 00:50:33,819
+key in every space
+
+576
+00:50:34,400 --> 00:50:35,900
+station
+
+577
+00:50:37,160 --> 00:50:41,819
+cool getting there five and
+
+578
+00:50:44,119 --> 00:50:47,260
+six not five and
+
+579
+00:50:50,920 --> 00:50:54,400
+nine wow it's huge yeah this set is actually quite big I
+
+580
+00:50:54,400 --> 00:50:56,299
+was uh
+
+581
+00:50:57,640 --> 00:51:00,680
+I was uh a little concerned about whether I I have to
+
+582
+00:51:00,680 --> 00:51:05,280
+raise this this camera up quite a bit in anticipation I still
+
+583
+00:51:05,280 --> 00:51:09,859
+don't know if I'll get it all in frame uh but we'll
+
+584
+00:51:11,799 --> 00:51:16,359
+see Dr magic went to Canada a long time ago it is
+
+585
+00:51:16,359 --> 00:51:19,880
+quite a nice country uh it's a very big country there is
+
+586
+00:51:19,880 --> 00:51:21,380
+a
+
+587
+00:51:22,119 --> 00:51:25,200
+lot there is a lot to it okay yeah I think we
+
+588
+00:51:25,200 --> 00:51:29,359
+only I think we've only buildt like half of the coaster layout
+
+589
+00:51:29,359 --> 00:51:34,119
+I think there's like a whole other loop on this side so
+
+590
+00:51:34,119 --> 00:51:37,020
+which I guess we're building the base of
+
+591
+00:51:40,079 --> 00:51:44,260
+now so yeah this thing is going to be quite
+
+592
+00:51:47,680 --> 00:51:50,619
+large hey what's up
+
+593
+00:51:52,319 --> 00:51:56,180
+yerb not much we're building a space coaster
+
+594
+00:52:00,880 --> 00:52:03,299
+let me organize some of these
+
+595
+00:52:12,280 --> 00:52:16,119
+pieces this Technic really difficult for a first-time Builder I never had
+
+596
+00:52:16,119 --> 00:52:20,359
+time Lego as a kid yeah I actually I would depends what
+
+597
+00:52:20,359 --> 00:52:24,920
+Technic set you get I think some of the big Flagship Technic
+
+598
+00:52:24,920 --> 00:52:29,960
+sets are actually quite complicated um I mean I think the instructions
+
+599
+00:52:29,960 --> 00:52:34,000
+are quite good but you I think in for some of them
+
+600
+00:52:34,000 --> 00:52:36,980
+you do have to kind of pay attention to what's going
+
+601
+00:52:37,920 --> 00:52:42,000
+on with system builds you can kind of like pay half attention
+
+602
+00:52:42,000 --> 00:52:44,079
+and you know whatever if you forget if you miss a piece
+
+603
+00:52:44,079 --> 00:52:49,680
+or something it's usually not critical you can usually fix it later
+
+604
+00:52:49,680 --> 00:52:53,880
+or you can just like it'll be okay if you just leave
+
+605
+00:52:53,880 --> 00:52:57,200
+it out but but in Technic builds if you get something slightly
+
+606
+00:52:57,200 --> 00:53:02,520
+off or get something wrong especially with like complex gear systems uh
+
+607
+00:53:02,520 --> 00:53:07,640
+sometimes it's really hard to recover from mistakes and if you have
+
+608
+00:53:07,640 --> 00:53:11,079
+to go back and like pull things apart it's Can it can
+
+609
+00:53:11,079 --> 00:53:13,980
+be quite
+
+610
+00:53:16,839 --> 00:53:19,799
+cumbersome so yeah I think you General you do have to pay
+
+611
+00:53:19,799 --> 00:53:24,640
+attention a little bit more whereas for this build for example I'm
+
+612
+00:53:24,640 --> 00:53:27,960
+just kind of like like throwing the pieces on and if something
+
+613
+00:53:27,960 --> 00:53:30,420
+gets put in the wrong spot
+
+614
+00:53:32,200 --> 00:53:34,900
+well it'll be
+
+615
+00:53:36,760 --> 00:53:41,839
+okay o random Technic bricks what are we going to be doing
+
+616
+00:53:41,839 --> 00:53:43,819
+with these I
+
+617
+00:53:51,319 --> 00:53:52,819
+wonder
+
+618
+00:53:54,160 --> 00:53:55,660
+uh
+
+619
+00:53:57,680 --> 00:54:02,380
+let see did I do that
+
+620
+00:54:06,319 --> 00:54:11,400
+interesting it's like the they have different pins oh
+
+621
+00:54:11,400 --> 00:54:16,740
+cuz I didn't put all the pins in I need another
+
+622
+00:54:18,119 --> 00:54:24,079
+pin there we go two black pins two gray
+
+623
+00:54:24,079 --> 00:54:25,579
+pins
+
+624
+00:54:29,880 --> 00:54:35,079
+oh my gosh then of course putting
+
+625
+00:54:35,079 --> 00:54:37,920
+helps if you put the mole on one side first and then
+
+626
+00:54:37,920 --> 00:54:42,020
+put the thing on all right there we
+
+627
+00:54:47,440 --> 00:54:52,520
+go what's your favorite plant plant piece oh I
+
+628
+00:54:52,520 --> 00:54:55,579
+actually do really like the new Fern piece
+
+629
+00:54:56,960 --> 00:55:02,720
+big fan of the new Fern piece I got to say uh
+
+630
+00:55:02,720 --> 00:55:06,160
+but actually these pieces are really cool too actually I do like
+
+631
+00:55:06,160 --> 00:55:08,660
+this piece very
+
+632
+00:55:09,200 --> 00:55:14,480
+nice but the fern one might be my new favorite
+
+633
+00:55:14,480 --> 00:55:18,220
+uh yeah and maybe followed by this
+
+634
+00:55:24,000 --> 00:55:25,500
+one
+
+635
+00:55:34,720 --> 00:55:39,380
+okay man there definitely very lot of steps in
+
+636
+00:55:40,200 --> 00:55:44,299
+this don't want to put too many pieces on at the same
+
+637
+00:55:50,319 --> 00:55:54,039
+time sometimes I think they could put just a few more steps
+
+638
+00:55:54,039 --> 00:55:58,819
+a few more pieces for First Step people figured
+
+639
+00:55:59,980 --> 00:56:01,480
+[Music]
+
+640
+00:56:14,720 --> 00:56:18,020
+out okay I'm already
+
+641
+00:56:18,880 --> 00:56:24,599
+uh running low on Space here keyboard's got to go up
+
+642
+00:56:24,599 --> 00:56:26,260
+out of
+
+643
+00:56:45,680 --> 00:56:50,799
+way okay sorry again little behind on the
+
+644
+00:56:50,799 --> 00:56:55,599
+chat as usual that's a four by 2x4 first oh no I
+
+645
+00:56:55,599 --> 00:56:57,500
+already put two
+
+646
+00:57:10,680 --> 00:57:13,559
+before uh what time is it here it's almost 11 o'clock in
+
+647
+00:57:13,559 --> 00:57:15,059
+the
+
+648
+00:57:19,240 --> 00:57:23,359
+morning uh personal feel like old more angular Lego sets have certain
+
+649
+00:57:23,359 --> 00:57:25,859
+charm to them yeah for sure
+
+650
+00:57:26,760 --> 00:57:30,680
+I mean it's a balance between having it look like Lego and
+
+651
+00:57:30,680 --> 00:57:34,119
+you know like the new Spider-Man bus that was just released it
+
+652
+00:57:34,119 --> 00:57:39,240
+it almost looks like a little uncanny cuz it's it's
+
+653
+00:57:39,240 --> 00:57:44,520
+like almost close to being a like hyper realistic
+
+654
+00:57:44,520 --> 00:57:48,020
+it's too it's like too realistic it's less
+
+655
+00:57:50,280 --> 00:57:51,780
+legoy
+
+656
+00:57:53,799 --> 00:57:57,880
+uh yeah Cy new sets with all the special pieces don't even
+
+657
+00:57:57,880 --> 00:58:01,740
+look like Lego sometimes yeah
+
+658
+00:58:06,559 --> 00:58:10,039
+uh should I ask for a place made up for Lego construction
+
+659
+00:58:10,039 --> 00:58:15,200
+in my future house yes obviously everybody needs a Lego build
+
+660
+00:58:15,200 --> 00:58:16,700
+room
+
+661
+00:58:23,039 --> 00:58:28,119
+uh yeah there's not many small Lego Technic pieces or sets
+
+662
+00:58:28,119 --> 00:58:29,619
+I
+
+663
+00:58:32,319 --> 00:58:36,039
+guess I guess once you're like into Technic you just want the
+
+664
+00:58:36,039 --> 00:58:37,539
+flagship
+
+665
+00:58:42,799 --> 00:58:46,380
+models what is that like gray like
+
+666
+00:58:46,920 --> 00:58:51,280
+gray did you ever build the Apple Tower no have zero interest
+
+667
+00:58:51,280 --> 00:58:57,020
+in building the Apple Tower it see seems very
+
+668
+00:58:57,079 --> 00:59:02,200
+like whoops those are definitely the wrong color it seems like
+
+669
+00:59:02,200 --> 00:59:06,140
+a thoroughly unpleasant build to be
+
+670
+00:59:07,200 --> 00:59:10,839
+honest would you find reading the instructions for the Lego sets that
+
+671
+00:59:10,839 --> 00:59:14,799
+they came with easier or did you find it easier to look
+
+672
+00:59:14,799 --> 00:59:19,559
+it up on the internet and do it from there uh I
+
+673
+00:59:19,559 --> 00:59:21,740
+don't know I think it depends
+
+674
+00:59:22,640 --> 00:59:25,980
+on what kind of experience you
+
+675
+00:59:26,880 --> 00:59:31,119
+like if I'm sitting down at a table to build I would
+
+676
+00:59:31,119 --> 00:59:36,299
+definitely just use the instructions that come with the
+
+677
+00:59:38,079 --> 00:59:42,640
+set because uh I think it's a much nicer building experience but
+
+678
+00:59:42,640 --> 00:59:48,200
+if I'm I'm at the computer and I have the computer on
+
+679
+00:59:48,200 --> 00:59:50,940
+uh I mean this
+
+680
+00:59:51,720 --> 00:59:55,140
+is this isn't uh
+
+681
+00:59:55,760 --> 01:00:01,260
+any more difficult than using the paper
+
+682
+01:00:04,240 --> 01:00:07,640
+instructions but it depends on a lot of things like how good
+
+683
+01:00:07,640 --> 01:00:09,460
+your screen
+
+684
+01:00:12,079 --> 01:00:16,160
+is if I was sitting at a table I definitely would not
+
+685
+01:00:16,160 --> 01:00:18,539
+use a tablet or
+
+686
+01:00:23,000 --> 01:00:28,079
+anything okay I think we're we're getting close to finishing the
+
+687
+01:00:28,079 --> 01:00:32,599
+the framing for the base is actually super solid which I guess
+
+688
+01:00:32,599 --> 01:00:34,380
+it has to
+
+689
+01:00:35,480 --> 01:00:38,740
+be uh did I finish that
+
+690
+01:00:50,240 --> 01:00:53,799
+yeah uh such a such of the well some of the big
+
+691
+01:00:53,799 --> 01:00:58,119
+sets can be bor boring to build there's much repetition yeah for
+
+692
+01:00:58,119 --> 01:01:01,839
+sure yeah like some of them I have like zero interest in
+
+693
+01:01:01,839 --> 01:01:06,280
+the a tower for one the Coliseum looks kind of dull the
+
+694
+01:01:06,280 --> 01:01:11,799
+captain Shield oh my gosh that looks absolutely terrible to build
+
+695
+01:01:11,799 --> 01:01:14,299
+uh or Captain America
+
+696
+01:01:18,480 --> 01:01:23,880
+shield but sometimes that's just uh you know necessary
+
+697
+01:01:23,880 --> 01:01:27,799
+evil to get something that looks good I mean certainly I've designed
+
+698
+01:01:27,799 --> 01:01:33,240
+my own models that are very repetitive I mean the Domino machine
+
+699
+01:01:33,240 --> 01:01:39,119
+is the Domino ring is absolutely terrible to build
+
+700
+01:01:39,119 --> 01:01:44,200
+you have to build like 64 of all the Domino stands and
+
+701
+01:01:44,200 --> 01:01:47,760
+everything oh my God it was such a slug to put that
+
+702
+01:01:47,760 --> 01:01:49,260
+thing
+
+703
+01:01:51,039 --> 01:01:54,160
+together sometimes that's the that's the only way to build it is
+
+704
+01:01:54,160 --> 01:02:00,619
+to okay we got an eyeball some kind of alien happening over
+
+705
+01:02:15,520 --> 01:02:21,500
+here every good space set needs a some kind of alien alien
+
+706
+01:02:22,400 --> 01:02:24,839
+life how are you going to motorize this are you going to
+
+707
+01:02:24,839 --> 01:02:29,400
+use a chain left no I think this set the small sets
+
+708
+01:02:29,400 --> 01:02:34,480
+uh I kind of prototyped some stuff it's like
+
+709
+01:02:34,480 --> 01:02:38,079
+too much work I think to implement a chain into like a
+
+710
+01:02:38,079 --> 01:02:42,160
+the small coaster set so I designed like uh some kind of
+
+711
+01:02:42,160 --> 01:02:47,200
+a flywheel accelerator system that uh you can tack onto the
+
+712
+01:02:47,200 --> 01:02:51,400
+side at least that's what I prototyped anyway we'll uh we'll see
+
+713
+01:02:51,400 --> 01:02:54,859
+how well it works
+
+714
+01:02:59,599 --> 01:03:05,700
+we will get to that once uh once the build is
+
+715
+01:03:12,039 --> 01:03:15,640
+finished and then it'll either work or it won't hopefully it won't
+
+716
+01:03:15,640 --> 01:03:17,740
+take too long to find
+
+717
+01:03:23,279 --> 01:03:24,779
+out
+
+718
+01:03:30,839 --> 01:03:35,980
+two of these then one of those
+
+719
+01:03:38,440 --> 01:03:42,240
+excellent It's Lego moving away from base plates yeah I mean they've
+
+720
+01:03:42,240 --> 01:03:46,000
+been well I think the only things that use base plates anymore
+
+721
+01:03:46,000 --> 01:03:50,099
+are the Modular Buildings uh so
+
+722
+01:03:51,039 --> 01:03:53,640
+yeah do you already know how to motorize this yeah I have
+
+723
+01:03:53,640 --> 01:03:57,920
+a pretty good idea the motor will be on the track no
+
+724
+01:03:57,920 --> 01:04:03,520
+I'm not going to motorize the actual like physical roller coaster
+
+725
+01:04:03,520 --> 01:04:08,720
+it's like too small uh sometimes find myself buying sets
+
+726
+01:04:08,720 --> 01:04:11,779
+for parts yeah I mean I do that all the
+
+727
+01:04:12,640 --> 01:04:15,960
+time in fact that's mostly why I buy sets is just to
+
+728
+01:04:15,960 --> 01:04:17,460
+get
+
+729
+01:04:18,039 --> 01:04:20,720
+parts actually I guess that's not true anymore back in the day
+
+730
+01:04:20,720 --> 01:04:22,339
+it certainly
+
+731
+01:04:23,200 --> 01:04:27,279
+was it's not a very good way to get parts unless you're
+
+732
+01:04:27,279 --> 01:04:29,640
+buying certain like I think this set is a good set to
+
+733
+01:04:29,640 --> 01:04:32,279
+get parts wow you get a lot of basic bricks and plates
+
+734
+01:04:32,279 --> 01:04:34,180
+which are Super
+
+735
+01:04:34,839 --> 01:04:40,079
+handy oh and we have a little mounted camera that's
+
+736
+01:04:40,079 --> 01:04:43,559
+cool but of course it's facing away from the alien that's coming
+
+737
+01:04:43,559 --> 01:04:48,059
+out of the system super
+
+738
+01:04:50,880 --> 01:04:55,839
+cool that's pretty cool little alien I got to see you always
+
+739
+01:04:55,839 --> 01:04:57,900
+got to watch out for
+
+740
+01:04:59,319 --> 01:05:02,220
+aliens invading your
+
+741
+01:05:06,799 --> 01:05:08,299
+space
+
+742
+01:05:11,039 --> 01:05:15,400
+uh bashy hey Jay just thanks so much for making the maze
+
+743
+01:05:15,400 --> 01:05:20,400
+oh cheers old school throwback it's a set that means a lot
+
+744
+01:05:20,400 --> 01:05:23,079
+to me and it's still my favorite set I own oh that's
+
+745
+01:05:23,079 --> 01:05:28,400
+awesome yeah I was uh super surprised that I actually got selected
+
+746
+01:05:28,400 --> 01:05:30,839
+back in the day I don't think they would make it anymore
+
+747
+01:05:30,839 --> 01:05:34,140
+there's too many other good uh Lego idea
+
+748
+01:05:36,720 --> 01:05:41,599
+sets have you seen the new tech Technic Space sets yeah yeah
+
+749
+01:05:41,599 --> 01:05:46,960
+I have I'm not as I mentioned at the beginning of this
+
+750
+01:05:46,960 --> 01:05:50,520
+uh I'm not super excited about the look of Yi but uh
+
+751
+01:05:50,520 --> 01:05:52,140
+you know
+
+752
+01:05:53,079 --> 01:05:56,059
+whatever that's why I built my
+
+753
+01:05:59,039 --> 01:06:03,160
+own uh fly wheels to push it up or will it be
+
+754
+01:06:03,160 --> 01:06:07,839
+fullon launch coaster yeah I mean I think we can play around
+
+755
+01:06:07,839 --> 01:06:11,119
+with that I don't think it Mo will move fast enough to
+
+756
+01:06:11,119 --> 01:06:17,079
+like launch the coaster up the hill but uh
+
+757
+01:06:17,079 --> 01:06:20,099
+yeah basically it'll just push the coaster up
+
+758
+01:06:21,960 --> 01:06:25,180
+the up the slopes hopefully
+
+759
+01:06:26,200 --> 01:06:30,880
+these angled curved slopes will be a little bit of a challenge
+
+760
+01:06:30,880 --> 01:06:36,660
+so excuse me we'll see we'll see how it
+
+761
+01:06:42,880 --> 01:06:47,299
+goes okay we got another support
+
+762
+01:06:51,880 --> 01:06:55,140
+excellent and even more support
+
+763
+01:07:03,440 --> 01:07:07,619
+s oh Dr mag got to go cheers thanks for
+
+764
+01:07:09,520 --> 01:07:12,680
+joining love to see you build a custom ghost train style build
+
+765
+01:07:12,680 --> 01:07:16,000
+from a Fairground oh yeah surprising haven't made a set for that
+
+766
+01:07:16,000 --> 01:07:18,000
+one yet oh yeah I mean that's a great idea I mean
+
+767
+01:07:18,000 --> 01:07:22,559
+they've built a ghost train in the past so maybe it's coming
+
+768
+01:07:22,559 --> 01:07:25,779
+I mean they can't build everything at once
+
+769
+01:07:26,680 --> 01:07:30,339
+so sometimes they got to spread it out a little
+
+770
+01:07:36,799 --> 01:07:41,559
+bit okay that's clearly a good support Oo we got some more
+
+771
+01:07:41,559 --> 01:07:47,039
+coaster [Music] pieces here is an uphill or a downhill
+
+772
+01:07:47,039 --> 01:07:51,799
+who knows oh I clearly forgot to I supposed to put two
+
+773
+01:07:51,799 --> 01:07:57,099
+oh yeah where's my other uphill there it
+
+774
+01:07:58,200 --> 01:08:01,220
+is okay now we're getting
+
+775
+01:08:03,160 --> 01:08:08,599
+some some height where do all these glow-in-the-dark pieces go
+
+776
+01:08:08,599 --> 01:08:10,380
+I guess they're
+
+777
+01:08:22,839 --> 01:08:24,339
+coming
+
+778
+01:08:26,120 --> 01:08:28,339
+I got to go turn the heater
+
+779
+01:08:29,520 --> 01:08:32,540
+off starting to get a little
+
+780
+01:08:36,040 --> 01:08:39,759
+hot you miss the challenge of building with your very limited number
+
+781
+01:08:39,759 --> 01:08:45,279
+of Parts H like most of us morals yeah but
+
+782
+01:08:45,279 --> 01:08:48,400
+the beautiful thing especially about like crater 3 in one sets is
+
+783
+01:08:48,400 --> 01:08:50,759
+that if I ever want to feel like I want to build
+
+784
+01:08:50,759 --> 01:08:54,799
+something with limited parts I just bust open a crater 3 in
+
+785
+01:08:54,799 --> 01:08:59,159
+one set and I just see what I can build with just
+
+786
+01:08:59,159 --> 01:09:03,199
+using the parts in that set which is a great way to
+
+787
+01:09:03,199 --> 01:09:08,100
+to force yourself to build from a limited parts pallet
+
+788
+01:09:08,279 --> 01:09:11,880
+again haven't done that in a while actually I guess the last
+
+789
+01:09:11,880 --> 01:09:13,659
+time was
+
+790
+01:09:16,719 --> 01:09:20,920
+the uh was the bricks and functions set which I guess actually
+
+791
+01:09:20,920 --> 01:09:24,219
+wasn't that long ago
+
+792
+01:09:25,199 --> 01:09:28,779
+but yeah it's a great way to exercise
+
+793
+01:09:33,040 --> 01:09:38,819
+creativity fornal liked every one of my short videos cheers
+
+794
+01:09:41,640 --> 01:09:45,000
+thanks uh idea when the new Lego cata set will be released
+
+795
+01:09:45,000 --> 01:09:49,239
+I have no clue no I haven't heard from them in a
+
+796
+01:09:49,239 --> 01:09:51,960
+while uh okay what do we got here I think we get
+
+797
+01:09:51,960 --> 01:09:54,380
+a new bag s and eight
+
+798
+01:10:04,760 --> 01:10:10,340
+I think this is it for the for the actual coaster
+
+799
+01:10:13,080 --> 01:10:15,840
+base isn't this a three in one set yeah it is it
+
+800
+01:10:15,840 --> 01:10:19,480
+is a three in one set maybe I'll see if I can
+
+801
+01:10:19,480 --> 01:10:21,620
+build something else with
+
+802
+01:10:22,640 --> 01:10:24,140
+it
+
+803
+01:10:27,920 --> 01:10:30,659
+crazy Turtle really enjoys my builds
+
+804
+01:10:31,920 --> 01:10:34,820
+cheers that is much
+
+805
+01:10:37,040 --> 01:10:42,120
+appreciated oh I have to put my turntables together myself that's a
+
+806
+01:10:42,120 --> 01:10:46,920
+relatively new thing LEGO has been doing hope if I did it
+
+807
+01:10:46,920 --> 01:10:48,540
+the right
+
+808
+01:10:51,800 --> 01:10:55,400
+way oh no what the the H did I do I jumped
+
+809
+01:10:55,400 --> 01:11:00,140
+ahead too much oh burnt orange
+
+810
+01:11:01,320 --> 01:11:06,500
+tiles that's cool I like this color
+
+811
+01:11:06,520 --> 01:11:09,020
+actually as
+
+812
+01:11:10,120 --> 01:11:14,920
+well Al little the burnt orange against the regular orange is a
+
+813
+01:11:14,920 --> 01:11:19,020
+little bit of a clashes a
+
+814
+01:11:22,560 --> 01:11:24,060
+bit
+
+815
+01:11:34,719 --> 01:11:39,880
+okay what are we building here some kind of crazy vehicle
+
+816
+01:11:39,880 --> 01:11:41,500
+of some
+
+817
+01:11:47,960 --> 01:11:54,060
+sort one by one rounds as Wheels that's pretty interesting
+
+818
+01:11:55,080 --> 01:11:58,340
+like micro scale Rover of some
+
+819
+01:12:01,360 --> 01:12:03,860
+sort it's
+
+820
+01:12:16,320 --> 01:12:21,659
+fun ah Corner plate where or where is my corner
+
+821
+01:12:22,480 --> 01:12:28,420
+plate oh there it is I see it I see
+
+822
+01:12:34,679 --> 01:12:40,980
+it oo trans orange 4x4 Corner
+
+823
+01:12:52,440 --> 01:12:53,940
+tiles
+
+824
+01:13:08,440 --> 01:13:13,560
+it's definitely some kind of little Rover oh yeah it's like a
+
+825
+01:13:13,560 --> 01:13:18,840
+Curiosity Rover it's even got a little camera mounted
+
+826
+01:13:18,840 --> 01:13:20,540
+on the
+
+827
+01:13:22,360 --> 01:13:27,440
+top where is I need a pearl
+
+828
+01:13:27,440 --> 01:13:31,260
+gold telescope where the heck is
+
+829
+01:13:32,520 --> 01:13:35,020
+that hiding
+
+830
+01:13:39,880 --> 01:13:42,739
+somewhere oh there it
+
+831
+01:13:43,520 --> 01:13:46,139
+is there it
+
+832
+01:13:52,360 --> 01:13:53,860
+is
+
+833
+01:13:56,320 --> 01:14:01,360
+okay okay okay okay we got oh I see the rover
+
+834
+01:14:01,360 --> 01:14:05,320
+sits on a turntable oh yeah it's digging up the terrain I
+
+835
+01:14:05,320 --> 01:14:10,520
+guess the Orange is supposed to be kind of like Mars
+
+836
+01:14:10,520 --> 01:14:12,020
+I
+
+837
+01:14:13,000 --> 01:14:19,000
+guess I see we're supporting the
+
+838
+01:14:19,000 --> 01:14:21,199
+upper section of the coaster here so we're going to add some
+
+839
+01:14:21,199 --> 01:14:23,780
+axles for stability
+
+840
+01:14:26,159 --> 01:14:31,219
+so when I put these stanions up I assume it will
+
+841
+01:14:32,000 --> 01:14:33,500
+be
+
+842
+01:14:34,600 --> 01:14:36,100
+relatively
+
+843
+01:14:52,280 --> 01:14:53,780
+strong
+
+844
+01:14:54,800 --> 01:14:58,300
+I think that's it for that yeah okay
+
+845
+01:15:01,400 --> 01:15:05,659
+uh yeah and now yeah we are
+
+846
+01:15:08,360 --> 01:15:12,860
+building some platforms which I
+
+847
+01:15:14,880 --> 01:15:18,300
+assume The Coasters will go
+
+848
+01:15:21,120 --> 01:15:24,420
+on support the track piece
+
+849
+01:15:27,679 --> 01:15:30,340
+the track pieces need your
+
+850
+01:15:33,239 --> 01:15:36,219
+support oh there's my
+
+851
+01:15:43,800 --> 01:15:45,300
+bracket
+
+852
+01:15:52,199 --> 01:15:53,699
+okay
+
+853
+01:15:57,480 --> 01:16:01,760
+is this table connected with the legs the studio video it looked
+
+854
+01:16:01,760 --> 01:16:06,219
+like just put it on top Loosely yeah
+
+855
+01:16:08,199 --> 01:16:12,120
+uh the legs those legs flimsy legs are gone this table now
+
+856
+01:16:12,120 --> 01:16:17,739
+sits on cabinets basically I have cabinets underneath but
+
+857
+01:16:17,760 --> 01:16:23,159
+uh the top is just loose this is a 4T
+
+858
+01:16:23,159 --> 01:16:28,440
+by 8T sheet of well laminated plywood basically
+
+859
+01:16:28,440 --> 01:16:33,659
+or press board or something and yeah it just sits Loosely on
+
+860
+01:16:35,360 --> 01:16:41,080
+top of the cabinets underneath it I mean it's so
+
+861
+01:16:41,080 --> 01:16:44,620
+heavy it's definitely not moving very
+
+862
+01:16:48,760 --> 01:16:54,000
+easily the original legs I had it on the original leg frame
+
+863
+01:16:54,000 --> 01:16:59,320
+they were pretty flimsy actually they did not
+
+864
+01:16:59,320 --> 01:17:01,699
+hold up super well
+
+865
+01:17:04,120 --> 01:17:07,060
+o we have a flexible
+
+866
+01:17:07,679 --> 01:17:11,620
+rubber lift arm thing I wonder what that's
+
+867
+01:17:12,199 --> 01:17:16,840
+for I do like this piece actually this like flexible rubber one
+
+868
+01:17:16,840 --> 01:17:21,560
+it's comes in very handy in some situations I don't know what
+
+869
+01:17:21,560 --> 01:17:24,139
+they're doing using it for
+
+870
+01:17:26,360 --> 01:17:28,580
+this piece but
+
+871
+01:17:42,800 --> 01:17:45,620
+uh one two
+
+872
+01:17:52,000 --> 01:17:53,500
+three
+
+873
+01:17:57,639 --> 01:17:59,580
+getting some big
+
+874
+01:18:01,600 --> 01:18:07,860
+stands if we look from the side yeah we're definitely getting some
+
+875
+01:18:21,920 --> 01:18:27,679
+height we ever nled the pieces before building a set no
+
+876
+01:18:27,679 --> 01:18:31,880
+uh definitely not not uh super organized anyway I mean sometimes I
+
+877
+01:18:31,880 --> 01:18:34,500
+try and separate pieces out
+
+878
+01:18:37,080 --> 01:18:42,080
+roughly uh but definitely not three I need three of these where
+
+879
+01:18:42,080 --> 01:18:46,940
+the heck's the other one go one two oh back
+
+880
+01:18:48,920 --> 01:18:53,540
+here perspective is a little odd on this angle
+
+881
+01:19:09,920 --> 01:19:14,780
+okay what color is that that is black there it
+
+882
+01:19:16,600 --> 01:19:22,199
+is oh and a gray one interesting odd that they put
+
+883
+01:19:22,199 --> 01:19:27,260
+one of each color in it seems a little
+
+884
+01:19:47,760 --> 01:19:51,260
+unnecessary what seven long
+
+885
+01:19:51,840 --> 01:19:53,340
+axle
+
+886
+01:20:07,159 --> 01:20:10,500
+okay where does this one
+
+887
+01:20:21,760 --> 01:20:23,260
+go
+
+888
+01:20:25,360 --> 01:20:31,120
+uh oh Joko is back hey I'm trying to
+
+889
+01:20:31,120 --> 01:20:35,540
+get involved with the Lego Community how are you guys uh we're
+
+890
+01:20:36,480 --> 01:20:42,159
+great build my Space Coaster Alpine versus Nordic skiing skating versus
+
+891
+01:20:42,159 --> 01:20:44,020
+classic style
+
+892
+01:20:45,639 --> 01:20:49,800
+uh I mean I used to ski Alpine Ski quite a bit
+
+893
+01:20:49,800 --> 01:20:51,960
+back in the day and then I used to snowboard quite a
+
+894
+01:20:51,960 --> 01:20:54,159
+bit back in the day as well as well but lately definitely
+
+895
+01:20:54,159 --> 01:20:59,000
+Nordic skiing it's just so much easier we can actually just go
+
+896
+01:20:59,000 --> 01:21:02,840
+like right outside our house just there's Trails down by the river
+
+897
+01:21:02,840 --> 01:21:09,020
+in the winter that are uh even groomed
+
+898
+01:21:09,040 --> 01:21:14,120
+uh like 500 meters from our house so that's pretty awesome
+
+899
+01:21:14,120 --> 01:21:19,739
+and then Ottawa has a ton of Nordic skiing trails in the
+
+900
+01:21:20,239 --> 01:21:25,100
+area so yeah I definitely PR it's cheap it's
+
+901
+01:21:26,159 --> 01:21:31,679
+easy it's good the Alpine skiing around here is not that great
+
+902
+01:21:31,679 --> 01:21:36,659
+eastern Ontario is it's like East Coast Canada it's like too
+
+903
+01:21:38,120 --> 01:21:41,219
+icy it's not like the west
+
+904
+01:21:42,360 --> 01:21:47,480
+coast and uh we usually just do classic
+
+905
+01:21:47,480 --> 01:21:52,040
+style is the entire basement for your Lego area Yep this whole
+
+906
+01:21:52,040 --> 01:21:54,980
+room in the Bas basement which is
+
+907
+01:21:55,800 --> 01:21:59,880
+like I can't remember how big it is 4 M by 7
+
+908
+01:21:59,880 --> 01:22:01,380
+m
+
+909
+01:22:02,800 --> 01:22:07,800
+no yeah something like that seven yeah I think it's 4X 8
+
+910
+01:22:07,800 --> 01:22:10,340
+m this whole
+
+911
+01:22:10,960 --> 01:22:14,620
+room it is entirely for
+
+912
+01:22:16,600 --> 01:22:23,060
+Lego why do you not use a chair cuz I like standing
+
+913
+01:22:23,159 --> 01:22:27,679
+especially when I'm building my own models uh I go like collect
+
+914
+01:22:27,679 --> 01:22:31,000
+parts so often if I was sitting it's actually really annoying because
+
+915
+01:22:31,000 --> 01:22:35,760
+you got to get up every time you have to get up
+
+916
+01:22:35,760 --> 01:22:39,400
+out of the chair go get parts come back sit down then
+
+917
+01:22:39,400 --> 01:22:43,860
+just do it again in like 30 seconds so
+
+918
+01:22:44,960 --> 01:22:49,340
+uh so yeah that's why I usually build standing
+
+919
+01:22:51,560 --> 01:22:53,060
+up
+
+920
+01:22:55,960 --> 01:23:00,040
+got some kind of doohickey going on here I don't know what
+
+921
+01:23:00,040 --> 01:23:03,040
+this is but it looks like it moves and it might do
+
+922
+01:23:03,040 --> 01:23:06,980
+something fun let's hope
+
+923
+01:23:17,040 --> 01:23:22,639
+so know why we didn't build this while we were building the
+
+924
+01:23:22,639 --> 01:23:27,600
+stand it would have been a lot more stable but whatever o
+
+925
+01:23:27,600 --> 01:23:31,020
+and we got a little coaster piece on the
+
+926
+01:23:36,040 --> 01:23:39,179
+top oh and then we got some
+
+927
+01:23:39,880 --> 01:23:43,710
+Flames got some Flames [Music]
+
+928
+01:23:49,159 --> 01:23:53,440
+happening looking forward to how you motorize this yeah what' I say
+
+929
+01:23:53,440 --> 01:23:55,159
+at the beginning it would be like an hour and a half
+
+930
+01:23:55,159 --> 01:23:58,920
+to build this so we're getting close maybe a little more than
+
+931
+01:23:58,920 --> 01:24:01,260
+an hour and a half to build the
+
+932
+01:24:02,000 --> 01:24:04,480
+set an hour and a half to two hours to build a
+
+933
+01:24:04,480 --> 01:24:09,699
+set and then hopefully the motorizing won't take that
+
+934
+01:24:14,000 --> 01:24:16,560
+long I'm sure we can get it up and running in like
+
+935
+01:24:16,560 --> 01:24:18,179
+half an
+
+936
+01:24:20,800 --> 01:24:26,239
+hour clearly some kind of comment oh that's
+
+937
+01:24:26,239 --> 01:24:30,280
+cool I don't know how this is going to get activated but
+
+938
+01:24:30,280 --> 01:24:34,560
+uh we have some kind of I bet when the roller coaster
+
+939
+01:24:34,560 --> 01:24:39,060
+comes past it like pushes it
+
+940
+01:24:40,280 --> 01:24:44,739
+up I do love me some Play
+
+941
+01:24:51,360 --> 01:24:52,860
+features
+
+942
+01:25:04,800 --> 01:25:06,940
+how many of these do I need
+
+943
+01:25:08,320 --> 01:25:12,580
+six one two three four five
+
+944
+01:25:16,239 --> 01:25:17,739
+six
+
+945
+01:25:21,280 --> 01:25:22,780
+interesting
+
+946
+01:25:31,159 --> 01:25:35,940
+oh and we finally finish
+
+947
+01:25:36,719 --> 01:25:40,219
+off putting all the coaster pieces
+
+948
+01:25:43,040 --> 01:25:44,540
+on
+
+949
+01:25:48,760 --> 01:25:54,460
+excellent hopefully it all lines up we did this
+
+950
+01:26:00,400 --> 01:26:03,619
+right oh yes it works
+
+951
+01:26:08,280 --> 01:26:13,100
+excellent and then we tile these connections all
+
+952
+01:26:21,199 --> 01:26:22,699
+up
+
+953
+01:26:24,400 --> 01:26:29,790
+and then we put some random lights on everybody needs some
+
+954
+01:26:29,790 --> 01:26:31,290
+[Music]
+
+955
+01:26:32,239 --> 01:26:33,739
+random
+
+956
+01:26:43,320 --> 01:26:47,440
+detailing do you like kaying actually no I never really got into
+
+957
+01:26:47,440 --> 01:26:48,940
+kayaking
+
+958
+01:26:50,719 --> 01:26:55,639
+much I'm actually not much of a water sports kind of guy
+
+959
+01:26:55,639 --> 01:27:00,619
+I don't SW I don't swim very well so
+
+960
+01:27:00,760 --> 01:27:06,679
+uh excuse me I'm too skinny I sink
+
+961
+01:27:06,679 --> 01:27:12,980
+uh so yeah I've never really well that's the other
+
+962
+01:27:13,639 --> 01:27:17,119
+clip where the heck does that go oh I see it goes
+
+963
+01:27:17,119 --> 01:27:18,619
+under
+
+964
+01:27:20,159 --> 01:27:25,840
+there so yeah I never never really got into many water sports
+
+965
+01:27:25,840 --> 01:27:29,580
+which is a shame because uh they do look pretty
+
+966
+01:27:30,520 --> 01:27:35,400
+fun but there's only so much one can do in life and
+
+967
+01:27:35,400 --> 01:27:40,639
+since we spend so much time rock climbing uh that is definitely
+
+968
+01:27:40,639 --> 01:27:45,860
+takes up most of our time we got ourselves a light
+
+969
+01:27:50,000 --> 01:27:53,219
+brick which is pretty exciting
+
+970
+01:28:04,600 --> 01:28:07,219
+everybody loves getting a light
+
+971
+01:28:10,639 --> 01:28:15,440
+Breck oh I love it when sets has surprise feature one didn't
+
+972
+01:28:15,440 --> 01:28:18,239
+know about yeah yeah I didn't look uh I didn't look into
+
+973
+01:28:18,239 --> 01:28:23,480
+this set at all in terms of uh that's cool the light
+
+974
+01:28:23,480 --> 01:28:27,040
+we put a hole right in front of the light yeah I
+
+975
+01:28:27,040 --> 01:28:31,920
+didn't look at any reviews for this set or anything uh so
+
+976
+01:28:31,920 --> 01:28:34,820
+I really have no idea what
+
+977
+01:28:36,280 --> 01:28:41,520
+uh what this set will I don't even know what it like
+
+978
+01:28:41,520 --> 01:28:45,360
+looks like when it's when it's going or how the coaster travels
+
+979
+01:28:45,360 --> 01:28:48,679
+very I mean I assume it goes around the coaster track obviously
+
+980
+01:28:48,679 --> 01:28:54,560
+but uh I have no
+
+981
+01:28:54,560 --> 01:29:00,239
+pre know pre-known knowledge about this set okay
+
+982
+01:29:00,239 --> 01:29:04,600
+here we have some kind of blinking light thing o and we
+
+983
+01:29:04,600 --> 01:29:07,540
+have like a big crater on the back of
+
+984
+01:29:08,760 --> 01:29:12,940
+it to activate it some kind of Rocky
+
+985
+01:29:19,920 --> 01:29:24,400
+feature oh North Carolina in house JD how could I find Lego
+
+986
+01:29:24,400 --> 01:29:29,360
+communities in my area uh I believe there are resources to do
+
+987
+01:29:29,360 --> 01:29:34,920
+that I'm pretty sure somewhere on the Lego website
+
+988
+01:29:34,920 --> 01:29:40,480
+H it's probably not the main Lego website there is a
+
+989
+01:29:40,480 --> 01:29:43,219
+list of all the Lego
+
+990
+01:29:44,480 --> 01:29:50,440
+clubs in the world uh but I'm sure Google is your friend
+
+991
+01:29:50,440 --> 01:29:53,400
+I'm sure you can just search online I mean I assume you've
+
+992
+01:29:53,400 --> 01:29:57,679
+tried to look for North Carolina Lego user group that would be
+
+993
+01:29:57,679 --> 01:29:59,780
+the first thing I would
+
+994
+01:30:00,719 --> 01:30:06,560
+do oo Flames oh again this is like a larger version
+
+995
+01:30:06,560 --> 01:30:11,719
+of this Comet oh man it's cool we got
+
+996
+01:30:11,719 --> 01:30:13,219
+some
+
+997
+01:30:17,760 --> 01:30:22,340
+Flamin we need to turn the lights off
+
+998
+01:30:27,360 --> 01:30:29,820
+except my uh
+
+999
+01:30:31,080 --> 01:30:33,699
+Auto there we
+
+1000
+01:30:37,719 --> 01:30:41,820
+go cool that's
+
+1001
+01:30:45,280 --> 01:30:50,840
+fun where does this go this goes
+
+1002
+01:30:50,840 --> 01:30:52,340
+here
+
+1003
+01:31:00,719 --> 01:31:03,600
+say tax on the side it's a shame that this doesn't activate
+
+1004
+01:31:03,600 --> 01:31:09,020
+by the coaster moving or maybe it does I have no
+
+1005
+01:31:09,840 --> 01:31:16,340
+idea we'll see I guess either way it's pretty
+
+1006
+01:31:17,480 --> 01:31:22,260
+fun everybody loves light up features
+
+1007
+01:31:27,080 --> 01:31:29,719
+isn't that Sac religion canot to go kayaking or canoeing I mean
+
+1008
+01:31:29,719 --> 01:31:33,820
+we canoe I own a canoe Crystal I own a canoe so
+
+1009
+01:31:33,880 --> 01:31:38,800
+yes we go canoeing quite often it's definitely a very Canadian to
+
+1010
+01:31:38,800 --> 01:31:42,719
+co canoeing uh not kayaking though although a lot of people do
+
+1011
+01:31:42,719 --> 01:31:44,219
+kayak
+
+1012
+01:31:45,760 --> 01:31:51,920
+but uh yeah so yes we definitely have a canoe
+
+1013
+01:31:51,920 --> 01:31:55,719
+uh it is sacrilege to not skate though skating is definitely more
+
+1014
+01:31:55,719 --> 01:31:57,460
+of a Canadian
+
+1015
+01:32:02,400 --> 01:32:07,080
+thing but uh I can't say I skate all that great I
+
+1016
+01:32:07,080 --> 01:32:10,840
+never actually played hockey when I was a kid but uh but
+
+1017
+01:32:10,840 --> 01:32:15,699
+I can actually skate so all hope it's not
+
+1018
+01:32:19,000 --> 01:32:22,080
+lost those light bricks remind me of the old RC X touch
+
+1019
+01:32:22,080 --> 01:32:25,340
+sensors yeah they are very similar form
+
+1020
+01:32:33,639 --> 01:32:36,719
+factor the way you talk about Lego sometimes feels like a love
+
+1021
+01:32:36,719 --> 01:32:42,440
+hate relationship yeah I mean it's just like any relationship
+
+1022
+01:32:42,440 --> 01:32:47,600
+there's highs and there's lows there's good and there's bad you
+
+1023
+01:32:47,600 --> 01:32:52,639
+never really know it's a very flexible thing I have
+
+1024
+01:32:52,639 --> 01:32:54,900
+no idea why I have
+
+1025
+01:32:58,960 --> 01:33:04,040
+one Technic connector left over okay here we
+
+1026
+01:33:04,040 --> 01:33:09,239
+have a little ringed planet of some sort I guess that's
+
+1027
+01:33:09,239 --> 01:33:10,900
+what this
+
+1028
+01:33:11,719 --> 01:33:16,880
+is it's cool okay clearly I like oh I forgot
+
+1029
+01:33:16,880 --> 01:33:21,960
+to put these on so that's why those exist oh
+
+1030
+01:33:21,960 --> 01:33:26,840
+also forgot to put one of these tiles on oh my gosh
+
+1031
+01:33:26,840 --> 01:33:29,719
+everything all over place that's probably I mean this shouldn't be an
+
+1032
+01:33:29,719 --> 01:33:32,600
+extra piece where the heck did this come from oh that goes
+
+1033
+01:33:32,600 --> 01:33:37,880
+on the comet clearly forgot that no idea where that goes
+
+1034
+01:33:37,880 --> 01:33:42,360
+that's probably extra extra extra extra extra extra extra extra this should
+
+1035
+01:33:42,360 --> 01:33:47,600
+not be extra i' oh this and this probably oh I forgot
+
+1036
+01:33:47,600 --> 01:33:52,060
+the oh this should be higher
+
+1037
+01:33:55,600 --> 01:33:59,560
+yeah just uh okay finally on the bag nine which is the
+
+1038
+01:33:59,560 --> 01:34:01,060
+last
+
+1039
+01:34:08,040 --> 01:34:12,480
+bag uh awesome fire forgot the orange slope yep thanks I've eventually
+
+1040
+01:34:12,480 --> 01:34:16,219
+figured that out took me a while
+
+1041
+01:34:20,480 --> 01:34:21,980
+uh
+
+1042
+01:34:23,159 --> 01:34:26,480
+looks amazing yeah it's coming together pretty nice actually I do like
+
+1043
+01:34:26,480 --> 01:34:29,340
+uh a lot of the all the details and
+
+1044
+01:34:31,000 --> 01:34:36,199
+everything but I assume we finally get some coasters yeah oh yeah
+
+1045
+01:34:36,199 --> 01:34:38,659
+they actually need Wheels in
+
+1046
+01:34:40,119 --> 01:34:43,260
+them guess I have to put them
+
+1047
+01:34:44,480 --> 01:34:49,679
+together uh oh and we clearly have some kids who
+
+1048
+01:34:49,679 --> 01:34:54,760
+are going to enjoy the the ride how much did you
+
+1049
+01:34:54,760 --> 01:34:57,159
+get this for I mean I just paid full price for it
+
+1050
+01:34:57,159 --> 01:35:02,280
+cuz I knew I wanted it and I wanted to build it
+
+1051
+01:35:02,280 --> 01:35:07,219
+and motorize it so and I wanted it sooner rather than
+
+1052
+01:35:08,520 --> 01:35:12,860
+later oh they have cute little classic
+
+1053
+01:35:13,760 --> 01:35:18,179
+space printing on them that's so
+
+1054
+01:35:19,679 --> 01:35:22,619
+cute that's so cute
+
+1055
+01:35:23,400 --> 01:35:25,580
+like short little stubby
+
+1056
+01:35:38,199 --> 01:35:42,619
+legs pigtails everybody likes the
+
+1057
+01:35:45,400 --> 01:35:50,560
+pigtails I don't know where the heck the other head went well
+
+1058
+01:35:50,560 --> 01:35:54,440
+there's the hair oh the head is already on oh my gosh
+
+1059
+01:35:54,440 --> 01:35:56,300
+I'm losing my
+
+1060
+01:36:00,440 --> 01:36:06,219
+mind okay mini figs are sorted all done
+
+1061
+01:36:10,840 --> 01:36:14,699
+with oo looks like we're building some kind of
+
+1062
+01:36:18,719 --> 01:36:24,340
+Rocket Saturn five Style it's very American
+
+1063
+01:36:40,639 --> 01:36:45,659
+styling snore subscribed I'm in love a
+
+1064
+01:36:46,199 --> 01:36:49,880
+cheers uh holda I wish oh I wish I had a two
+
+1065
+01:36:49,880 --> 01:36:54,280
+un broke yeah I mean sad sadly Lego is expensive there's no
+
+1066
+01:36:54,280 --> 01:36:56,060
+getting around
+
+1067
+01:37:19,040 --> 01:37:24,040
+that all Hammer glad I didn't into getting a crappy set yeah
+
+1068
+01:37:24,040 --> 01:37:26,340
+oh I knew it was going to be
+
+1069
+01:37:26,960 --> 01:37:30,440
+good I mean you can tell just by the photos it's uh
+
+1070
+01:37:30,440 --> 01:37:32,460
+going be a pretty nice
+
+1071
+01:37:33,520 --> 01:37:38,320
+set and lately the crater 3 in one sets have all been
+
+1072
+01:37:38,320 --> 01:37:40,540
+pretty decent in my
+
+1073
+01:37:41,480 --> 01:37:47,659
+opinion o friction half pins I do love friction half pins
+
+1074
+01:37:48,400 --> 01:37:52,420
+definitely bought a fair number of these already from
+
+1075
+01:37:56,920 --> 01:37:59,619
+uh Lego online pick a
+
+1076
+01:38:10,239 --> 01:38:15,280
+Breck palade priest really extra no no I miss I quote unquote
+
+1077
+01:38:15,280 --> 01:38:20,119
+lost this as I was building and I fetched another one from
+
+1078
+01:38:20,119 --> 01:38:24,659
+my Lego collection and then I eventually found
+
+1079
+01:38:32,960 --> 01:38:36,880
+it Lego's really into space now with all these new Technic sets
+
+1080
+01:38:36,880 --> 01:38:41,560
+yeah yeah the Technic lineup looks pretty interesting actually I don't know
+
+1081
+01:38:41,560 --> 01:38:45,139
+if I'll buy I mean I'll buy the a
+
+1082
+01:38:47,280 --> 01:38:52,179
+obviously uh the Rover kind of looks pretty cool too
+
+1083
+01:38:54,159 --> 01:38:56,280
+I might pick that up but you know I probably don't need
+
+1084
+01:38:56,280 --> 01:39:01,360
+it so maybe if it goes on sale the gray
+
+1085
+01:39:01,360 --> 01:39:03,619
+wheels look pretty interesting
+
+1086
+01:39:07,719 --> 01:39:11,199
+though I haven't taken a I didn't have a chance yet to
+
+1087
+01:39:11,199 --> 01:39:15,360
+really take a good look at the photos uh but I probably
+
+1088
+01:39:15,360 --> 01:39:17,260
+will at some
+
+1089
+01:39:19,040 --> 01:39:23,599
+point I'm sure some other fan sites will do a breakdown of
+
+1090
+01:39:23,599 --> 01:39:25,099
+uh
+
+1091
+01:39:25,760 --> 01:39:30,920
+oh I put that on backwards so you know put that on
+
+1092
+01:39:30,920 --> 01:39:36,000
+the wrong side that goes on the top oh it's
+
+1093
+01:39:36,000 --> 01:39:38,300
+quite a substantial rocket
+
+1094
+01:39:38,960 --> 01:39:42,760
+actually get some more Flames at the back oh you couldn't give
+
+1095
+01:39:42,760 --> 01:39:45,940
+me four Flames I only get two
+
+1096
+01:39:50,040 --> 01:39:51,540
+flames
+
+1097
+01:39:56,199 --> 01:39:58,980
+where does this oh this rocket goes
+
+1098
+01:40:00,159 --> 01:40:04,820
+on angled excellent that's
+
+1099
+01:40:05,920 --> 01:40:11,980
+cool man it's shaping up to be pretty big but
+
+1100
+01:40:12,639 --> 01:40:15,860
+uh cool little rocket
+
+1101
+01:40:19,960 --> 01:40:21,460
+excellent
+
+1102
+01:40:31,760 --> 01:40:35,520
+uh I've got a wild idea for you take the new UCS
+
+1103
+01:40:35,520 --> 01:40:37,800
+at8 and find a way to motorize it to walk like the
+
+1104
+01:40:37,800 --> 01:40:39,580
+old Technic
+
+1105
+01:40:40,239 --> 01:40:41,739
+atat
+
+1106
+01:40:42,880 --> 01:40:48,619
+yeah uh I had I was planning to
+
+1107
+01:40:49,920 --> 01:40:51,420
+uh
+
+1108
+01:40:54,199 --> 01:40:59,840
+build a walking atat at some point before they released the UCS
+
+1109
+01:40:59,840 --> 01:41:05,719
+atat and uh just never really came
+
+1110
+01:41:05,719 --> 01:41:09,340
+about but yeah I have no interest in buying
+
+1111
+01:41:10,040 --> 01:41:16,000
+the the UCS one this is too big for
+
+1112
+01:41:16,000 --> 01:41:21,460
+for me o we got some lettering that's cool dot Style
+
+1113
+01:41:29,840 --> 01:41:35,159
+that's a pretty nice little font they have here two
+
+1114
+01:41:35,159 --> 01:41:39,460
+by three studs can we get all
+
+1115
+01:41:40,199 --> 01:41:43,260
+the letters to look
+
+1116
+01:41:48,840 --> 01:41:52,400
+good getting them to all be like super straight might be a
+
+1117
+01:41:52,400 --> 01:41:54,739
+little bit annoying but
+
+1118
+01:42:01,599 --> 01:42:06,800
+uh what's it going to say who knows it'll
+
+1119
+01:42:06,800 --> 01:42:08,420
+be a
+
+1120
+01:42:19,760 --> 01:42:25,199
+surprise Oh missing antenna on top oh yeah clearly
+
+1121
+01:42:25,199 --> 01:42:30,280
+spaceship is missing an antenna think of
+
+1122
+01:42:30,280 --> 01:42:31,940
+it as
+
+1123
+01:42:32,599 --> 01:42:36,920
+investment yeah okay we got to deal with the antenna on top
+
+1124
+01:42:36,920 --> 01:42:40,840
+of the spaceship there we go or I guess it's a rocket
+
+1125
+01:42:40,840 --> 01:42:42,900
+it's not really a
+
+1126
+01:42:44,520 --> 01:42:47,300
+ship okay we got
+
+1127
+01:42:48,320 --> 01:42:52,860
+Spa what could possibly be the next letter I don't
+
+1128
+01:42:58,520 --> 01:43:01,080
+know I guess I should actually look at the instructions I'm just
+
+1129
+01:43:01,080 --> 01:43:04,880
+kind of building the letters the way I think they should go
+
+1130
+01:43:04,880 --> 01:43:09,020
+together which uh I assume is the way they'll do
+
+1131
+01:43:12,760 --> 01:43:17,800
+it oh it's pretty nice font actually they're lucky
+
+1132
+01:43:17,800 --> 01:43:20,440
+that all these letters can be done very easily in a 3X
+
+1133
+01:43:20,440 --> 01:43:23,320
+two it gets a little dicey when you have to make something
+
+1134
+01:43:23,320 --> 01:43:24,940
+like an
+
+1135
+01:43:30,119 --> 01:43:36,540
+M there just not enough two studs wide is not big enough
+
+1136
+01:43:36,880 --> 01:43:39,860
+for for like an
+
+1137
+01:43:40,719 --> 01:43:45,580
+M cool space that's pretty
+
+1138
+01:43:49,679 --> 01:43:51,179
+awesome
+
+1139
+01:43:55,440 --> 01:43:59,340
+well I guess I'm doing things a bit out of order as
+
+1140
+01:44:01,440 --> 01:44:07,159
+usual okay uh I think I got this some good
+
+1141
+01:44:07,159 --> 01:44:11,119
+got our space Oh what do I do with this oh let's
+
+1142
+01:44:11,119 --> 01:44:14,300
+see don't do anything with it
+
+1143
+01:44:19,599 --> 01:44:21,099
+yet
+
+1144
+01:44:22,280 --> 01:44:24,560
+uh oh order the k for S shark waiting for it to
+
+1145
+01:44:24,560 --> 01:44:27,040
+arrive looking forward to building it oh yeah might it might be
+
+1146
+01:44:27,040 --> 01:44:32,520
+a while depending on when you ordered it uh they're like so
+
+1147
+01:44:32,520 --> 01:44:38,920
+swamped with orders uh it's a bit crazy to be
+
+1148
+01:44:38,920 --> 01:44:44,000
+honest okay and here we have oh are we finally building
+
+1149
+01:44:44,000 --> 01:44:49,360
+part of the coaster I think we might be
+
+1150
+01:44:49,360 --> 01:44:51,540
+this might be the actual
+
+1151
+01:44:55,560 --> 01:44:59,380
+coaster oh oh no this is just the rocket for
+
+1152
+01:45:00,239 --> 01:45:04,780
+the it's cool we have like a shuttle that's pretty awesome
+
+1153
+01:45:13,599 --> 01:45:17,460
+actually and two little Flames at the
+
+1154
+01:45:19,480 --> 01:45:20,980
+back
+
+1155
+01:45:29,080 --> 01:45:33,900
+how does this go there we go oh man that's
+
+1156
+01:45:35,199 --> 01:45:40,440
+uh it's actually quite nice little space logo
+
+1157
+01:45:40,440 --> 01:45:41,940
+with
+
+1158
+01:45:45,400 --> 01:45:50,280
+the the little shuttle in the middle it's pretty cool super cool
+
+1159
+01:45:50,280 --> 01:45:54,820
+actually actually where does this go this goes
+
+1160
+01:45:57,760 --> 01:45:59,260
+here
+
+1161
+01:46:00,360 --> 01:46:01,860
+space
+
+1162
+01:46:02,960 --> 01:46:08,000
+awesome awesome okay we're definitely once I get
+
+1163
+01:46:08,000 --> 01:46:10,880
+the instructions out of the way we'll actually be able to see
+
+1164
+01:46:10,880 --> 01:46:17,380
+this in full uh but uh for now we just got
+
+1165
+01:46:18,040 --> 01:46:23,280
+to imagine controversial opinion I don't like plastic
+
+1166
+01:46:23,280 --> 01:46:27,860
+bags yeah I mean nobody likes plastic bags I don't think that's
+
+1167
+01:46:28,199 --> 01:46:32,860
+controversial it's pretty wasteful okay finally get to build the
+
+1168
+01:46:33,440 --> 01:46:37,560
+coaster cardboard trays I mean they're going to plast or paper bags
+
+1169
+01:46:37,560 --> 01:46:41,360
+but uh have yet to actually get any paper bags it's been
+
+1170
+01:46:41,360 --> 01:46:45,520
+a long process and I still don't think they're actually 100% paper
+
+1171
+01:46:45,520 --> 01:46:50,560
+I think they're lined with like uh film so so
+
+1172
+01:46:50,560 --> 01:46:55,800
+I don't know how recyclable they actually are the old Technic at
+
+1173
+01:46:55,800 --> 01:46:58,119
+was the first motorized set I ever got oh wow still have
+
+1174
+01:46:58,119 --> 01:47:02,599
+it in storage you know I never got that one actually was
+
+1175
+01:47:02,599 --> 01:47:08,360
+pretty amazing yeah which is why I wanted to design my own
+
+1176
+01:47:08,360 --> 01:47:12,040
+I speak Spanish there's no question mark there so that's a statement
+
+1177
+01:47:12,040 --> 01:47:14,020
+but no I don't
+
+1178
+01:47:19,320 --> 01:47:22,800
+uh what do you think about the new speed Champion sets uh
+
+1179
+01:47:22,800 --> 01:47:27,840
+I mean I just had a quick glance at at them I
+
+1180
+01:47:27,840 --> 01:47:31,440
+didn't really take a good look so I have no not formed
+
+1181
+01:47:31,440 --> 01:47:34,679
+an opinion yet I mean on first very quick glance they look
+
+1182
+01:47:34,679 --> 01:47:36,179
+pretty
+
+1183
+01:47:37,040 --> 01:47:42,760
+good oo Jeffrey ordered three sets on Monday and they're coming
+
+1184
+01:47:42,760 --> 01:47:45,260
+today lucky
+
+1185
+01:47:48,199 --> 01:47:51,580
+you uh what is that
+
+1186
+01:47:54,280 --> 01:47:58,179
+gray 1 by two plate okay we're finally building a
+
+1187
+01:48:14,679 --> 01:48:20,739
+coaster with some streamlined sides on it excellent
+
+1188
+01:48:30,119 --> 01:48:34,040
+hello welcome to the chat space sign is pretty sweet space sign
+
+1189
+01:48:34,040 --> 01:48:39,360
+is amazing it is uh pretty awesome
+
+1190
+01:48:39,360 --> 01:48:41,139
+not going to
+
+1191
+01:48:49,199 --> 01:48:50,699
+lie
+
+1192
+01:48:54,679 --> 01:48:58,300
+set looks super cool it does actually look quite
+
+1193
+01:48:59,119 --> 01:49:02,659
+cool and hopefully fun to play
+
+1194
+01:49:07,520 --> 01:49:11,280
+with okay clearly my coaster is intended to be a shuttle as
+
+1195
+01:49:11,280 --> 01:49:16,400
+well I sense a theme running throughout this set
+
+1196
+01:49:16,400 --> 01:49:20,820
+perhaps it's space shuttle related okay so there's card number one
+
+1197
+01:49:29,520 --> 01:49:32,099
+uh multiple smaller
+
+1198
+01:49:33,360 --> 01:49:37,320
+boxes does it have a motor this does not have a motor
+
+1199
+01:49:37,320 --> 01:49:42,860
+um we're going to make it we're going to make it go
+
+1200
+01:49:43,159 --> 01:49:47,560
+though we're going to make it have a motor actually I'm not
+
+1201
+01:49:47,560 --> 01:49:52,639
+going to motorize the actual cars but uh we will push them
+
+1202
+01:49:52,639 --> 01:49:55,820
+along in some kind of motorized
+
+1203
+01:50:19,040 --> 01:50:20,540
+fashion
+
+1204
+01:50:23,040 --> 01:50:25,099
+and why are your latest
+
+1205
+01:50:25,679 --> 01:50:31,239
+videos uh about the New Year
+
+1206
+01:50:31,239 --> 01:50:35,199
+I'm not sure what you're referring to there are you making any
+
+1207
+01:50:35,199 --> 01:50:39,480
+oh hello from Georgia I assume are you making any personal changes
+
+1208
+01:50:39,480 --> 01:50:43,800
+to it oh uh I'm just going to motorize this model I
+
+1209
+01:50:43,800 --> 01:50:47,000
+will probably not make any modifications to the set itself well other
+
+1210
+01:50:47,000 --> 01:50:50,540
+than sticking a motor on it but uh
+
+1211
+01:50:51,280 --> 01:50:53,340
+which I guess is modification
+
+1212
+01:50:54,239 --> 01:51:00,099
+enough all right we got two cars pretty
+
+1213
+01:51:00,560 --> 01:51:04,159
+cool last one I'm going to guess this is going to look
+
+1214
+01:51:04,159 --> 01:51:06,860
+very similar to the second
+
+1215
+01:51:10,880 --> 01:51:14,760
+one but it will probably have some exhaust ports on it I
+
+1216
+01:51:14,760 --> 01:51:20,079
+would guess oh yeah so
+
+1217
+01:51:20,079 --> 01:51:22,179
+kind of engines in the
+
+1218
+01:51:36,760 --> 01:51:40,520
+back uh when you're motorizing it be careful of the back there's
+
+1219
+01:51:40,520 --> 01:51:45,199
+exhaust pieces with fire and mine fall off oh with the smallest
+
+1220
+01:51:45,199 --> 01:51:50,679
+nudge Yeah well yeah we'll see we'll see
+
+1221
+01:51:50,679 --> 01:51:54,880
+we we might have to the spaceship must might be going under
+
+1222
+01:51:54,880 --> 01:52:00,480
+a lot of stress during the process of doing this so
+
+1223
+01:52:00,480 --> 01:52:04,679
+we'll see if we have to modify or take off the engines
+
+1224
+01:52:04,679 --> 01:52:06,300
+in the
+
+1225
+01:52:12,119 --> 01:52:18,139
+back Oo we have a triple triple exhaust that's pretty
+
+1226
+01:52:18,880 --> 01:52:20,380
+cool
+
+1227
+01:52:24,159 --> 01:52:28,599
+oh yeah but I see these are just uh these pieces don't
+
+1228
+01:52:28,599 --> 01:52:33,920
+have a full Hollow hole in them so we're only holding
+
+1229
+01:52:33,920 --> 01:52:35,420
+them
+
+1230
+01:52:37,440 --> 01:52:41,099
+by like the barest of
+
+1231
+01:52:42,000 --> 01:52:47,679
+attachments so yeah that's a shame actually
+
+1232
+01:52:47,679 --> 01:52:49,599
+oh yeah I know we're supposed to put these on yeah that'll
+
+1233
+01:52:49,599 --> 01:52:53,440
+be better oh yeah that'll be good we put a 1 by
+
+1234
+01:52:53,440 --> 01:52:57,860
+one round with a hole on top be a slightly better
+
+1235
+01:52:59,480 --> 01:53:04,639
+connection oh and actually I stuck this tile on but that's not
+
+1236
+01:53:04,639 --> 01:53:09,300
+we need a tail finan obviously oh yeah here we go
+
+1237
+01:53:13,440 --> 01:53:14,940
+excellent
+
+1238
+01:53:16,239 --> 01:53:19,360
+Tada and I assume we get to put some Minifigs in as
+
+1239
+01:53:19,360 --> 01:53:20,860
+well
+
+1240
+01:53:26,599 --> 01:53:31,619
+I guess they can sit in the middle okay here we
+
+1241
+01:53:32,960 --> 01:53:39,380
+go I will get rid of my
+
+1242
+01:53:44,040 --> 01:53:50,260
+instructions we will bring this front and center
+
+1243
+01:53:52,560 --> 01:53:55,300
+first of all let's just see how this
+
+1244
+01:53:59,590 --> 01:54:01,090
+[Music]
+
+1245
+01:54:01,960 --> 01:54:06,159
+goes oh yeah nice nice nice and you see when it gets
+
+1246
+01:54:06,159 --> 01:54:11,679
+to the this top here does uh it does trigger this
+
+1247
+01:54:11,679 --> 01:54:14,320
+this [Music]
+
+1248
+01:54:18,679 --> 01:54:20,179
+comet
+
+1249
+01:54:22,880 --> 01:54:25,699
+okay so for
+
+1250
+01:54:27,199 --> 01:54:31,139
+motorization let's see what we have going
+
+1251
+01:54:48,679 --> 01:54:54,040
+on where do I keep my Lego yeah in collection behind me
+
+1252
+01:54:54,040 --> 01:54:57,099
+okay okay I got some
+
+1253
+01:54:59,320 --> 01:55:04,800
+pieces and we're going to try so the way I have envisioned
+
+1254
+01:55:04,800 --> 01:55:08,560
+this is that we're going to mount some Wheels on the side
+
+1255
+01:55:08,560 --> 01:55:12,920
+of the tracks similar to how they did in the first roller
+
+1256
+01:55:12,920 --> 01:55:16,760
+coaster the first roller coaster has the the chain that brings the
+
+1257
+01:55:16,760 --> 01:55:20,000
+roller coaster up but then at the top it uses some Wheels
+
+1258
+01:55:20,000 --> 01:55:23,000
+to basically push it around the curves so we're going to do
+
+1259
+01:55:23,000 --> 01:55:26,780
+something similar we're going to have
+
+1260
+01:55:29,159 --> 01:55:34,020
+uh some Wheels mounted on the top and I
+
+1261
+01:55:34,400 --> 01:55:36,900
+think we
+
+1262
+01:55:42,400 --> 01:55:47,880
+will have two of them I do have a prototype already built
+
+1263
+01:55:47,880 --> 01:55:52,340
+here oh I just lost the piece and we got some
+
+1264
+01:55:55,880 --> 01:55:58,659
+Motors and a battery
+
+1265
+01:56:03,960 --> 01:56:07,060
+box motor battery
+
+1266
+01:56:14,239 --> 01:56:19,520
+box and I'm using these new flip-flop Technic gears which are Super
+
+1267
+01:56:19,520 --> 01:56:25,360
+super awesome actually uh I think they're
+
+1268
+01:56:25,360 --> 01:56:29,139
+uh going to be Game Changer in terms of building like compact
+
+1269
+01:56:30,320 --> 01:56:34,520
+mechanisms so I think the way I want to do this the
+
+1270
+01:56:34,520 --> 01:56:38,320
+way I had the Prototype I actually want two wheels mounted on
+
+1271
+01:56:38,320 --> 01:56:42,199
+the side and I'm going to actually have two of these connect
+
+1272
+01:56:42,199 --> 01:56:43,900
+together to
+
+1273
+01:56:48,480 --> 01:56:49,980
+drive
+
+1274
+01:56:54,920 --> 01:56:59,840
+so we need a way to drive these obviously and so we're
+
+1275
+01:56:59,840 --> 01:57:04,619
+going to put some double bubble gears mounted like
+
+1276
+01:57:13,480 --> 01:57:17,020
+so so we're going to go like
+
+1277
+01:57:18,400 --> 01:57:19,900
+so
+
+1278
+01:57:23,520 --> 01:57:26,460
+and we're actually just going to tack these
+
+1279
+01:57:27,800 --> 01:57:31,079
+in like that that way I can drive and then we'll put
+
+1280
+01:57:31,079 --> 01:57:32,940
+another one
+
+1281
+01:57:36,400 --> 01:57:41,900
+obviously actually let's just make this all color
+
+1282
+01:57:43,119 --> 01:57:44,619
+coordinated
+
+1283
+01:57:45,320 --> 01:57:49,900
+put black one and then we need another
+
+1284
+01:57:52,119 --> 01:57:55,500
+you know I took all these pieces out but oh there's
+
+1285
+01:58:09,159 --> 01:58:11,659
+one okay
+
+1286
+01:58:15,920 --> 01:58:21,000
+so now I have a single Drive drive axle that drives
+
+1287
+01:58:21,000 --> 01:58:25,360
+both of those wheels so we're just going to have to we're
+
+1288
+01:58:25,360 --> 01:58:28,760
+going to mount this on the side of the track here and
+
+1289
+01:58:28,760 --> 01:58:33,440
+to do that I'm actually going to use the bars that run
+
+1290
+01:58:33,440 --> 01:58:36,440
+in the middle of the track and we're just going to clip
+
+1291
+01:58:36,440 --> 01:58:39,960
+we're going to use these uh little Clips with a bar on
+
+1292
+01:58:39,960 --> 01:58:43,940
+them to clip clip it to the
+
+1293
+01:58:48,320 --> 01:58:52,119
+track we're just going to stick that in a technic connector we're
+
+1294
+01:58:52,119 --> 01:58:54,060
+going to put the Clips
+
+1295
+01:58:57,040 --> 01:59:00,800
+in so that way I can clip this Technic connector to the
+
+1296
+01:59:00,800 --> 01:59:06,040
+bottom of the track and then we can mount whatever
+
+1297
+01:59:06,040 --> 01:59:08,719
+we want to to the track itself and it shouldn't interfere with
+
+1298
+01:59:08,719 --> 01:59:13,960
+the coaster actually operating um so we'll make another
+
+1299
+01:59:13,960 --> 01:59:15,540
+one of
+
+1300
+01:59:18,239 --> 01:59:19,739
+those
+
+1301
+01:59:24,040 --> 01:59:28,099
+and then we'll connect them together with a relatively long
+
+1302
+01:59:30,119 --> 01:59:34,719
+axle so now I can clip it to basically because I have
+
+1303
+01:59:34,719 --> 01:59:39,560
+these mounted on an axle I can adjust the length of them
+
+1304
+01:59:39,560 --> 01:59:45,159
+to suit the distance between the crossbars on the track so
+
+1305
+01:59:45,159 --> 01:59:50,460
+there we have a super it's actually quite a Sol
+
+1306
+01:59:50,840 --> 01:59:54,920
+ID oh man I pulled a lot of these pieces out it's
+
+1307
+01:59:54,920 --> 02:00:00,040
+quite a solid colle connection to the track just from underneath
+
+1308
+02:00:00,040 --> 02:00:05,760
+and uh you can actually Mount this to because it's got a
+
+1309
+02:00:05,760 --> 02:00:09,320
+sliding cuz these connectors are mounted on a sliding axle we can
+
+1310
+02:00:09,320 --> 02:00:13,280
+sh vary the distance between them so we can actually mount it
+
+1311
+02:00:13,280 --> 02:00:18,360
+to any track piece uh The Straits either of
+
+1312
+02:00:18,360 --> 02:00:22,500
+these uh large slopes the small
+
+1313
+02:00:23,119 --> 02:00:27,520
+slopes and uh I think we'll obviously probably have to figure out
+
+1314
+02:00:27,520 --> 02:00:31,239
+a way to connect them to the curved slopes as well but
+
+1315
+02:00:31,239 --> 02:00:34,500
+uh I don't think that should be too much of a
+
+1316
+02:00:37,159 --> 02:00:42,440
+problem okay uh but now we need to
+
+1317
+02:00:42,440 --> 02:00:47,480
+somehow Mount that as well so
+
+1318
+02:00:47,480 --> 02:00:51,060
+more Technic connectors we're just going to slide these
+
+1319
+02:00:51,880 --> 02:00:55,699
+on actually I'm going to sit this one in
+
+1320
+02:01:13,400 --> 02:01:16,199
+there and I want this I don't want this to be rigidly
+
+1321
+02:01:16,199 --> 02:01:20,800
+mounted so I'm actually sliding these wheels on these axles and I'm
+
+1322
+02:01:20,800 --> 02:01:25,400
+going to stick a rubber band to pull them in so that
+
+1323
+02:01:25,400 --> 02:01:27,060
+way when
+
+1324
+02:01:29,800 --> 02:01:36,099
+the when the roller coaster comes by it can
+
+1325
+02:01:36,760 --> 02:01:42,280
+actually uh it'll it needs to like basically have some flexibility
+
+1326
+02:01:42,280 --> 02:01:46,639
+in the movement so that it doesn't bind uh so we're just
+
+1327
+02:01:46,639 --> 02:01:50,719
+going to stick a rubber band on it like so so now
+
+1328
+02:01:50,719 --> 02:01:55,300
+we have this basically spring-loaded set of Drive
+
+1329
+02:01:56,639 --> 02:02:00,500
+wheels that we can mount beside the roller coaster
+
+1330
+02:02:04,280 --> 02:02:09,880
+track and I think that's pretty much it for this one
+
+1331
+02:02:09,880 --> 02:02:12,380
+I'm going to mount this
+
+1332
+02:02:17,960 --> 02:02:22,880
+on so now in theory when the roller coaster comes up you
+
+1333
+02:02:22,880 --> 02:02:27,099
+can see how it like turns the
+
+1334
+02:02:27,880 --> 02:02:32,800
+wheels but if I'm actually driving these wheels it should lift the
+
+1335
+02:02:32,800 --> 02:02:36,440
+coaster up now this coaster actually might be too heavy in my
+
+1336
+02:02:36,440 --> 02:02:41,599
+testing I was only using empty coasters and this thing
+
+1337
+02:02:41,599 --> 02:02:45,159
+is actually quite heavy so we'll see it might not work at
+
+1338
+02:02:45,159 --> 02:02:49,560
+all oh and actually her head gets in the way very interesting
+
+1339
+02:02:49,560 --> 02:02:54,020
+I might have to mount it on the other side so there's
+
+1340
+02:02:57,560 --> 02:03:03,820
+clearance which we can definitely do shouldn't be a
+
+1341
+02:03:11,199 --> 02:03:14,820
+problem and then we should have some
+
+1342
+02:03:17,880 --> 02:03:19,380
+clearance
+
+1343
+02:03:31,599 --> 02:03:35,079
+okay uh now we need to make another one of those actually
+
+1344
+02:03:35,079 --> 02:03:37,920
+we're going to need to make a few might need to make
+
+1345
+02:03:37,920 --> 02:03:39,420
+more
+
+1346
+02:03:42,760 --> 02:03:45,699
+than more than a
+
+1347
+02:03:47,880 --> 02:03:49,380
+few
+
+1348
+02:03:54,119 --> 02:03:56,360
+we're going to need at least three because we'll probably need one
+
+1349
+02:03:56,360 --> 02:03:59,320
+on this section of track one on this section of track and
+
+1350
+02:03:59,320 --> 02:04:03,679
+then one on this section of track so I'm just going to
+
+1351
+02:04:03,679 --> 02:04:07,679
+put a bunch together I think I have enough I think I
+
+1352
+02:04:07,679 --> 02:04:10,340
+pull enough pieces out to
+
+1353
+02:04:11,480 --> 02:04:14,340
+make three of
+
+1354
+02:04:15,000 --> 02:04:18,840
+them or four of them I have uh one prototype already bu
+
+1355
+02:04:18,840 --> 02:04:20,340
+built
+
+1356
+02:04:23,079 --> 02:04:27,559
+so but now that I know how this goes together should be
+
+1357
+02:04:27,559 --> 02:04:30,059
+pretty uh
+
+1358
+02:04:41,960 --> 02:04:47,159
+quick kind of doing this just based on memory but uh when
+
+1359
+02:04:47,159 --> 02:04:51,880
+first starting with an idea do you prototype just by taking Parts
+
+1360
+02:04:51,880 --> 02:04:55,739
+in building or do you do anything electronically first no it's all
+
+1361
+02:04:57,719 --> 02:05:03,119
+just mostly I'd say 90 9% of the time
+
+1362
+02:05:03,119 --> 02:05:07,139
+I always start with real bricks and I just figure
+
+1363
+02:05:09,639 --> 02:05:15,659
+out how to put them together yeah I just prototype with real
+
+1364
+02:05:17,679 --> 02:05:19,179
+bricks
+
+1365
+02:05:23,480 --> 02:05:26,739
+it's definitely the way I prefer to
+
+1366
+02:05:39,400 --> 02:05:43,579
+build okay we need to make the drives train
+
+1367
+02:05:44,480 --> 02:05:48,440
+again uh maybe mount it on the other side to avoid collision
+
+1368
+02:05:48,440 --> 02:05:52,960
+with train below yeah since the gears are hanging too low yes
+
+1369
+02:05:52,960 --> 02:05:55,059
+great minds think
+
+1370
+02:05:58,679 --> 02:06:04,119
+alike indeed that is what we have
+
+1371
+02:06:04,119 --> 02:06:06,619
+done okay
+
+1372
+02:06:09,480 --> 02:06:14,520
+uh actually I don't know if I have enough of
+
+1373
+02:06:14,520 --> 02:06:16,020
+that
+
+1374
+02:06:17,599 --> 02:06:19,099
+part
+
+1375
+02:06:21,400 --> 02:06:23,579
+all right there number
+
+1376
+02:06:28,119 --> 02:06:33,239
+two oh yeah we do do some Mi mix and
+
+1377
+02:06:33,239 --> 02:06:36,179
+match the colors but that's
+
+1378
+02:06:47,599 --> 02:06:49,099
+fine
+
+1379
+02:07:06,719 --> 02:07:08,820
+okay actually one of
+
+1380
+02:07:13,760 --> 02:07:16,679
+these actually I'm just going to put two together for now for
+
+1381
+02:07:16,679 --> 02:07:19,020
+the for the Straits
+
+1382
+02:07:24,390 --> 02:07:28,780
+[Music] which way do I want this to
+
+1383
+02:07:30,239 --> 02:07:32,739
+go this
+
+1384
+02:07:45,679 --> 02:07:49,099
+way I need more half p
+
+1385
+02:08:03,040 --> 02:08:05,059
+riveting entertainment
+
+1386
+02:08:07,400 --> 02:08:10,320
+here do I have a mechanical engineering degree or is it just
+
+1387
+02:08:10,320 --> 02:08:15,219
+experience uh I do have an engineering degree it's uh not mechanical
+
+1388
+02:08:15,639 --> 02:08:19,619
+though okay uh
+
+1389
+02:08:21,960 --> 02:08:25,880
+basically all of this is just from experience and playing okay I'm
+
+1390
+02:08:25,880 --> 02:08:28,520
+going to mount these oh actually yeah I want those on the
+
+1391
+02:08:28,520 --> 02:08:30,020
+other
+
+1392
+02:08:30,760 --> 02:08:35,920
+side I want to mount it on the other side M
+
+1393
+02:08:35,920 --> 02:08:41,000
+this one on the other side as well if there's space
+
+1394
+02:08:41,000 --> 02:08:43,219
+yeah appears to be
+
+1395
+02:08:45,800 --> 02:08:49,980
+space and then we somehow need to motorize all
+
+1396
+02:08:52,679 --> 02:08:58,400
+this and uh for that
+
+1397
+02:08:58,400 --> 02:09:02,619
+actually I'm going to need to get a few more
+
+1398
+02:09:13,199 --> 02:09:19,360
+pieces oh basically I'm going to try
+
+1399
+02:09:19,360 --> 02:09:23,639
+Mount the motor directly onto the end of one of them so
+
+1400
+02:09:23,639 --> 02:09:29,179
+we can drive it give it a little direct drive
+
+1401
+02:09:29,760 --> 02:09:34,239
+action um and there appears to be more room at top so
+
+1402
+02:09:34,239 --> 02:09:37,119
+I'm just going to take the top one off and we're going
+
+1403
+02:09:37,119 --> 02:09:39,540
+to stick a motor on it
+
+1404
+02:09:43,239 --> 02:09:48,800
+somehow and for now I'm just going to tack on
+
+1405
+02:09:48,800 --> 02:09:50,940
+I'm just going to tack
+
+1406
+02:09:55,960 --> 02:10:01,040
+on I'm going to tack on a motor we're just going to
+
+1407
+02:10:01,040 --> 02:10:06,119
+tack on a lift arm to the end so we have
+
+1408
+02:10:06,119 --> 02:10:10,679
+something to actually connect the motor to and we're actually going to
+
+1409
+02:10:10,679 --> 02:10:15,880
+need a longer axle which I anticipated so we'll get
+
+1410
+02:10:15,880 --> 02:10:18,739
+a five long axle
+
+1411
+02:10:19,599 --> 02:10:21,739
+we'll stick this
+
+1412
+02:10:28,119 --> 02:10:33,360
+on so this way basically I've just stuck another Technic connector
+
+1413
+02:10:33,360 --> 02:10:35,920
+on here so I can put a pin on it and then
+
+1414
+02:10:35,920 --> 02:10:40,840
+we can just stick the motor right on So in theory we
+
+1415
+02:10:40,840 --> 02:10:42,619
+got our battery
+
+1416
+02:10:44,239 --> 02:10:49,360
+box stick it on we
+
+1417
+02:10:49,360 --> 02:10:53,219
+can just direct drive this whole
+
+1418
+02:11:02,239 --> 02:11:06,500
+thing let's see except it is on the other
+
+1419
+02:11:07,719 --> 02:11:10,679
+side will this fit down here actually I think we'll put it
+
+1420
+02:11:10,679 --> 02:11:12,900
+on the bottom if we
+
+1421
+02:11:15,639 --> 02:11:19,020
+can will this all fit
+
+1422
+02:11:26,040 --> 02:11:28,360
+it would be nicer if there wasn't a big motor sticking out
+
+1423
+02:11:28,360 --> 02:11:31,059
+the top
+
+1424
+02:11:33,960 --> 02:11:37,599
+anyway well this slope is just a bit in the way so
+
+1425
+02:11:37,599 --> 02:11:42,900
+I'm actually going to take that off for
+
+1426
+02:11:45,360 --> 02:11:48,860
+now okay so we have a motor
+
+1427
+02:11:50,000 --> 02:11:51,820
+with one
+
+1428
+02:11:56,400 --> 02:11:59,820
+motorized it's hitting it's hitting the
+
+1429
+02:12:02,360 --> 02:12:07,599
+alien okay there we go so now in
+
+1430
+02:12:07,599 --> 02:12:12,280
+theory we got one motor in theory when this comes up here
+
+1431
+02:12:12,280 --> 02:12:14,340
+oh it's going the wrong
+
+1432
+02:12:15,960 --> 02:12:21,480
+way oh yeah it pushes pushes the coaster up
+
+1433
+02:12:21,480 --> 02:12:25,880
+which is good but obviously we need to need to motorize the
+
+1434
+02:12:25,880 --> 02:12:28,139
+other section as
+
+1435
+02:12:32,639 --> 02:12:35,760
+well I love your GBC modules I plans for new one hey
+
+1436
+02:12:35,760 --> 02:12:40,980
+guys let's start cheers thanks my
+
+1437
+02:12:41,960 --> 02:12:45,559
+friend Lego Battle Master just joined you're almost done yeah we're almost
+
+1438
+02:12:45,559 --> 02:12:49,239
+done uh well I don't know if it'll completely work when we're
+
+1439
+02:12:49,239 --> 02:12:53,159
+but anyway okay uh yeah we're getting we're getting places we have
+
+1440
+02:12:53,159 --> 02:12:58,639
+one motorized section to track uh we do need to somehow transfer
+
+1441
+02:12:58,639 --> 02:13:04,079
+all this rotational movement to this other motorized section of track
+
+1442
+02:13:04,079 --> 02:13:08,960
+or other so I'm going to put this one back on and
+
+1443
+02:13:08,960 --> 02:13:10,460
+in
+
+1444
+02:13:12,199 --> 02:13:17,440
+theory I think we can we can just connect
+
+1445
+02:13:17,440 --> 02:13:22,300
+these two axles with some universal
+
+1446
+02:13:27,880 --> 02:13:31,619
+joints which I conveniently have located
+
+1447
+02:13:34,360 --> 02:13:39,540
+here how far how long an axle do we
+
+1448
+02:13:40,440 --> 02:13:44,940
+need actually let's slide this down a little
+
+1449
+02:13:46,280 --> 02:13:50,340
+bit these are adjustable to a certain
+
+1450
+02:13:50,880 --> 02:13:54,699
+degree because you can just slide them on an
+
+1451
+02:13:57,719 --> 02:14:03,699
+axle but I do think I want a nine long
+
+1452
+02:14:06,280 --> 02:14:09,699
+axle instead of an eight long
+
+1453
+02:14:16,880 --> 02:14:18,380
+one
+
+1454
+02:14:19,239 --> 02:14:22,960
+let's slide that back up okay so now in theory that should
+
+1455
+02:14:22,960 --> 02:14:24,980
+drive both of
+
+1456
+02:14:35,280 --> 02:14:40,320
+them oh except have the gearing backwards on
+
+1457
+02:14:40,320 --> 02:14:43,980
+this one this one has to be turned
+
+1458
+02:14:46,880 --> 02:14:48,380
+around
+
+1459
+02:14:54,320 --> 02:14:59,820
+right much better oh yeah now we need a shorter axle
+
+1460
+02:14:59,880 --> 02:15:05,280
+back it's important that the gears go the right way otherwise
+
+1461
+02:15:05,280 --> 02:15:08,260
+your roller coaster is going nowhere
+
+1462
+02:15:16,800 --> 02:15:18,300
+fast
+
+1463
+02:15:23,239 --> 02:15:25,900
+okay now we're
+
+1464
+02:15:29,920 --> 02:15:33,659
+cooking both Motors going in the right direction
+
+1465
+02:15:38,880 --> 02:15:42,880
+excellent crazy Technic with all kinds of stuff in the chat I
+
+1466
+02:15:42,880 --> 02:15:45,059
+have no idea what you're talking
+
+1467
+02:15:46,800 --> 02:15:48,300
+about
+
+1468
+02:15:50,760 --> 02:15:52,679
+I think he need some support from the motor itself at the
+
+1469
+02:15:52,679 --> 02:15:55,400
+bottom it will hang and wiggle in the whole assembly due to
+
+1470
+02:15:55,400 --> 02:15:58,900
+vibration yeah we'll see I
+
+1471
+02:16:00,760 --> 02:16:04,980
+mean so far so good
+
+1472
+02:16:06,960 --> 02:16:10,830
+uh we're just going to do some manual testing up to this
+
+1473
+02:16:10,830 --> 02:16:16,559
+[Music] point now my coaster is not on the track
+
+1474
+02:16:16,559 --> 02:16:19,920
+so help [Music]
+
+1475
+02:16:24,040 --> 02:16:27,659
+oh yeah it does seem to be a bit too
+
+1476
+02:16:33,200 --> 02:16:37,019
+heavy well that work oh
+
+1477
+02:16:39,980 --> 02:16:41,480
+[Music]
+
+1478
+02:16:45,160 --> 02:16:50,139
+yeah okay but now we also need to
+
+1479
+02:16:55,040 --> 02:16:58,899
+motorize we need more we need more
+
+1480
+02:16:59,439 --> 02:17:05,819
+power we definitely need more have this other one pre-built
+
+1481
+02:17:09,359 --> 02:17:12,179
+here which we can
+
+1482
+02:17:13,719 --> 02:17:18,099
+mount on the outside of this track
+
+1483
+02:17:38,399 --> 02:17:42,359
+and I think like ultimately you might be able to join all
+
+1484
+02:17:42,359 --> 02:17:48,280
+of these uh accelerators together with
+
+1485
+02:17:48,280 --> 02:17:53,359
+the you know universal joints but uh that's going to probably be
+
+1486
+02:17:53,359 --> 02:17:57,120
+super annoying and really finicky to get working so for now I'm
+
+1487
+02:17:57,120 --> 02:17:58,780
+just going
+
+1488
+02:18:01,840 --> 02:18:06,080
+to that is definitely running the wrong way we're going to need
+
+1489
+02:18:06,080 --> 02:18:10,559
+to reverse these as well if I use the same battery box
+
+1490
+02:18:10,559 --> 02:18:15,679
+anyway it's also missing a gear so that needs to
+
+1491
+02:18:15,679 --> 02:18:18,019
+be rectified
+
+1492
+02:18:27,319 --> 02:18:29,740
+it's going quite fast
+
+1493
+02:18:31,160 --> 02:18:34,620
+yeah uh but I will need
+
+1494
+02:18:46,519 --> 02:18:48,019
+to
+
+1495
+02:18:48,960 --> 02:18:53,679
+actually I might just get another do I have another battery box
+
+1496
+02:18:53,679 --> 02:18:56,300
+no probably not because I'll need
+
+1497
+02:18:59,519 --> 02:19:04,380
+to change the gearing well maybe I can just turn this
+
+1498
+02:19:16,439 --> 02:19:17,939
+around
+
+1499
+02:19:30,439 --> 02:19:32,899
+okay will
+
+1500
+02:19:34,800 --> 02:19:38,240
+this no because I turned it around and I turned the gearing
+
+1501
+02:19:38,240 --> 02:19:43,510
+around I actually just need to [Music]
+
+1502
+02:19:44,200 --> 02:19:47,939
+redo the gearing on this one
+
+1503
+02:20:01,399 --> 02:20:03,819
+oh no I lost the
+
+1504
+02:20:16,359 --> 02:20:17,859
+piece
+
+1505
+02:20:39,920 --> 02:20:44,819
+can you make breaks for the station too yeah I don't think
+
+1506
+02:20:46,319 --> 02:20:47,819
+so
+
+1507
+02:20:51,520 --> 02:20:55,580
+I think ultimately I need to put the gears on the other
+
+1508
+02:20:56,080 --> 02:20:59,359
+side in this configur I just need to drive it from the
+
+1509
+02:20:59,359 --> 02:21:04,640
+back actually so what we're going to do is
+
+1510
+02:21:04,640 --> 02:21:08,140
+we are going to make that
+
+1511
+02:21:15,399 --> 02:21:18,460
+longer need a longer lift
+
+1512
+02:21:28,720 --> 02:21:34,280
+arm and then this axle will need to be
+
+1513
+02:21:34,280 --> 02:21:38,340
+1 2 3 four five six 7even
+
+1514
+02:21:46,240 --> 02:21:47,740
+long
+
+1515
+02:21:57,960 --> 02:21:59,460
+and
+
+1516
+02:22:04,960 --> 02:22:07,899
+then yeah there we
+
+1517
+02:22:11,720 --> 02:22:13,220
+go
+
+1518
+02:22:16,160 --> 02:22:21,319
+excellent so in theory I still think this coaster
+
+1519
+02:22:21,319 --> 02:22:23,300
+might be a bit too
+
+1520
+02:22:24,550 --> 02:22:29,680
+[Music] heavy a it doesn't quite make it to the
+
+1521
+02:22:29,680 --> 02:22:31,780
+first set of
+
+1522
+02:22:35,600 --> 02:22:39,020
+drivers I'm just going to try it with a
+
+1523
+02:22:41,080 --> 02:22:44,460
+empty coaster I'm just
+
+1524
+02:22:46,160 --> 02:22:47,660
+curious
+
+1525
+02:22:48,960 --> 02:22:50,960
+yeah cuzz with a lighter coaster it actually makes it all the
+
+1526
+02:22:50,960 --> 02:22:53,590
+way to [Music]
+
+1527
+02:23:01,090 --> 02:23:02,590
+[Music]
+
+1528
+02:23:07,920 --> 02:23:10,520
+the it's hard to tell what the dark blue on the dark
+
+1529
+02:23:10,520 --> 02:23:12,500
+blue but
+
+1530
+02:23:16,080 --> 02:23:17,580
+uh
+
+1531
+02:23:26,640 --> 02:23:32,300
+this is what happens when you're trying to put prototypes into
+
+1532
+02:23:32,880 --> 02:23:37,080
+production I'm actually just going to going to confirm that it's just
+
+1533
+02:23:37,080 --> 02:23:43,180
+the weight that's an issue I'm going to use these cars without
+
+1534
+02:23:46,080 --> 02:23:47,580
+decorations
+
+1535
+02:23:48,200 --> 02:23:50,960
+oh interesting these ones definitely don't run as smooth as the ones
+
+1536
+02:23:50,960 --> 02:23:52,460
+I
+
+1537
+02:24:02,500 --> 02:24:04,000
+[Music]
+
+1538
+02:24:07,439 --> 02:24:11,640
+have got to trim some fat off those astronauts oh Jake sovich
+
+1539
+02:24:11,640 --> 02:24:13,380
+is in the
+
+1540
+02:24:14,120 --> 02:24:17,740
+house yeah clearly uh
+
+1541
+02:24:19,399 --> 02:24:25,740
+it's uh I mean we could definitely add another accelerator
+
+1542
+02:24:26,080 --> 02:24:29,060
+to this track piece
+
+1543
+02:24:32,560 --> 02:24:35,660
+here which we might have to
+
+1544
+02:24:37,560 --> 02:24:40,580
+do to make it more
+
+1545
+02:24:43,479 --> 02:24:47,620
+reliable but yeah it is definitely an intense ride
+
+1546
+02:24:48,399 --> 02:24:53,080
+oh we're close though it's definitely close I'll definitely have to play
+
+1547
+02:24:53,080 --> 02:24:55,340
+around with it a little bit
+
+1548
+02:24:56,040 --> 02:25:01,000
+more I think if you have a standard track with the without
+
+1549
+02:25:01,000 --> 02:25:06,620
+the curved without the curved slope Corners
+
+1550
+02:25:07,319 --> 02:25:12,520
+uh you could definitely get a little bit better
+
+1551
+02:25:12,520 --> 02:25:14,899
+performance out of it
+
+1552
+02:25:15,880 --> 02:25:17,380
+um
+
+1553
+02:25:17,920 --> 02:25:20,120
+or at least you wouldn't need as many Motors I'm actually going
+
+1554
+02:25:20,120 --> 02:25:24,979
+to mount this a little bit differently seems to Sag quite a
+
+1555
+02:25:27,760 --> 02:25:30,960
+bit and I think some of the spacing could probably be improved
+
+1556
+02:25:30,960 --> 02:25:32,580
+a little
+
+1557
+02:25:35,439 --> 02:25:38,500
+bit oh almost made
+
+1558
+02:25:41,880 --> 02:25:46,920
+it it's interesting that my this
+
+1559
+02:25:46,920 --> 02:25:51,440
+coaster for whatever reason seems [Music]
+
+1560
+02:25:53,439 --> 02:25:56,660
+to seems to work much
+
+1561
+02:26:08,160 --> 02:26:09,660
+[Music]
+
+1562
+02:26:15,800 --> 02:26:17,300
+better
+
+1563
+02:26:21,080 --> 02:26:25,319
+can't you put the wheels on the bottom of the tracks that
+
+1564
+02:26:25,319 --> 02:26:29,340
+we're a little bit less visible yeah no not
+
+1565
+02:26:29,910 --> 02:26:31,410
+[Music]
+
+1566
+02:26:36,600 --> 02:26:40,319
+really please please please make the stream available to watch later yeah
+
+1567
+02:26:40,319 --> 02:26:42,600
+I think most of my streams are public I mean some of
+
+1568
+02:26:42,600 --> 02:26:44,660
+them aren't but
+
+1569
+02:26:45,200 --> 02:26:48,740
+uh some fold of P paper under table
+
+1570
+02:26:50,319 --> 02:26:52,840
+legs oh yeah it' be really cool if you make it bigger
+
+1571
+02:26:52,840 --> 02:26:54,460
+with a
+
+1572
+02:26:55,800 --> 02:26:58,840
+loop looks like the comet may slow just ha yeah I took
+
+1573
+02:26:58,840 --> 02:27:03,120
+the Comet off um it definitely runs a lot smoother with the
+
+1574
+02:27:03,120 --> 02:27:04,620
+Comet
+
+1575
+02:27:07,680 --> 02:27:10,540
+off and I think
+
+1576
+02:27:11,960 --> 02:27:17,220
+uh some improvement could be made to the mounting
+
+1577
+02:27:18,520 --> 02:27:21,200
+yeah like we just need the wheels to be just a tad
+
+1578
+02:27:21,200 --> 02:27:24,470
+closer to the [Music]
+
+1579
+02:27:26,160 --> 02:27:29,040
+rails I mean I think if you were making a bigger coaster
+
+1580
+02:27:29,040 --> 02:27:31,880
+you would just use the TR the train uh the train you
+
+1581
+02:27:31,880 --> 02:27:36,680
+would just use the chain system I think the nice thing about
+
+1582
+02:27:36,680 --> 02:27:42,080
+this particular system is that uh
+
+1583
+02:27:42,080 --> 02:27:44,560
+you know it's a relatively low piece count it's easy to just
+
+1584
+02:27:44,560 --> 02:27:47,520
+tack it on so even if if you just have a really
+
+1585
+02:27:47,520 --> 02:27:52,640
+small almost flat Loop in like a City layout or something
+
+1586
+02:27:52,640 --> 02:27:57,800
+uh you could easily just like stick this on and your you
+
+1587
+02:27:57,800 --> 02:28:01,460
+know your your tram could just run on its
+
+1588
+02:28:03,439 --> 02:28:08,359
+own I mean obviously it won't work for like super large uh
+
+1589
+02:28:08,359 --> 02:28:13,680
+coaster layouts um unless you put multi them multiple
+
+1590
+02:28:13,680 --> 02:28:17,660
+of them around the entire track but uh
+
+1591
+02:28:19,840 --> 02:28:21,340
+[Music]
+
+1592
+02:28:23,880 --> 02:28:27,479
+but uh I mean it is pretty fun to watch anyway it's
+
+1593
+02:28:27,479 --> 02:28:31,500
+a bit loud obviously anything with motors is loud
+
+1594
+02:28:32,240 --> 02:28:37,319
+uh but uh yeah anyway uh that's pretty much all
+
+1595
+02:28:37,319 --> 02:28:40,640
+I wanted to do today obviously it could use some improvement but
+
+1596
+02:28:40,640 --> 02:28:45,340
+this is why we test things out uh we get some feedback
+
+1597
+02:28:45,600 --> 02:28:50,160
+obviously it needs to handle heavier cars uh a little bit better
+
+1598
+02:28:50,160 --> 02:28:53,720
+which I think it can do obviously the heavier cars just don't
+
+1599
+02:28:53,720 --> 02:28:57,720
+make it up this slope so we need another we would need
+
+1600
+02:28:57,720 --> 02:29:01,000
+another accelerator here which is actually quite a lot for just this
+
+1601
+02:29:01,000 --> 02:29:06,120
+small set um I think some of the older sets like the
+
+1602
+02:29:06,120 --> 02:29:11,240
+the pirate coaster uh you would only need two accelerators cuz you
+
+1603
+02:29:11,240 --> 02:29:14,060
+just have the one big hill
+
+1604
+02:29:14,920 --> 02:29:18,120
+uh which should should be good as long as it can make
+
+1605
+02:29:18,120 --> 02:29:21,680
+it up to the as long as the front of the car
+
+1606
+02:29:21,680 --> 02:29:25,060
+can make it back up to the first accelerator
+
+1607
+02:29:25,680 --> 02:29:29,279
+um but uh yeah we'll see again we'll just have to test
+
+1608
+02:29:29,279 --> 02:29:32,880
+it out but I'm looking forward to testing this with different track
+
+1609
+02:29:32,880 --> 02:29:38,120
+configurations you know just to see what uh you know what works
+
+1610
+02:29:38,120 --> 02:29:41,080
+and what doesn't and uh that's just all part of the process
+
+1611
+02:29:41,080 --> 02:29:47,020
+of developing any kind of new system like this
+
+1612
+02:29:47,680 --> 02:29:52,520
+uh so yeah but I think that's probably all we'll do today
+
+1613
+02:29:52,520 --> 02:29:55,680
+I'll probably ask see what's going on the chat before I sign
+
+1614
+02:29:55,680 --> 02:29:59,120
+off but uh it's definitely lunch time for me uh when you
+
+1615
+02:29:59,120 --> 02:30:02,000
+put the motor in the corner a bit more into the corner
+
+1616
+02:30:02,000 --> 02:30:04,760
+yeah I mean you can definitely Mount these well actually yeah I
+
+1617
+02:30:04,760 --> 02:30:10,600
+can just try that like I can just Mount this one lower
+
+1618
+02:30:10,600 --> 02:30:15,120
+well actually I can because for whatever reason the Center Bar is
+
+1619
+02:30:15,120 --> 02:30:17,380
+thicker than the rest
+
+1620
+02:30:17,960 --> 02:30:22,399
+um I mean actually I can I'll just move that here and
+
+1621
+02:30:22,399 --> 02:30:26,060
+then use these two
+
+1622
+02:30:27,080 --> 02:30:31,200
+uh yeah we we Mount this closer to the corner I mean
+
+1623
+02:30:31,200 --> 02:30:34,460
+it's definitely more stable if we mount it in the middle
+
+1624
+02:30:35,720 --> 02:30:40,800
+but I just don't know if we Mount this further like it
+
+1625
+02:30:40,800 --> 02:30:42,880
+might pick it up but I don't know if it'll push it
+
+1626
+02:30:42,880 --> 02:30:46,680
+enough to get to the next one now it's got to be
+
+1627
+02:30:46,680 --> 02:30:49,020
+is a fine balance between
+
+1628
+02:30:50,680 --> 02:30:53,800
+being oh yeah with it's like for a heavier car might not
+
+1629
+02:30:53,800 --> 02:30:55,540
+oh there we
+
+1630
+02:30:57,640 --> 02:31:00,819
+go good idea
+
+1631
+02:31:08,000 --> 02:31:11,380
+uh but I still think for the heavier
+
+1632
+02:31:12,040 --> 02:31:16,859
+car it might have some issues
+
+1633
+02:31:17,399 --> 02:31:19,540
+oh yeah see it doesn't
+
+1634
+02:31:20,479 --> 02:31:24,140
+quite oh yeah yeah yeah okay okay
+
+1635
+02:31:24,920 --> 02:31:26,420
+[Music]
+
+1636
+02:31:30,560 --> 02:31:35,600
+okay put the whole the kids would puke days yeah
+
+1637
+02:31:35,600 --> 02:31:40,540
+it's obviously uh way too intense for small
+
+1638
+02:31:45,359 --> 02:31:46,859
+children
+
+1639
+02:31:51,760 --> 02:31:56,760
+yeah unfortunately that mounting doesn't quite work as well uh so that
+
+1640
+02:31:56,760 --> 02:32:00,020
+goes with the so let's add
+
+1641
+02:32:03,080 --> 02:32:08,200
+like Yeah we're definitely getting into the hanger Zone but let's add
+
+1642
+02:32:08,200 --> 02:32:10,580
+let's put some bricks on one
+
+1643
+02:32:15,279 --> 02:32:16,779
+car
+
+1644
+02:32:21,910 --> 02:32:23,410
+[Music]
+
+1645
+02:32:28,600 --> 02:32:33,160
+okay we're still work we're still working we're still working I think
+
+1646
+02:32:33,160 --> 02:32:38,120
+uh as I mentioned yeah we need to adjust the mounting just
+
+1647
+02:32:38,120 --> 02:32:40,300
+so it's a little bit
+
+1648
+02:32:44,000 --> 02:32:48,740
+more uh it just needs to be bit more snug to the
+
+1649
+02:32:49,479 --> 02:32:54,580
+rails to really pick up the vehicles really pick up the
+
+1650
+02:32:59,760 --> 02:33:01,260
+[Music]
+
+1651
+02:33:06,840 --> 02:33:10,779
+cars yeah we're getting a little bit heavier
+
+1652
+02:33:12,640 --> 02:33:15,680
+now it's not quite making it all the way and I think
+
+1653
+02:33:15,680 --> 02:33:20,120
+if we add the weight on this one it might be a
+
+1654
+02:33:20,120 --> 02:33:23,750
+bit too [Music]
+
+1655
+02:33:29,240 --> 02:33:32,899
+much yeah doesn't quite make
+
+1656
+02:33:40,120 --> 02:33:43,160
+it couldn't you add a support underneath the wheels to make more
+
+1657
+02:33:43,160 --> 02:33:47,460
+stable yeah we definitely can uh
+
+1658
+02:33:48,760 --> 02:33:54,080
+I'm also curious I've never tried it with like multiple
+
+1659
+02:33:54,080 --> 02:33:57,859
+cars like how many cars can we get going on
+
+1660
+02:34:05,690 --> 02:34:09,180
+[Music] here
+
+1661
+02:34:15,080 --> 02:34:16,580
+interesting
+
+1662
+02:34:26,880 --> 02:34:29,899
+I mean that works pretty well too
+
+1663
+02:34:34,680 --> 02:34:37,880
+uh I mean nobody wants a roller coaster with three cars on
+
+1664
+02:34:37,880 --> 02:34:42,740
+it uh seems very
+
+1665
+02:34:43,800 --> 02:34:49,160
+uh it seems uh not very entertaining uh
+
+1666
+02:34:49,160 --> 02:34:52,000
+maybe an extra car for length though that will add weight yeah
+
+1667
+02:34:52,000 --> 02:34:55,680
+well obviously again great minds think a like if you make it
+
+1668
+02:34:55,680 --> 02:34:59,700
+a little bigger would be better
+
+1669
+02:35:03,319 --> 02:35:08,560
+yeah only one booster seems to be needed to be hanging other
+
+1670
+02:35:08,560 --> 02:35:13,479
+can be supported from the bottom yeah uh I mean there are
+
+1671
+02:35:13,479 --> 02:35:18,680
+definitely lots of ways to mount the wheels uh
+
+1672
+02:35:18,680 --> 02:35:24,120
+my experiment was just uh trying to make it as flexible
+
+1673
+02:35:24,120 --> 02:35:29,399
+as possible because mounting it to the to the track themselves
+
+1674
+02:35:29,399 --> 02:35:33,800
+means that like you don't have to build up any kind of
+
+1675
+02:35:33,800 --> 02:35:38,520
+sub substructure to to mount each one individually like the mounting can
+
+1676
+02:35:38,520 --> 02:35:41,640
+be the same for every one and it doesn't matter like where
+
+1677
+02:35:41,640 --> 02:35:45,160
+your track is relative to wherever your base is it could be
+
+1678
+02:35:45,160 --> 02:35:47,540
+like raised up up
+
+1679
+02:35:48,160 --> 02:35:51,680
+higher so that was a logic behind mounting them to the track
+
+1680
+02:35:51,680 --> 02:35:56,880
+itself just makes it a lot more flexible um
+
+1681
+02:35:56,880 --> 02:36:00,939
+and then you can mount it to standard straight pieces as
+
+1682
+02:36:02,760 --> 02:36:06,140
+well attach two TRS together
+
+1683
+02:36:10,000 --> 02:36:14,000
+yeah uh fill the whole track with cars actually if you filled
+
+1684
+02:36:14,000 --> 02:36:16,520
+the whole track with cars you probably only need one accelerator to
+
+1685
+02:36:16,520 --> 02:36:20,200
+keep the whole thing going but I actually actually don't know if
+
+1686
+02:36:20,200 --> 02:36:24,640
+I have actually I probably do have that many track cars but
+
+1687
+02:36:24,640 --> 02:36:27,920
+oh actually probably not I think I only have like 25 of
+
+1688
+02:36:27,920 --> 02:36:30,660
+these it would be
+
+1689
+02:36:39,439 --> 02:36:42,240
+insane but what's the point of having a live stream if you
+
+1690
+02:36:42,240 --> 02:36:47,200
+don't do crazy things so here we go how many of these
+
+1691
+02:36:47,200 --> 02:36:48,939
+can we put
+
+1692
+02:36:54,080 --> 02:36:59,080
+together before it all collapses it why don't these go together before
+
+1693
+02:36:59,080 --> 02:37:01,260
+it collapses in a
+
+1694
+02:37:03,800 --> 02:37:07,819
+heap oh my God for whatever these ones
+
+1695
+02:37:12,120 --> 02:37:16,300
+are okay so clearly
+
+1696
+02:37:23,880 --> 02:37:26,660
+a super long train doesn't seem
+
+1697
+02:37:41,960 --> 02:37:46,300
+to all right how how far can we go
+
+1698
+02:37:48,600 --> 02:37:53,220
+oh my God some of these are like really hard to put
+
+1699
+02:38:02,200 --> 02:38:08,460
+together okay clearly I have uh an actual ton of these
+
+1700
+02:38:10,240 --> 02:38:13,100
+cars which is a bit
+
+1701
+02:38:13,840 --> 02:38:18,140
+ridiculous I think we bought these in plug bulk like the first
+
+1702
+02:38:18,279 --> 02:38:24,060
+time they were available which seems ridiculous to me like who needs
+
+1703
+02:38:25,000 --> 02:38:30,200
+like a million train cars but you know whatever clearly
+
+1704
+02:38:30,200 --> 02:38:32,420
+I needed a lot for
+
+1705
+02:38:44,720 --> 02:38:46,220
+this
+
+1706
+02:38:50,680 --> 02:38:55,200
+actually definitely works a lot better with longer cars because uh you
+
+1707
+02:38:55,200 --> 02:38:58,220
+definitely have uh
+
+1708
+02:39:00,279 --> 02:39:04,680
+more basically a car is always in contact with one of the
+
+1709
+02:39:04,680 --> 02:39:06,180
+driving
+
+1710
+02:39:10,220 --> 02:39:14,760
+[Applause] Wheels well why stop now we'll just get all the ones
+
+1711
+02:39:14,760 --> 02:39:16,460
+I have
+
+1712
+02:39:27,040 --> 02:39:30,740
+Legos in motion hey fellow YouTuber I just got here what's going
+
+1713
+02:39:30,840 --> 02:39:36,160
+on well you just missed a a lot of building
+
+1714
+02:39:36,160 --> 02:39:37,660
+roller
+
+1715
+02:39:39,319 --> 02:39:44,479
+coasters now we're building a snake coaster oh man
+
+1716
+02:39:44,479 --> 02:39:50,660
+do I have enough to actually complete the complete the
+
+1717
+02:39:51,359 --> 02:39:54,660
+snake oh yeah I do for
+
+1718
+02:39:57,080 --> 02:40:00,359
+sure oh but the spacing okay we're actually just going to run
+
+1719
+02:40:00,359 --> 02:40:02,180
+it like this
+
+1720
+02:40:14,560 --> 02:40:16,060
+first
+
+1721
+02:40:28,200 --> 02:40:31,560
+yeah I can't actually connect them together because as you can probably
+
+1722
+02:40:31,560 --> 02:40:34,479
+I don't know if you can tell but well I guess there's
+
+1723
+02:40:34,479 --> 02:40:37,620
+a lot of flexibility in the the
+
+1724
+02:40:38,600 --> 02:40:42,460
+spacing so like depending on where it is in the
+
+1725
+02:40:43,560 --> 02:40:46,700
+track I guess I can connect
+
+1726
+02:40:48,640 --> 02:40:52,660
+together there we go
+
+1727
+02:41:13,720 --> 02:41:18,800
+connected actually I'm just really curious if I just drop I don't
+
+1728
+02:41:18,800 --> 02:41:21,140
+think we need as many accelerators
+
+1729
+02:41:26,120 --> 02:41:29,790
+now definitely doesn't run as well [Music]
+
+1730
+02:41:31,960 --> 02:41:35,779
+though he definitely helps to have more
+
+1731
+02:41:37,200 --> 02:41:39,800
+power yeah maybe you can make that into Dragon I mean it
+
+1732
+02:41:39,800 --> 02:41:44,160
+does kind of look ridiculously awesome if these cars were all decorated
+
+1733
+02:41:44,160 --> 02:41:49,640
+in some way with like uh yeah some crazy
+
+1734
+02:41:49,640 --> 02:41:54,720
+snake eating itself you know snake eating the tail even
+
+1735
+02:41:54,720 --> 02:41:56,819
+just having like a
+
+1736
+02:41:57,560 --> 02:41:59,060
+circular
+
+1737
+02:42:00,439 --> 02:42:05,060
+track the snake eating its own tail that would be pretty interesting
+
+1738
+02:42:06,200 --> 02:42:09,840
+uh looks like a bicycle chain maybe you could make that but
+
+1739
+02:42:09,840 --> 02:42:14,359
+with a dragon yeah reminds me of the conveyors in Amazon warehouse
+
+1740
+02:42:14,359 --> 02:42:15,859
+yeah
+
+1741
+02:42:16,439 --> 02:42:22,500
+the common roller closer to Legoland yeah like the classic snake
+
+1742
+02:42:24,640 --> 02:42:29,800
+game uh yeah anyway that actually turned out to be super
+
+1743
+02:42:29,800 --> 02:42:34,080
+fun but I think we are probably good to go I definitely
+
+1744
+02:42:34,080 --> 02:42:36,580
+need to eat lunch now
+
+1745
+02:42:37,760 --> 02:42:40,520
+uh oh actually I was curious I'm just going to count these
+
+1746
+02:42:40,520 --> 02:42:44,960
+1 2 3 4 5 8 9 10 11 12 13 14
+
+1747
+02:42:44,960 --> 02:42:48,439
+15 16 17 18 19 20 1 2 3 4 5 6
+
+1748
+02:42:48,439 --> 02:42:53,100
+7 8 9 10 11 12 33
+
+1749
+02:42:54,359 --> 02:42:57,880
+cars so yeah it's crazy and I have three more so I
+
+1750
+02:42:57,880 --> 02:43:01,560
+have 36 in total actually I might have a few more in
+
+1751
+02:43:01,560 --> 02:43:04,160
+some other Coaster sets that I haven't opened yet but uh that's
+
+1752
+02:43:04,160 --> 02:43:06,180
+all I have kicking
+
+1753
+02:43:07,200 --> 02:43:11,880
+around actually I should have another one of these too actually so
+
+1754
+02:43:11,880 --> 02:43:15,939
+who knows 36 plus okay anyway
+
+1755
+02:43:16,800 --> 02:43:21,640
+that is it for today thanks for the entertaining stream and the
+
+1756
+02:43:21,640 --> 02:43:25,319
+cool experiment suggestions at the end it actually turned out to be
+
+1757
+02:43:25,319 --> 02:43:31,080
+pretty good and very entertaining uh
+
+1758
+02:43:31,080 --> 02:43:33,840
+hope everybody has a good day hope everybody has a good holidays
+
+1759
+02:43:33,840 --> 02:43:35,760
+actually I'll probably stream next week I think I don't know what
+
+1760
+02:43:35,760 --> 02:43:40,399
+we'll do actually I think I might uh try to make the
+
+1761
+02:43:40,399 --> 02:43:45,399
+ski hill bigger uh I might try and extend it we'll see
+
+1762
+02:43:45,399 --> 02:43:47,240
+how big we can make the ski hill and still have it
+
+1763
+02:43:47,240 --> 02:43:51,880
+actually work um cuz I a few people have requested to see
+
+1764
+02:43:51,880 --> 02:43:56,800
+how how big it could go uh anyway thanks for everybody for
+
+1765
+02:43:56,800 --> 02:44:01,160
+joining thanks R Hamburg as always for moderating uh thanks everybody for
+
+1766
+02:44:01,160 --> 02:44:06,279
+the questions and suggestions uh hopefully you all had
+
+1767
+02:44:06,279 --> 02:44:10,960
+as much fun as I did and we will see you next
+
+1768
+02:44:10,960 --> 02:44:17,100
+week keep on building thanks for watching see you next time
+
