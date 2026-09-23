@@ -30,6 +30,16 @@
 \usepackage[scale=0.8]{geometry}
 
 %% ==========================================================================
+%% TYPOGRAPHY
+%% Discourage LaTeX's automatic mid-word hyphenation (e.g. "Univer-sity",
+%% "long-gitudinal"); microtype's protrusion/expansion (loaded by moderncv)
+%% absorbs the resulting slack instead.
+%% ==========================================================================
+\tolerance=1000
+\emergencystretch=3em
+\hyphenpenalty=10000
+
+%% ==========================================================================
 %% CUSTOM COMMANDS
 %% ==========================================================================
 \newcommand{\cvdoublecolumn}[2]{%
@@ -46,7 +56,7 @@
 %% ==========================================================================
 \AtBeginDocument{\recomputelengths}
 \firstname{William}
-\familyname{Gray-Roncal}
+\familyname{\mbox{Gray-Roncal}}
 \address{Johns Hopkins University Applied Physics Laboratory\\
   11100 Johns Hopkins Road, MP3-E104\\
   Asymmetric Operations Sector\\

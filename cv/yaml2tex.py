@@ -204,6 +204,16 @@ def preamble(ident):
 \\usepackage[scale=0.8]{{geometry}}
 
 {RULE}
+%% TYPOGRAPHY
+%% Discourage LaTeX's automatic mid-word hyphenation (e.g. "Univer-sity",
+%% "long-gitudinal"); microtype's protrusion/expansion (loaded by moderncv)
+%% absorbs the resulting slack instead.
+{RULE}
+\\tolerance=1000
+\\emergencystretch=3em
+\\hyphenpenalty=10000
+
+{RULE}
 %% CUSTOM COMMANDS
 {RULE}
 \\newcommand{{\\cvdoublecolumn}}[2]{{%
@@ -220,7 +230,7 @@ def preamble(ident):
 {RULE}
 \\AtBeginDocument{{\\recomputelengths}}
 \\firstname{{{ident['first_name']}}}
-\\familyname{{{ident['family_name']}}}
+\\familyname{{\\mbox{{{ident['family_name']}}}}}
 \\address{{{address}\\\\
   }}{{{ident['address_city']}}}
 \\homepage{{{ident['homepage']}}}
