@@ -204,6 +204,16 @@ def preamble(ident):
 \\usepackage[scale=0.8]{{geometry}}
 
 {RULE}
+%% TYPOGRAPHY
+%% Discourage LaTeX's automatic mid-word hyphenation (e.g. "Univer-sity",
+%% "long-gitudinal"); microtype's protrusion/expansion (loaded by moderncv)
+%% absorbs the resulting slack instead.
+{RULE}
+\\tolerance=1000
+\\emergencystretch=3em
+\\hyphenpenalty=10000
+
+{RULE}
 %% CUSTOM COMMANDS
 {RULE}
 \\newcommand{{\\cvdoublecolumn}}[2]{{%
@@ -220,7 +230,7 @@ def preamble(ident):
 {RULE}
 \\AtBeginDocument{{\\recomputelengths}}
 \\firstname{{{ident['first_name']}}}
-\\familyname{{{ident['family_name']}}}
+\\familyname{{\\mbox{{{ident['family_name']}}}}}
 \\address{{{address}\\\\
   }}{{{ident['address_city']}}}
 \\homepage{{{ident['homepage']}}}
@@ -245,9 +255,20 @@ def carry_over_bibliography_blocks():
     if start == -1 or end == -1 or end <= start:
         sys.exit("could not locate the publications block in cv/will_cv.tex")
     block = old[start:end].rstrip()
-    # strip the leading rule comment lines; we re-emit our own section header
-    block = re.sub(r"^%%.*\n", "", block, count=6)
-    return block.strip()
+    # Both boundaries were found by matching a neighboring section's own
+    # "%% ===\n%% TITLE\n%% ===" header text, so the rule line adjacent to
+    # each boundary belongs to that other section (re-emitted fresh below
+    # or by the next section's own header), not to this carried content.
+    # Previously this used re.sub(r"^%%.*\n", "", block, count=6), but `^`
+    # without re.MULTILINE only ever matches once, so `count` was a no-op:
+    # each regeneration left one stray rule line at each end, accumulating
+    # more of them on every future run.
+    lines = block.split("\n")
+    while lines and (lines[0] == RULE or lines[0].startswith("%% PUBLICATIONS")):
+        lines.pop(0)
+    while lines and lines[-1] == RULE:
+        lines.pop()
+    return "\n".join(lines).strip()
 
 
 def main():
